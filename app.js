@@ -115,7 +115,8 @@ function buildActs(src, akty, osoby) {
         p.miesz = false; /* numer domu dotyczy innej miejscowości */
         p.note = (p.note ? p.note + " " : "") + `Zamieszkała w miejscowości „${p.wies}”, numer domu dotyczy tej miejscowości.`;
       }
-      if (role === "dziadek_matki" || role === "maz_chrzestnej") p.note = "";
+      /* rola już mówi „ojciec matki” / „mąż chrzestnej”; reszta uwagi (np. forma łacińska imienia) zostaje */
+      if (role === "dziadek_matki" || role === "maz_chrzestnej") p.note = p.note.replace(/^(ojciec matki|mąż chrzestnej)\.?\s*/i, "");
       return p;
     });
     /* nazwiska wyprowadzone z nazwiska rodzica (oznaczone, nie są odczytem) */
@@ -453,7 +454,8 @@ function sourceCard(id) {
     <dt>Rodzaj akt</dt><dd>${esc(s.rodzaje)}</dd><dt>Roczniki</dt><dd>${esc(s.roczniki)}</dd>
     <dt>Miejscowości</dt><dd>${(s.wsie || []).map(vName).join(", ")}</dd><dt>Skany</dt><dd>${esc(s.skany)}</dd><dt>Stan</dt><dd>${esc(s.stan)}</dd>
     ${n ? `<dt>Wpisy na stronie</dt><dd>${n}${s.odczyt_ai ? ' <span class="flag">odczyt AI, do sprawdzenia</span>' : ""}</dd>` : ""}</dl>
-    ${s.link ? `<a class="small" href="${esc(s.link)}" target="_blank" rel="noopener">${esc(new URL(s.link).hostname)} ↗</a>` : '<span class="small muted">Link do ustalenia</span>'}</div>`;
+    ${s.link ? `<a class="small" href="${esc(s.link)}" target="_blank" rel="noopener">${esc(new URL(s.link).hostname)} ↗</a>` : '<span class="small muted">Link do ustalenia</span>'}
+    ${s.katalog_danych ? `<br><a class="small" href="https://github.com/Machmi-pro/plaucza-i-okolice/blob/main/data/${esc(s.katalog_danych)}/uwagi.md" target="_blank" rel="noopener">Uwagi do odczytu tej księgi ↗</a>` : ""}</div>`;
 }
 
 function viewSources(v) {

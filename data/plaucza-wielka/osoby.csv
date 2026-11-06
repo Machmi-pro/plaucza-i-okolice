@@ -1,65 +1,65 @@
 akt,lp,imie,nazwisko,nazwisko_panienskie,rola,wies_zamieszkania,dom_zrodlowy,dom,pewnosc_nazwiska,pewnosc_domu,mieszkaniec,uwagi
 app-879-151-1847-U-s062a,1,Julianna,,,dziecko,pw,11,11,,pewny,tak,
-app-879-151-1847-U-s062a,2,Paulus,Towstyga,,ojciec,pw,11,11,niepewny,pewny,tak,
-app-879-151-1847-U-s062a,3,Anastasia,,,matka,pw,11,11,,pewny,tak,Córka Andreae Bortnyk
-app-879-151-1847-U-s062a,4,Andreae,Bortnyk,,inna,,,,pewny,,nie,Ojciec matki
-app-879-151-1847-U-s062a,5,Tomas,S…vinski,,chrzestny,,,,nieczytelny,,nie,
-app-879-151-1847-U-s062a,6,Anastasia,,,chrzestna,,,,,,nie,Żona Alexii Bortnyk
-app-879-151-1847-U-s062a,7,Alexii,Bortnyk,,inna,,,,pewny,,nie,Mąż chrzestnej
-app-879-151-1847-U-s062a,8,Maria,Re…tycha,,akuszerka,,,,nieczytelny,,nie,
-app-879-151-1847-U-s062a,9,Petrus,Bobowczak,,kaplan,,,,niepewny,,nie,Proboszcz. Ochrzcił i bierzmował.
-app-879-151-1847-U-s063a,1,Joannes,,,dziecko,pw,123,123,,pewny,tak,
-app-879-151-1847-U-s063a,2,Maria,,,matka,pw,123,123,,pewny,tak,Córka Theodori Kowalyk
-app-879-151-1847-U-s063a,3,Theodori,Kowalyk,,inna,,,,niepewny,,nie,Ojciec matki
-app-879-151-1847-U-s063a,4,Casper,Ska…winski,,chrzestny,,,,nieczytelny,,nie,
-app-879-151-1847-U-s063a,5,Anna,,,chrzestna,,,,,,nie,Żona Joannis Babiak
-app-879-151-1847-U-s063a,6,Joannis,Babiak,,inna,,,,pewny,,nie,Mąż chrzestnej
-app-879-151-1847-U-s063b,1,Euphrosina,,,dziecko,pw,44,44,,pewny,tak,
-app-879-151-1847-U-s063b,2,Basilius,Bujak,,ojciec,pw,44,44,pewny,pewny,tak,
-app-879-151-1847-U-s063b,3,Anna,,,matka,pw,44,44,,pewny,tak,Córka Michaelis Worok
-app-879-151-1847-U-s063b,4,Michaelis,Worok,,inna,,,,niepewny,,nie,Ojciec matki
-app-879-151-1847-U-s063b,5,Theodorus,Grochowski,,chrzestny,,,,pewny,,nie,
-app-879-151-1847-U-s063b,6,Maria,,,chrzestna,,,,,,nie,Żona Joannis H…monik
-app-879-151-1847-U-s063b,7,Joannis,H…monik,,inna,,,,nieczytelny,,nie,Mąż chrzestnej
+app-879-151-1847-U-s062a,2,Paweł,Towstyga,,ojciec,pw,11,11,pewny,pewny,tak,W akcie zapisano imię Paulus.
+app-879-151-1847-U-s062a,3,Anastazja,,,matka,pw,11,11,,pewny,tak,Córka Andrzeja Bortnyk W akcie zapisano imię Anastasia.
+app-879-151-1847-U-s062a,4,Andrzej,Bortnyk,,inna,,,,pewny,,nie,Ojciec matki W akcie zapisano imię Andreae.
+app-879-151-1847-U-s062a,5,Tomasz,Krawinski,,chrzestny,,,,niepewny,,nie,W akcie zapisano imię Tomas.
+app-879-151-1847-U-s062a,6,Anastazja,,,chrzestna,,,,,,nie,Żona Aleksego Bortnyk W akcie zapisano imię Anastasia.
+app-879-151-1847-U-s062a,7,Aleksy,Bortnyk,,inna,,,,pewny,,nie,Mąż chrzestnej W akcie zapisano imię Alexii.
+app-879-151-1847-U-s062a,8,Maria,Rehutycha,,akuszerka,,,,niepewny,,nie,
+app-879-151-1847-U-s062a,9,Piotr,Bobowczak,,kaplan,,,,pewny,,nie,Proboszcz. Ochrzcił i bierzmował. W akcie zapisano imię Petrus.
+app-879-151-1847-U-s063a,1,Jan,,,dziecko,pw,123,123,,pewny,tak,W akcie zapisano imię Joannes.
+app-879-151-1847-U-s063a,2,Maria,,,matka,pw,123,123,,pewny,tak,Córka Teodora Kowalyk
+app-879-151-1847-U-s063a,3,Teodor,Kowalyk,,inna,,,,pewny,,nie,Ojciec matki W akcie zapisano imię Theodori.
+app-879-151-1847-U-s063a,4,Kacper,Skawinski,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Casper.
+app-879-151-1847-U-s063a,5,Anna,,,chrzestna,,,,,,nie,Żona Jana Babiak
+app-879-151-1847-U-s063a,6,Jan,Babiak,,inna,,,,pewny,,nie,Mąż chrzestnej W akcie zapisano imię Joannis.
+app-879-151-1847-U-s063b,1,Eufrozyna,,,dziecko,pw,44,44,,pewny,tak,W akcie zapisano imię Euphrosina.
+app-879-151-1847-U-s063b,2,Bazyli,Bujak,,ojciec,pw,44,44,pewny,pewny,tak,W akcie zapisano imię Basilius.
+app-879-151-1847-U-s063b,3,Anna,,,matka,pw,44,44,,pewny,tak,Córka Michała Worok
+app-879-151-1847-U-s063b,4,Michał,Worok,,inna,,,,pewny,,nie,Ojciec matki W akcie zapisano imię Michaelis.
+app-879-151-1847-U-s063b,5,Teodor,Grochowski,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Theodorus.
+app-879-151-1847-U-s063b,6,Maria,,,chrzestna,,,,,,nie,Żona Jana Hromonik (nazwisko odczytane niepewnie).
+app-879-151-1847-U-s063b,7,Jan,Hromonik,,inna,,,,niepewny,,nie,Mąż chrzestnej W akcie zapisano imię Joannis.
 app-879-151-1847-U-s063b,8,Maria,Bujak,,akuszerka,,,,pewny,,nie,
-app-879-151-1847-U-s063c,1,Basilius,,,dziecko,pw,56,56,,pewny,tak,
-app-879-151-1847-U-s063c,2,Jacobus,Meleniowski,,ojciec,pw,56,56,niepewny,pewny,tak,
-app-879-151-1847-U-s063c,3,Maria,,,matka,pw,56,56,,pewny,tak,Córka Michaelis Prociak
-app-879-151-1847-U-s063c,4,Michaelis,Prociak,,inna,,,,niepewny,,nie,Ojciec matki
-app-879-151-1847-U-s063c,5,Basilius,Bujak,,chrzestny,,,,pewny,,nie,
-app-879-151-1847-U-s063c,6,Anna,,,chrzestna,,,,,,nie,Żona Andreae Maw…zyniec
-app-879-151-1847-U-s063c,7,Andreae,Maw…zyniec,,inna,,,,nieczytelny,,nie,Mąż chrzestnej
+app-879-151-1847-U-s063c,1,Bazyli,,,dziecko,pw,56,56,,pewny,tak,W akcie zapisano imię Basilius.
+app-879-151-1847-U-s063c,2,Jakub,Melenioski,,ojciec,pw,56,56,niepewny,pewny,tak,W akcie zapisano imię Jacobus.
+app-879-151-1847-U-s063c,3,Maria,,,matka,pw,56,56,,pewny,tak,Córka Michała Prociak
+app-879-151-1847-U-s063c,4,Michał,Prociak,,inna,,,,pewny,,nie,Ojciec matki W akcie zapisano imię Michaelis.
+app-879-151-1847-U-s063c,5,Bazyli,Bujak,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Basilius.
+app-879-151-1847-U-s063c,6,Anna,,,chrzestna,,,,,,nie,Żona Andrzeja Mawruszyniec.
+app-879-151-1847-U-s063c,7,Andrzej,Mawruszyniec,,inna,,,,pewny,,nie,Mąż chrzestnej W akcie zapisano imię Andreae.
 app-879-151-1847-U-s063c,8,Maria,Bujak,,akuszerka,,,,pewny,,nie,
-app-879-151-1847-U-s063d,1,Euphrosina,,,dziecko,pw,48,48,,pewny,tak,
-app-879-151-1847-U-s063d,2,Elias,Babiak,,ojciec,pw,48,48,pewny,pewny,tak,
-app-879-151-1847-U-s063d,3,Catharina,,,matka,pw,48,48,,pewny,tak,Córka Theodori Maw…zyniec
-app-879-151-1847-U-s063d,4,Theodori,Maw…zyniec,,inna,,,,nieczytelny,,nie,Ojciec matki
-app-879-151-1847-U-s063d,5,Stephanus,Łec…w,,chrzestny,,,,nieczytelny,,nie,
-app-879-151-1847-U-s063d,6,Maria,,,chrzestna,,,,,,nie,Żona Theodori Bortnyk
-app-879-151-1847-U-s063d,7,Theodori,Bortnyk,,inna,,,,pewny,,nie,Mąż chrzestnej
-app-879-151-1847-U-s063d,8,Eudocia,Mar…ka,,akuszerka,,,,nieczytelny,,nie,
+app-879-151-1847-U-s063d,1,Eufrozyna,,,dziecko,pw,48,48,,pewny,tak,W akcie zapisano imię Euphrosina.
+app-879-151-1847-U-s063d,2,Eliasz,Babiak,,ojciec,pw,48,48,pewny,pewny,tak,W akcie zapisano imię Elias.
+app-879-151-1847-U-s063d,3,Katarzyna,,,matka,pw,48,48,,pewny,tak,Córka Teodora Mawruszyniec. W akcie zapisano imię Catharina.
+app-879-151-1847-U-s063d,4,Teodor,Mawruszyniec,,inna,,,,pewny,,nie,Ojciec matki W akcie zapisano imię Theodori.
+app-879-151-1847-U-s063d,5,Stefan,Łeciow,,chrzestny,,,,niepewny,,nie,W akcie zapisano imię Stephanus.
+app-879-151-1847-U-s063d,6,Maria,,,chrzestna,,,,,,nie,Żona Teodora Bortnyk
+app-879-151-1847-U-s063d,7,Teodor,Bortnyk,,inna,,,,pewny,,nie,Mąż chrzestnej W akcie zapisano imię Theodori.
+app-879-151-1847-U-s063d,8,Eudokia,Muryka,,akuszerka,,,,niepewny,,nie,W akcie zapisano imię Eudocia.
 app-879-151-1847-U-s063e,1,Leon,,,dziecko,pw,5,5,,pewny,tak,
-app-879-151-1847-U-s063e,2,Michael,Dubas,,ojciec,pw,5,5,niepewny,pewny,tak,
-app-879-151-1847-U-s063e,3,Martha,,,matka,pw,5,5,,pewny,tak,Córka Joannis Babiak
-app-879-151-1847-U-s063e,4,Joannis,Babiak,,inna,,,,pewny,,nie,Ojciec matki
-app-879-151-1847-U-s063e,5,Nicolaus,Bo…gucki,,chrzestny,,,,nieczytelny,,nie,
-app-879-151-1847-U-s063e,6,Parasc…va,,,chrzestna,,,,,,nie,Żona Romani Bar…ab
-app-879-151-1847-U-s063e,7,Romani,Bar…ab,,inna,,,,nieczytelny,,nie,Mąż chrzestnej
-app-879-151-1847-U-s063e,8,Maria,Re…tycha,,akuszerka,,,,nieczytelny,,nie,
-app-879-151-1847-U-s063f,1,Constantinus,,,dziecko,pw,17,17,,pewny,tak,
-app-879-151-1847-U-s063f,2,Paulus,Pryhoda,,ojciec,pw,17,17,pewny,pewny,tak,
-app-879-151-1847-U-s063f,3,Melania,,,matka,pw,17,17,,pewny,tak,Córka Constantii Babiak
-app-879-151-1847-U-s063f,4,Constantii,Babiak,,inna,,,,pewny,,nie,Ojciec matki
-app-879-151-1847-U-s063f,5,Joachimus,Chodkiewicz,,chrzestny,,,,pewny,,nie,
-app-879-151-1847-U-s063f,6,Barbara,,,chrzestna,,,,,,nie,Żona Pauli Barab…sz
-app-879-151-1847-U-s063f,7,Pauli,Barab…sz,,inna,,,,nieczytelny,,nie,Mąż chrzestnej
-app-879-151-1847-U-s063f,8,Maria,Re…tycha,,akuszerka,,,,nieczytelny,,nie,
-app-879-151-1847-U-s063g,1,Chrystina,,,dziecko,pw,35,35,,pewny,tak,Niepewny odczyt końcówki imienia
-app-879-151-1847-U-s063g,2,Gregorius,Babiak,,ojciec,pw,35,35,pewny,pewny,tak,
-app-879-151-1847-U-s063g,3,Maria,,,matka,pw,35,35,,pewny,tak,Córka Joannis O…nyk
-app-879-151-1847-U-s063g,4,Joannis,O…nyk,,inna,,,,nieczytelny,,nie,Ojciec matki
-app-879-151-1847-U-s063g,5,Stephanus,Stołowaty,,chrzestny,,,,niepewny,,nie,
-app-879-151-1847-U-s063g,6,Anna,,,chrzestna,,,,,,nie,Żona Joannis Babiak
-app-879-151-1847-U-s063g,7,Joannis,Babiak,,inna,,,,pewny,,nie,Mąż chrzestnej
+app-879-151-1847-U-s063e,2,Michał,Dubas,,ojciec,pw,5,5,pewny,pewny,tak,W akcie zapisano imię Michael.
+app-879-151-1847-U-s063e,3,Marta,,,matka,pw,5,5,,pewny,tak,Córka Jana Babiak W akcie zapisano imię Martha.
+app-879-151-1847-U-s063e,4,Jan,Babiak,,inna,,,,pewny,,nie,Ojciec matki W akcie zapisano imię Joannis.
+app-879-151-1847-U-s063e,5,Mikołaj,Bogucki,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Nicolaus.
+app-879-151-1847-U-s063e,6,Paraskiewa,,,chrzestna,,,,,,nie,Żona Romana Bazarab. W akcie zapisano imię Parasceva.
+app-879-151-1847-U-s063e,7,Roman,Bazarab,,inna,,,,pewny,,nie,Mąż chrzestnej W akcie zapisano imię Romani.
+app-879-151-1847-U-s063e,8,Maria,Rehutycha,,akuszerka,,,,niepewny,,nie,
+app-879-151-1847-U-s063f,1,Konstanty,,,dziecko,pw,17,17,,pewny,tak,W akcie zapisano imię Constantinus.
+app-879-151-1847-U-s063f,2,Paweł,Pryhoda,,ojciec,pw,17,17,pewny,pewny,tak,W akcie zapisano imię Paulus.
+app-879-151-1847-U-s063f,3,Melania,,,matka,pw,17,17,,pewny,tak,Córka Konstantego Babiak
+app-879-151-1847-U-s063f,4,Konstanty,Babiak,,inna,,,,pewny,,nie,Ojciec matki W akcie zapisano imię Constantii.
+app-879-151-1847-U-s063f,5,Joachim,Chodkiewicz,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Joachimus.
+app-879-151-1847-U-s063f,6,Barbara,,,chrzestna,,,,,,nie,Żona Pawła Barabasz.
+app-879-151-1847-U-s063f,7,Paweł,Barabasz,,inna,,,,pewny,,nie,Mąż chrzestnej W akcie zapisano imię Pauli.
+app-879-151-1847-U-s063f,8,Maria,Rehutycha,,akuszerka,,,,niepewny,,nie,
+app-879-151-1847-U-s063g,1,Krystyna,,,dziecko,pw,35,35,,pewny,tak,W akcie zapisano imię Chrystina.
+app-879-151-1847-U-s063g,2,Grzegorz,Babiak,,ojciec,pw,35,35,pewny,pewny,tak,W akcie zapisano imię Gregorius.
+app-879-151-1847-U-s063g,3,Maria,,,matka,pw,35,35,,pewny,tak,Córka Jana Oliynyk (nazwisko odczytane niepewnie).
+app-879-151-1847-U-s063g,4,Jan,Oliynyk,,inna,,,,niepewny,,nie,Ojciec matki W akcie zapisano imię Joannis.
+app-879-151-1847-U-s063g,5,Stefan,Stołowaty,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Stephanus.
+app-879-151-1847-U-s063g,6,Anna,,,chrzestna,,,,,,nie,Żona Jana Babiak
+app-879-151-1847-U-s063g,7,Jan,Babiak,,inna,,,,pewny,,nie,Mąż chrzestnej W akcie zapisano imię Joannis.
 app-879-151-1847-U-s063g,8,Maria,Bujak,,akuszerka,,,,pewny,,nie,
-app-879-151-1847-U-s063g,9,Petrus,Bobowczak,,kaplan,,,,niepewny,,nie,Proboszcz. Adnotacja o chrzcie i bierzmowaniu pod tabelą.
+app-879-151-1847-U-s063g,9,Piotr,Bobowczak,,kaplan,,,,pewny,,nie,Proboszcz. Adnotacja o chrzcie i bierzmowaniu pod tabelą. W akcie zapisano imię Petrus.
