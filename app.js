@@ -41,7 +41,11 @@ const fmtDate = d => {
 };
 const exactDate = e => /^\d{4}-\d{2}-\d{2}$/.test(e.date);
 const pkey = p => p.from + "-" + p.to;
-const findPeriod = k => PERIODS.find(p => pkey(p) === k);
+/* „Wszystkie lata”: domyślny widok domów, zbiera wszystkie opracowane roczniki naraz */
+const ALL_KEY = "wszystkie";
+const ALL_PERIOD = { from: 1700, to: 1945, title: "Wszystkie opracowane lata", desc: {}, all: true };
+const findPeriod = k => k === ALL_KEY ? ALL_PERIOD : PERIODS.find(p => pkey(p) === k);
+const keyOf = p => p.all ? ALL_KEY : pkey(p);
 const periodDesc = (p, v) => p.desc[v] || p.desc["*"] || "";
 const listYears = ys => [...new Set(ys)].sort((a, b) => a - b).join(", ");
 const hasHouse = p => p.miesz && p.dom != null;
@@ -205,15 +209,12 @@ function go(patch, replace = false) {
   else { navCount++; location.hash = h; }
 }
 function goBack() { if (navCount > 0) { navCount--; history.back(); } else go({ v: "wies", d: "", a: "", e: "", q: "" }); }
-function defaultPeriod(v) {
-  /* okres z największą liczbą wpisów, żeby lista domów była widoczna od razu */
-  let best = null, n = 0;
-  for (const p of PERIODS) {
-    const c = ACTS.filter(a => a.v === v && year(a) >= p.from && year(a) <= p.to).length;
-    if (c > n) { n = c; best = p; }
-  }
-  return best ? pkey(best) : pkey(PERIODS[0]);
+function defaultPeriod() {
+  /* domyślnie wszystkie lata naraz; okresy na osi czasu działają jak opcjonalny filtr */
+  return ALL_KEY;
 }
+const dataYears = v => [...new Set(ACTS.filter(a => a.v === v).map(year))].sort((a, b) => a - b);
+const periodLabel = p => p.all ? "wszystkie lata" : `${p.from}–${p.to}`;
 
 /* ===================== FILTRY I INDEKSY ===================== */
 function actsIn(v, from, to, f = {}) {
@@ -292,8 +293,9 @@ function timeline(v) {
   const cur = findPeriod(S.o);
   const openPart = PARTS.findIndex(pt => pt.periods.some(p => pkey(p) === S.o));
   let h = `<details class="tl"><summary><span class="tl-ico" aria-hidden="true">◷</span>
-    <span class="tl-main"><small>Okres</small><strong>${cur.from}–${cur.to}</strong><span>${esc(cur.title)}</span></span><span class="tl-change">Zmień okres</span></summary>
-    <div class="tl-body"><div class="timeline" aria-label="Oś czasu">`;
+    <span class="tl-main"><small>Okres</small><strong>${cur.all ? "Wszystkie lata" : `${cur.from}–${cur.to}`}</strong><span>${esc(cur.all ? yearsText(v) : cur.title)}</span></span><span class="tl-change">${cur.all ? "Wybierz okres" : "Zmień okres"}</span></summary>
+    <div class="tl-body"><button class="period all-years" aria-pressed="${!!cur.all}" data-period="${ALL_KEY}"><span class="row"><strong>Wszystkie lata</strong><span class="small">● ${esc(yearsText(v))}</span></span><span>Wszystkie domy i wpisy ze wszystkich opracowanych źródeł naraz</span></button>
+    <p class="small muted" style="margin:10px 2px 4px">Albo zawęź do jednego okresu:</p><div class="timeline" aria-label="Oś czasu">`;
   PARTS.forEach((pt, i) => {
     const cnt = pt.periods.filter(p => periodHasData(v, p)).length;
     h += `<details ${i === openPart ? "open" : ""}><summary><span><span class="yrs">${pt.label}</span><br>
@@ -314,6 +316,13 @@ function timeline(v) {
   return h + `</div><div class="legend"><span class="l-has">okres z opracowanymi wpisami</span><span>okres bez wpisów</span><span class="l-evt">wydarzenie</span></div></div></details>`;
 }
 
+function yearsText(v) {
+  const ys = dataYears(v);
+  if (!ys.length) return "brak opracowanych wpisów";
+  const out = []; let a = ys[0], prev = ys[0];
+  for (const y of ys.slice(1).concat(Infinity)) { if (y !== prev + 1) { out.push(a === prev ? `${a}` : `${a}–${prev}`); a = y; } prev = y; }
+  return "opracowane: " + out.join(", ");
+}
 function wykazTable(v, p) {
   let rows = "";
   for (let y = p.from; y <= p.to; y++) rows += `<tr><td>${y}</td><td>${stateChip(yearState(v, "rz", y))}</td><td>${stateChip(yearState(v, "gk", y))}</td></tr>`;
@@ -343,18 +352,18 @@ function periodPanel(v, p) {
   const acts = actsIn(v, p.from, p.to, f);
   const { houses, noHouse } = housesFrom(acts);
   const collapse = S.zw !== "0";
-  const yrs = []; for (let y = p.from; y <= p.to; y++) yrs.push(y);
-  let h = `<div class="filters" id="okres" aria-label="Filtry okresu ${p.from}–${p.to}">
+  const yrs = []; if (p.all) yrs.push(...dataYears(v)); else for (let y = p.from; y <= p.to; y++) yrs.push(y);
+  let h = `<div class="filters" id="okres" aria-label="Filtry: ${periodLabel(p)}">
     <label>Rocznik<select data-f="r"><option value="">wszystkie</option>${yrs.map(y => `<option ${S.r == y ? "selected" : ""}>${y}</option>`).join("")}</select></label>
     <label>Obrządek<select data-f="ob"><option value="">oba</option><option value="rz" ${S.ob === "rz" ? "selected" : ""}>rz.-kat.</option><option value="gk" ${S.ob === "gk" ? "selected" : ""}>gr.-kat.</option></select></label>
     <label>Rodzaj aktu<select data-f="rd"><option value="">wszystkie</option>${Object.keys(KIND).map(k => `<option value="${k}" ${S.rd === k ? "selected" : ""}>${KIND_SHORT[k]}</option>`).join("")}</select></label>
   </div>`;
-  const ev = EVENTS.find(e => e.v === v && e.after === pkey(p));
+  const ev = p.all ? null : EVENTS.find(e => e.v === v && e.after === pkey(p));
   if (ev) h += `<div class="note event">Okres zaczyna się w roku wydarzenia „${esc(ev.title)}”. ${exactDate(ev)
     ? `Wydarzenie miało miejsce ${fmtDate(ev.date)}; wpisy z ${ev.date.slice(0, 4)} r. sprzed tej daty powstały przed nim, mimo że są pokazywane w tym okresie.`
     : `${esc(ev.dateNote)}, dlatego wpisy z ${esc(ev.date)} r. nie są dzielone na sprzed i po wydarzeniu.`} <a href="#" data-event="${ev.id}">Karta wydarzenia</a></div>`;
   if (!houses.length && !noHouse.length) {
-    return h + emptyState(v, S.r ? +S.r : p.from, S.r ? +S.r : p.to, S.ob, S.r || S.ob || S.rd ? "Brak wpisów dla wybranych filtrów" : "Ten okres nie ma jeszcze opracowanych wpisów") + wykaz(v, p);
+    return h + emptyState(v, S.r ? +S.r : p.from, S.r ? +S.r : p.to, S.ob, S.r || S.ob || S.rd ? "Brak wpisów dla wybranych filtrów" : p.all ? "Ta wieś nie ma jeszcze opracowanych wpisów" : "Ten okres nie ma jeszcze opracowanych wpisów") + (p.all ? "" : wykaz(v, p));
   }
   h += `<div class="list-head"><h3 class="section-title" style="margin:0">Domy <span class="count">${houses.length}</span></h3>
     <label class="toggle" style="margin:0"><input type="checkbox" data-collapse ${collapse ? "checked" : ""}> Zwiń powtórzenia</label></div>`;
@@ -370,7 +379,7 @@ function periodPanel(v, p) {
   if (houses.length) h += `</ul>`;
   h += `<h3 class="section-title">Bez numeru domu <span class="count">${noHouse.length}</span></h3>`;
   h += noHouse.length ? noHouse.map(entryCard).join("") : `<p class="muted small">Wszystkie wpisy w tym zakresie mają numer domu.</p>`;
-  return h + wykaz(v, p);
+  return h + (p.all ? "" : wykaz(v, p));
 }
 
 function personLine(p) {
@@ -416,14 +425,14 @@ function entryCard(a) {
 
 function viewHouse() {
   const v = S.w, no = +S.d, p = findPeriod(S.o);
-  const all = S.z === "all";
+  const all = S.z === "all" || !!p.all;
   const from = all ? 1700 : p.from, to = all ? 1945 : p.to;
   const inHouse = a => a.people.some(x => hasHouse(x) && x.dom === no);
   const acts = actsIn(v, from, to).filter(inHouse);
   const allActs = actsIn(v, 1700, 1945).filter(inHouse);
-  let h = `<a href="#" class="back" data-back>← ${esc(vName(v))}, ${p.from}–${p.to}</a>
+  let h = `<a href="#" class="back" data-back>← ${esc(vName(v))}, ${periodLabel(p)}</a>
     <h2>Dom nr ${no}</h2><p class="lead">${esc(vName(v))}. Wpisy, w których źródło wiąże osobę z tym numerem domu.</p>
-    <div class="seg"><button aria-pressed="${!all}" data-scope="okres">Okres ${p.from}–${p.to}</button><button aria-pressed="${all}" data-scope="all">Wszystkie lata</button></div>`;
+    ${p.all ? "" : `<div class="seg"><button aria-pressed="${!all}" data-scope="okres">Okres ${p.from}–${p.to}</button><button aria-pressed="${all}" data-scope="all">Wszystkie lata</button></div>`}`;
   if (acts.some(a => a.unverified)) h += aiNote;
   const rows = acts.flatMap(a => a.people.filter(x => hasHouse(x) && x.dom === no).map(x => ({ a, p: x })));
   const names = namesForHouse(rows, true);
