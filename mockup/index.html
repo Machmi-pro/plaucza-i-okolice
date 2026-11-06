@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domy i mieszkańcy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f7f3ec;
+  --surface: #fffdf9;
+  --surface-2: #efe8dc;
+  --ink: #2a2520;
+  --ink-2: #5d554c;
+  --line: #ddd3c4;
+  --accent: #7a3b1e;
+  --accent-ink: #ffffff;
+  --event: #9c2b2b;
+  --event-bg: #f8e4df;
+  --ok: #2f6b3a;     --ok-bg: #dcefdc;
+  --scan: #2c5a86;   --scan-bg: #dde9f5;
+  --part: #7a5d12;   --part-bg: #f5ebcc;
+  --cat: #5d554c;    --cat-bg: #e9e4dc;
+  --none: #8a8178;   --none-bg: transparent;
+  --warn: #8a4b00;   --warn-bg: #fdecc8;
+  --radius: 10px;
+  --serif: "Source Serif 4", Georgia, serif;
+  --sans: "Source Sans 3", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1b1916; --surface: #24211d; --surface-2: #2e2a25; --ink: #eee7dc; --ink-2: #b9afa2;
+    --line: #3d3832; --accent: #e09a6c; --accent-ink: #1b1916; --event: #f08f80; --event-bg: #3a2420;
+    --ok: #8fd09a; --ok-bg: #1f3423; --scan: #95c0ea; --scan-bg: #1d2c3b; --part: #e3c46d; --part-bg: #3a321b;
+    --cat: #c8bfb3; --cat-bg: #34302a; --none: #8f867b; --warn: #f2b35e; --warn-bg: #3b2c14;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1b1916; --surface: #24211d; --surface-2: #2e2a25; --ink: #eee7dc; --ink-2: #b9afa2;
+  --line: #3d3832; --accent: #e09a6c; --accent-ink: #1b1916; --event: #f08f80; --event-bg: #3a2420;
+  --ok: #8fd09a; --ok-bg: #1f3423; --scan: #95c0ea; --scan-bg: #1d2c3b; --part: #e3c46d; --part-bg: #3a321b;
+  --cat: #c8bfb3; --cat-bg: #34302a; --none: #8f867b; --warn: #f2b35e; --warn-bg: #3b2c14;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 var(--sans); overflow-wrap: anywhere; }
+a { color: var(--accent); }
+button, select, input { font: inherit; color: inherit; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 650; line-height: 1.2; margin: 0; }
+h1 { font-size: 1.35rem; }
+h2 { font-size: 1.2rem; }
+h3 { font-size: 1.02rem; }
+.wrap { max-width: 640px; margin: 0 auto; padding: 0 16px; }
+.mock-note { background: var(--warn-bg); color: var(--warn); font-size: .82rem; text-align: center; padding: 4px 16px; }
+
+/* Nagłówek */
+header.top { position: sticky; top: 0; z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+header.top .wrap { padding-top: 10px; padding-bottom: 10px; display: grid; gap: 8px; }
+.brand { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.brand small { color: var(--ink-2); font-size: .8rem; }
+.controls { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 8px; }
+select, input[type="search"] { width: 100%; min-height: 42px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); padding: 6px 10px; }
+form.search { display: flex; gap: 6px; min-width: 0; }
+form.search input { min-width: 0; }
+.btn { white-space: nowrap; min-height: 42px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); border-radius: 8px; padding: 6px 12px; cursor: pointer; font-weight: 600; }
+.btn.ghost { background: transparent; color: var(--accent); }
+.btn.small { min-height: 34px; padding: 4px 10px; font-size: .9rem; }
+
+main { padding: 14px 0 48px; }
+.lead { color: var(--ink-2); margin: 6px 0 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; margin: 10px 0; }
+.muted { color: var(--ink-2); }
+.small { font-size: .88rem; }
+.back { display: inline-block; margin-bottom: 8px; text-decoration: none; font-weight: 600; }
+
+/* Zakładki */
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 8px 0 12px; }
+.tabs button { flex: 1; background: none; border: 0; border-bottom: 3px solid transparent; padding: 8px 2px; cursor: pointer; color: var(--ink-2); font-weight: 600; font-size: .92rem; }
+.tabs button[aria-selected="true"] { color: var(--ink); border-color: var(--accent); }
+
+/* Oś czasu */
+.timeline details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); margin: 8px 0; }
+.timeline summary { list-style: none; cursor: pointer; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.timeline summary::-webkit-details-marker { display: none; }
+.timeline summary .yrs { font-family: var(--serif); font-weight: 650; font-size: 1.1rem; }
+.timeline summary::after { content: "▾"; color: var(--ink-2); transition: transform .15s; }
+.timeline details[open] summary::after { transform: rotate(180deg); }
+.timeline ol { list-style: none; margin: 0; padding: 0 10px 10px 22px; border-left: 2px solid var(--line); margin-left: 20px; }
+.timeline li { position: relative; margin: 6px 0; }
+.timeline li::before { content: ""; position: absolute; left: -29px; top: 16px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--ink-2); }
+.timeline li.has::before { background: var(--ok); border-color: var(--ok); }
+.timeline li.event::before { border-radius: 2px; transform: rotate(45deg); background: var(--event); border-color: var(--event); }
+.period { width: 100%; text-align: left; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; cursor: pointer; display: grid; gap: 2px; }
+.period[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--surface); }
+.period .row { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.period strong { font-family: var(--serif); }
+.period .desc { color: var(--ink-2); font-size: .86rem; }
+.evt { width: 100%; text-align: left; background: var(--event-bg); color: var(--ink); border: 1px dashed var(--event); border-radius: 8px; padding: 8px 10px; cursor: pointer; }
+.evt .lbl { display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--event); margin-bottom: 2px; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .8rem; color: var(--ink-2); margin: 4px 0 0; }
+.legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; border: 2px solid var(--ink-2); vertical-align: -1px; }
+.legend .l-has::before { background: var(--ok); border-color: var(--ok); }
+.legend .l-evt::before { border-radius: 1px; transform: rotate(45deg); background: var(--event); border-color: var(--event); }
+
+/* Znaczniki stanu */
+.chip { display: inline-block; font-size: .76rem; font-weight: 600; border-radius: 99px; padding: 1px 8px; white-space: nowrap; border: 1px solid transparent; }
+.s-opracowany { color: var(--ok); background: var(--ok-bg); }
+.s-w_opracowaniu { color: var(--ok); background: transparent; border-color: var(--ok); }
+.s-skany_calosc { color: var(--scan); background: var(--scan-bg); }
+.s-skany_czesc { color: var(--part); background: var(--part-bg); }
+.s-katalog { color: var(--cat); background: var(--cat-bg); }
+.s-brak_ustalen { color: var(--none); border-color: var(--line); }
+.flag { display: inline-block; font-size: .74rem; font-weight: 600; color: var(--warn); background: var(--warn-bg); border-radius: 4px; padding: 0 5px; }
+
+/* Panel okresu */
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+.filters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin: 10px 0; }
+.filters label { font-size: .76rem; color: var(--ink-2); display: grid; gap: 2px; }
+.filters select { min-height: 38px; padding: 4px 6px; }
+.wykaz summary { cursor: pointer; font-weight: 600; }
+.wykaz table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: .88rem; }
+.wykaz th, .wykaz td { text-align: left; padding: 4px 4px; border-top: 1px solid var(--line); }
+.wykaz th { font-weight: 600; color: var(--ink-2); }
+
+/* Domy */
+.houses { list-style: none; padding: 0; margin: 0; }
+.house { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 10px; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; margin: 8px 0; cursor: pointer; }
+.house .no { font-family: var(--serif); font-size: 1.5rem; font-weight: 650; color: var(--accent); line-height: 1; padding-top: 2px; }
+.house .no small { display: block; font-family: var(--sans); font-size: .68rem; font-weight: 600; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
+.names { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; }
+.names b { font-weight: 600; }
+.names .yrs { color: var(--ink-2); font-size: .9rem; }
+.toggle { display: flex; align-items: center; gap: 8px; font-size: .9rem; color: var(--ink-2); margin: 6px 0; }
+.toggle input { width: 18px; height: 18px; accent-color: var(--accent); }
+
+/* Wpisy */
+.seg { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; margin: 10px 0; }
+.seg button { border: 0; background: var(--surface); padding: 8px; cursor: pointer; font-weight: 600; color: var(--ink-2); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.entry { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); margin: 8px 0; }
+.entry summary { cursor: pointer; padding: 10px 12px; display: grid; gap: 2px; list-style: none; }
+.entry summary::-webkit-details-marker { display: none; }
+.entry .when { font-family: var(--serif); font-weight: 650; }
+.entry .body { padding: 0 12px 12px; border-top: 1px solid var(--line); }
+dl.meta { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 12px; margin: 10px 0; font-size: .9rem; }
+dl.meta dt { color: var(--ink-2); }
+dl.meta dd { margin: 0; }
+.people { list-style: none; margin: 8px 0; padding: 0; display: grid; gap: 6px; }
+.people li { background: var(--bg); border-radius: 8px; padding: 6px 10px; font-size: .92rem; }
+.people .role { font-size: .76rem; color: var(--ink-2); text-transform: uppercase; letter-spacing: .03em; font-weight: 600; }
+.src-read { font-size: .8rem; color: var(--ink-2); }
+.note { border-left: 3px solid var(--part); background: var(--part-bg); padding: 8px 10px; border-radius: 0 8px 8px 0; font-size: .9rem; margin: 10px 0; }
+.note.event { border-color: var(--event); background: var(--event-bg); }
+
+/* Wyniki */
+.result { display: block; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; margin: 8px 0; cursor: pointer; }
+.result .nm { font-weight: 600; font-size: 1.02rem; }
+.result .where { color: var(--ink-2); font-size: .9rem; }
+
+/* Pusty wynik */
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: var(--radius); padding: 14px; margin: 10px 0; }
+.empty h3 { margin-bottom: 6px; }
+.empty ul { margin: 8px 0; padding-left: 18px; }
+.empty li { margin: 3px 0; }
+
+.section-title { margin: 20px 0 4px; font-size: 1.05rem; }
+.event-head { border-left: 4px solid var(--event); padding-left: 10px; }
+.event-head .lbl { color: var(--event); font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 12px 0; }
+.two .btn { width: 100%; white-space: normal; }
+.srcs { list-style: none; padding: 0; margin: 0; }
+footer { color: var(--ink-2); font-size: .8rem; text-align: center; padding: 20px 16px 32px; }
+</style>
+</head>
+<body>
+<div class="mock-note">Makieta. Wszystkie nazwiska, numery aktów i część sygnatur są przykładowe.</div>
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><h1>Domy i mieszkańcy</h1><small>1700–1945</small></div>
+    <div class="controls">
+      <select id="village" aria-label="Wybór wsi"></select>
+      <form class="search" id="searchForm" role="search">
+        <input type="search" id="q" placeholder="Nazwisko…" aria-label="Szukaj nazwiska" autocomplete="off">
+        <button class="btn" type="submit" aria-label="Szukaj">Szukaj</button>
+      </form>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="app" tabindex="-1"></main>
+<footer>Makieta strony „Domy i mieszkańcy”. Płaucza Mała • Glinna • Płaucza Wielka</footer>
+
+<script>
+/* ===================== DANE PRZYKŁADOWE ===================== */
+const VILLAGES = [
+  { id: "pm", name: "Płaucza Mała", variants: ["Płaucza Mała", "Plaucza Mala", "Płaucza parva"],
+    desc: "Wieś w dawnym powiecie brzeżańskim. Pierwsza opracowywana miejscowość; księgi parafii Kozłów zaczynają się w 1723 r., później wieś należała do parafii Budyłów, a od 1932 r. miała własną parafię rzymskokatolicką." },
+  { id: "gl", name: "Glinna", variants: ["Glinna", "Hlynna"],
+    desc: "Wieś sąsiednia. Materiał nie jest jeszcze opracowany; widoczny jest tylko stan źródeł." },
+  { id: "pw", name: "Płaucza Wielka", variants: ["Płaucza Wielka", "Plaucza Wielka", "Płaucza magna"],
+    desc: "Siedziba parafii greckokatolickiej z filiami. Opracowanie rozpoczęte od ksiąg 1847–1848." },
+];
+
+const PARTS = [
+  { label: "1700–1808", periods: [
+    { from: 1700, to: 1775, title: "Najstarsze wzmianki", desc: { pm: "Dla Płauczy Małej księgi parafii Kozłów zaczynają się w 1723 r." } },
+    { from: 1776, to: 1808, title: "Akta wymieniające Płauczę Małą", desc: { pm: "Numery domów są pokazywane tam, gdzie występują w źródle." } } ] },
+  { label: "1809–1871", periods: [
+    { from: 1809, to: 1835, title: "Wczesne księgi XIX wieku", desc: { pm: "Brak potwierdzonego dostępu do skanów z lat 1809–1817." } },
+    { from: 1836, to: 1851, title: "Skany obu obrządków", desc: { pm: "Okres, dla którego dostępne są skany obu obrządków." } },
+    { from: 1852, to: 1871, title: "Domy w połowie XIX wieku", desc: { "*": "Lista źródeł wskazuje dostępność poszczególnych roczników." } } ] },
+  { label: "1872–1909", periods: [
+    { from: 1872, to: 1884, title: "Seria ksiąg Budyłowa, cz. 1", desc: { "*": "Pierwsza część dłuższej serii ksiąg parafii Budyłów." } },
+    { from: 1885, to: 1895, title: "Seria ksiąg Budyłowa, cz. 2", desc: { pm: "Rok 1892 pozwala zestawić zapisy obu obrządków." } },
+    { from: 1896, to: 1909, title: "Przed pożarem", desc: { pm: "Ostatni okres przed pożarem Płauczy Małej." } } ] },
+  { label: "1910–1945", periods: [
+    { from: 1910, to: 1918, title: "Od roku pożaru", desc: { pm: "Dokładne daty aktów i wydarzenia decydują, czy wpis z 1910 r. powstał przed pożarem czy po nim." } },
+    { from: 1919, to: 1931, title: "Międzywojnie", desc: { pm: "Przed wyodrębnieniem parafii rzymskokatolickiej w Płauczy Małej." } },
+    { from: 1932, to: 1938, title: "Własna parafia rz.-kat.", desc: { pm: "Okres własnej parafii rzymskokatolickiej w Płauczy Małej." } },
+    { from: 1939, to: 1945, title: "Okres wojenny", desc: {} } ] },
+];
+const PERIODS = PARTS.flatMap(p => p.periods);
+const pkey = p => p.from + "-" + p.to;
+
+const SOURCES = {
+  koz:   { arch: "AGAD", fond: "301", sig: "301/[sygn. do ustalenia]", parish: "Kozłów", rite: "rz", kinds: "U, M, Z", years: "1723–1871", villages: ["pm"], scans: "częściowo", state: "w opracowaniu", link: "https://agad.gov.pl/inwentarze/KLwo301new.xml" },
+  pwgk:  { arch: "AGAD", fond: "298", sig: "298/[sygn. do ustalenia]", parish: "Płaucza Wielka z filiami", rite: "gk", kinds: "U, M, Z", years: "1836–1851", villages: ["pm", "gl", "pw"], scans: "w całości", state: "w opracowaniu", link: "https://agad.gov.pl/inwentarze/ksGrec298.xml" },
+  pw47:  { arch: "AGAD (Szukaj w Archiwach)", fond: "298", sig: "Płaucza Wielka z filiami, 1847–1848", parish: "Płaucza Wielka z filiami", rite: "gk", kinds: "U, M, Z", years: "1847–1848", villages: ["pm", "gl", "pw"], scans: "w całości", state: "w opracowaniu", link: "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/18135536" },
+  bud1:  { arch: "AGAD", fond: "301", sig: "301/[sygn. do ustalenia]", parish: "Budyłów", rite: "rz", kinds: "U, M, Z", years: "1872–1895", villages: ["pm", "gl"], scans: "w całości", state: "skany do opracowania", link: "https://agad.gov.pl/inwentarze/KLwo301new.xml" },
+  bud2:  { arch: "AGAD (Szukaj w Archiwach)", fond: "301", sig: "301/1831", parish: "Budyłów", rite: "rz", kinds: "U, M, Z", years: "1896–1909", villages: ["pm", "gl"], scans: "w całości", state: "w opracowaniu", link: "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17820318" },
+  lwow:  { arch: "Archiwum Historyczne we Lwowie", fond: "", sig: "galeria 138376 (fond/opis/sprawa do ustalenia)", parish: "parafia greckokatolicka (do ustalenia)", rite: "gk", kinds: "U, M, Z", years: "1885–1910", villages: ["pm"], scans: "częściowo", state: "w opracowaniu", link: "https://archium.tsdial.archives.gov.ua/file-viewer/138376" },
+  bud3:  { arch: "AGAD", fond: "301", sig: "301/[sygn. do ustalenia]", parish: "Budyłów", rite: "rz", kinds: "U, M, Z", years: "1910–1931", villages: ["pm"], scans: "częściowo", state: "w opracowaniu", link: "https://agad.gov.pl/inwentarze/KLwo301new.xml" },
+  prasa: { arch: "Prasa", fond: "", sig: "Gazeta (tytuł i numer do ustalenia), 1910", parish: "", rite: "", kinds: "relacja prasowa", years: "1910", villages: ["pm"], scans: "do ustalenia", state: "kwerenda", link: "" },
+};
+const RITE = { rz: "rzymskokatolicki", gk: "greckokatolicki" };
+const KIND = { U: "Urodzenie / chrzest", M: "Małżeństwo", Z: "Zgon" };
+const ROLE = { dziecko: "dziecko", ojciec: "ojciec", matka: "matka", chrzestny: "chrzestny", chrzestna: "chrzestna", swiadek: "świadek", zmarly: "zmarły", zmarla: "zmarła", pan_mlody: "pan młody", panna_mloda: "panna młoda" };
+const STATE = {
+  opracowany: "Opracowany", w_opracowaniu: "W opracowaniu", skany_calosc: "Skany do opracowania",
+  skany_czesc: "Skany częściowe", katalog: "Znany z katalogu", brak_ustalen: "Źródła nie ustalono",
+};
+
+/* Stan roczników: [wieś, obrządek, od, do, stan] — późniejsze wiersze nadpisują wcześniejsze */
+const YEAR_RULES = [
+  ["pm","rz",1700,1945,"brak_ustalen"], ["pm","gk",1700,1945,"brak_ustalen"],
+  ["pm","rz",1723,1775,"katalog"], ["pm","rz",1776,1808,"skany_calosc"], ["pm","gk",1776,1808,"katalog"],
+  ["pm","rz",1809,1817,"katalog"], ["pm","gk",1809,1817,"katalog"], ["pm","rz",1818,1835,"skany_czesc"], ["pm","gk",1818,1835,"katalog"],
+  ["pm","rz",1836,1845,"opracowany"], ["pm","rz",1846,1851,"skany_calosc"], ["pm","gk",1836,1840,"opracowany"], ["pm","gk",1841,1851,"skany_calosc"],
+  ["pm","rz",1852,1871,"skany_czesc"], ["pm","gk",1852,1871,"katalog"],
+  ["pm","rz",1872,1895,"skany_calosc"], ["pm","gk",1872,1891,"katalog"], ["pm","gk",1885,1891,"skany_czesc"], ["pm","rz",1892,1892,"opracowany"], ["pm","gk",1892,1892,"opracowany"], ["pm","gk",1893,1910,"skany_czesc"],
+  ["pm","rz",1896,1904,"skany_calosc"], ["pm","rz",1905,1909,"opracowany"],
+  ["pm","rz",1910,1910,"opracowany"], ["pm","rz",1911,1918,"skany_czesc"], ["pm","gk",1911,1918,"katalog"],
+  ["pm","rz",1919,1938,"katalog"], ["pm","gk",1919,1938,"katalog"],
+  ["gl","rz",1700,1945,"brak_ustalen"], ["gl","gk",1700,1945,"brak_ustalen"], ["gl","gk",1836,1851,"skany_calosc"], ["gl","rz",1872,1909,"skany_calosc"], ["gl","rz",1910,1938,"katalog"],
+  ["pw","rz",1700,1945,"brak_ustalen"], ["pw","gk",1700,1945,"brak_ustalen"], ["pw","gk",1836,1851,"skany_calosc"], ["pw","gk",1847,1848,"opracowany"], ["pw","gk",1852,1918,"katalog"],
+];
+function yearState(v, rite, y) {
+  let s = "brak_ustalen";
+  for (const [rv, rr, a, b, st] of YEAR_RULES) if (rv === v && rr === rite && y >= a && y <= b) s = st;
+  return s;
+}
+
+/* Grupy wariantów nazwisk (łączą wyszukiwanie, nie osoby) */
+const VARIANTS = {
+  kowalczuk: ["Kowalczuk", "Kowalczuck", "Kowalczukowa", "Kowalczukówna"],
+  wisniewski: ["Wiśniewski", "Wiśniewska", "Wiszniewski", "Wiszniewska"],
+  lysak: ["Łysak", "Lysak", "Łysakówna"],
+  bojko: ["Bojko", "Boyko"],
+  hnatyszyn: ["Hnatyszyn", "Hnatyszynowa"],
+  mazur: ["Mazur", "Mazurówna"],
+  szewczuk: ["Szewczuk", "Szewczukówna"],
+};
+
+/* Osoba: [imię, nazwisko, rola, dom (liczba|null), dom źródłowy, mieszkaniec?, pewność nazwiska, pewność domu, nazwisko panieńskie] */
+const P = (imie, nazw, rola, dom = null, domSrc = "", miesz = false, pn = "pewny", pd = "pewny", pan = "") => ({ imie, nazw, rola, dom, domSrc: domSrc || (dom != null ? String(dom) : ""), miesz, pn, pd, pan });
+const ACTS = [
+  { id: "pm-1837-U-012", v: "pm", date: "1837-03-04", rite: "rz", kind: "U", src: "koz", nr: "12", page: "s. 41", scan: "#", people: [
+    P("Jan","Kowalczuk","dziecko",47,"47",true), P("Michał","Kowalczuk","ojciec",47,"47",true), P("Anna","Kowalczukowa","matka",47,"47",true,"pewny","pewny","Mazur"),
+    P("Józef","Wiśniewski","chrzestny"), P("Maryanna","Bojko","chrzestna") ] },
+  { id: "pm-1838-U-005", v: "pm", date: "1838-01-19", rite: "gk", kind: "U", src: "pwgk", nr: "5", page: "k. 3v", scan: "#", people: [
+    P("Iwan","Hnatyszyn","dziecko",10,"10",true), P("Hryć","Hnatyszyn","ojciec",10,"10",true), P("Paraska","Hnatyszynowa","matka",10,"10",true,"pewny","pewny","Szewczuk"),
+    P("Petro","Łysak","chrzestny") ] },
+  { id: "pm-1839-U-030", v: "pm", date: "1839-11-02", rite: "gk", kind: "U", src: "pwgk", nr: "30", page: "k. 9", scan: "#", note: "Numer domu zapisany cyframi rzymskimi, ostatni znak nieostry.", people: [
+    P("Teodor","Łysak","dziecko",124,"CXXIV",true,"pewny","niepewny"), P("Petro","Łysak","ojciec",124,"CXXIV",true,"pewny","niepewny"), P("Anastazja","Łysak","matka",124,"CXXIV",true) ] },
+  { id: "pm-1840-Z-021", v: "pm", date: "1840-06-15", rite: "rz", kind: "Z", src: "koz", nr: "21", page: "s. 112", scan: "#", note: "Nazwisko zapisane z końcówką „-ck”.", people: [
+    P("Michał","Kowalczuck","zmarly",47,"47",true,"niepewny") ] },
+  { id: "pm-1842-M-003", v: "pm", date: "1842-02-07", rite: "rz", kind: "M", src: "koz", nr: "3", page: "s. 160", scan: "#", people: [
+    P("Wojciech","Mazur","pan_mlody",2,"2",true), P("Katarzyna","Wiszniewska","panna_mloda",124,"124",true), P("Jakub","Bojko","swiadek"), P("Józef","Wiśniewski","swiadek") ] },
+  { id: "pm-1844-U-009", v: "pm", date: "1844", rite: "rz", kind: "U", src: "koz", nr: "9", page: "s. 77", scan: "#", note: "Akt nie podaje numeru domu.", people: [
+    P("Franciszek","Bojko","dziecko"), P("Jakub","Bojko","ojciec"), P("Zofia","Bojko","matka","","",false,"pewny","pewny","Mazur") ] },
+  { id: "pm-1892-U-018", v: "pm", date: "1892-04-10", rite: "rz", kind: "U", src: "bud1", nr: "18", page: "s. 22", scan: "#", people: [
+    P("Stanisław","Kowalczuk","dziecko",47,"47",true), P("Jan","Kowalczuk","ojciec",47,"47",true), P("Agnieszka","Kowalczukowa","matka",47,"47",true,"pewny","pewny","Wiśniewska") ] },
+  { id: "pm-1892-U-022", v: "pm", date: "1892-05-01", rite: "gk", kind: "U", src: "lwow", nr: "22", page: "k. 14", scan: "https://archium.tsdial.archives.gov.ua/file-viewer/138376", people: [
+    P("Mychajło","Hnatyszyn","dziecko",10,"10",true), P("Iwan","Hnatyszyn","ojciec",10,"10",true), P("Marija","Hnatyszynowa","matka",10,"10",true,"pewny","pewny","Kowalczuk") ] },
+  { id: "pm-1892-M-004-rz", v: "pm", date: "1892-10-23", rite: "rz", kind: "M", src: "bud1", nr: "4", page: "s. 61", scan: "#", event: "z-1892-mazur-lysak", people: [
+    P("Andrzej","Mazur","pan_mlody",2,"2",true), P("Anastazja","Łysakówna","panna_mloda",124,"124",true), P("Teodor","Łysak","swiadek") ] },
+  { id: "pm-1892-M-004-gk", v: "pm", date: "1892-10-23", rite: "gk", kind: "M", src: "lwow", nr: "7", page: "k. 30", scan: "https://archium.tsdial.archives.gov.ua/file-viewer/139982", event: "z-1892-mazur-lysak", note: "Ten sam ślub zapisany w księdze greckokatolickiej.", people: [
+    P("Andrij","Mazur","pan_mlody",2,"2",true), P("Anastasija","Lysak","panna_mloda",124,"124",true) ] },
+  { id: "pm-1905-U-031", v: "pm", date: "1905-08-12", rite: "rz", kind: "U", src: "bud2", nr: "31", page: "s. 18", scan: "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17820318", people: [
+    P("Józefa","Szewczuk","dziecko",31,"31",true), P("Piotr","Szewczuk","ojciec",31,"31",true), P("Maria","Szewczuk","matka",31,"31",true,"pewny","pewny","Bojko"), P("Stanisław","Kowalczuk","chrzestny") ] },
+  { id: "pm-1907-Z-014", v: "pm", date: "1907-01-30", rite: "rz", kind: "Z", src: "bud2", nr: "14", page: "s. 140", scan: "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17820318", people: [
+    P("Agnieszka","Kowalczukowa","zmarla",47,"47",true,"pewny","pewny","Wiśniewska") ] },
+  { id: "pm-1908-U-040", v: "pm", date: "1908-03-03", rite: "rz", kind: "U", src: "bud2", nr: "40", page: "s. 44", scan: "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17820318", people: [
+    P("Jan","Wiśniewski","dziecko",124,"124",true), P("Tomasz","Wiśniewski","ojciec",124,"124",true), P("Rozalia","Wiśniewska","matka",124,"124",true,"pewny","pewny","Łysak") ] },
+  { id: "pm-1909-U-007", v: "pm", date: "1909-01-21", rite: "rz", kind: "U", src: "bud2", nr: "7", page: "s. 70", scan: "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17820318", note: "Druga cyfra numeru domu zatarta; odczyt „4” niepewny.", people: [
+    P("Paweł","Boyko","dziecko",4,"4[?]",true,"niepewny","niepewny"), P("Jakub","Boyko","ojciec",4,"4[?]",true,"niepewny","niepewny") ] },
+  { id: "pm-1910-U-002", v: "pm", date: "1910-01-14", rite: "rz", kind: "U", src: "bud3", nr: "2", page: "s. 3", scan: "#", people: [
+    P("Helena","Kowalczuk","dziecko",47,"47",true), P("Stanisław","Kowalczuk","ojciec",47,"47",true) ] },
+  { id: "pm-1910-Z-019", v: "pm", date: "1910-09-05", rite: "rz", kind: "Z", src: "bud3", nr: "19", page: "s. 88", scan: "#", people: [
+    P("Andrzej","Mazur","zmarly",2,"2",true) ] },
+  { id: "pm-1910-U-033", v: "pm", date: "1910", rite: "rz", kind: "U", src: "bud3", nr: "33", page: "s. 12", scan: "#", note: "W akcie brak dnia i miesiąca; znany tylko rok.", people: [
+    P("Anna","Szewczuk","dziecko",31,"31",true), P("Piotr","Szewczuk","ojciec",31,"31",true) ] },
+  { id: "pw-1847-U-011", v: "pw", date: "1847-02-28", rite: "gk", kind: "U", src: "pw47", nr: "11", page: "k. 5", scan: "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/18135536", people: [
+    P("Wasyl","Kowalczuk","dziecko",47,"47",true), P("Hryć","Kowalczuk","ojciec",47,"47",true) ] },
+];
+
+const EVENTS = [
+  { id: "pozar-1910", v: "pm", title: "Pożar Płauczy Małej, 1910", date: "1910", dateNote: "Dokładna data do potwierdzenia",
+    desc: "Pożar strawił znaczną część zabudowy wsi. Opis w makiecie jest przykładowy; właściwa treść zostanie uzupełniona na podstawie relacji prasowej i dokumentów parafialnych.",
+    sources: ["prasa", "bud3"], houses: [2, 31, 47], before: "1896-1909", after: "1910-1918" },
+];
+
+/* ===================== NARZĘDZIA ===================== */
+const CYR = { а:"a",б:"b",в:"w",г:"h",ґ:"g",д:"d",е:"e",є:"je",ж:"z",з:"z",и:"y",і:"i",ї:"ji",й:"j",к:"k",л:"l",м:"m",н:"n",о:"o",п:"p",р:"r",с:"s",т:"t",у:"u",ф:"f",х:"ch",ц:"c",ч:"cz",ш:"sz",щ:"szcz",ь:"",ю:"ju",я:"ja" };
+function norm(s) {
+  return (s || "").toLowerCase().replace(/ł/g, "l").normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[а-яіїєґ]/g, c => CYR[c] ?? c).replace(/[\s'’\-]/g, "");
+}
+const variantOf = {};
+for (const [g, list] of Object.entries(VARIANTS)) for (const n of list) variantOf[norm(n)] = g;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const year = a => +a.date.slice(0, 4);
+const vName = id => VILLAGES.find(v => v.id === id)?.name || id;
+const fmtDate = d => {
+  const m = ["", "stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
+  const [y, mo, da] = d.split("-");
+  if (da) return `${+da} ${m[+mo]} ${y}`;
+  if (mo) return `${m[+mo].replace(/a$/, "")} ${y}`;
+  return `${y} (bez dokładnej daty)`;
+};
+const findPeriod = k => PERIODS.find(p => pkey(p) === k);
+const periodDesc = (p, v) => p.desc[v] || p.desc["*"] || "";
+const listYears = ys => {
+  const u = [...new Set(ys)].sort((a, b) => a - b);
+  return u.join(", ");
+};
+
+/* ===================== STAN / ROUTING ===================== */
+let S = {};
+function readHash() {
+  const p = new URLSearchParams(location.hash.slice(1));
+  S = Object.fromEntries(p.entries());
+  S.w = S.w || "pm"; S.v = S.v || "wies"; S.t = S.t || "domy";
+}
+function go(patch, replace = false) {
+  const next = { ...S, ...patch };
+  for (const k of Object.keys(next)) if (next[k] === "" || next[k] == null) delete next[k];
+  const h = "#" + new URLSearchParams(next).toString();
+  if (replace) history.replaceState(null, "", h); else history.pushState(null, "", h);
+  route(true);
+}
+window.addEventListener("popstate", () => route(true));
+window.addEventListener("hashchange", () => route(true));
+
+/* ===================== FILTRY I INDEKSY ===================== */
+function actsIn(v, from, to, f = {}) {
+  return ACTS.filter(a => a.v === v && year(a) >= from && year(a) <= to
+    && (!f.r || year(a) === +f.r) && (!f.ob || a.rite === f.ob) && (!f.rd || a.kind === f.rd))
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+function housesFrom(acts) {
+  const map = new Map();
+  const noHouse = [];
+  for (const a of acts) {
+    let any = false;
+    for (const p of a.people) {
+      if (p.miesz && p.dom != null && p.dom !== "") {
+        any = true;
+        if (!map.has(p.dom)) map.set(p.dom, []);
+        map.get(p.dom).push({ a, p });
+      }
+    }
+    if (!any) noHouse.push(a);
+  }
+  const houses = [...map.entries()].sort((x, y) => x[0] - y[0]);
+  return { houses, noHouse };
+}
+function namesForHouse(rows, collapse) {
+  if (collapse) {
+    const g = new Map();
+    for (const { a, p } of rows) {
+      const key = variantOf[norm(p.nazw)] || norm(p.nazw);
+      if (!g.has(key)) g.set(key, { names: new Set(), years: [], flag: false });
+      const e = g.get(key); e.names.add(p.nazw); e.years.push(year(a)); if (p.pn !== "pewny" || p.pd !== "pewny") e.flag = true;
+    }
+    return [...g.values()].map(e => ({ name: [...e.names].join(" / "), years: listYears(e.years), flag: e.flag }));
+  }
+  return rows.map(({ a, p }) => ({ name: `${p.imie} ${p.nazw}`, years: String(year(a)), flag: p.pn !== "pewny" || p.pd !== "pewny" }));
+}
+
+/* ===================== WIDOKI ===================== */
+const app = document.getElementById("app");
+function stateChip(s) { return `<span class="chip s-${s}">${STATE[s]}</span>`; }
+function periodHasData(v, p) { return ACTS.some(a => a.v === v && year(a) >= p.from && year(a) <= p.to); }
+
+function viewVillage() {
+  const v = VILLAGES.find(x => x.id === S.w);
+  const tab = S.t;
+  let h = `<h2>${esc(v.name)}</h2><p class="lead">${esc(v.desc)}</p>
+  <div class="tabs" role="tablist">
+    ${[["domy", "Domy i mieszkańcy"], ["historia", "Historia wsi"], ["zrodla", "Źródła"]].map(([k, l]) =>
+      `<button role="tab" aria-selected="${tab === k}" data-tab="${k}">${l}</button>`).join("")}
+  </div>`;
+  if (tab === "zrodla") return h + viewSources(v.id);
+  h += timeline(v.id);
+  if (tab === "historia") return h + viewHistory(v.id);
+  if (S.o) h += periodPanel(v.id, findPeriod(S.o));
+  else h += `<p class="muted small">Rozwiń część osi i wybierz okres, aby zobaczyć listę domów.</p>`;
+  return h;
+}
+
+function timeline(v) {
+  const openPart = S.o ? PARTS.findIndex(pt => pt.periods.some(p => pkey(p) === S.o)) : -1;
+  let h = `<div class="timeline" aria-label="Oś czasu">`;
+  PARTS.forEach((pt, i) => {
+    const cnt = pt.periods.filter(p => periodHasData(v, p)).length;
+    h += `<details ${i === openPart ? "open" : ""}><summary><span><span class="yrs">${pt.label}</span><br>
+      <span class="muted small">${pt.periods.length} okres${pt.periods.length > 4 ? "ów" : "y"} · ${cnt ? cnt + " z opracowanymi wpisami" : "brak opracowanych wpisów"}</span></span></summary><ol>`;
+    for (const p of pt.periods) {
+      for (const e of EVENTS.filter(e => e.v === v && +e.date.slice(0, 4) === p.from))
+        h += `<li class="event"><button class="evt" data-event="${e.id}"><span class="lbl">◆ Wydarzenie</span><br><strong>${esc(e.title)}</strong><br><span class="muted small">${esc(e.dateNote)}</span></button></li>`;
+      const has = periodHasData(v, p);
+      h += `<li class="${has ? "has" : ""}"><button class="period" aria-pressed="${S.o === pkey(p)}" data-period="${pkey(p)}">
+        <span class="row"><strong>${p.from}–${p.to}</strong><span class="small ${has ? "" : "muted"}">${has ? "● opracowane wpisy" : "○ brak opracowanych"}</span></span>
+        <span>${esc(p.title)}</span>${periodDesc(p, v) ? `<span class="desc">${esc(periodDesc(p, v))}</span>` : ""}</button></li>`;
+    }
+    h += `</ol></details>`;
+  });
+  return h + `</div><div class="legend"><span class="l-has">okres z opracowanymi wpisami</span><span>okres bez wpisów</span><span class="l-evt">wydarzenie</span></div>`;
+}
+
+function wykaz(v, p, open = false) {
+  let rows = "";
+  for (let y = p.from; y <= p.to; y++) rows += `<tr><td>${y}</td><td>${stateChip(yearState(v, "rz", y))}</td><td>${stateChip(yearState(v, "gk", y))}</td></tr>`;
+  return `<details class="wykaz card" ${open ? "open" : ""}><summary>Szczegółowy wykaz roczników</summary>
+    <table><thead><tr><th>Rok</th><th>rz.-kat.</th><th>gr.-kat.</th></tr></thead><tbody>${rows}</tbody></table></details>`;
+}
+
+function stateSummary(v, from, to, rite) {
+  const rites = rite ? [rite] : ["rz", "gk"];
+  const c = {};
+  for (const r of rites) for (let y = from; y <= to; y++) { const s = yearState(v, r, y); (c[s] = c[s] || []).push(`${y} ${r === "rz" ? "rz.-kat." : "gr.-kat."}`); }
+  return c;
+}
+function compressYears(items) {
+  const by = {};
+  for (const it of items) { const [y, r] = it.split(" "); (by[r] = by[r] || []).push(+y); }
+  return Object.entries(by).map(([r, ys]) => {
+    const out = []; let s = ys[0], prev = ys[0];
+    for (const y of ys.slice(1).concat(Infinity)) { if (y !== prev + 1) { out.push(s === prev ? `${s}` : `${s}–${prev}`); s = y; } prev = y; }
+    return `${out.join(", ")} (${r})`;
+  }).join("; ");
+}
+function emptyState(v, from, to, rite, title) {
+  const c = stateSummary(v, from, to, rite);
+  const order = ["w_opracowaniu", "skany_calosc", "skany_czesc", "katalog", "brak_ustalen", "opracowany"];
+  const expl = {
+    opracowany: "opracowane, ale bez wpisów spełniających filtry",
+    w_opracowaniu: "opracowanie trwa",
+    skany_calosc: "skany dostępne, czekają na opracowanie",
+    skany_czesc: "skany dostępne częściowo",
+    katalog: "znane z katalogu, bez potwierdzonego dostępu do skanów",
+    brak_ustalen: "źródła jeszcze nie ustalono",
+  };
+  const li = order.filter(s => c[s]).map(s => `<li>${stateChip(s)} <span class="small">${expl[s]}: ${compressYears(c[s])}</span></li>`).join("");
+  return `<div class="empty" role="status"><h3>${esc(title)}</h3>
+    <p class="small muted">Brak opracowanych wpisów dla tych ustawień. Stan materiału:</p><ul>${li}</ul>
+    <button class="btn ghost small" data-tab="zrodla">Zobacz źródła</button></div>`;
+}
+
+function periodPanel(v, p) {
+  const f = { r: S.r, ob: S.ob, rd: S.rd };
+  const acts = actsIn(v, p.from, p.to, f);
+  const { houses, noHouse } = housesFrom(acts);
+  const collapse = S.zw !== "0";
+  const yrs = []; for (let y = p.from; y <= p.to; y++) yrs.push(y);
+  let h = `<div class="panel-head" id="okres"><h2>${p.from}–${p.to}</h2><span class="muted small">${esc(p.title)}</span></div>
+  <div class="filters">
+    <label>Rocznik<select data-f="r"><option value="">wszystkie</option>${yrs.map(y => `<option ${S.r == y ? "selected" : ""}>${y}</option>`).join("")}</select></label>
+    <label>Obrządek<select data-f="ob"><option value="">oba</option><option value="rz" ${S.ob === "rz" ? "selected" : ""}>rz.-kat.</option><option value="gk" ${S.ob === "gk" ? "selected" : ""}>gr.-kat.</option></select></label>
+    <label>Rodzaj aktu<select data-f="rd"><option value="">wszystkie</option>${Object.entries(KIND).map(([k, l]) => `<option value="${k}" ${S.rd === k ? "selected" : ""}>${l.split(" ")[0]}</option>`).join("")}</select></label>
+  </div>`;
+  const ev = EVENTS.find(e => e.v === v && e.after === pkey(p));
+  if (ev) h += `<div class="note event">Okres zaczyna się w roku wydarzenia „${esc(ev.title)}”. ${esc(ev.dateNote)}, dlatego wpisy z ${ev.date} r. nie są dzielone na sprzed i po pożarze. <a href="#" data-event="${ev.id}">Karta wydarzenia</a></div>`;
+  h += wykaz(v, p);
+  if (!houses.length && !noHouse.length) {
+    return h + emptyState(v, S.r ? +S.r : p.from, S.r ? +S.r : p.to, S.ob, S.r || S.ob || S.rd ? "Brak wpisów dla wybranych filtrów" : "Ten okres nie ma jeszcze opracowanych wpisów");
+  }
+  h += `<label class="toggle"><input type="checkbox" data-collapse ${collapse ? "checked" : ""}> Zwiń powtórzenia nazwiska</label>
+    <h3 class="section-title">Domy (${houses.length})</h3><ul class="houses">`;
+  for (const [no, rows] of houses) {
+    const names = namesForHouse(rows, collapse);
+    h += `<li><button class="house" data-house="${no}"><span class="no"><small>nr</small>${no}</span><ul class="names">
+      ${names.map(n => `<li><b>${esc(n.name)}</b> ${n.flag ? '<span class="flag">niepewny odczyt</span>' : ""}<br><span class="yrs">${n.years}</span></li>`).join("")}</ul></button></li>`;
+  }
+  h += `</ul>`;
+  h += `<h3 class="section-title">Bez numeru domu (${noHouse.length})</h3>`;
+  h += noHouse.length ? noHouse.map(entryCard).join("") : `<p class="muted small">Wszystkie wpisy w tym zakresie mają numer domu.</p>`;
+  return h;
+}
+
+function personLine(p, v) {
+  const flags = [];
+  if (p.pn !== "pewny") flags.push(`nazwisko: ${p.pn}`);
+  if (p.dom != null && p.dom !== "" && p.pd !== "pewny") flags.push(`numer domu: ${p.pd}`);
+  const dom = p.dom != null && p.dom !== "" ? `dom nr ${p.dom}${p.domSrc && p.domSrc !== String(p.dom) ? ` <span class="src-read">(w źródle: „${esc(p.domSrc)}”)</span>` : ""}${p.miesz ? "" : ' <span class="src-read">(nie przypisany do listy mieszkańców)</span>'}` : '<span class="src-read">bez adresu w akcie</span>';
+  return `<li><span class="role">${ROLE[p.rola] || p.rola}</span><br><b>${esc(p.imie)} ${esc(p.nazw)}</b>${p.pan ? ` <span class="muted">z d. ${esc(p.pan)}</span>` : ""}
+    ${flags.length ? `<span class="flag">${flags.join(", ")}</span>` : ""}<br><span class="small">${dom}</span></li>`;
+}
+function actMeta(a) {
+  const s = SOURCES[a.src];
+  return `<dl class="meta">
+    <dt>Data</dt><dd>${fmtDate(a.date)}</dd>
+    <dt>Rodzaj</dt><dd>${KIND[a.kind]}</dd>
+    <dt>Obrządek</dt><dd>${RITE[a.rite]}</dd>
+    <dt>Parafia</dt><dd>${esc(s.parish)}</dd>
+    <dt>Sygnatura</dt><dd>${esc(s.arch)}, ${esc(s.sig)}</dd>
+    <dt>Akt / strona</dt><dd>nr ${esc(a.nr)}, ${esc(a.page)}</dd>
+    <dt>Skan</dt><dd>${a.scan && a.scan !== "#" ? `<a href="${esc(a.scan)}" target="_blank" rel="noopener">otwórz skan ↗</a>` : '<a href="#" onclick="return false">otwórz skan (przykład)</a>'}</dd>
+  </dl>`;
+}
+function entryCard(a) {
+  const main = a.people.filter(p => ["dziecko", "zmarly", "zmarla", "pan_mlody", "panna_mloda"].includes(p.rola)).map(p => `${p.imie} ${p.nazw}`).join(" i ");
+  const copies = a.event ? ACTS.filter(x => x.event === a.event && x.id !== a.id) : [];
+  return `<details class="entry"><summary><span class="when">${fmtDate(a.date)}</span>
+    <span>${KIND[a.kind]}: ${esc(main)}</span><span class="muted small">${RITE[a.rite]} · ${esc(SOURCES[a.src].parish)} · nr ${esc(a.nr)}</span></summary>
+    <div class="body">${actMeta(a)}
+      ${a.note ? `<div class="note">Uwagi do odczytu: ${esc(a.note)}</div>` : ""}
+      <ul class="people">${a.people.map(p => personLine(p, a.v)).join("")}</ul>
+      ${copies.length ? `<p class="small">Ten sam akt w innym źródle: ${copies.map(c => `<a href="#" data-act="${c.id}">${RITE[c.rite]}, nr ${esc(c.nr)}</a>`).join(", ")}</p>` : ""}
+      <a href="#" class="small" data-act="${a.id}">Strona wzmianki</a>
+    </div></details>`;
+}
+
+function viewHouse() {
+  const v = S.w, no = +S.d, p = S.o ? findPeriod(S.o) : null;
+  const all = S.z === "all" || !p;
+  const from = all ? 1700 : p.from, to = all ? 1945 : p.to;
+  const acts = actsIn(v, from, to).filter(a => a.people.some(x => x.miesz && x.dom === no));
+  const allActs = actsIn(v, 1700, 1945).filter(a => a.people.some(x => x.miesz && x.dom === no));
+  let h = `<a href="#" class="back" data-back>← ${esc(vName(v))}${p ? `, ${pkey(p).replace("-", "–")}` : ""}</a>
+    <h2>Dom nr ${no}</h2><p class="lead">${esc(vName(v))}. Wpisy, w których źródło wiąże osobę z tym numerem domu.</p>
+    <div class="seg"><button aria-pressed="${!all}" data-scope="okres" ${p ? "" : "disabled"}>${p ? `Okres ${p.from}–${p.to}` : "Okres"}</button><button aria-pressed="${all}" data-scope="all">Wszystkie lata</button></div>`;
+  const rows = acts.flatMap(a => a.people.filter(x => x.miesz && x.dom === no).map(x => ({ a, p: x })));
+  const names = namesForHouse(rows, true);
+  if (names.length) h += `<div class="card"><h3>Nazwiska</h3><ul class="names" style="margin-top:6px">${names.map(n => `<li><b>${esc(n.name)}</b> ${n.flag ? '<span class="flag">niepewny odczyt</span>' : ""} <span class="yrs">${n.years}</span></li>`).join("")}</ul></div>`;
+  h += `<div class="note small">Rok potwierdza wzmiankę. Ciągłość zamieszkania między wzmiankami i tożsamość budynku po pożarze 1910 r. wymagają osobnego potwierdzenia.</div>`;
+  h += `<h3 class="section-title">Wpisy chronologicznie (${acts.length})</h3>`;
+  h += acts.length ? acts.map(entryCard).join("") : emptyState(v, from, to, "", `Brak wpisów dla domu nr ${no} w tym okresie`) + (allActs.length ? `<p class="small">Ten dom ma ${allActs.length} wpis(y) w innych latach. <a href="#" data-scope="all">Pokaż wszystkie lata</a></p>` : "");
+  const other = VILLAGES.filter(x => x.id !== v && ACTS.some(a => a.v === x.id && a.people.some(pp => pp.miesz && pp.dom === no)));
+  if (other.length) h += `<p class="small muted">Dom o tym samym numerze w innej wsi to osobna karta: ${other.map(x => `<a href="#" data-goto-house="${x.id}:${no}">${esc(x.name)}, nr ${no}</a>`).join(", ")}.</p>`;
+  return h;
+}
+
+function viewAct() {
+  const a = ACTS.find(x => x.id === S.a);
+  if (!a) return `<p>Nie znaleziono wpisu.</p>`;
+  const copies = a.event ? ACTS.filter(x => x.event === a.event && x.id !== a.id) : [];
+  return `<a href="#" class="back" data-back>← wróć</a>
+    <h2>${KIND[a.kind]}, ${fmtDate(a.date)}</h2><p class="lead">${esc(vName(a.v))} · wzmianka źródłowa</p>
+    <div class="card">${actMeta(a)}${a.note ? `<div class="note">Uwagi do odczytu: ${esc(a.note)}</div>` : ""}</div>
+    <h3 class="section-title">Osoby we wpisie</h3><ul class="people">${a.people.map(p => personLine(p, a.v)).join("")}</ul>
+    ${copies.length ? `<div class="card small">Ten sam akt zachował się także w: ${copies.map(c => `<a href="#" data-act="${c.id}">${esc(SOURCES[c.src].arch)}, ${RITE[c.rite]}, nr ${esc(c.nr)}</a>`).join(", ")}.</div>` : ""}
+    <h3 class="section-title">Źródło</h3>${sourceCard(a.src)}`;
+}
+
+function sourceCard(id) {
+  const s = SOURCES[id];
+  return `<div class="card"><b>${esc(s.arch)}${s.fond ? `, zespół ${esc(s.fond)}` : ""}</b><br><span class="small">${esc(s.sig)}</span>
+    <dl class="meta"><dt>Parafia</dt><dd>${esc(s.parish || "—")}</dd><dt>Obrządek</dt><dd>${s.rite ? RITE[s.rite] : "—"}</dd>
+    <dt>Rodzaj akt</dt><dd>${esc(s.kinds)}</dd><dt>Roczniki</dt><dd>${esc(s.years)}</dd>
+    <dt>Miejscowości</dt><dd>${s.villages.map(vName).join(", ")}</dd><dt>Skany</dt><dd>${esc(s.scans)}</dd><dt>Stan</dt><dd>${esc(s.state)}</dd></dl>
+    ${s.link ? `<a class="small" href="${esc(s.link)}" target="_blank" rel="noopener">${esc(new URL(s.link).hostname)} ↗</a>` : '<span class="small muted">Link do ustalenia</span>'}</div>`;
+}
+
+function viewSources(v) {
+  const ids = Object.keys(SOURCES).filter(id => SOURCES[id].villages.includes(v));
+  let h = `<p class="small muted">Wykaz źródeł dla tej wsi i stan opracowania roczników. Okresy są wspólne dla wszystkich wsi; dostępność źródeł różni się między miejscowościami.</p>`;
+  h += `<div class="legend" style="margin-bottom:8px">${Object.keys(STATE).map(stateChip).join(" ")}</div>`;
+  h += `<h3 class="section-title">Roczniki według okresów</h3>`;
+  for (const p of PERIODS) {
+    const c = stateSummary(v, p.from, p.to);
+    const best = ["opracowany", "w_opracowaniu", "skany_calosc", "skany_czesc", "katalog", "brak_ustalen"].filter(s => c[s]);
+    h += `<details class="wykaz card"><summary>${p.from}–${p.to} <span style="font-weight:400">${best.slice(0, 2).map(stateChip).join(" ")}</span></summary>
+      ${wykaz(v, p, true).replace(/<details[^>]*><summary>.*?<\/summary>/, "").replace(/<\/details>$/, "")}</details>`;
+  }
+  h += `<h3 class="section-title">Źródła (${ids.length})</h3>` + ids.map(sourceCard).join("");
+  return h;
+}
+
+function viewHistory(v) {
+  const evs = EVENTS.filter(e => e.v === v);
+  if (!evs.length) return `<div class="empty"><h3>Brak opisanych wydarzeń</h3><p class="small muted">Dla tej wsi nie dodano jeszcze wydarzeń. Wydarzenia pojawią się na osi czasu jako znaczniki ◆.</p></div>`;
+  return `<h3 class="section-title">Wydarzenia</h3>` + evs.map(e => `<button class="evt" style="margin:6px 0" data-event="${e.id}"><span class="lbl">◆ Wydarzenie · ${e.date}</span><br><strong>${esc(e.title)}</strong><br><span class="small muted">${esc(e.desc.slice(0, 90))}…</span></button>`).join("");
+}
+
+function viewEvent() {
+  const e = EVENTS.find(x => x.id === S.e);
+  const after = findPeriod(e.after), before = findPeriod(e.before);
+  const afterActs = actsIn(e.v, after.from, after.to);
+  const y = +e.date;
+  const yearActs = ACTS.filter(a => a.v === e.v && year(a) === y);
+  return `<a href="#" class="back" data-back>← ${esc(vName(e.v))}</a>
+    <div class="event-head"><span class="lbl">◆ Wydarzenie</span><h2>${esc(e.title)}</h2><p class="muted small" style="margin:2px 0 0">${e.date} · ${esc(e.dateNote)}</p></div>
+    <p>${esc(e.desc)}</p>
+    <div class="two">
+      <button class="btn ghost" data-goto-period="${e.before}">Domy przed pożarem<br><span class="small">${before.from}–${before.to}</span></button>
+      <button class="btn" data-goto-period="${e.after}">Domy od roku pożaru<br><span class="small">${after.from}–${after.to}</span></button>
+    </div>
+    <div class="note event small">Dopóki dokładna data pożaru nie jest potwierdzona, ${yearActs.length} wpis(y) z ${y} r. pozostają w widoku „Od roku pożaru”, bez przypisania do części przed pożarem lub po nim.</div>
+    ${afterActs.every(a => year(a) === y) ? `<div class="empty small"><b>Późniejsze lata (${y + 1}–${after.to})</b> nie są jeszcze opracowane: ${compressYears(stateSummary(e.v, y + 1, after.to, "rz")[yearState(e.v, "rz", y + 1)] || [])} — ${STATE[yearState(e.v, "rz", y + 1)].toLowerCase()}.</div>` : ""}
+    <h3 class="section-title">Powiązane domy</h3>
+    <p class="small muted">Domy, których numery wskazują dokumenty dotyczące pożaru.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:6px">${e.houses.map(n => `<button class="btn ghost small" data-goto-house="${e.v}:${n}">nr ${n}</button>`).join("")}</div>
+    <h3 class="section-title">Źródła</h3>${e.sources.map(sourceCard).join("")}`;
+}
+
+function viewSearch() {
+  const q = S.q || "", nq = norm(q), all = S.all === "1";
+  let h = `<a href="#" class="back" data-back>← ${esc(vName(S.w))}</a><h2>Wyniki: „${esc(q)}”</h2>
+    <label class="toggle"><input type="checkbox" data-allv ${all ? "checked" : ""}> Wszystkie wsie</label>`;
+  if (nq.length < 2) return h + `<p class="muted">Wpisz co najmniej dwie litery nazwiska.</p>`;
+  const groups = new Set(Object.entries(variantOf).filter(([n]) => n.includes(nq)).map(([, g]) => g));
+  const res = new Map();
+  for (const a of ACTS) {
+    if (!all && a.v !== S.w) continue;
+    for (const p of a.people) {
+      const nn = norm(p.nazw), np = norm(p.pan);
+      const direct = nn.includes(nq) || (np && np.includes(nq));
+      const viaVar = !direct && (groups.has(variantOf[nn]) || (np && groups.has(variantOf[np])));
+      if (!direct && !viaVar) continue;
+      const dom = p.miesz && p.dom != null && p.dom !== "" ? p.dom : null;
+      const key = `${a.v}|${dom ?? "-"}|${p.nazw}`;
+      if (!res.has(key)) res.set(key, { v: a.v, dom, nazw: p.nazw, years: [], acts: [], viaVar, maiden: !nn.includes(nq) && np && np.includes(nq), pan: p.pan });
+      const r = res.get(key); r.years.push(year(a)); r.acts.push(a.id);
+    }
+  }
+  const list = [...res.values()].sort((a, b) => a.v.localeCompare(b.v) || (a.dom ?? 1e9) - (b.dom ?? 1e9) || a.nazw.localeCompare(b.nazw));
+  if (!list.length) {
+    const p = S.o ? findPeriod(S.o) : null;
+    return h + `<div class="empty" role="status"><h3>Nie znaleziono nazwiska</h3><p class="small">Wyszukiwanie obejmuje tylko opracowane wpisy ${all ? "ze wszystkich wsi" : `z wsi ${esc(vName(S.w))}`}. Wiele roczników czeka jeszcze na opracowanie.</p>
+      ${all ? "" : `<button class="btn ghost small" data-allv-on>Szukaj we wszystkich wsiach</button> `}<button class="btn ghost small" data-tab="zrodla">Stan źródeł</button></div>`;
+  }
+  h += `<p class="small muted">${list.length} wynik(ów). Pisownia jak w dokumencie; zbieżność nazwisk nie oznacza pokrewieństwa.</p>`;
+  for (const r of list) {
+    h += `<button class="result" ${r.dom != null ? `data-goto-house="${r.v}:${r.dom}"` : `data-act="${r.acts[0]}"`}>
+      <span class="nm">${esc(r.nazw)}</span> ${r.viaVar ? '<span class="chip s-katalog">wariant pisowni</span>' : ""} ${r.maiden ? `<span class="chip s-katalog">nazwisko panieńskie: ${esc(r.pan)}</span>` : ""}<br>
+      <span class="where">${esc(vName(r.v))} · ${r.dom != null ? `dom nr ${r.dom}` : "Bez numeru domu"}</span><br>
+      <span class="small">Lata: ${listYears(r.years)}</span></button>`;
+  }
+  return h;
+}
+
+/* ===================== RENDER ===================== */
+let lastView = "";
+function route(scroll) {
+  readHash();
+  document.getElementById("village").value = S.w;
+  document.getElementById("q").value = S.v === "szukaj" ? (S.q || "") : "";
+  const views = { wies: viewVillage, dom: viewHouse, akt: viewAct, szukaj: viewSearch, wydarzenie: viewEvent };
+  app.innerHTML = (views[S.v] || viewVillage)();
+  const sig = S.v + S.d + S.a + S.e;
+  if (scroll && sig !== lastView) window.scrollTo(0, 0);
+  lastView = sig;
+}
+
+const vsel = document.getElementById("village");
+vsel.innerHTML = VILLAGES.map(v => `<option value="${v.id}">${esc(v.name)}</option>`).join("");
+vsel.addEventListener("change", () => go({ w: vsel.value, v: "wies", d: "", a: "", e: "" })); /* okres i filtry zostają */
+document.getElementById("searchForm").addEventListener("submit", ev => { ev.preventDefault(); go({ v: "szukaj", q: document.getElementById("q").value.trim() }); });
+
+app.addEventListener("click", ev => {
+  const t = ev.target.closest("[data-tab],[data-period],[data-house],[data-act],[data-event],[data-scope],[data-goto-house],[data-goto-period],[data-back],[data-allv-on]");
+  if (!t) return;
+  ev.preventDefault();
+  const d = t.dataset;
+  if (d.tab) go({ v: "wies", t: d.tab });
+  else if (d.period) { go({ o: S.o === d.period ? "" : d.period, r: "" }); requestAnimationFrame(() => document.getElementById("okres")?.scrollIntoView({ behavior: "smooth", block: "start" })); }
+  else if (d.house) go({ v: "dom", d: d.house, z: "" });
+  else if (d.gotoHouse) { const [w, n] = d.gotoHouse.split(":"); go({ v: "dom", w, d: n, z: S.o ? "" : "all" }); }
+  else if (d.act) go({ v: "akt", a: d.act });
+  else if (d.event) go({ v: "wydarzenie", e: d.event });
+  else if (d.gotoPeriod) { go({ v: "wies", t: "domy", o: d.gotoPeriod, r: "", e: "" }); requestAnimationFrame(() => document.getElementById("okres")?.scrollIntoView({ block: "start" })); }
+  else if (d.scope) go({ z: d.scope === "all" ? "all" : "" }, true);
+  else if ("allvOn" in d) go({ all: "1" }, true);
+  else if ("back" in d) history.length > 1 ? history.back() : go({ v: "wies" });
+});
+app.addEventListener("change", ev => {
+  const t = ev.target;
+  if (t.dataset.f) go({ [t.dataset.f]: t.value }, true);
+  else if ("collapse" in t.dataset) go({ zw: t.checked ? "" : "0" }, true);
+  else if ("allv" in t.dataset) go({ all: t.checked ? "1" : "" }, true);
+});
+route(false);
+</script>
+</body>
+</html>
