@@ -1,0 +1,1010 @@
+akt,lp,imie,nazwisko,nazwisko_panienskie,rola,wies_zamieszkania,dom_zrodlowy,dom,pewnosc_nazwiska,pewnosc_domu,mieszkaniec,uwagi
+cdial-201-4a-1117-1836-M-s1538ra,1,Grzegorz,,,pan_mlody,pm,75,75,,pewny,tak,W akcie imię Gregorius. Wiek 22 lat
+cdial-201-4a-1117-1836-M-s1538ra,2,Anna,,,panna_mloda,,,,,,nie,Wiek 22 lat
+cdial-201-4a-1117-1836-M-s1538ra,3,Jan,W…k,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1538ra,4,Grzegorz,Baran,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-M-s1538ra,5,Jakub,Homeniuk,,swiadek,,,,pewny,,nie,W akcie imię Jacobus
+cdial-201-4a-1117-1836-M-s1538ra,6,Stefan,Homeniuk,,swiadek,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-M-s1538ra,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1538rb,1,Bazyli,,,pan_mlody,pm,6,6,,pewny,tak,W akcie imię Basilius. Wiek 27 lat
+cdial-201-4a-1117-1836-M-s1538rb,2,Marta,,,panna_mloda,,,,,,nie,W akcie imię Martha. Wiek 25 lat
+cdial-201-4a-1117-1836-M-s1538rb,3,Andrzej,Sowiec[?],,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Andreas
+cdial-201-4a-1117-1836-M-s1538rb,4,Daniel,Jurkow,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Danielus
+cdial-201-4a-1117-1836-M-s1538rb,5,Michał,Kusznicz[?],,swiadek,,,,niepewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-M-s1538rb,6,Onezym,Zafjan[?],,swiadek,,,,niepewny,,nie,W akcie imię Onisimus
+cdial-201-4a-1117-1836-M-s1538rb,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1538rc,1,Thateus[?],,,pan_mlody,pm,57,57,,pewny,tak,Wiek 40 lat
+cdial-201-4a-1117-1836-M-s1538rc,2,Maria,,,panna_mloda,,,,,,nie,Wiek 31 lat
+cdial-201-4a-1117-1836-M-s1538rc,3,Marcin,Trojan,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Martinus
+cdial-201-4a-1117-1836-M-s1538rc,4,Eliasz,Ż…k,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Elias
+cdial-201-4a-1117-1836-M-s1538rc,5,Maciej,Sie…ski,,swiadek,,,,niepewny,,nie,W akcie imię Mathias
+cdial-201-4a-1117-1836-M-s1538rc,6,Michał,K…,,swiadek,,,,niepewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-M-s1538rc,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1538rd,1,Aleksy,,,pan_mlody,pm,25,25,,pewny,tak,W akcie imię Alexius. Wiek 20 lat
+cdial-201-4a-1117-1836-M-s1538rd,2,Maria,,,panna_mloda,,,,,,nie,Wiek 16 lat
+cdial-201-4a-1117-1836-M-s1538rd,3,Filip,M…yto,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Philippus
+cdial-201-4a-1117-1836-M-s1538rd,4,Jan,Zafjan[?],,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1538rd,5,Mateusz,Homeniuk,,swiadek,,,,pewny,,nie,W akcie imię Mattheus
+cdial-201-4a-1117-1836-M-s1538rd,6,Onezym,Zafjan[?],,swiadek,,,,niepewny,,nie,W akcie imię Onisimus
+cdial-201-4a-1117-1836-M-s1538rd,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1538re,1,Jan,Szlimowski[?],,pan_mlody,Mszaniec,,,niepewny,,nie,W akcie imię Joannes. Wiek 48 lat
+cdial-201-4a-1117-1836-M-s1538re,2,Prakseda,,,panna_mloda,,,,,,nie,W akcie imię Praxeda. Wiek 40 lat
+cdial-201-4a-1117-1836-M-s1538re,3,Stefan,Małaczyński,,swiadek,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-M-s1538re,4,Łukasz,Rewny,,swiadek,,,,pewny,,nie,W akcie imię Lucas
+cdial-201-4a-1117-1836-M-s1538re,5,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1538rf,1,Wojciech,,,pan_mlody,pm,16,16,,pewny,tak,W akcie imię Adalbertus. Wiek 23 lat
+cdial-201-4a-1117-1836-M-s1538rf,2,Paraskewa,,,panna_mloda,,,,,,nie,W akcie imię Parasceva. Wiek 21 lat
+cdial-201-4a-1117-1836-M-s1538rf,3,Jan,Manastyrski,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1538rf,4,Antoni,Regyna,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Antonius
+cdial-201-4a-1117-1836-M-s1538rf,5,Antoni,N…asiński,,swiadek,,,,niepewny,,nie,W akcie imię Antonius
+cdial-201-4a-1117-1836-M-s1538rf,6,Gabriel,Wac…ut,,swiadek,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-M-s1538rf,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1538rg,1,Grzegorz,,,pan_mlody,pm,44,44,,pewny,tak,W akcie imię Gregorius. Wiek 27 lat
+cdial-201-4a-1117-1836-M-s1538rg,2,Eufrozyna,,,panna_mloda,,,,,,nie,W akcie imię Eufrosinia. Wiek 21 lat
+cdial-201-4a-1117-1836-M-s1538rg,3,Jan,Kusznicz[?],,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1538rg,4,Jan,Dow…,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1538rg,5,Stefan,Małaczyński,,swiadek,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-M-s1538rg,6,Mateusz,Sie…ski,,swiadek,,,,niepewny,,nie,W akcie imię Mattheus
+cdial-201-4a-1117-1836-M-s1538rg,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1538rh,1,Aleksy,,,pan_mlody,pm,8,8,,pewny,tak,W akcie imię Alexius. Wiek 22 lat
+cdial-201-4a-1117-1836-M-s1538rh,2,Eudoksja,,,panna_mloda,,,,,,nie,W akcie imię Eudoxia. Wiek 16 lat
+cdial-201-4a-1117-1836-M-s1538rh,3,Bazyli,Marczowski[?],,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Basilius
+cdial-201-4a-1117-1836-M-s1538rh,4,Michał,Sie…ski,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-M-s1538rh,5,Grzegorz,Kusznicz[?],,swiadek,,,,niepewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-M-s1538rh,6,Mateusz,Sie…ski,,swiadek,,,,niepewny,,nie,W akcie imię Mattheus
+cdial-201-4a-1117-1836-M-s1538rh,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1538ri,1,Aleksy,,,pan_mlody,pm,37,37,,pewny,tak,W akcie imię Alexius. Wiek 36 lat
+cdial-201-4a-1117-1836-M-s1538ri,2,Maria,,,panna_mloda,,,,,,nie,Wiek 24 lat
+cdial-201-4a-1117-1836-M-s1538ri,3,Andrzej,Osa…wicz,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Andreas
+cdial-201-4a-1117-1836-M-s1538ri,4,Jan,M…yński,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1538ri,5,Karol,Szczawurski,,swiadek,,,,pewny,,nie,W akcie imię Carolus. Pisownia skorygowana przez użytkowniczkę
+cdial-201-4a-1117-1836-M-s1538ri,6,Ignacy,Małaczyński,,swiadek,,,,pewny,,nie,W akcie imię Ignatius
+cdial-201-4a-1117-1836-M-s1538ri,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1540ra,1,Anastazja,,,dziecko,pm,52,52,,pewny,tak,W akcie imię Anastasia
+cdial-201-4a-1117-1836-U-s1540ra,2,Grzegorz,Michow[?],,ojciec,pm,52,52,niepewny,pewny,tak,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1540ra,3,Prakseda,,Z…,matka,pm,52,52,niepewny,pewny,tak,W akcie imię Praxeda. córka Jacentius Z…
+cdial-201-4a-1117-1836-U-s1540ra,4,Saba,Drewnicki,,chrzestny,,,,pewny,,nie,W akcie imię Sabba
+cdial-201-4a-1117-1836-U-s1540ra,5,Agata,,,chrzestna,,,,,,nie,żona Stephanus Małaczyński
+cdial-201-4a-1117-1836-U-s1540ra,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1540ra,7,Jacek,Z…,,inna,,,,niepewny,,nie,W akcie imię Jacentius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1540ra,8,Stefan,Małaczyński,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1540ra,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1540rb,1,Auksenty,,,dziecko,pm,16,16,,pewny,tak,W akcie imię Auxentius
+cdial-201-4a-1117-1836-U-s1540rb,2,Tymoteusz,Marczowski[?],,ojciec,pm,16,16,niepewny,pewny,tak,W akcie imię Timotheus
+cdial-201-4a-1117-1836-U-s1540rb,3,Ksenia,,K…tek,matka,pm,16,16,niepewny,pewny,tak,W akcie imię Xenia. córka Joannes K…tek
+cdial-201-4a-1117-1836-U-s1540rb,4,Saba,Drewnicki,,chrzestny,,,,pewny,,nie,W akcie imię Sabba
+cdial-201-4a-1117-1836-U-s1540rb,5,Maria,,,chrzestna,,,,,,nie,żona Joannes D…l
+cdial-201-4a-1117-1836-U-s1540rb,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1540rb,7,Jan,K…tek,,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1540rb,8,Jan,D…l,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1540rb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1540rc,1,Eudoksja,,,dziecko,pm,34,34,,pewny,tak,W akcie imię Eudoxia
+cdial-201-4a-1117-1836-U-s1540rc,2,Jakub,Rewny,,ojciec,pm,34,34,pewny,pewny,tak,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1540rc,3,Eudoksja,,Kobr…ly,matka,pm,34,34,niepewny,pewny,tak,W akcie imię Eudoxia. córka Basilius Kobr…ly
+cdial-201-4a-1117-1836-U-s1540rc,4,Stefan,Małaczyński,,chrzestny,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1540rc,5,Barbara,,,chrzestna,,,,,,nie,żona Mattheus Sie…ski
+cdial-201-4a-1117-1836-U-s1540rc,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1540rc,7,Bazyli,Kobr…ly,,inna,,,,niepewny,,nie,W akcie imię Basilius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1540rc,8,Mateusz,Sie…ski,,inna,,,,niepewny,,nie,W akcie imię Mattheus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1540rc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1540rd,1,Grzegorz,,,dziecko,pm,46,46,,pewny,tak,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1540rd,2,Jan,Chmyz,,ojciec,pm,46,46,pewny,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1540rd,3,Julianna,,Grabowski[?],matka,pm,46,46,niepewny,pewny,tak,córka Joannes Grabowski[?]
+cdial-201-4a-1117-1836-U-s1540rd,4,Jan,W…k,,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1540rd,5,Barbara,,,chrzestna,,,,,,nie,żona Mattheus Sie…ski
+cdial-201-4a-1117-1836-U-s1540rd,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1540rd,7,Jan,Grabowski[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1540rd,8,Mateusz,Sie…ski,,inna,,,,niepewny,,nie,W akcie imię Mattheus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1540rd,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1540re,1,Aleksy,,,dziecko,pm,18,18,,pewny,tak,W akcie imię Alexius
+cdial-201-4a-1117-1836-U-s1540re,2,Michał,W…k,,ojciec,pm,18,18,niepewny,pewny,tak,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1540re,3,Agafia,,Skarz[?],matka,pm,18,18,niepewny,pewny,tak,W akcie imię Ahaphia. córka Basilius Skarz[?]
+cdial-201-4a-1117-1836-U-s1540re,4,Aleksy,Czar,,chrzestny,,,,pewny,,nie,W akcie imię Alexius
+cdial-201-4a-1117-1836-U-s1540re,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Joannes Mar…owski
+cdial-201-4a-1117-1836-U-s1540re,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1540re,7,Bazyli,Skarz[?],,inna,,,,niepewny,,nie,W akcie imię Basilius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1540re,8,Jan,Mar…owski,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1540re,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1540rf,1,Tymoteusz,,,dziecko,pm,70,70,,pewny,tak,W akcie imię Timotheus
+cdial-201-4a-1117-1836-U-s1540rf,2,Jan,Sarczuk,,ojciec,pm,70,70,pewny,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1540rf,3,Maria,,M…yka,matka,pm,70,70,niepewny,pewny,tak,córka Elias M…yka
+cdial-201-4a-1117-1836-U-s1540rf,4,Michał,Sowiec[?],,chrzestny,,,,niepewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1540rf,5,Regina,,,chrzestna,,,,,,nie,żona Basilius Marczowski[?]
+cdial-201-4a-1117-1836-U-s1540rf,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1540rf,7,Eliasz,M…yka,,inna,,,,niepewny,,nie,W akcie imię Elias. Ojciec matki
+cdial-201-4a-1117-1836-U-s1540rf,8,Bazyli,Marczowski[?],,inna,,,,niepewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1540rf,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1540rg,1,Theocanus[?],,,dziecko,pm,26,26,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1540rg,2,Pantaleon,Małaczyński,,ojciec,pm,26,26,pewny,pewny,tak,Nazwisko skorygowane przez użytkowniczkę
+cdial-201-4a-1117-1836-U-s1540rg,3,Anna,,P…,matka,pm,26,26,niepewny,pewny,tak,córka Maximus P…
+cdial-201-4a-1117-1836-U-s1540rg,4,Stefan,Sarczuk,,chrzestny,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1540rg,5,Eudoksja,,,chrzestna,,,,,,nie,W akcie imię Eudoxia. żona Jacobus Pichur
+cdial-201-4a-1117-1836-U-s1540rg,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1540rg,7,Maksym,P…,,inna,,,,niepewny,,nie,W akcie imię Maximus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1540rg,8,Jakub,Pichur,,inna,,,,pewny,,nie,W akcie imię Jacobus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1540rg,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541la,1,Helena,,,dziecko,pm,10,10,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1541la,2,Eustachy,Bonisławski,,ojciec,pm,10,10,pewny,pewny,tak,W akcie imię Eustachius
+cdial-201-4a-1117-1836-U-s1541la,3,Maria,,Rewny,matka,pm,10,10,pewny,pewny,tak,Córka Leona. Nazwisko panieńskie skorygowane przez użytkowniczkę
+cdial-201-4a-1117-1836-U-s1541la,4,Jakub,Rewny,,chrzestny,,,,pewny,,nie,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1541la,5,Eufrozyna,,,chrzestna,,,,,,nie,W akcie imię Eufrosinia. żona Sabba Drewnicki
+cdial-201-4a-1117-1836-U-s1541la,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1541la,7,Leon,Rewny,,inna,,,,pewny,,nie,W akcie imię Leo. Ojciec matki. Pisownia zgodna z korektą nazwiska panieńskiego córki w tym akcie
+cdial-201-4a-1117-1836-U-s1541la,8,Saba,Drewnicki,,inna,,,,pewny,,nie,W akcie imię Sabba. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541la,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541lb,1,Tekla,,,dziecko,pm,60,60,,pewny,tak,W akcie imię Tecla
+cdial-201-4a-1117-1836-U-s1541lb,2,Karol,Szczawurski,,ojciec,pm,60,60,pewny,pewny,tak,W akcie imię Carolus. Pisownia skorygowana przez użytkowniczkę
+cdial-201-4a-1117-1836-U-s1541lb,3,Anna,,L…ski,matka,pm,60,60,niepewny,pewny,tak,córka Mattheus L…ski
+cdial-201-4a-1117-1836-U-s1541lb,4,Stefan,S…owski,,chrzestny,,,,niepewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1541lb,5,Agnieszka,,,chrzestna,,,,,,nie,W akcie imię Agnes. żona Stephanus Małaczyński
+cdial-201-4a-1117-1836-U-s1541lb,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1541lb,7,Mateusz,L…ski,,inna,,,,niepewny,,nie,W akcie imię Mattheus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541lb,8,Stefan,Małaczyński,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541lb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541lc,1,Marta,,,dziecko,pm,15,15,,pewny,tak,W akcie imię Martha
+cdial-201-4a-1117-1836-U-s1541lc,2,Onezym,Dydyk,,ojciec,pm,15,15,pewny,pewny,tak,W akcie imię Onisimus
+cdial-201-4a-1117-1836-U-s1541lc,3,Eudoksja,,Marczowski[?],matka,pm,15,15,niepewny,pewny,tak,W akcie imię Eudoxia. córka Joannes Marczowski[?]
+cdial-201-4a-1117-1836-U-s1541lc,4,Michał,M…yka,,chrzestny,,,,niepewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1541lc,5,Marta,,,chrzestna,,,,,,nie,W akcie imię Martha. żona Stanislaus Bonisławski
+cdial-201-4a-1117-1836-U-s1541lc,6,Anna,Czerniawska[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1541lc,7,Jan,Marczowski[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541lc,8,Stanisław,Bonisławski,,inna,,,,pewny,,nie,W akcie imię Stanislaus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541lc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541ld,1,Marta,,,dziecko,pm,53,53,,pewny,tak,W akcie imię Martha
+cdial-201-4a-1117-1836-U-s1541ld,2,Aleksy,Czernienka[?],,ojciec,pm,53,53,niepewny,pewny,tak,W akcie imię Alexius
+cdial-201-4a-1117-1836-U-s1541ld,3,Maria,,Sowiec[?],matka,pm,53,53,niepewny,pewny,tak,córka Joannes Sowiec[?]
+cdial-201-4a-1117-1836-U-s1541ld,4,Jan,Sarczuk,,chrzestny,,,,pewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1541ld,5,Barbara,,,chrzestna,,,,,,nie,żona Mattheus Sie…ski
+cdial-201-4a-1117-1836-U-s1541ld,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1541ld,7,Jan,Sowiec[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541ld,8,Mateusz,Sie…ski,,inna,,,,niepewny,,nie,W akcie imię Mattheus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541ld,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541le,1,Anna,,,dziecko,pm,73,73,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1541le,2,Grzegorz,Drewnicki,,ojciec,pm,73,73,pewny,pewny,tak,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1541le,3,Anastazja,,Dydyk,matka,pm,73,73,pewny,pewny,tak,W akcie imię Anastasia. córka zmarłego Isidorus Dydyk
+cdial-201-4a-1117-1836-U-s1541le,4,Andrzej,Marczowski[?],,chrzestny,,,,niepewny,,nie,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1541le,5,Eufrozyna,,,chrzestna,,,,,,nie,W akcie imię Eufrosinia. żona Sabba Drewnicki
+cdial-201-4a-1117-1836-U-s1541le,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1541le,7,Izydor,Dydyk,,inna,,,,pewny,,nie,W akcie imię Isidorus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541le,8,Saba,Drewnicki,,inna,,,,pewny,,nie,W akcie imię Sabba. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541le,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541lf,1,Eudoksja,,,dziecko,pm,13,13,,pewny,tak,W akcie imię Eudoxia
+cdial-201-4a-1117-1836-U-s1541lf,2,Michał,Kusznicz[?],,ojciec,pm,13,13,niepewny,pewny,tak,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1541lf,3,Anastazja,,Łukawski,matka,pm,13,13,pewny,pewny,tak,W akcie imię Anastasia. córka zmarłego Michael Łukawski
+cdial-201-4a-1117-1836-U-s1541lf,4,Stefan,Kon…wicz,,chrzestny,,,,niepewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1541lf,5,Agnieszka,,,chrzestna,,,,,,nie,W akcie imię Agnes. żona Stephanus Małaczyński
+cdial-201-4a-1117-1836-U-s1541lf,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1541lf,7,Michał,Łukawski,,inna,,,,pewny,,nie,W akcie imię Michael. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541lf,8,Stefan,Małaczyński,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541lf,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541lg,1,Emilian,,,dziecko,pm,24,24,,pewny,tak,W akcie imię Emilianus
+cdial-201-4a-1117-1836-U-s1541lg,2,Andrzej,Pawłowicz,,ojciec,pm,24,24,pewny,pewny,tak,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1541lg,3,Eufrozyna,,Jar…czuk,matka,pm,24,24,niepewny,pewny,tak,W akcie imię Eufrosinia. córka Theodorus Jar…czuk
+cdial-201-4a-1117-1836-U-s1541lg,4,Mateusz,Sie…ski,,chrzestny,,,,niepewny,,nie,W akcie imię Mattheus
+cdial-201-4a-1117-1836-U-s1541lg,5,Eudoksja,,,chrzestna,,,,,,nie,W akcie imię Eudoxia. żona Jacobus Pichur
+cdial-201-4a-1117-1836-U-s1541lg,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1541lg,7,Teodor,Jar…czuk,,inna,,,,niepewny,,nie,W akcie imię Theodorus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541lg,8,Jakub,Pichur,,inna,,,,pewny,,nie,W akcie imię Jacobus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541lg,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541ra,1,Aleksy,,,dziecko,pm,25,25,,pewny,tak,W akcie imię Alexius
+cdial-201-4a-1117-1836-U-s1541ra,2,Daniel,K…yto,,ojciec,pm,25,25,niepewny,pewny,tak,
+cdial-201-4a-1117-1836-U-s1541ra,3,Pelagia,,Skarz[?],matka,pm,25,25,niepewny,pewny,tak,córka Joannes Skarz[?]
+cdial-201-4a-1117-1836-U-s1541ra,4,Andrzej,Pawłowicz,,chrzestny,,,,pewny,,nie,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1541ra,5,Eudoksja,,,chrzestna,,,,,,nie,W akcie imię Eudoxia. żona Mathias Pichur
+cdial-201-4a-1117-1836-U-s1541ra,6,Tatiana,M…yka,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1541ra,7,Jan,Skarz[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541ra,8,Maciej,Pichur,,inna,,,,pewny,,nie,W akcie imię Mathias. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541ra,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541rb,1,Jan,,,dziecko,pm,28,28,,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1541rb,2,Mateusz,Homeniuk,,ojciec,pm,28,28,pewny,pewny,tak,W akcie imię Mattheus
+cdial-201-4a-1117-1836-U-s1541rb,3,Ksenia,,S…ko,matka,pm,28,28,niepewny,pewny,tak,W akcie imię Xenia. córka zmarłego Paulus S…ko
+cdial-201-4a-1117-1836-U-s1541rb,4,Józef,Pichur,,chrzestny,,,,pewny,,nie,W akcie imię Josephus
+cdial-201-4a-1117-1836-U-s1541rb,5,Maria,,,chrzestna,,,,,,nie,żona Antonius Rewny
+cdial-201-4a-1117-1836-U-s1541rb,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1541rb,7,Paweł,S…ko,,inna,,,,niepewny,,nie,W akcie imię Paulus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541rb,8,Antoni,Rewny,,inna,,,,pewny,,nie,W akcie imię Antonius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541rb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541rc,1,Filip,,,dziecko,pm,48,48,,pewny,tak,W akcie imię Philippus
+cdial-201-4a-1117-1836-U-s1541rc,2,Michał,W…k,,ojciec,pm,48,48,niepewny,pewny,tak,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1541rc,3,Anna,,Sabaka,matka,pm,48,48,pewny,pewny,tak,córka Stephanus Sabaka
+cdial-201-4a-1117-1836-U-s1541rc,4,Michał,Sabaka,,chrzestny,,,,pewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1541rc,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Gabriel Czar…ny
+cdial-201-4a-1117-1836-U-s1541rc,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1541rc,7,Stefan,Sabaka,,inna,,,,pewny,,nie,W akcie imię Stephanus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541rc,8,Gabriel,Czar…ny,,inna,,,,niepewny,,nie,Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541rc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541rd,1,Grzegorz,,,dziecko,pm,78,78,,pewny,tak,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1541rd,2,Jan,W…k,,ojciec,pm,78,78,niepewny,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1541rd,3,Eudoksja,,Zarnowski,matka,pm,78,78,pewny,pewny,tak,W akcie imię Eudoxia. córka Demetrius Zarnowski
+cdial-201-4a-1117-1836-U-s1541rd,4,Antoni,N…asiński,,chrzestny,,,,niepewny,,nie,W akcie imię Antonius
+cdial-201-4a-1117-1836-U-s1541rd,5,Rozalia,,,chrzestna,,,,,,nie,W akcie imię Rosalia. żona Mattheus Łom…
+cdial-201-4a-1117-1836-U-s1541rd,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1541rd,7,Dymitr,Zarnowski,,inna,,,,pewny,,nie,W akcie imię Demetrius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541rd,8,Mateusz,Łom…,,inna,,,,niepewny,,nie,W akcie imię Mattheus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541rd,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541re,1,Maria,,,dziecko,pm,83,83,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1541re,2,Wojciech,Manastyrski,,ojciec,pm,83,83,pewny,pewny,tak,W akcie imię Adalbertus
+cdial-201-4a-1117-1836-U-s1541re,3,Prakseda,,Sc…na,matka,pm,83,83,niepewny,pewny,tak,W akcie imię Praxeda. córka Antonius Sc…na
+cdial-201-4a-1117-1836-U-s1541re,4,Andrzej,Jurkow,,chrzestny,,,,pewny,,nie,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1541re,5,Katarzyna,,,chrzestna,,,,,,nie,W akcie imię Catarina. żona Michael M…yka
+cdial-201-4a-1117-1836-U-s1541re,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1541re,7,Antoni,Sc…na,,inna,,,,niepewny,,nie,W akcie imię Antonius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541re,8,Michał,M…yka,,inna,,,,niepewny,,nie,W akcie imię Michael. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1541re,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1541rf,1,Katarzyna,,,dziecko,pm,57,57,,pewny,tak,W akcie imię Catarina
+cdial-201-4a-1117-1836-U-s1541rf,2,Teodor,Trojan,,ojciec,pm,57,57,pewny,pewny,tak,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1541rf,3,Maria,,Ż…k,matka,pm,57,57,niepewny,pewny,tak,córka zmarłego Elias Ż…k
+cdial-201-4a-1117-1836-U-s1541rf,4,Konstanty,Bonisławski,,chrzestny,,,,pewny,,nie,W akcie imię Constantinus
+cdial-201-4a-1117-1836-U-s1541rf,5,Anna,,,chrzestna,,,,,,nie,żona Carolus Szczawurski
+cdial-201-4a-1117-1836-U-s1541rf,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
+cdial-201-4a-1117-1836-U-s1541rf,7,Eliasz,Ż…k,,inna,,,,niepewny,,nie,W akcie imię Elias. Ojciec matki
+cdial-201-4a-1117-1836-U-s1541rf,8,Karol,Szczawurski,,inna,,,,pewny,,nie,W akcie imię Carolus. Mąż chrzestnej wymieniony w akcie. Pisownia skorygowana przez użytkowniczkę
+cdial-201-4a-1117-1836-U-s1541rf,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1536ra,1,Paweł,,,zmarly,pm,52,52,,pewny,tak,W akcie imię Paulus. Wiek w latach 14
+cdial-201-4a-1117-1836-Z-s1536ra,2,Jan,Mac…szyniec,,ojciec,,,,niepewny,,nie,W akcie imię Joannes. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1536ra,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1536rb,1,Leon,,,zmarly,pm,87,87,,pewny,tak,W akcie imię Leo. Wiek w latach 1
+cdial-201-4a-1117-1836-Z-s1536rb,2,Stefan,S…anowski,,ojciec,,,,niepewny,,nie,W akcie imię Stephanus. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1536rb,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1536rc,1,Anastazja,,,zmarla,pm,42,42,,pewny,tak,W akcie imię Anastasia. Wiek w latach 2
+cdial-201-4a-1117-1836-Z-s1536rc,2,Teodor,Regyna,,ojciec,,,,pewny,,nie,W akcie imię Theodorus. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1536rc,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1536rd,1,Tekla,,,zmarla,pm,60,60,,pewny,tak,W akcie imię Tecla. Wiek 1 tydzień
+cdial-201-4a-1117-1836-Z-s1536rd,2,Karol,Szczawurski,,ojciec,,,,pewny,,nie,W akcie imię Carolus. Wymieniony przy zmarłej osobie. Pisownia skorygowana przez użytkowniczkę
+cdial-201-4a-1117-1836-Z-s1536rd,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1536re,1,Eudoksja,,,zmarla,pm,13,13,,pewny,tak,W akcie imię Eudoxia. Wiek 3 tygodnie
+cdial-201-4a-1117-1836-Z-s1536re,2,Michał,Kusznicz[?],,ojciec,,,,niepewny,,nie,W akcie imię Michael. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1536re,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1536rf,1,Helena,,,zmarla,pm,36,36,,pewny,tak,W akcie imię Helenna. Wiek w latach 45
+cdial-201-4a-1117-1836-Z-s1536rf,2,Jan,Rychow,,inna,,,,pewny,,nie,W akcie imię Joannes. Mąż zmarłej
+cdial-201-4a-1117-1836-Z-s1536rf,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1536rg,1,Jan,Chmyz,,zmarly,pm,46,46,pewny,pewny,tak,W akcie imię Joannes. Wiek w latach 57
+cdial-201-4a-1117-1836-Z-s1536rg,2,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1544ra,1,Paweł,Barabasz,,pan_mlody,pw,84,84,pewny,pewny,tak,W akcie imię Paulus. Wiek 23 lat
+cdial-201-4a-1117-1836-M-s1544ra,2,Barbara,,,panna_mloda,,,,,,nie,Wiek 14 lat
+cdial-201-4a-1117-1836-M-s1544ra,3,Andrzej,Barabasz,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Andreas
+cdial-201-4a-1117-1836-M-s1544ra,4,Eustachy,Mac…szyniec,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Eustachius
+cdial-201-4a-1117-1836-M-s1544ra,5,Mikołaj,B…ski,,swiadek,,,,niepewny,,nie,W akcie imię Nicolaus
+cdial-201-4a-1117-1836-M-s1544ra,6,Grzegorz,K…ak,,swiadek,,,,niepewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-M-s1544ra,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1544rb,1,Teodor,,,pan_mlody,pw,77,77,,pewny,tak,W akcie imię Theodorus. Wiek 23 lat
+cdial-201-4a-1117-1836-M-s1544rb,2,Eudoksja,,,panna_mloda,,,,,,nie,W akcie imię Eudoxia. Wiek 25 lat
+cdial-201-4a-1117-1836-M-s1544rb,3,Michał,K…,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-M-s1544rb,4,Jan,Koł…ski,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1544rb,5,Konstanty,…,,swiadek,,,,nieczytelny,,nie,W akcie imię Constantinus
+cdial-201-4a-1117-1836-M-s1544rb,6,Jan,Jurczyn[?],,swiadek,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1544rb,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1544rc,1,Andrzej,,,pan_mlody,pw,92,92,,pewny,tak,W akcie imię Andreas. Wiek 20 lat
+cdial-201-4a-1117-1836-M-s1544rc,2,Katarzyna,,,panna_mloda,,,,,,nie,W akcie imię Catarina. Wiek 20 lat
+cdial-201-4a-1117-1836-M-s1544rc,3,Jakub,D…nal,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Jacobus
+cdial-201-4a-1117-1836-M-s1544rc,4,Łukasz,Walczyszyn[?],,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Lucas
+cdial-201-4a-1117-1836-M-s1544rc,5,Jan,…,,swiadek,,,,nieczytelny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1544rc,6,Andrzej,B…wicz,,swiadek,,,,niepewny,,nie,W akcie imię Andreas
+cdial-201-4a-1117-1836-M-s1544rc,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1544rd,1,Pantaleon,,,pan_mlody,pw,12,12,,pewny,tak,Wiek 21 lat
+cdial-201-4a-1117-1836-M-s1544rd,2,Anastazja,,,panna_mloda,,,,,,nie,W akcie imię Anastasia. Wiek 20 lat
+cdial-201-4a-1117-1836-M-s1544rd,3,Grzegorz,…szyszyn,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-M-s1544rd,4,Jan,Bortnyk,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1544rd,5,Kasper,M…iński,,swiadek,,,,niepewny,,nie,W akcie imię Casper
+cdial-201-4a-1117-1836-M-s1544rd,6,Teodor,S…ski,,swiadek,,,,niepewny,,nie,W akcie imię Theodorus
+cdial-201-4a-1117-1836-M-s1544rd,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1544re,1,Paweł,,,pan_mlody,pw,111,111,,pewny,tak,W akcie imię Paulus. Wiek 20 lat
+cdial-201-4a-1117-1836-M-s1544re,2,Maria,,,panna_mloda,,,,,,nie,Wiek 22 lat
+cdial-201-4a-1117-1836-M-s1544re,3,Maksym,Kołow…,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Maximus
+cdial-201-4a-1117-1836-M-s1544re,4,Łukasz,Ka…uk,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Lucas
+cdial-201-4a-1117-1836-M-s1544re,5,Konstanty,D…cki,,swiadek,,,,niepewny,,nie,W akcie imię Constantinus
+cdial-201-4a-1117-1836-M-s1544re,6,Mikołaj,Błażko,,swiadek,,,,pewny,,nie,W akcie imię Nicolaus
+cdial-201-4a-1117-1836-M-s1544re,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1545la,1,Grzegorz,,,pan_mlody,pw,95,95,,pewny,tak,W akcie imię Gregorius. Wiek 22 lat
+cdial-201-4a-1117-1836-M-s1545la,2,Eudoksja,,,panna_mloda,,,,,,nie,W akcie imię Eudoxia. Wiek 18 lat
+cdial-201-4a-1117-1836-M-s1545la,3,Bazyli,Ł…,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Basilius
+cdial-201-4a-1117-1836-M-s1545la,4,Jan,Melnyk,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1545la,5,Konstanty,…,,swiadek,,,,nieczytelny,,nie,W akcie imię Constantinus
+cdial-201-4a-1117-1836-M-s1545la,6,Jakub,Rac…,,swiadek,,,,niepewny,,nie,W akcie imię Jacobus
+cdial-201-4a-1117-1836-M-s1545la,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1545lb,1,Bazyli,,,pan_mlody,pw,84,84,,pewny,tak,W akcie imię Basilius. Wiek 20 lat
+cdial-201-4a-1117-1836-M-s1545lb,2,Sophia,,,panna_mloda,,,,,,nie,Wiek 18 lat
+cdial-201-4a-1117-1836-M-s1545lb,3,Saba,Drewnicki,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Sabba
+cdial-201-4a-1117-1836-M-s1545lb,4,Grzegorz,Bortnyk,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-M-s1545lb,5,Łukasz,Mac…wicz,,swiadek,,,,niepewny,,nie,W akcie imię Lucas
+cdial-201-4a-1117-1836-M-s1545lb,6,Maciej,Sie…ski,,swiadek,,,,niepewny,,nie,W akcie imię Mathias
+cdial-201-4a-1117-1836-M-s1545lb,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1545lc,1,Łukasz,,,pan_mlody,pw,128,128,,pewny,tak,W akcie imię Lucas. Wiek 22 lat
+cdial-201-4a-1117-1836-M-s1545lc,2,Barbara,,,panna_mloda,,,,,,nie,Wiek 18 lat
+cdial-201-4a-1117-1836-M-s1545lc,3,Teodor,Marczowski[?],,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Theodorus
+cdial-201-4a-1117-1836-M-s1545lc,4,Mateusz,Kołot[?],,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Mattheus
+cdial-201-4a-1117-1836-M-s1545lc,5,Mateusz,Homeniuk,,swiadek,,,,pewny,,nie,W akcie imię Mattheus
+cdial-201-4a-1117-1836-M-s1545lc,6,Michał,Rogucki[?],,swiadek,,,,niepewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-M-s1545lc,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1545ld,1,Jan,,,pan_mlody,pw,116,116,,pewny,tak,W akcie imię Joannes. Wiek 22 lat
+cdial-201-4a-1117-1836-M-s1545ld,2,Eudoksja,,,panna_mloda,,,,,,nie,W akcie imię Eudoxia. Wiek 24 lat
+cdial-201-4a-1117-1836-M-s1545ld,3,Teodor,K…yszyn,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Theodorus
+cdial-201-4a-1117-1836-M-s1545ld,4,Maksym,Kołow…,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Maximus
+cdial-201-4a-1117-1836-M-s1545ld,5,Mikołaj,Barabasz,,swiadek,,,,pewny,,nie,W akcie imię Nicolaus
+cdial-201-4a-1117-1836-M-s1545ld,6,Konstanty,D…cki,,swiadek,,,,niepewny,,nie,W akcie imię Constantinus
+cdial-201-4a-1117-1836-M-s1545ld,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1546ra,1,Józef,,,dziecko,pw,33,33,,pewny,tak,W akcie imię Josephus
+cdial-201-4a-1117-1836-U-s1546ra,2,Anna,,Fil…icz,matka,pw,33,33,niepewny,pewny,tak,córka Mattheus Fil…icz
+cdial-201-4a-1117-1836-U-s1546ra,3,Stefan,K…ut,,chrzestny,,,,niepewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1546ra,4,Maria,,,chrzestna,,,,,,nie,żona Antonius K…
+cdial-201-4a-1117-1836-U-s1546ra,5,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1546ra,6,Mateusz,Fil…icz,,inna,,,,niepewny,,nie,W akcie imię Mattheus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1546ra,7,Antoni,K…,,inna,,,,niepewny,,nie,W akcie imię Antonius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1546ra,8,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1546rb,1,Julianna,,,dziecko,pw,8,8,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1546rb,2,Jan,Sawczuk,,ojciec,pw,8,8,pewny,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1546rb,3,Anastazja,,Pawłowicz,matka,pw,8,8,pewny,pewny,tak,W akcie imię Anastasia. córka Elias Pawłowicz
+cdial-201-4a-1117-1836-U-s1546rb,4,Grzegorz,Kołot[?],,chrzestny,,,,niepewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1546rb,5,Julianna,,,chrzestna,,,,,,nie,żona Basilius Bor…uk
+cdial-201-4a-1117-1836-U-s1546rb,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1546rb,7,Eliasz,Pawłowicz,,inna,,,,pewny,,nie,W akcie imię Elias. Ojciec matki
+cdial-201-4a-1117-1836-U-s1546rb,8,Bazyli,Bor…uk,,inna,,,,niepewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1546rb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1546rc,1,Emilian,,,dziecko,pw,15,15,,pewny,tak,W akcie imię Emilianus
+cdial-201-4a-1117-1836-U-s1546rc,2,Stefan,Koc…ut,,ojciec,pw,15,15,niepewny,pewny,tak,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1546rc,3,Anna,,Woł…ka,matka,pw,15,15,niepewny,pewny,tak,córka Simeon Woł…ka
+cdial-201-4a-1117-1836-U-s1546rc,4,Michał,Kit…ak,,chrzestny,,,,niepewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1546rc,5,Anna,,,chrzestna,,,,,,nie,żona Michael K…icki
+cdial-201-4a-1117-1836-U-s1546rc,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1546rc,7,Szymon,Woł…ka,,inna,,,,niepewny,,nie,W akcie imię Simeon. Ojciec matki
+cdial-201-4a-1117-1836-U-s1546rc,8,Michał,K…icki,,inna,,,,niepewny,,nie,W akcie imię Michael. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1546rc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1546rd,1,Ksenia,,,dziecko,pw,146,146,,pewny,tak,W akcie imię Xenia
+cdial-201-4a-1117-1836-U-s1546rd,2,Jakub,Barabasz,,ojciec,pw,146,146,pewny,pewny,tak,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1546rd,3,Maria,,Skarz[?],matka,pw,146,146,niepewny,pewny,tak,córka Sabba Skarz[?]
+cdial-201-4a-1117-1836-U-s1546rd,4,Grzegorz,Ber…aba,,chrzestny,,,,niepewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1546rd,5,Ksenia,,,chrzestna,,,,,,nie,W akcie imię Xenia. żona Gregorius Kołak[?]
+cdial-201-4a-1117-1836-U-s1546rd,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1546rd,7,Saba,Skarz[?],,inna,,,,niepewny,,nie,W akcie imię Sabba. Ojciec matki
+cdial-201-4a-1117-1836-U-s1546rd,8,Grzegorz,Kołak[?],,inna,,,,niepewny,,nie,W akcie imię Gregorius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1546rd,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547la,1,Paweł,,,dziecko,pw,29[?],,,niepewny,tak,W akcie imię Paulus
+cdial-201-4a-1117-1836-U-s1547la,2,Andrzej,H…ów,,ojciec,pw,29[?],,niepewny,niepewny,tak,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1547la,3,Julianna,,Sał…,matka,pw,29[?],,niepewny,niepewny,tak,córka Franciscus Sał…
+cdial-201-4a-1117-1836-U-s1547la,4,Osapius,Grochowski[?],,chrzestny,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547la,5,Anna,,,chrzestna,,,,,,nie,żona Andreas P…
+cdial-201-4a-1117-1836-U-s1547la,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547la,7,Franciszek,Sał…,,inna,,,,niepewny,,nie,W akcie imię Franciscus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547la,8,Andrzej,P…,,inna,,,,niepewny,,nie,W akcie imię Andreas. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547la,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547lb,1,Eudoksja,,,dziecko,pw,24,24,,pewny,tak,W akcie imię Eudoxia
+cdial-201-4a-1117-1836-U-s1547lb,2,Bazyli,Walczyszen[?],,ojciec,pw,24,24,niepewny,pewny,tak,W akcie imię Basilius
+cdial-201-4a-1117-1836-U-s1547lb,3,Teodozja,,M…,matka,pw,24,24,niepewny,pewny,tak,W akcie imię Theodosia. córka Joannes M…
+cdial-201-4a-1117-1836-U-s1547lb,4,Teodor,Bortnik,,chrzestny,,,,pewny,,nie,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1547lb,5,Anna,,,chrzestna,,,,,,nie,żona Gregorius Kołot[?]
+cdial-201-4a-1117-1836-U-s1547lb,6,Marianna,Bar…yzna,,akuszerka,,,,niepewny,,nie,W akcie imię Mariana
+cdial-201-4a-1117-1836-U-s1547lb,7,Jan,M…,,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547lb,8,Grzegorz,Kołot[?],,inna,,,,niepewny,,nie,W akcie imię Gregorius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547lb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547lc,1,Maria,,,dziecko,pw,48,48,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1547lc,2,Eliasz,Pabiak,,ojciec,pw,48,48,pewny,pewny,tak,W akcie imię Elias
+cdial-201-4a-1117-1836-U-s1547lc,3,Katarzyna,,…czy…,matka,pw,48,48,niepewny,pewny,tak,W akcie imię Catarina. córka Daniel …czy…
+cdial-201-4a-1117-1836-U-s1547lc,4,Teodor,Bortnik,,chrzestny,,,,pewny,,nie,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1547lc,5,Tekla,,,chrzestna,,,,,,nie,żona Stephanus S…
+cdial-201-4a-1117-1836-U-s1547lc,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547lc,7,Daniel,…czy…,,inna,,,,niepewny,,nie,Ojciec matki
+cdial-201-4a-1117-1836-U-s1547lc,8,Stefan,S…,,inna,,,,niepewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547lc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547ld,1,Jakub,,,dziecko,pw,71,71,,pewny,tak,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1547ld,2,Michał,D…nal,,ojciec,pw,71,71,niepewny,pewny,tak,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1547ld,3,Marta,,Dubas,matka,pw,71,71,pewny,pewny,tak,W akcie imię Martha. córka Andreas Dubas
+cdial-201-4a-1117-1836-U-s1547ld,4,Mateusz,Pabiak,,chrzestny,,,,pewny,,nie,W akcie imię Mattheus
+cdial-201-4a-1117-1836-U-s1547ld,5,Anna,,,chrzestna,,,,,,nie,żona Stephanus Koc…ut
+cdial-201-4a-1117-1836-U-s1547ld,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547ld,7,Andrzej,Dubas,,inna,,,,pewny,,nie,W akcie imię Andreas. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547ld,8,Stefan,Koc…ut,,inna,,,,niepewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547ld,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547le,1,Agafia,,,dziecko,pw,118,118,,pewny,tak,W akcie imię Ahaphia
+cdial-201-4a-1117-1836-U-s1547le,2,Maria,,Kowalik[?],matka,pw,118,118,niepewny,pewny,tak,córka Theodorus Kowalik[?]
+cdial-201-4a-1117-1836-U-s1547le,3,Michał,Sabaka,,chrzestny,,,,pewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1547le,4,Maria,,,chrzestna,,,,,,nie,żona Joannes Kołot[?]
+cdial-201-4a-1117-1836-U-s1547le,5,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547le,6,Teodor,Kowalik[?],,inna,,,,niepewny,,nie,W akcie imię Theodorus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547le,7,Jan,Kołot[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547le,8,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547lf,1,Anastazja,,,dziecko,pw,46,46,,pewny,tak,W akcie imię Anastasia
+cdial-201-4a-1117-1836-U-s1547lf,2,Jan,Wy…cki,,ojciec,pw,46,46,niepewny,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1547lf,3,Maria,,Pod…,matka,pw,46,46,niepewny,pewny,tak,córka Clemens Pod… z W…
+cdial-201-4a-1117-1836-U-s1547lf,4,Jakub,Barabasz,,chrzestny,,,,pewny,,nie,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1547lf,5,Katarzyna,,,chrzestna,,,,,,nie,W akcie imię Katharzyna. żona Joannes Pro…ny
+cdial-201-4a-1117-1836-U-s1547lf,6,Maria,Rogucka,,akuszerka,,,,pewny,,nie,
+cdial-201-4a-1117-1836-U-s1547lf,7,Klemens,Pod…,,inna,,,,niepewny,,nie,W akcie imię Clemens. Ojciec matki. Wzmianka o pochodzeniu z W…
+cdial-201-4a-1117-1836-U-s1547lf,8,Jan,Pro…ny,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547lf,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547lg,1,Helena,,,dziecko,pw,12[?],,,niepewny,tak,
+cdial-201-4a-1117-1836-U-s1547lg,2,Aleksy,M…ły,,ojciec,pw,12[?],,niepewny,niepewny,tak,W akcie imię Alexius
+cdial-201-4a-1117-1836-U-s1547lg,3,Eufrozyna,,Prichoda,matka,pw,12[?],,pewny,niepewny,tak,W akcie imię Eufrosinia. córka Eustachius Prichoda z Augustówka
+cdial-201-4a-1117-1836-U-s1547lg,4,Michał,Rogucki[?],,chrzestny,,,,niepewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1547lg,5,Prakseda,,,chrzestna,,,,,,nie,W akcie imię Praxeda. żona Gabriel Jaw…ko
+cdial-201-4a-1117-1836-U-s1547lg,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547lg,7,Eustachy,Prichoda,,inna,,,,pewny,,nie,W akcie imię Eustachius. Ojciec matki. Wzmianka o pochodzeniu z Augustówka
+cdial-201-4a-1117-1836-U-s1547lg,8,Gabriel,Jaw…ko,,inna,,,,niepewny,,nie,Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547lg,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547ra,1,Maria,,,dziecko,pw,61,61,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1547ra,2,Jan,Kozowicz,,ojciec,pw,61,61,pewny,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1547ra,3,Ksenia,,Wolyn[?],matka,pw,61,61,niepewny,pewny,tak,W akcie imię Xenia. córka Gregorius Wolyn[?]
+cdial-201-4a-1117-1836-U-s1547ra,4,Grzegorz,Ołynyk,,chrzestny,,,,pewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1547ra,5,Melania,,,chrzestna,,,,,,nie,W akcie imię Melanna. żona Gregorius Kory…
+cdial-201-4a-1117-1836-U-s1547ra,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547ra,7,Grzegorz,Wolyn[?],,inna,,,,niepewny,,nie,W akcie imię Gregorius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547ra,8,Grzegorz,Kory…,,inna,,,,niepewny,,nie,W akcie imię Gregorius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547ra,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547rb,1,Teodor,,,dziecko,pw,89,89,,pewny,tak,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1547rb,2,Gabriel,Kołot[?],,ojciec,pw,89,89,niepewny,pewny,tak,
+cdial-201-4a-1117-1836-U-s1547rb,3,Ksenia,,Kocak[?],matka,pw,89,89,niepewny,pewny,tak,W akcie imię Xenia. córka Joannes Kocak[?]
+cdial-201-4a-1117-1836-U-s1547rb,4,Jan,Pabiak,,chrzestny,,,,pewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1547rb,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Daniel Pabiak
+cdial-201-4a-1117-1836-U-s1547rb,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547rb,7,Jan,Kocak[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547rb,8,Daniel,Pabiak,,inna,,,,pewny,,nie,Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547rb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547rc,1,Paweł,,,dziecko,pw,64,64,,pewny,tak,W akcie imię Paulus
+cdial-201-4a-1117-1836-U-s1547rc,2,Teodor,Grochowski,,ojciec,pw,64,64,pewny,pewny,tak,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1547rc,3,Ksenia,,Pabiak,matka,pw,64,64,pewny,pewny,tak,W akcie imię Xenia. córka Joannes Pabiak
+cdial-201-4a-1117-1836-U-s1547rc,4,Eustachy,Grochowski[?],,chrzestny,,,,niepewny,,nie,W akcie imię Eustachius
+cdial-201-4a-1117-1836-U-s1547rc,5,Julianna,,,chrzestna,,,,,,nie,żona Basilius B…ko
+cdial-201-4a-1117-1836-U-s1547rc,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547rc,7,Jan,Pabiak,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547rc,8,Bazyli,B…ko,,inna,,,,niepewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547rc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547rd,1,Agrypina,,,dziecko,pw,65,65,,pewny,tak,W akcie imię Agripina
+cdial-201-4a-1117-1836-U-s1547rd,2,Jan,Junczyn[?],,ojciec,pw,65,65,niepewny,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1547rd,3,Ksenia,,Rad…,matka,pw,65,65,niepewny,pewny,tak,W akcie imię Xenia. córka Demetrius Rad…
+cdial-201-4a-1117-1836-U-s1547rd,4,Gabriel,Kory…,,chrzestny,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547rd,5,Katarzyna,,,chrzestna,,,,,,nie,W akcie imię Catarina. żona Michael Grochowski[?]
+cdial-201-4a-1117-1836-U-s1547rd,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547rd,7,Dymitr,Rad…,,inna,,,,niepewny,,nie,W akcie imię Demetrius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547rd,8,Michał,Grochowski[?],,inna,,,,niepewny,,nie,W akcie imię Michael. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547rd,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547re,1,Marta,,,dziecko,pw,57,57,,pewny,tak,W akcie imię Martha
+cdial-201-4a-1117-1836-U-s1547re,2,Jakub,M…niow,,ojciec,pw,57,57,niepewny,pewny,tak,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1547re,3,Maria,,Szczyszyn[?],matka,pw,57,57,niepewny,pewny,tak,córka Michael Szczyszyn[?]
+cdial-201-4a-1117-1836-U-s1547re,4,Daniel,Barabasz,,chrzestny,,,,pewny,,nie,
+cdial-201-4a-1117-1836-U-s1547re,5,Anna,,,chrzestna,,,,,,nie,żona Michael Sabaka
+cdial-201-4a-1117-1836-U-s1547re,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547re,7,Michał,Szczyszyn[?],,inna,,,,niepewny,,nie,W akcie imię Michael. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547re,8,Michał,Sabaka,,inna,,,,pewny,,nie,W akcie imię Michael. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547re,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547rf,1,Emilian,,,dziecko,pw,52,52,,pewny,tak,W akcie imię Emilianus
+cdial-201-4a-1117-1836-U-s1547rf,2,Aleksy,Szczyszyn[?],,ojciec,pw,52,52,niepewny,pewny,tak,W akcie imię Alexius
+cdial-201-4a-1117-1836-U-s1547rf,3,Paraskewa,,Kowalik[?],matka,pw,52,52,niepewny,pewny,tak,W akcie imię Parasceva. córka Michael Kowalik[?]
+cdial-201-4a-1117-1836-U-s1547rf,4,Stefan,Dubas,,chrzestny,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1547rf,5,Marta,,,chrzestna,,,,,,nie,W akcie imię Martha. żona Bartolomeus B…zko
+cdial-201-4a-1117-1836-U-s1547rf,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547rf,7,Michał,Kowalik[?],,inna,,,,niepewny,,nie,W akcie imię Michael. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547rf,8,Bartłomiej,B…zko,,inna,,,,niepewny,,nie,W akcie imię Bartolomeus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547rf,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547rg,1,Eliasz,,,dziecko,pw,53[?],,,niepewny,tak,W akcie imię Elias
+cdial-201-4a-1117-1836-U-s1547rg,2,Teodor,Bortnyk,,ojciec,pw,53[?],,pewny,niepewny,tak,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1547rg,3,Maria,,Sawandczuk[?],matka,pw,53[?],,niepewny,niepewny,tak,córka Joannes Sawandczuk[?]
+cdial-201-4a-1117-1836-U-s1547rg,4,Łukasz,Junc…,,chrzestny,,,,niepewny,,nie,W akcie imię Lucas
+cdial-201-4a-1117-1836-U-s1547rg,5,Julianna,,,chrzestna,,,,,,nie,żona Joannes Kozowicz
+cdial-201-4a-1117-1836-U-s1547rg,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547rg,7,Jan,Sawandczuk[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547rg,8,Jan,Kozowicz,,inna,,,,pewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547rg,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1547rh,1,Anna,,,dziecko,pw,23,23,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1547rh,2,Teodor,Blahowski[?],,ojciec,pw,23,23,niepewny,pewny,tak,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1547rh,3,Teodozja,,Pabiak,matka,pw,23,23,pewny,pewny,tak,W akcie imię Theodosia. córka Joannes Pabiak
+cdial-201-4a-1117-1836-U-s1547rh,4,Jan,Junczyn[?],,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1547rh,5,Maria,,,chrzestna,,,,,,nie,żona Gregorius Ber…aba
+cdial-201-4a-1117-1836-U-s1547rh,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1547rh,7,Jan,Pabiak,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547rh,8,Grzegorz,Ber…aba,,inna,,,,niepewny,,nie,W akcie imię Gregorius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547rh,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548la,1,Anna,,,dziecko,pw,54,54,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1548la,2,Michał,Sk…zyk,,ojciec,pw,54,54,niepewny,pewny,tak,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1548la,3,Maria,,Skarz[?],matka,pw,54,54,niepewny,pewny,tak,córka Simeon Skarz[?]
+cdial-201-4a-1117-1836-U-s1548la,4,Mateusz,Man…,,chrzestny,,,,niepewny,,nie,W akcie imię Mattheus
+cdial-201-4a-1117-1836-U-s1548la,5,Maria,,,chrzestna,,,,,,nie,żona Joannes Wy…cki
+cdial-201-4a-1117-1836-U-s1548la,6,Maria,Rogucka,,akuszerka,,,,pewny,,nie,
+cdial-201-4a-1117-1836-U-s1548la,7,Szymon,Skarz[?],,inna,,,,niepewny,,nie,W akcie imię Simeon. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548la,8,Jan,Wy…cki,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548la,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548lb,1,Eudoksja,,,dziecko,pw,14,14,,pewny,tak,W akcie imię Eudoxia
+cdial-201-4a-1117-1836-U-s1548lb,2,Grzegorz,Kołot[?],,ojciec,pw,14,14,niepewny,pewny,tak,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1548lb,3,Barbara,,M…,matka,pw,14,14,niepewny,pewny,tak,córka Gregorius M…
+cdial-201-4a-1117-1836-U-s1548lb,4,Bazyli,Pabiak,,chrzestny,,,,pewny,,nie,W akcie imię Basilius
+cdial-201-4a-1117-1836-U-s1548lb,5,Anna,,,chrzestna,,,,,,nie,żona Simeon Skarz[?]
+cdial-201-4a-1117-1836-U-s1548lb,6,Tatiana,W…yzna,,akuszerka,,,,niepewny,,nie,W akcie imię Thatianna
+cdial-201-4a-1117-1836-U-s1548lb,7,Grzegorz,M…,,inna,,,,niepewny,,nie,W akcie imię Gregorius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548lb,8,Szymon,Skarz[?],,inna,,,,niepewny,,nie,W akcie imię Simeon. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548lb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548lc,1,Tekla,,,dziecko,pw,109,109,,pewny,tak,W akcie imię Thecla
+cdial-201-4a-1117-1836-U-s1548lc,2,Stefan,Bortnyk,,ojciec,pw,109,109,pewny,pewny,tak,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1548lc,3,Julianna,,M…owski,matka,pw,109,109,niepewny,pewny,tak,córka Joannes M…owski
+cdial-201-4a-1117-1836-U-s1548lc,4,Franciszek,Radaczyński,,chrzestny,,,,pewny,,nie,W akcie imię Franciscus
+cdial-201-4a-1117-1836-U-s1548lc,5,Tatiana,,,chrzestna,,,,,,nie,W akcie imię Thatianna. żona Sebastianus Machow
+cdial-201-4a-1117-1836-U-s1548lc,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1548lc,7,Jan,M…owski,,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548lc,8,Sebastian,Machow,,inna,,,,pewny,,nie,W akcie imię Sebastianus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548lc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548ld,1,Jan,,,dziecko,pw,22,22,,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1548ld,2,Stefan,Bortnyk,,ojciec,pw,22,22,pewny,pewny,tak,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1548ld,3,Anastazja,,M…yka,matka,pw,22,22,niepewny,pewny,tak,W akcie imię Anastasia. córka Joannes M…yka
+cdial-201-4a-1117-1836-U-s1548ld,4,Mikołaj,Rogucki[?],,chrzestny,,,,niepewny,,nie,W akcie imię Nicolaus
+cdial-201-4a-1117-1836-U-s1548ld,5,Barbara,,,chrzestna,,,,,,nie,żona Paulus Barabasz
+cdial-201-4a-1117-1836-U-s1548ld,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1548ld,7,Jan,M…yka,,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548ld,8,Paweł,Barabasz,,inna,,,,pewny,,nie,W akcie imię Paulus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548ld,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548le,1,Andrzej,,,dziecko,pw,77,77,,pewny,tak,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1548le,2,Dymitr,Kołot[?],,ojciec,pw,77,77,niepewny,pewny,tak,W akcie imię Demetrius
+cdial-201-4a-1117-1836-U-s1548le,3,Maria,,Jurczyn[?],matka,pw,77,77,niepewny,pewny,tak,córka Theodorus Jurczyn[?]
+cdial-201-4a-1117-1836-U-s1548le,4,Łukasz,Dubas,,chrzestny,,,,pewny,,nie,W akcie imię Lucas
+cdial-201-4a-1117-1836-U-s1548le,5,Anna,,,chrzestna,,,,,,nie,żona Joannes Jurczyn[?]
+cdial-201-4a-1117-1836-U-s1548le,6,Julianna,W…howa,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1548le,7,Teodor,Jurczyn[?],,inna,,,,niepewny,,nie,W akcie imię Theodorus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548le,8,Jan,Jurczyn[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548le,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548lf,1,Tatiana,,,dziecko,pw,146,146,,pewny,tak,W akcie imię Thatianna
+cdial-201-4a-1117-1836-U-s1548lf,2,Tymoteusz,Ostopow[?],,ojciec,pw,146,146,niepewny,pewny,tak,W akcie imię Thimotheus
+cdial-201-4a-1117-1836-U-s1548lf,3,Prakseda,,Jedor…ko,matka,pw,146,146,niepewny,pewny,tak,W akcie imię Praxeda. córka Michael Jedor…ko
+cdial-201-4a-1117-1836-U-s1548lf,4,Bazyli,S…rzy…ny,,chrzestny,,,,niepewny,,nie,W akcie imię Basilius
+cdial-201-4a-1117-1836-U-s1548lf,5,Tatiana,,,chrzestna,,,,,,nie,W akcie imię Thatianna. żona Joannes W…ko
+cdial-201-4a-1117-1836-U-s1548lf,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1548lf,7,Michał,Jedor…ko,,inna,,,,niepewny,,nie,W akcie imię Michael. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548lf,8,Jan,W…ko,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548lf,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548lg,1,Jan,,,dziecko,pw,105[?],,,niepewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1548lg,2,Daniel,Pabiak,,ojciec,pw,105[?],,pewny,niepewny,tak,W akcie imię Danielus
+cdial-201-4a-1117-1836-U-s1548lg,3,Prakseda,,Baraban,matka,pw,105[?],,pewny,niepewny,tak,W akcie imię Praxeda. córka Joannes Baraban
+cdial-201-4a-1117-1836-U-s1548lg,4,Teodor,Balik,,chrzestny,,,,pewny,,nie,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1548lg,5,Anna,,,chrzestna,,,,,,nie,żona Joannes Jurczyn[?]
+cdial-201-4a-1117-1836-U-s1548lg,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1548lg,7,Jan,Baraban,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548lg,8,Jan,Jurczyn[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548lg,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548ra,1,Paweł,,,dziecko,pw,58,58,,pewny,tak,W akcie imię Paulus
+cdial-201-4a-1117-1836-U-s1548ra,2,Michał,Grochowski,,ojciec,pw,58,58,pewny,pewny,tak,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1548ra,3,Katarzyna,,Bortnyk,matka,pw,58,58,pewny,pewny,tak,W akcie imię Catarina. córka Joannes Bortnyk
+cdial-201-4a-1117-1836-U-s1548ra,4,Jan,Jurczyn[?],,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1548ra,5,Maria,,,chrzestna,,,,,,nie,żona Stephanus Pabiak
+cdial-201-4a-1117-1836-U-s1548ra,6,Maria,Rogucka,,akuszerka,,,,pewny,,nie,
+cdial-201-4a-1117-1836-U-s1548ra,7,Jan,Bortnyk,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548ra,8,Stefan,Pabiak,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548ra,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548rb,1,Pelagia,,,dziecko,pw,90,90,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1548rb,2,Bazyli,Koł…nik,,ojciec,pw,90,90,niepewny,pewny,tak,W akcie imię Basilius
+cdial-201-4a-1117-1836-U-s1548rb,3,Katarzyna,,Kon…wicz,matka,pw,90,90,niepewny,pewny,tak,W akcie imię Catarina. córka Antonius Kon…wicz
+cdial-201-4a-1117-1836-U-s1548rb,4,Kasper,M…iński,,chrzestny,,,,niepewny,,nie,W akcie imię Casper
+cdial-201-4a-1117-1836-U-s1548rb,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Basilius Koł…ko
+cdial-201-4a-1117-1836-U-s1548rb,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1548rb,7,Antoni,Kon…wicz,,inna,,,,niepewny,,nie,W akcie imię Antonius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548rb,8,Bazyli,Koł…ko,,inna,,,,niepewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548rb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548rc,1,Paraskewa,,,dziecko,pw,50,50,,pewny,tak,W akcie imię Parasceva
+cdial-201-4a-1117-1836-U-s1548rc,2,Mikołaj,Rogucki[?],,ojciec,pw,50,50,niepewny,pewny,tak,W akcie imię Nicolaus
+cdial-201-4a-1117-1836-U-s1548rc,3,Maria,,Jurczyn[?],matka,pw,50,50,niepewny,pewny,tak,córka Gregorius Jurczyn[?]
+cdial-201-4a-1117-1836-U-s1548rc,4,Stefan,K…our,,chrzestny,,,,niepewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1548rc,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Basilius Koł…ko
+cdial-201-4a-1117-1836-U-s1548rc,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1548rc,7,Grzegorz,Jurczyn[?],,inna,,,,niepewny,,nie,W akcie imię Gregorius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548rc,8,Bazyli,Koł…ko,,inna,,,,niepewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548rc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548rd,1,Agafia,,,dziecko,pw,47[?],,,niepewny,tak,W akcie imię Ahaphia
+cdial-201-4a-1117-1836-U-s1548rd,2,Stefan,Bortnyk,,ojciec,pw,47[?],,pewny,niepewny,tak,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1548rd,3,Tekla,,Melnik,matka,pw,47[?],,pewny,niepewny,tak,córka Joannes Melnik
+cdial-201-4a-1117-1836-U-s1548rd,4,Daniel,Jurczyn[?],,chrzestny,,,,niepewny,,nie,W akcie imię Danielus
+cdial-201-4a-1117-1836-U-s1548rd,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Basilius J…
+cdial-201-4a-1117-1836-U-s1548rd,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1548rd,7,Jan,Melnik,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548rd,8,Bazyli,J…,,inna,,,,niepewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548rd,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548re,1,Pelagia,,,dziecko,pw,82,82,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1548re,2,Szymon,Kałusz,,ojciec,pw,82,82,pewny,pewny,tak,W akcie imię Simeon
+cdial-201-4a-1117-1836-U-s1548re,3,Anastazja,,D…nycz…,matka,pw,82,82,niepewny,pewny,tak,W akcie imię Anastasia. córka Joannes D…nycz…
+cdial-201-4a-1117-1836-U-s1548re,4,Jan,Drumak[?],,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1548re,5,Maria,,,chrzestna,,,,,,nie,żona Stephanus Bortnyk
+cdial-201-4a-1117-1836-U-s1548re,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1548re,7,Jan,D…nycz…,,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548re,8,Stefan,Bortnyk,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548re,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548rf,1,Maria,,,dziecko,pw,78,78,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1548rf,2,Andrzej,Bortnyk,,ojciec,pw,78,78,pewny,pewny,tak,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1548rf,3,Anna,,Załka,matka,pw,78,78,pewny,pewny,tak,córka Danielus Załka
+cdial-201-4a-1117-1836-U-s1548rf,4,Łukasz,Ost…ow,,chrzestny,,,,niepewny,,nie,W akcie imię Lucas
+cdial-201-4a-1117-1836-U-s1548rf,5,…,,,chrzestna,,,,,,nie,żona Basilius Bortnik
+cdial-201-4a-1117-1836-U-s1548rf,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1548rf,7,Daniel,Załka,,inna,,,,pewny,,nie,W akcie imię Danielus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548rf,8,Bazyli,Bortnik,,inna,,,,pewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548rf,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1548rg,1,Nazar,,,dziecko,pw,91,91,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1548rg,2,Łucja,,Melnik,matka,pw,91,91,pewny,pewny,tak,W akcie imię Lucia. córka Joannes Melnik
+cdial-201-4a-1117-1836-U-s1548rg,3,Grzegorz,Kołot[?],,chrzestny,,,,niepewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1548rg,4,Maria,,,chrzestna,,,,,,nie,żona Joannes Wy…cki
+cdial-201-4a-1117-1836-U-s1548rg,5,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1548rg,6,Jan,Melnik,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548rg,7,Jan,Wy…cki,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548rg,8,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1549la,1,Andrzej,,,dziecko,pw,139[?],,,niepewny,tak,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1549la,2,Grzegorz,Pabiak,,ojciec,pw,139[?],,pewny,niepewny,tak,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1549la,3,Julianna,,Melnyk,matka,pw,139[?],,pewny,niepewny,tak,córka Joannes Melnyk
+cdial-201-4a-1117-1836-U-s1549la,4,Daniel,Pabiak,,chrzestny,,,,pewny,,nie,W akcie imię Danielus
+cdial-201-4a-1117-1836-U-s1549la,5,Ksenia,,,chrzestna,,,,,,nie,W akcie imię Xenia. żona Theodorus Grochowski[?]
+cdial-201-4a-1117-1836-U-s1549la,6,Julianna,W…howa,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1549la,7,Jan,Melnyk,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1549la,8,Teodor,Grochowski[?],,inna,,,,niepewny,,nie,W akcie imię Theodorus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1549la,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1549lb,1,Prakseda,,,dziecko,pw,30[?],,,niepewny,tak,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1549lb,2,Grzegorz,Bortnyk,,ojciec,pw,30[?],,pewny,niepewny,tak,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1549lb,3,Eudoksja,,J…mieny,matka,pw,30[?],,niepewny,niepewny,tak,W akcie imię Eudoxia. córka Stephanus J…mieny
+cdial-201-4a-1117-1836-U-s1549lb,4,Bazyli,…nczyszen,,chrzestny,,,,niepewny,,nie,W akcie imię Basilius
+cdial-201-4a-1117-1836-U-s1549lb,5,Katarzyna,,,chrzestna,,,,,,nie,W akcie imię Catharyna. żona Antonius Grabowski[?]
+cdial-201-4a-1117-1836-U-s1549lb,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1549lb,7,Stefan,J…mieny,,inna,,,,niepewny,,nie,W akcie imię Stephanus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1549lb,8,Antoni,Grabowski[?],,inna,,,,niepewny,,nie,W akcie imię Antonius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1549lb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1549lc,1,Prakseda,,,dziecko,pw,37,37,,pewny,tak,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1549lc,2,Szymon,Koł…isty,,ojciec,pw,37,37,niepewny,pewny,tak,W akcie imię Simeonus
+cdial-201-4a-1117-1836-U-s1549lc,3,Anna,,Kołato,matka,pw,37,37,pewny,pewny,tak,córka Gabriel Kołato
+cdial-201-4a-1117-1836-U-s1549lc,4,Eustachy,Pryndzak,,chrzestny,,,,pewny,,nie,W akcie imię Eustachius
+cdial-201-4a-1117-1836-U-s1549lc,5,Katarzyna,,,chrzestna,,,,,,nie,W akcie imię Catarina. żona Petrus Dubas
+cdial-201-4a-1117-1836-U-s1549lc,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1549lc,7,Gabriel,Kołato,,inna,,,,pewny,,nie,Ojciec matki
+cdial-201-4a-1117-1836-U-s1549lc,8,Piotr,Dubas,,inna,,,,pewny,,nie,W akcie imię Petrus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1549lc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1549ld,1,Andrzej,,,dziecko,pw,124,124,,pewny,tak,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1549ld,2,Jan,Drumak[?],,ojciec,pw,124,124,niepewny,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1549ld,3,Maria,,Kołot[?],matka,pw,124,124,niepewny,pewny,tak,córka Michael Kołot[?]
+cdial-201-4a-1117-1836-U-s1549ld,4,Bazyli,P…rzy…to,,chrzestny,,,,niepewny,,nie,W akcie imię Basilius
+cdial-201-4a-1117-1836-U-s1549ld,5,Maria,,,chrzestna,,,,,,nie,żona Ignatius Grusz…ki
+cdial-201-4a-1117-1836-U-s1549ld,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1549ld,7,Michał,Kołot[?],,inna,,,,niepewny,,nie,W akcie imię Michael. Ojciec matki
+cdial-201-4a-1117-1836-U-s1549ld,8,Ignacy,Grusz…ki,,inna,,,,niepewny,,nie,W akcie imię Ignatius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1549ld,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1549le,1,Andrzej,,,dziecko,pw,10,10,,pewny,tak,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1549le,2,Bazyli,Pabiak,,ojciec,pw,10,10,pewny,pewny,tak,W akcie imię Basilius
+cdial-201-4a-1117-1836-U-s1549le,3,Anastazja,,Bortnyk,matka,pw,10,10,pewny,pewny,tak,W akcie imię Anastasia. córka Simeon Bortnyk
+cdial-201-4a-1117-1836-U-s1549le,4,Andrzej,…nczyszen,,chrzestny,,,,niepewny,,nie,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1549le,5,Ksenia,,,chrzestna,,,,,,nie,W akcie imię Xenea. żona Gabriel Kołot[?]
+cdial-201-4a-1117-1836-U-s1549le,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1549le,7,Szymon,Bortnyk,,inna,,,,pewny,,nie,W akcie imię Simeon. Ojciec matki
+cdial-201-4a-1117-1836-U-s1549le,8,Gabriel,Kołot[?],,inna,,,,niepewny,,nie,Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1549le,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1549lf,1,Barbara,,,dziecko,pw,153[?],,,niepewny,tak,
+cdial-201-4a-1117-1836-U-s1549lf,2,Mikołaj,…nczyszen,,ojciec,pw,153[?],,niepewny,niepewny,tak,W akcie imię Nicolaus
+cdial-201-4a-1117-1836-U-s1549lf,3,Prakseda,,Dubas,matka,pw,153[?],,pewny,niepewny,tak,W akcie imię Praxeda. córka Lucas Dubas
+cdial-201-4a-1117-1836-U-s1549lf,4,Jakub,Barabasz,,chrzestny,,,,pewny,,nie,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1549lf,5,Katarzyna,,,chrzestna,,,,,,nie,W akcie imię Catarina. żona Petrus Dubas
+cdial-201-4a-1117-1836-U-s1549lf,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1549lf,7,Łukasz,Dubas,,inna,,,,pewny,,nie,W akcie imię Lucas. Ojciec matki
+cdial-201-4a-1117-1836-U-s1549lf,8,Piotr,Dubas,,inna,,,,pewny,,nie,W akcie imię Petrus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1549lf,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1542ra,1,Jan,,,zmarly,pw,54,54,,pewny,tak,W akcie imię Joannes. Wiek w latach 2
+cdial-201-4a-1117-1836-Z-s1542ra,2,Michał,Skarz[?],,ojciec,,,,niepewny,,nie,W akcie imię Michael. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1542ra,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1542rb,1,Szymon,,,zmarly,pw,128,128,,pewny,tak,W akcie imię Simeon. Wiek w latach 2
+cdial-201-4a-1117-1836-Z-s1542rb,2,Jan,S…yga,,ojciec,,,,niepewny,,nie,W akcie imię Joannes. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1542rb,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1542rc,1,Stefan,,,zmarly,pw,37,37,,pewny,tak,W akcie imię Stephanus. Wiek w latach 6
+cdial-201-4a-1117-1836-Z-s1542rc,2,Szymon,Koł…isty,,ojciec,,,,niepewny,,nie,W akcie imię Simeon. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1542rc,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1542rd,1,Jan,Bajak,,zmarly,pw,75,75,pewny,pewny,tak,W akcie imię Joannes. Wiek w latach 65
+cdial-201-4a-1117-1836-Z-s1542rd,2,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1542re,1,Eudoksja,,,zmarla,pw,68,68,,pewny,tak,W akcie imię Eudoxia. Wiek w latach 6
+cdial-201-4a-1117-1836-Z-s1542re,2,Jan,Łacanowski[?],,ojciec,,,,niepewny,,nie,W akcie imię Joannes. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1542re,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1542rf,1,Maria,,,zmarla,pw,129,129,,pewny,tak,Wiek w latach 38
+cdial-201-4a-1117-1836-Z-s1542rf,2,Paweł,Dzumak,,inna,,,,pewny,,nie,W akcie imię Paulus. Mąż zmarłej
+cdial-201-4a-1117-1836-Z-s1542rf,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1543la,1,Pelagia,,,zmarla,pw,5,5,,pewny,tak,Wiek w latach 1
+cdial-201-4a-1117-1836-Z-s1543la,2,Eustachy,Pabiak,,ojciec,,,,pewny,,nie,W akcie imię Eustachius. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1543la,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1543lb,1,Mikołaj,,,zmarly,pw,153,153,,pewny,tak,W akcie imię Nicolaus. Wiek w latach 28
+cdial-201-4a-1117-1836-Z-s1543lb,2,Bazyli,…nczyszen,,ojciec,,,,niepewny,,nie,W akcie imię Basilius. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1543lb,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1543lc,1,Teodor,,,zmarly,pw,56,56,,pewny,tak,W akcie imię Theodorus. Wiek w latach 1
+cdial-201-4a-1117-1836-Z-s1543lc,2,Michał,K…omienko,,ojciec,,,,niepewny,,nie,W akcie imię Michael. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1543lc,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1543ld,1,Jakub,,,zmarly,pw,116,116,,pewny,tak,W akcie imię Jacobus. Wiek w latach 1
+cdial-201-4a-1117-1836-Z-s1543ld,2,Gabriel,Saw…kow,,ojciec,,,,niepewny,,nie,Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1543ld,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1543le,1,Prakseda,,,zmarla,pw,25,25,,pewny,tak,W akcie imię Praxeda. Wiek w latach 1
+cdial-201-4a-1117-1836-Z-s1543le,2,Grzegorz,Bortnik,,ojciec,,,,pewny,,nie,W akcie imię Gregorius. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1543le,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1543lf,1,Katarzyna,,,zmarla,pw,75,75,,pewny,tak,W akcie imię Catarina. Wiek w latach 38
+cdial-201-4a-1117-1836-Z-s1543lf,2,Bazyli,Pabiak,,inna,,,,pewny,,nie,W akcie imię Basilius. Mąż zmarłej
+cdial-201-4a-1117-1836-Z-s1543lf,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1543lg,1,Eudoksja,,,zmarla,pw,73,73,,pewny,tak,W akcie imię Eudoxia. Wiek w latach 25
+cdial-201-4a-1117-1836-Z-s1543lg,2,Daniel,Pawliszyn,,ojciec,,,,pewny,,nie,W akcie imię Danielus. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1543lg,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1543lh,1,Maria,,,zmarla,pw,24,24,,pewny,tak,Wiek w latach 69
+cdial-201-4a-1117-1836-Z-s1543lh,2,Jan,Sadow…,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż zmarłej
+cdial-201-4a-1117-1836-Z-s1543lh,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1532ra,1,Paweł,Chorkawy,,pan_mlody,gl,27,27,pewny,pewny,tak,W akcie imię Paulus. Wiek 61 lat
+cdial-201-4a-1117-1836-M-s1532ra,2,Katarzyna,,,panna_mloda,,,,,,nie,W akcie imię Catarina. Wiek 24 lat
+cdial-201-4a-1117-1836-M-s1532ra,3,Paweł,Nowak,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Paulus
+cdial-201-4a-1117-1836-M-s1532ra,4,Jan,Melnyk,,swiadek,,,,pewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1532ra,5,Jan,Łyg[?],,swiadek,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1532ra,6,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1532rb,1,Andrzej,Regyna,,pan_mlody,gl,85,85,pewny,pewny,tak,W akcie imię Andreas. Wiek 27 lat
+cdial-201-4a-1117-1836-M-s1532rb,2,Prakseda,,,panna_mloda,,,,,,nie,W akcie imię Praxeda. Wiek 25 lat
+cdial-201-4a-1117-1836-M-s1532rb,3,Andrzej,Regyna,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Andreas
+cdial-201-4a-1117-1836-M-s1532rb,4,Teodor,K…wski,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Theodorus
+cdial-201-4a-1117-1836-M-s1532rb,5,Stefan,Regyna,,swiadek,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-M-s1532rb,6,Jan,Melnyk,,swiadek,,,,pewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1532rb,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1532rc,1,Jan,Szc…yk,,pan_mlody,gl,100,100,niepewny,pewny,tak,W akcie imię Joannes. Wiek 26 lat
+cdial-201-4a-1117-1836-M-s1532rc,2,Ksenia,,,panna_mloda,,,,,,nie,W akcie imię Xenia. Wiek 15 lat
+cdial-201-4a-1117-1836-M-s1532rc,3,Szymon,Szc…yk,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Simeon
+cdial-201-4a-1117-1836-M-s1532rc,4,Michał,Kit…,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Michael
+cdial-201-4a-1117-1836-M-s1532rc,5,Stefan,Regyna,,swiadek,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-M-s1532rc,6,Stefan,D…es,,swiadek,,,,niepewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-M-s1532rc,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1532rd,1,Dymitr,Antonow,,pan_mlody,gl,26,26,pewny,pewny,tak,W akcie imię Demetrius. Wiek 18 lat
+cdial-201-4a-1117-1836-M-s1532rd,2,Katarzyna,,,panna_mloda,,,,,,nie,W akcie imię Catarina. Wiek 16 lat
+cdial-201-4a-1117-1836-M-s1532rd,3,Paweł,Antonow,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Paulus
+cdial-201-4a-1117-1836-M-s1532rd,4,Grzegorz,Moroz,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-M-s1532rd,5,Jozafat,Rewny,,swiadek,,,,pewny,,nie,W akcie imię Osaphat
+cdial-201-4a-1117-1836-M-s1532rd,6,Andrzej,Dudar,,swiadek,,,,pewny,,nie,W akcie imię Andreas
+cdial-201-4a-1117-1836-M-s1532rd,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1532re,1,Paweł,Zaba,,pan_mlody,gl,7,7,pewny,pewny,tak,W akcie imię Paulus. Wiek 21 lat
+cdial-201-4a-1117-1836-M-s1532re,2,Eufrozyna,,,panna_mloda,,,,,,nie,W akcie imię Eufrosinia. Wiek 16 lat
+cdial-201-4a-1117-1836-M-s1532re,3,Stefan,Zaba,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-M-s1532re,4,Paweł,Moroz,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Paulus
+cdial-201-4a-1117-1836-M-s1532re,5,Andrzej,K…,,swiadek,,,,niepewny,,nie,W akcie imię Andreas
+cdial-201-4a-1117-1836-M-s1532re,6,Mikołaj,Radz,,swiadek,,,,pewny,,nie,W akcie imię Nicolaus
+cdial-201-4a-1117-1836-M-s1532re,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-M-s1533la,1,Jan,Kul…k,,pan_mlody,gl,89,89,niepewny,pewny,tak,W akcie imię Joannes. Wiek 27 lat
+cdial-201-4a-1117-1836-M-s1533la,2,Maria,,,panna_mloda,,,,,,nie,Wiek 15 lat
+cdial-201-4a-1117-1836-M-s1533la,3,…,Kul…k,,rodzic_pana_mlodego,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-M-s1533la,4,Stefan,Melnyk,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-M-s1533la,5,Joachim,Radz,,swiadek,,,,pewny,,nie,W akcie imię Joachimus
+cdial-201-4a-1117-1836-M-s1533la,6,Łukasz,Pro…k,,swiadek,,,,niepewny,,nie,W akcie imię Lucas
+cdial-201-4a-1117-1836-M-s1533la,7,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1533ra,1,Maria,,,dziecko,gl,24,24,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1533ra,2,Jakub,Dudar,,ojciec,gl,24,24,pewny,pewny,tak,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1533ra,3,Maria,,D…,matka,gl,24,24,niepewny,pewny,tak,córka D…
+cdial-201-4a-1117-1836-U-s1533ra,4,Asaphatus,Rewny,,chrzestny,,,,pewny,,nie,
+cdial-201-4a-1117-1836-U-s1533ra,5,Eudoksja,,,chrzestna,,,,,,nie,W akcie imię Eudoxia. żona Joannes W…
+cdial-201-4a-1117-1836-U-s1533ra,6,Anna,Gr…[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1533ra,7,D…,,,inna,,,,,,nie,Ojciec matki
+cdial-201-4a-1117-1836-U-s1533ra,8,Jan,W…,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1533ra,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1533rb,1,Ksenia,,,dziecko,gl,28,28,,pewny,tak,W akcie imię Xenia
+cdial-201-4a-1117-1836-U-s1533rb,2,Jacek,,,ojciec,gl,28,28,,pewny,tak,W akcie imię Jacentius
+cdial-201-4a-1117-1836-U-s1533rb,3,Regina,,Melnyk,matka,gl,28,28,pewny,pewny,tak,W akcie imię Regyna. córka Joannes Melnyk
+cdial-201-4a-1117-1836-U-s1533rb,4,Stefan,Zaba,,chrzestny,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1533rb,5,Maria,Chorkawa,,chrzestna,,,,pewny,,nie,
+cdial-201-4a-1117-1836-U-s1533rb,6,Anna,Gr…[?],,akuszerka,,,,niepewny,,nie,
+cdial-201-4a-1117-1836-U-s1533rb,7,Jan,Melnyk,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1533rb,8,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1533rc,1,Kondrat,,,dziecko,gl,1,1,,pewny,tak,W akcie imię Condrat
+cdial-201-4a-1117-1836-U-s1533rc,2,Paweł,Moroz,,ojciec,gl,1,1,pewny,pewny,tak,W akcie imię Paulus
+cdial-201-4a-1117-1836-U-s1533rc,3,Prakseda,,Samogala,matka,gl,1,1,pewny,pewny,tak,W akcie imię Praxeda. córka Demetrius Samogala
+cdial-201-4a-1117-1836-U-s1533rc,4,Stefan,Zaba,,chrzestny,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1533rc,5,Eufrozyna,,,chrzestna,,,,,,nie,W akcie imię Eufrosinia. żona Andreas Za…
+cdial-201-4a-1117-1836-U-s1533rc,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1533rc,7,Dymitr,Samogala,,inna,,,,pewny,,nie,W akcie imię Demetrius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1533rc,8,Andrzej,Za…,,inna,,,,niepewny,,nie,W akcie imię Andreas. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1533rc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1533rd,1,Maria,,,dziecko,gl,106,106,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1533rd,2,Szymon,Gresiow,,ojciec,gl,106,106,pewny,pewny,tak,W akcie imię Simeon
+cdial-201-4a-1117-1836-U-s1533rd,3,Katarzyna,,Szyrkan[?],matka,gl,106,106,niepewny,pewny,tak,W akcie imię Catarina. córka Simeon Szyrkan[?]
+cdial-201-4a-1117-1836-U-s1533rd,4,Jan,Melnyk,,chrzestny,,,,pewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1533rd,5,Eufrozyna,,,chrzestna,,,,,,nie,W akcie imię Eufrosinia. żona Andreas Pa…towicz
+cdial-201-4a-1117-1836-U-s1533rd,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1533rd,7,Szymon,Szyrkan[?],,inna,,,,niepewny,,nie,W akcie imię Simeon. Ojciec matki
+cdial-201-4a-1117-1836-U-s1533rd,8,Andrzej,Pa…towicz,,inna,,,,niepewny,,nie,W akcie imię Andreas. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1533rd,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1533re,1,Grzegorz,,,dziecko,gl,107,107,,pewny,tak,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1533re,2,Szymon,Gresiow,,ojciec,gl,107,107,pewny,pewny,tak,W akcie imię Simeon
+cdial-201-4a-1117-1836-U-s1533re,3,Marta,,Skarz[?],matka,gl,107,107,niepewny,pewny,tak,W akcie imię Martha. córka Basilius Skarz[?]
+cdial-201-4a-1117-1836-U-s1533re,4,Jan,W…,,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1533re,5,Prakseda,,,chrzestna,,,,,,nie,W akcie imię Praxeda. żona Joannes Ł…
+cdial-201-4a-1117-1836-U-s1533re,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1533re,7,Bazyli,Skarz[?],,inna,,,,niepewny,,nie,W akcie imię Basilius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1533re,8,Jan,Ł…,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1533re,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1533rf,1,Szymon,,,dziecko,gl,28,28,,pewny,tak,W akcie imię Simeon
+cdial-201-4a-1117-1836-U-s1533rf,2,Aleksy,Regyna,,ojciec,gl,28,28,pewny,pewny,tak,W akcie imię Alexius
+cdial-201-4a-1117-1836-U-s1533rf,3,Maria,,M…yszen,matka,gl,28,28,niepewny,pewny,tak,córka Michael M…yszen
+cdial-201-4a-1117-1836-U-s1533rf,4,Paweł,Antonow,,chrzestny,,,,pewny,,nie,W akcie imię Paulus
+cdial-201-4a-1117-1836-U-s1533rf,5,Maria,,,chrzestna,,,,,,nie,żona Joannes Charkawy[?]
+cdial-201-4a-1117-1836-U-s1533rf,6,Eufrozyna,Kuczna[?],,akuszerka,,,,niepewny,,nie,W akcie imię Eufrosinia
+cdial-201-4a-1117-1836-U-s1533rf,7,Michał,M…yszen,,inna,,,,niepewny,,nie,W akcie imię Michael. Ojciec matki
+cdial-201-4a-1117-1836-U-s1533rf,8,Jan,Charkawy[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1533rf,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1533rg,1,Aleksander,,,dziecko,gl,12[?],,,niepewny,tak,W akcie imię Alexander
+cdial-201-4a-1117-1836-U-s1533rg,2,Jan,Kri…l,,ojciec,gl,12[?],,niepewny,niepewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1533rg,3,Ser…na,,D…,matka,gl,12[?],,niepewny,niepewny,tak,córka Joannes D…
+cdial-201-4a-1117-1836-U-s1533rg,4,Stefan,Zaba,,chrzestny,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1533rg,5,Marta,,,chrzestna,,,,,,nie,W akcie imię Martha. żona Stephanus Melnyk
+cdial-201-4a-1117-1836-U-s1533rg,6,Eufrozyna,Kuczna[?],,akuszerka,,,,niepewny,,nie,W akcie imię Eufrosinia
+cdial-201-4a-1117-1836-U-s1533rg,7,Jan,D…,,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1533rg,8,Stefan,Melnyk,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1533rg,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535la,1,Maria,,,dziecko,gl,86,86,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1535la,2,Szymon,Dudar,,ojciec,gl,86,86,pewny,pewny,tak,W akcie imię Simeon
+cdial-201-4a-1117-1836-U-s1535la,3,Maria,,Dow…,matka,gl,86,86,niepewny,pewny,tak,córka Simeon Dow…
+cdial-201-4a-1117-1836-U-s1535la,4,Joachim,Radz,,chrzestny,,,,pewny,,nie,W akcie imię Joachimus
+cdial-201-4a-1117-1836-U-s1535la,5,Eudoksja,,,chrzestna,,,,,,nie,W akcie imię Eudoxia. żona Elias Kałynyk[?]
+cdial-201-4a-1117-1836-U-s1535la,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535la,7,Szymon,Dow…,,inna,,,,niepewny,,nie,W akcie imię Simeon. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535la,8,Eliasz,Kałynyk[?],,inna,,,,niepewny,,nie,W akcie imię Elias. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535la,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535lb,1,Maria,,,dziecko,gl,66,66,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1535lb,2,Jan,Mar…kin,,ojciec,gl,66,66,niepewny,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1535lb,3,Maria,,Dow…,matka,gl,66,66,niepewny,pewny,tak,córka Nicolaus Dow…
+cdial-201-4a-1117-1836-U-s1535lb,4,Stefan,Piet…ny,,chrzestny,,,,niepewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1535lb,5,Ksenia,,,chrzestna,,,,,,nie,W akcie imię Xenia. żona Simeon Dow…
+cdial-201-4a-1117-1836-U-s1535lb,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535lb,7,Mikołaj,Dow…,,inna,,,,niepewny,,nie,W akcie imię Nicolaus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535lb,8,Szymon,Dow…,,inna,,,,niepewny,,nie,W akcie imię Simeon. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535lb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535lc,1,Jan,,,dziecko,gl,29,29,,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1535lc,2,Pantaleon,Radz,,ojciec,gl,29,29,pewny,pewny,tak,
+cdial-201-4a-1117-1836-U-s1535lc,3,Eudoksja,,Jała…,matka,gl,29,29,niepewny,pewny,tak,W akcie imię Eudoxia. córka Gregorius Jała…
+cdial-201-4a-1117-1836-U-s1535lc,4,Jan,Łyg[?],,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1535lc,5,Maria,,,chrzestna,,,,,,nie,żona Joannes D…
+cdial-201-4a-1117-1836-U-s1535lc,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535lc,7,Grzegorz,Jała…,,inna,,,,niepewny,,nie,W akcie imię Gregorius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535lc,8,Jan,D…,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535lc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535ld,1,Teodor,,,dziecko,gl,75,75,,pewny,tak,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1535ld,2,Jakub,Dudar,,ojciec,gl,75,75,pewny,pewny,tak,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1535ld,3,Maria,,Radz,matka,gl,75,75,pewny,pewny,tak,córka Joannes Radz
+cdial-201-4a-1117-1836-U-s1535ld,4,Bazyli,Moroz,,chrzestny,,,,pewny,,nie,W akcie imię Basilius
+cdial-201-4a-1117-1836-U-s1535ld,5,Febronia,,,chrzestna,,,,,,nie,W akcie imię Feuronia. żona Alexius …
+cdial-201-4a-1117-1836-U-s1535ld,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535ld,7,Jan,Radz,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535ld,8,Aleksy,…,,inna,,,,nieczytelny,,nie,W akcie imię Alexius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535ld,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535le,1,Maria,,,dziecko,gl,92,92,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1535le,2,Maciej,Łukowski,,ojciec,gl,92,92,pewny,pewny,tak,
+cdial-201-4a-1117-1836-U-s1535le,3,Irena,,Czor…y,matka,gl,92,92,niepewny,pewny,tak,W akcie imię Iryna. córka Basilius Czor…y
+cdial-201-4a-1117-1836-U-s1535le,4,Mikołaj,Chorkawy,,chrzestny,,,,pewny,,nie,W akcie imię Nicolaus
+cdial-201-4a-1117-1836-U-s1535le,5,Febronia,,,chrzestna,,,,,,nie,W akcie imię Feuronia. żona Andreas Za…
+cdial-201-4a-1117-1836-U-s1535le,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535le,7,Bazyli,Czor…y,,inna,,,,niepewny,,nie,W akcie imię Basilius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535le,8,Andrzej,Za…,,inna,,,,niepewny,,nie,W akcie imię Andreas. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535le,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535lf,1,Anna,,,dziecko,gl,45,45,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1535lf,2,Bazyli,Andruszuk,,ojciec,gl,45,45,pewny,pewny,tak,W akcie imię Basilius
+cdial-201-4a-1117-1836-U-s1535lf,3,Maria,,Baranowski[?],matka,gl,45,45,niepewny,pewny,tak,córka Elias Baranowski[?]
+cdial-201-4a-1117-1836-U-s1535lf,4,Grzegorz,Gresiow,,chrzestny,,,,pewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1535lf,5,Anna,,,chrzestna,,,,,,nie,żona Basilius Moroz
+cdial-201-4a-1117-1836-U-s1535lf,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535lf,7,Eliasz,Baranowski[?],,inna,,,,niepewny,,nie,W akcie imię Elias. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535lf,8,Bazyli,Moroz,,inna,,,,pewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535lf,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535lg,1,Anna,,,dziecko,gl,47,47,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1535lg,2,Pantaleon,Baraban,,ojciec,gl,47,47,pewny,pewny,tak,
+cdial-201-4a-1117-1836-U-s1535lg,3,Anna,,Porosowski[?],matka,gl,47,47,niepewny,pewny,tak,córka Joannes Porosowski[?]
+cdial-201-4a-1117-1836-U-s1535lg,4,Jan,D…es,,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1535lg,5,Prakseda,,,chrzestna,,,,,,nie,W akcie imię Praxeda. żona Gregorius Gł…yk
+cdial-201-4a-1117-1836-U-s1535lg,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535lg,7,Jan,Porosowski[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535lg,8,Grzegorz,Gł…yk,,inna,,,,niepewny,,nie,W akcie imię Gregorius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535lg,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535lh,1,Mateusz,,,dziecko,gl,7,7,,pewny,tak,W akcie imię Mattheus
+cdial-201-4a-1117-1836-U-s1535lh,2,Stefan,Zaba,,ojciec,gl,7,7,pewny,pewny,tak,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1535lh,3,Febronia,,Dopta,matka,gl,7,7,pewny,pewny,tak,córka Elias Dopta
+cdial-201-4a-1117-1836-U-s1535lh,4,Jan,Radz,,chrzestny,,,,pewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1535lh,5,Ksenia,,,chrzestna,,,,,,nie,W akcie imię Xenia. żona Demetrius Zorawski[?]
+cdial-201-4a-1117-1836-U-s1535lh,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535lh,7,Eliasz,Dopta,,inna,,,,pewny,,nie,W akcie imię Elias. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535lh,8,Dymitr,Zorawski[?],,inna,,,,niepewny,,nie,W akcie imię Demetrius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535lh,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535ra,1,Andrzej,,,dziecko,gl,34,34,,pewny,tak,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1535ra,2,Teodor,Antonow,,ojciec,gl,34,34,pewny,pewny,tak,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1535ra,3,Maria,,Kałynyk[?],matka,gl,34,34,niepewny,pewny,tak,córka Simeon Kałynyk[?]
+cdial-201-4a-1117-1836-U-s1535ra,4,Jozafat,Rewny,,chrzestny,,,,pewny,,nie,W akcie imię Osaphat
+cdial-201-4a-1117-1836-U-s1535ra,5,Marta,,,chrzestna,,,,,,nie,W akcie imię Martha. żona Stephanus Melnyk
+cdial-201-4a-1117-1836-U-s1535ra,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535ra,7,Szymon,Kałynyk[?],,inna,,,,niepewny,,nie,W akcie imię Simeon. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535ra,8,Stefan,Melnyk,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535ra,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535rb,1,Andrzej,,,dziecko,gl,59,59,,pewny,tak,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1535rb,2,Aleksy,Kobato[?],,ojciec,gl,59,59,niepewny,pewny,tak,"W akcie imię Alexius. Porównano chrzest na skanie 1535 i zgon na skanie 1531, oba pod nr 59. Możliwy odczyt Kobało"
+cdial-201-4a-1117-1836-U-s1535rb,3,Maria,,Łyg[?],matka,gl,59,59,niepewny,pewny,tak,córka zmarłego Theodorus Łyg[?]
+cdial-201-4a-1117-1836-U-s1535rb,4,Jakub,Regyna,,chrzestny,,,,pewny,,nie,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1535rb,5,Marta,,,chrzestna,,,,,,nie,W akcie imię Martha. żona Stephanus Melnyk
+cdial-201-4a-1117-1836-U-s1535rb,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535rb,7,Teodor,Łyg[?],,inna,,,,niepewny,,nie,W akcie imię Theodorus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535rb,8,Stefan,Melnyk,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535rb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535rc,1,Eufrozyna,,,dziecko,gl,76[?],,,niepewny,tak,W akcie imię Eufrosinia
+cdial-201-4a-1117-1836-U-s1535rc,2,Jozafat,Rewny,,ojciec,gl,76[?],,pewny,niepewny,tak,W akcie imię Osaphat
+cdial-201-4a-1117-1836-U-s1535rc,3,Maria,,P…,matka,gl,76[?],,niepewny,niepewny,tak,córka zmarłego Andreas P…
+cdial-201-4a-1117-1836-U-s1535rc,4,Grzegorz,Rudyk,,chrzestny,,,,pewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1535rc,5,Maria,,,chrzestna,,,,,,nie,żona Joannes Chorkawy
+cdial-201-4a-1117-1836-U-s1535rc,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535rc,7,Andrzej,P…,,inna,,,,niepewny,,nie,W akcie imię Andreas. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535rc,8,Jan,Chorkawy,,inna,,,,pewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535rc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535rd,1,Rozalia,,,dziecko,gl,11,11,,pewny,tak,W akcie imię Rosalia
+cdial-201-4a-1117-1836-U-s1535rd,2,Jakub,H…,,ojciec,gl,11,11,niepewny,pewny,tak,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1535rd,3,Anna,,H…,matka,gl,11,11,niepewny,pewny,tak,córka Joannes H…
+cdial-201-4a-1117-1836-U-s1535rd,4,Franciszek,…,,chrzestny,,,,nieczytelny,,nie,W akcie imię Franciscus
+cdial-201-4a-1117-1836-U-s1535rd,5,Tekla,,,chrzestna,,,,,,nie,W akcie imię Tecla. żona Stanislaus M…kowski
+cdial-201-4a-1117-1836-U-s1535rd,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535rd,7,Jan,H…,,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535rd,8,Stanisław,M…kowski,,inna,,,,niepewny,,nie,W akcie imię Stanislaus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535rd,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535re,1,Prakseda,,,dziecko,gl,26,26,,pewny,tak,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535re,2,Paweł,Antonow,,ojciec,gl,26,26,pewny,pewny,tak,W akcie imię Paulus
+cdial-201-4a-1117-1836-U-s1535re,3,Katarzyna,,Regyna,matka,gl,26,26,pewny,pewny,tak,W akcie imię Catharina. córka Joannes Regyna
+cdial-201-4a-1117-1836-U-s1535re,4,Jozafat,Rewny,,chrzestny,,,,pewny,,nie,W akcie imię Osaphat
+cdial-201-4a-1117-1836-U-s1535re,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Jacobus Regyna
+cdial-201-4a-1117-1836-U-s1535re,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535re,7,Jan,Regyna,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535re,8,Jakub,Regyna,,inna,,,,pewny,,nie,W akcie imię Jacobus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535re,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535rf,1,Konstanty,,,dziecko,gl,69,69,,pewny,tak,W akcie imię Constantinus
+cdial-201-4a-1117-1836-U-s1535rf,2,Stefan,D…es,,ojciec,gl,69,69,niepewny,pewny,tak,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1535rf,3,Maria,,Antonow,matka,gl,69,69,pewny,pewny,tak,córka Theodorus Antonow
+cdial-201-4a-1117-1836-U-s1535rf,4,Stefan,Regyna,,chrzestny,,,,pewny,,nie,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1535rf,5,Anna,,,chrzestna,,,,,,nie,żona Basilius Moroz
+cdial-201-4a-1117-1836-U-s1535rf,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535rf,7,Teodor,Antonow,,inna,,,,pewny,,nie,W akcie imię Theodorus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535rf,8,Bazyli,Moroz,,inna,,,,pewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535rf,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1535rg,1,Michał,,,dziecko,gl,28,28,,pewny,tak,W akcie imię Michael
+cdial-201-4a-1117-1836-U-s1535rg,2,Mikołaj,P…ocak,,ojciec,gl,28,28,niepewny,pewny,tak,W akcie imię Nicolaus
+cdial-201-4a-1117-1836-U-s1535rg,3,Katarzyna,,Ch…,matka,gl,28,28,niepewny,pewny,tak,W akcie imię Catarina. córka Simeon Ch…
+cdial-201-4a-1117-1836-U-s1535rg,4,Szymon,Dudar,,chrzestny,,,,pewny,,nie,W akcie imię Simeon
+cdial-201-4a-1117-1836-U-s1535rg,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Simeon Baraban
+cdial-201-4a-1117-1836-U-s1535rg,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1535rg,7,Szymon,Ch…,,inna,,,,niepewny,,nie,W akcie imię Simeon. Ojciec matki
+cdial-201-4a-1117-1836-U-s1535rg,8,Szymon,Baraban,,inna,,,,pewny,,nie,W akcie imię Simeon. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1535rg,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1536la,1,Maria,,,dziecko,gl,98,98,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1536la,2,Jakub,P…ak,,ojciec,gl,98,98,niepewny,pewny,tak,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1536la,3,Maria,,Dydyk[?],matka,gl,98,98,niepewny,pewny,tak,córka Basilius Dydyk[?]
+cdial-201-4a-1117-1836-U-s1536la,4,Aleksy,Czor…y,,chrzestny,,,,niepewny,,nie,W akcie imię Alexius
+cdial-201-4a-1117-1836-U-s1536la,5,Anna,,,chrzestna,,,,,,nie,żona Gabriel Baraban
+cdial-201-4a-1117-1836-U-s1536la,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1536la,7,Bazyli,Dydyk[?],,inna,,,,niepewny,,nie,W akcie imię Basilius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1536la,8,Gabriel,Baraban,,inna,,,,pewny,,nie,Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1536la,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1536lb,1,Barbara,,,dziecko,gl,11,11,,pewny,tak,
+cdial-201-4a-1117-1836-U-s1536lb,2,Andrzej,Humen…,,ojciec,gl,11,11,niepewny,pewny,tak,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1536lb,3,Maria,,J…awy,matka,gl,11,11,niepewny,pewny,tak,córka Michael J…awy
+cdial-201-4a-1117-1836-U-s1536lb,4,Jakub,Radz,,chrzestny,,,,pewny,,nie,W akcie imię Jacobus
+cdial-201-4a-1117-1836-U-s1536lb,5,Katarzyna,,,chrzestna,,,,,,nie,W akcie imię Catarina. żona Demetrius K…ato
+cdial-201-4a-1117-1836-U-s1536lb,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1536lb,7,Michał,J…awy,,inna,,,,niepewny,,nie,W akcie imię Michael. Ojciec matki
+cdial-201-4a-1117-1836-U-s1536lb,8,Dymitr,K…ato,,inna,,,,niepewny,,nie,W akcie imię Demetrius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1536lb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-U-s1536lc,1,Mikołaj,,,dziecko,gl,15,15,,pewny,tak,W akcie imię Nicolaus
+cdial-201-4a-1117-1836-U-s1536lc,2,Jan,Chorkawy,,ojciec,gl,15,15,pewny,pewny,tak,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1536lc,3,Katarzyna,,Moroz,matka,gl,15,15,pewny,pewny,tak,W akcie imię Catarina. córka Theodorus Moroz
+cdial-201-4a-1117-1836-U-s1536lc,4,Jan,Rad…,,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1536lc,5,Ser…ia,,,chrzestna,,,,,,nie,żona Demetrius Zarnowski
+cdial-201-4a-1117-1836-U-s1536lc,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
+cdial-201-4a-1117-1836-U-s1536lc,7,Teodor,Moroz,,inna,,,,pewny,,nie,W akcie imię Theodorus. Ojciec matki
+cdial-201-4a-1117-1836-U-s1536lc,8,Dymitr,Zarnowski,,inna,,,,pewny,,nie,W akcie imię Demetrius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1536lc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1531ra,1,Anna,,,zmarla,gl,77,77,,pewny,tak,Wiek w latach 52
+cdial-201-4a-1117-1836-Z-s1531ra,2,Maksym,Pos…piech,,inna,,,,niepewny,,nie,W akcie imię Maximus. Mąż zmarłej
+cdial-201-4a-1117-1836-Z-s1531ra,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1531rb,1,Mikołaj,,,zmarly,gl,93,93,,pewny,tak,W akcie imię Nicolaus. Wiek w latach 2
+cdial-201-4a-1117-1836-Z-s1531rb,2,Andrzej,M…,,ojciec,,,,niepewny,,nie,W akcie imię Andreas. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1531rb,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1531rc,1,Marta,,,zmarla,gl,102,102,,pewny,tak,W akcie imię Martha. Wiek w latach 40
+cdial-201-4a-1117-1836-Z-s1531rc,2,Daniel,Moroz,,ojciec,,,,pewny,,nie,W akcie imię Danielus. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1531rc,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1531rd,1,Aleksy,Kobalo[?],,zmarly,gl,59,59,niepewny,pewny,tak,"W akcie imię Alexius. Wiek w latach 42. Porównano chrzest na skanie 1535 i zgon na skanie 1531, oba pod nr 59. Możliwy odczyt Kobało"
+cdial-201-4a-1117-1836-Z-s1531rd,2,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1531re,1,Piotr,,,zmarly,gl,66,66,,pewny,tak,W akcie imię Petrus. Wiek w latach 2
+cdial-201-4a-1117-1836-Z-s1531re,2,Jan,Mako…hon,,ojciec,,,,niepewny,,nie,W akcie imię Joannes. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1531re,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1531rf,1,Anna,,,zmarla,gl,72,72,,pewny,tak,Wiek w latach 3
+cdial-201-4a-1117-1836-Z-s1531rf,2,Szymon,Dudar,,ojciec,,,,pewny,,nie,W akcie imię Simeon. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1531rf,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1531rg,1,Justyna,,,zmarla,gl,28,28,,pewny,tak,W akcie imię Justina. Wiek w latach 4
+cdial-201-4a-1117-1836-Z-s1531rg,2,Aleksy,Regyna,,ojciec,,,,pewny,,nie,W akcie imię Alexius. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1531rg,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1531rh,1,Maria,,,zmarla,gl,65,65,,pewny,tak,Wiek w latach 37
+cdial-201-4a-1117-1836-Z-s1531rh,2,Jakub,Szaran[?],,ojciec,,,,niepewny,,nie,W akcie imię Jacobus. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1531rh,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1531ri,1,Eufrozyna,,,zmarla,gl,26,26,,pewny,tak,W akcie imię Eufrosinia. Wiek w latach 71
+cdial-201-4a-1117-1836-Z-s1531ri,2,Paweł,Rewny,,inna,,,,pewny,,nie,W akcie imię Paulus. Mąż zmarłej
+cdial-201-4a-1117-1836-Z-s1531ri,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1531rj,1,Bazyli,Melnyk,,zmarly,gl,36,36,pewny,pewny,tak,W akcie imię Basilius. Wiek w latach 47
+cdial-201-4a-1117-1836-Z-s1531rj,2,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
+cdial-201-4a-1117-1836-Z-s1531rk,1,Prakseda,,,zmarla,gl,26,26,,pewny,tak,W akcie imię Praxeda. Wiek w latach 1
+cdial-201-4a-1117-1836-Z-s1531rk,2,Tymoteusz,Deny…sow,,ojciec,,,,niepewny,,nie,W akcie imię Thimotheus. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1531rk,3,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą

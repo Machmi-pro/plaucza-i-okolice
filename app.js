@@ -82,8 +82,8 @@ const getCSV = async path => parseCSV(await getText(path));
 function roleOf(r) {
   if (r.rola !== "inna") return r.rola;
   const u = r.uwagi.toLowerCase();
-  if (u.startsWith("ojciec matki")) return "dziadek_matki";
-  if (u.startsWith("mąż chrzestnej")) return "maz_chrzestnej";
+  if (u.includes("ojciec matki")) return "dziadek_matki";
+  if (u.includes("mąż chrzestnej")) return "maz_chrzestnej";
   return "inna";
 }
 
@@ -117,7 +117,7 @@ function buildActs(src, akty, osoby) {
         p.note = (p.note ? p.note + " " : "") + `Zamieszkała w miejscowości „${p.wies}”, numer domu dotyczy tej miejscowości.`;
       }
       /* rola już mówi „ojciec matki” / „mąż chrzestnej”; reszta uwagi (np. forma łacińska imienia) zostaje */
-      if (role === "dziadek_matki" || role === "maz_chrzestnej") p.note = p.note.replace(/^(ojciec matki|mąż chrzestnej)\.?\s*/i, "");
+      if (role === "dziadek_matki" || role === "maz_chrzestnej") p.note = p.note.replace(/(ojciec matki|mąż chrzestnej)\.?\s*/i, "").trim();
       return p;
     });
     /* nazwiska wyprowadzone z nazwiska rodzica (oznaczone, nie są odczytem) */

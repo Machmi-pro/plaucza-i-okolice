@@ -59,19 +59,23 @@
     "link": "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17820318"
   },
   {
-    "id": "lwow-138376",
-    "archiwum": "Archiwum Historyczne we Lwowie",
-    "zespol": "",
-    "sygnatura": "galeria 138376 (fond, opis i sprawa do ustalenia)",
-    "parafia": "parafia greckokatolicka (do ustalenia)",
+    "id": "cdial-201-4a-1117",
+    "katalog_danych": "grkat-1836",
+    "archiwum": "Centralne Państwowe Archiwum Historyczne Ukrainy we Lwowie (CDIAL)",
+    "zespol": "201",
+    "sygnatura": "op. 4a, spr. 1117 (galeria 138376)",
+    "parafia": "greckokatolicka; wyciągi dla Glinnej, Płauczy Małej i Płauczy Wielkiej",
     "obrzadek": "gk",
     "rodzaje": "U, M, Z",
-    "roczniki": "do ustalenia",
+    "roczniki": "1836",
     "wsie": [
-      "pm"
+      "pm",
+      "gl",
+      "pw"
     ],
-    "skany": "do sprawdzenia",
-    "stan": "do opracowania",
+    "skany": "w całości",
+    "stan": "w opracowaniu (rok 1836: 140 aktów)",
+    "odczyt_ai": true,
     "link": "https://archium.tsdial.archives.gov.ua/file-viewer/138376"
   },
   {
