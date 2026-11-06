@@ -1,307 +1,307 @@
 akt,lp,imie,nazwisko,nazwisko_panienskie,rola,wies_zamieszkania,dom_zrodlowy,dom,pewnosc_nazwiska,pewnosc_domu,mieszkaniec,uwagi
-cdial-618-2-109-1818-U-s022va,1,Agatha,,,dziecko,pm,66,66,,pewny,tak,
-cdial-618-2-109-1818-U-s022va,2,Gaspar,Bolesławski,,ojciec,pm,66,66,pewny,pewny,tak,
-cdial-618-2-109-1818-U-s022va,3,Apolonia,,,matka,pm,66,66,,pewny,tak,Córka Michaelis.
-cdial-618-2-109-1818-U-s022va,4,Michaele,Ryg…,,inna,,,,nieczytelny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s022va,5,Martinus,Trojan,,chrzestny,pm,,,pewny,,nie,
-cdial-618-2-109-1818-U-s022va,6,Agnes,,,chrzestna,pm,,,,,nie,Żona Blasii Bolesławskiego.
-cdial-618-2-109-1818-U-s022va,7,Blasii,Bolesławski,,inna,,,,pewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1818-U-s022va,8,Jacobus,Czyzewski,,kaplan,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s022vb,1,Mathias,,,dziecko,pm,37,37,,pewny,tak,
-cdial-618-2-109-1818-U-s022vb,2,Joannes,Niebylski,,ojciec,pm,37,37,pewny,pewny,tak,
-cdial-618-2-109-1818-U-s022vb,3,Victoria,,,matka,pm,37,37,,pewny,tak,Córka Joannis.
-cdial-618-2-109-1818-U-s022vb,4,Joanne,Murzynski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s022vb,5,Joannes,Radaczynski,,chrzestny,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s022vb,6,Josepha,,,chrzestna,,,,,,nie,Żona Stephani Murzynskiego.
-cdial-618-2-109-1818-U-s022vb,7,Stephani,Murzynski,,inna,,,,pewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1818-U-s022vb,8,Theodor,M…dzinski,,kaplan,,,,nieczytelny,,nie,Wikariusz obrządku greckokatolickiego z Płauczy Wielkiej.
-cdial-618-2-109-1818-U-s022vc,1,Nicolaus,,,dziecko,pm,20,20,,pewny,tak,
-cdial-618-2-109-1818-U-s022vc,2,Sebastianus,Pichur,,ojciec,pm,20,20,pewny,pewny,tak,
-cdial-618-2-109-1818-U-s022vc,3,Catharina,,,matka,pm,20,20,,pewny,tak,Córka Joanne.
-cdial-618-2-109-1818-U-s022vc,4,Joanne,Neh…ski,,inna,,,,nieczytelny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s022vc,5,Blasius,Bolesławski,,chrzestny,pm,,,pewny,,nie,
-cdial-618-2-109-1818-U-s022vc,6,Anna,,,chrzestna,pm,,,,,nie,Żona Andreae.
-cdial-618-2-109-1818-U-s022vc,7,Andreae,…kow,,inna,,,,nieczytelny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1818-U-s022vc,8,Marianna,Man…towska,,akuszerka,,,,nieczytelny,,nie,
-cdial-618-2-109-1818-U-s022vc,9,Jacobus,Czyzewski,,kaplan,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s022vd,1,Stephanus,,,dziecko,pm,3,3,,pewny,tak,
-cdial-618-2-109-1818-U-s022vd,2,Jacobus,Pichur,,ojciec,pm,3,3,pewny,pewny,tak,
-cdial-618-2-109-1818-U-s022vd,3,Anna,,,matka,pm,3,3,,pewny,tak,Córka Stephano.
-cdial-618-2-109-1818-U-s022vd,4,Stephano,M…czy,,inna,,,,nieczytelny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s022vd,5,Praxe…a,M…dzinska,,chrzestna,pm,,,nieczytelny,,nie,
-cdial-618-2-109-1818-U-s022vd,6,Thomas,Szczawinski,,chrzestny,pm,,,pewny,,nie,
+cdial-618-2-109-1818-U-s022va,1,Agata,,,dziecko,pm,66,66,,pewny,tak,W akcie zapisano imię Agatha.
+cdial-618-2-109-1818-U-s022va,2,Kacper,Bolesławski,,ojciec,pm,66,66,pewny,pewny,tak,W akcie zapisano imię Gaspar.
+cdial-618-2-109-1818-U-s022va,3,Apolonia,,,matka,pm,66,66,,pewny,tak,Córka Michała.
+cdial-618-2-109-1818-U-s022va,4,Michał,Ryg…,,inna,,,,nieczytelny,,nie,Ojciec matki. W akcie zapisano imię Michaele.
+cdial-618-2-109-1818-U-s022va,5,Marcin,Trojan,,chrzestny,pm,,,pewny,,nie,W akcie zapisano imię Martinus.
+cdial-618-2-109-1818-U-s022va,6,Agnieszka,,,chrzestna,pm,,,,,nie,Żona Błażeja Bolesławskiego. W akcie zapisano imię Agnes.
+cdial-618-2-109-1818-U-s022va,7,Błażej,Bolesławski,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Blasii.
+cdial-618-2-109-1818-U-s022va,8,Jakub,Czyzewski,,kaplan,,,,pewny,,nie,W akcie zapisano imię Jacobus.
+cdial-618-2-109-1818-U-s022vb,1,Maciej,,,dziecko,pm,37,37,,pewny,tak,W akcie zapisano imię Mathias.
+cdial-618-2-109-1818-U-s022vb,2,Jan,Niebylski,,ojciec,pm,37,37,pewny,pewny,tak,W akcie zapisano imię Joannes.
+cdial-618-2-109-1818-U-s022vb,3,Wiktoria,,,matka,pm,37,37,,pewny,tak,Córka Jana. W akcie zapisano imię Victoria.
+cdial-618-2-109-1818-U-s022vb,4,Jan,Murzynski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Joanne.
+cdial-618-2-109-1818-U-s022vb,5,Jan,Radaczyński,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Joannes. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-U-s022vb,6,Józefa,,,chrzestna,,,,,,nie,Żona Stefana Murzynskiego. W akcie zapisano imię Josepha.
+cdial-618-2-109-1818-U-s022vb,7,Stefan,Murzynski,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Stephani.
+cdial-618-2-109-1818-U-s022vb,8,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,Wikariusz obrządku greckokatolickiego z Płauczy Wielkiej. W akcie zapisano imię Theodor.
+cdial-618-2-109-1818-U-s022vc,1,Mikołaj,,,dziecko,pm,20,20,,pewny,tak,W akcie zapisano imię Nicolaus.
+cdial-618-2-109-1818-U-s022vc,2,Sebastian,Pichur,,ojciec,pm,20,20,pewny,pewny,tak,W akcie zapisano imię Sebastianus.
+cdial-618-2-109-1818-U-s022vc,3,Katarzyna,,,matka,pm,20,20,,pewny,tak,Córka Jana. W akcie zapisano imię Catharina.
+cdial-618-2-109-1818-U-s022vc,4,Jan,Nehielski,,inna,,,,niepewny,,nie,Ojciec matki. W akcie zapisano imię Joanne.
+cdial-618-2-109-1818-U-s022vc,5,Błażej,Bolesławski,,chrzestny,pm,,,pewny,,nie,W akcie zapisano imię Blasius.
+cdial-618-2-109-1818-U-s022vc,6,Anna,,,chrzestna,pm,,,,,nie,Żona Andrzeja.
+cdial-618-2-109-1818-U-s022vc,7,Andrzej,Sukow,,inna,,,,niepewny,,nie,Mąż chrzestnej. W akcie zapisano imię Andreae.
+cdial-618-2-109-1818-U-s022vc,8,Marianna,Manastyrska,,akuszerka,,,,pewny,,nie,Wcześniejszy odczyt nazwiska: Manasterska.
+cdial-618-2-109-1818-U-s022vc,9,Jakub,Czyzewski,,kaplan,,,,pewny,,nie,W akcie zapisano imię Jacobus.
+cdial-618-2-109-1818-U-s022vd,1,Stefan,,,dziecko,pm,3,3,,pewny,tak,W akcie zapisano imię Stephanus.
+cdial-618-2-109-1818-U-s022vd,2,Jakub,Pichur,,ojciec,pm,3,3,pewny,pewny,tak,W akcie zapisano imię Jacobus.
+cdial-618-2-109-1818-U-s022vd,3,Anna,,,matka,pm,3,3,,pewny,tak,Córka Stefana.
+cdial-618-2-109-1818-U-s022vd,4,Stefan,Morzy,,inna,,,,niepewny,,nie,Ojciec matki. W akcie zapisano imię Stephano.
+cdial-618-2-109-1818-U-s022vd,5,Prakseda,Mudzinska,,chrzestna,pm,,,pewny,,nie,W akcie zapisano imię Praxedis.
+cdial-618-2-109-1818-U-s022vd,6,Tomasz,Szczawinski,,chrzestny,pm,,,pewny,,nie,W akcie zapisano imię Thomas.
 cdial-618-2-109-1818-U-s022vd,7,Marianna,Copowa,,akuszerka,pm,,,pewny,,nie,
-cdial-618-2-109-1818-U-s022vd,8,Theodoro,M…dzinski,,kaplan,,,,nieczytelny,,nie,Chrzest z wody.
+cdial-618-2-109-1818-U-s022vd,8,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,Chrzest z wody. W akcie zapisano imię Theodoro.
 cdial-618-2-109-1818-U-s022vd,9,J.,Czyzewski,,kaplan,,,,pewny,,nie,Uzupełnienie ceremonii.
-cdial-618-2-109-1818-U-s022ve,1,Franciscus,,,dziecko,pm,23,23,,pewny,tak,
-cdial-618-2-109-1818-U-s022ve,2,Blasius,Bolesławski,,ojciec,pm,23,23,pewny,pewny,tak,
-cdial-618-2-109-1818-U-s022ve,3,Agnes,,,matka,pm,23,23,,pewny,tak,Córka Casimiro.
-cdial-618-2-109-1818-U-s022ve,4,Casimiro,Bonisławski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s022ve,5,Adalbertus,Bednarski,,chrzestny,pm,,,pewny,,nie,
-cdial-618-2-109-1818-U-s022ve,6,Theresia,,,chrzestna,pm,,,,,nie,Żona Martini Trojana.
-cdial-618-2-109-1818-U-s022ve,7,Martini,Trojan,,inna,,,,pewny,,nie,Mąż chrzestnej.
+cdial-618-2-109-1818-U-s022ve,1,Franciszek,,,dziecko,pm,23,23,,pewny,tak,W akcie zapisano imię Franciscus.
+cdial-618-2-109-1818-U-s022ve,2,Błażej,Bolesławski,,ojciec,pm,23,23,pewny,pewny,tak,W akcie zapisano imię Blasius.
+cdial-618-2-109-1818-U-s022ve,3,Agnieszka,,,matka,pm,23,23,,pewny,tak,Córka Kazimierza. W akcie zapisano imię Agnes.
+cdial-618-2-109-1818-U-s022ve,4,Kazimierz,Bonisławski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Casimiro.
+cdial-618-2-109-1818-U-s022ve,5,Wojciech,Bednarski,,chrzestny,pm,,,pewny,,nie,W akcie zapisano imię Adalbertus.
+cdial-618-2-109-1818-U-s022ve,6,Teresa,,,chrzestna,pm,,,,,nie,Żona Marcina Trojana. W akcie zapisano imię Theresia.
+cdial-618-2-109-1818-U-s022ve,7,Marcin,Trojan,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Martini.
 cdial-618-2-109-1818-U-s022ve,8,Apolonia,Copowa,,akuszerka,pm,,,pewny,,nie,
 cdial-618-2-109-1818-U-s022ve,9,J.,Czyzewski,,kaplan,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023a,1,Theresia,,,dziecko,pm,50[?],50,,niepewny,tak,
-cdial-618-2-109-1818-U-s023a,2,Joannes,Małaczynski,,ojciec,pm,50[?],50,pewny,niepewny,tak,
-cdial-618-2-109-1818-U-s023a,3,Veronica,,,matka,pm,50[?],50,,niepewny,tak,Córka Antonio.
-cdial-618-2-109-1818-U-s023a,4,Antonio,Małaczynski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s023a,5,Carolus,Radaczynski,,chrzestny,pw,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023a,6,Theresia,,,chrzestna,pw,,,,,nie,Żona Joannis Radaczynskiego.
-cdial-618-2-109-1818-U-s023a,7,Joannis,Radaczynski,,inna,,,,pewny,,nie,Mąż chrzestnej.
+cdial-618-2-109-1818-U-s023a,1,Teresa,,,dziecko,pm,50,50,,pewny,tak,W akcie zapisano imię Theresia.
+cdial-618-2-109-1818-U-s023a,2,Jan,Małaczyński,,ojciec,pm,50,50,pewny,pewny,tak,W akcie zapisano imię Joannes.
+cdial-618-2-109-1818-U-s023a,3,Weronika,,,matka,pm,50,50,,pewny,tak,Córka Antoniego. W akcie zapisano imię Veronica.
+cdial-618-2-109-1818-U-s023a,4,Antoni,Małaczyński,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Antonio.
+cdial-618-2-109-1818-U-s023a,5,Karol,Radaczyński,,chrzestny,pw,,,pewny,,nie,W akcie zapisano imię Carolus. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-U-s023a,6,Teresa,,,chrzestna,pw,,,,,nie,Żona Jana Radaczyńskiego. W akcie zapisano imię Theresia.
+cdial-618-2-109-1818-U-s023a,7,Jan,Radaczyński,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Joannis. Wcześniejszy odczyt nazwiska: Radaczynski.
 cdial-618-2-109-1818-U-s023a,8,Apolonia,Copowa,,akuszerka,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023a,9,Jacob.,Czyzewski,,kaplan,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023b,1,Stanislaus Kos.,,,dziecko,pm,61[?],61,,niepewny,tak,
-cdial-618-2-109-1818-U-s023b,2,Cajetanus,Szczawinski,,ojciec,pm,61[?],61,pewny,niepewny,tak,
-cdial-618-2-109-1818-U-s023b,3,Helena,,,matka,pm,61[?],61,,niepewny,tak,Córka Romano.
-cdial-618-2-109-1818-U-s023b,4,Romano,Wasylkowski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s023b,5,Stephanus,Małaczynski,,chrzestny,pm,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023b,6,Thecla,,,chrzestna,Krasna,,,,,nie,Żona Joannis.
-cdial-618-2-109-1818-U-s023b,7,Joannis,…on…ski,,inna,,,,nieczytelny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1818-U-s023b,8,Eudocia,Zawadynska,,akuszerka,Tołstoluhy,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023b,9,Jacob.,Czyzewski,,kaplan,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023c,1,Franciscus,,,dziecko,pm,55[?],55,,niepewny,tak,
-cdial-618-2-109-1818-U-s023c,2,Stephanus,Małaczynski,,ojciec,pm,55[?],55,pewny,niepewny,tak,
-cdial-618-2-109-1818-U-s023c,3,Agnes,,,matka,pm,55[?],55,,niepewny,tak,Córka Adalberto.
-cdial-618-2-109-1818-U-s023c,4,Adalberto,Strzałkowski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s023c,5,Gaspar,S…dzicki,,chrzestny,,,,nieczytelny,,nie,
-cdial-618-2-109-1818-U-s023c,6,Praxe…a,,,chrzestna,,,,,,nie,Żona Theodori.
-cdial-618-2-109-1818-U-s023c,7,Theodori,M…dzinski,,inna,,,,nieczytelny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1818-U-s023c,8,Theodor,M…dzinski,,kaplan,,,,nieczytelny,,nie,Wikariusz obrządku greckokatolickiego z Płauczy Wielkiej.
-cdial-618-2-109-1818-U-s023d,1,Victoria,,,dziecko,pm,66,66,,pewny,tak,
-cdial-618-2-109-1818-U-s023d,2,Mathias,Bolesławski,,ojciec,pm,66,66,pewny,pewny,tak,
-cdial-618-2-109-1818-U-s023d,3,Francisca,,,matka,pm,66,66,,pewny,tak,Córka Michaele.
-cdial-618-2-109-1818-U-s023d,4,Michaele,Bronowski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s023d,5,Martinus,Trojan,,chrzestny,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023d,6,Apolonia,,,chrzestna,,,,,,nie,Żona Gaspari Bolesławskiego.
-cdial-618-2-109-1818-U-s023d,7,Gaspari,Bolesławski,,inna,,,,pewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1818-U-s023d,8,Theodor,M…dzinski,,kaplan,,,,nieczytelny,,nie,Wikariusz obrządku greckokatolickiego z Płauczy Wielkiej.
-cdial-618-2-109-1818-U-s023e,1,Mariana,,,dziecko,pw,112,112,,pewny,tak,
-cdial-618-2-109-1818-U-s023e,2,Sebastianus,Podolski,,ojciec,pw,112,112,pewny,pewny,tak,
-cdial-618-2-109-1818-U-s023e,3,Anastasia,,,matka,pw,112,112,,pewny,tak,Córka Josepho.
-cdial-618-2-109-1818-U-s023e,4,Josepho,Za…bicki,,inna,,,,nieczytelny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s023e,5,Joannes,Mielnik,,chrzestny,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023e,6,Eva,,,chrzestna,,,,,,nie,Żona Sebastiani.
-cdial-618-2-109-1818-U-s023e,7,Sebastiani,Bła…kow,,inna,,,,nieczytelny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1818-U-s023e,8,Joannes,Zukowski,,kaplan,,,,pewny,,nie,Proboszcz obrządku greckokatolickiego w Płauczy Wielkiej.
-cdial-618-2-109-1818-U-s023va,1,Ludovicus,,,dziecko,pw,113,113,,pewny,tak,
-cdial-618-2-109-1818-U-s023va,2,Joannes,Radaczynski,,ojciec,pw,113,113,pewny,pewny,tak,
-cdial-618-2-109-1818-U-s023va,3,Theresia,,,matka,pw,113,113,,pewny,tak,Córka Joanne.
-cdial-618-2-109-1818-U-s023va,4,Joanne,Bogusz…ski,,inna,,,,nieczytelny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s023va,5,Carolus,Radaczynski,,chrzestny,pw,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023va,6,Theresia,,,chrzestna,pw,,,,,nie,Żona Francisci Radaczynskiego.
-cdial-618-2-109-1818-U-s023va,7,Francisci,Radaczynski,,inna,,,,pewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1818-U-s023va,8,Joanne,Zukowski,,kaplan,,,,pewny,,nie,Chrzest z wody.
-cdial-618-2-109-1818-U-s023va,9,Jacob.,Czyzewski,,kaplan,,,,pewny,,nie,Uzupełnienie ceremonii.
-cdial-618-2-109-1818-U-s023vb,1,Joannes,,,dziecko,pw,130,130,,pewny,tak,
-cdial-618-2-109-1818-U-s023vb,2,Franciscus,Radaczynski,,ojciec,pw,130,130,pewny,pewny,tak,
-cdial-618-2-109-1818-U-s023vb,3,Rosalia,,,matka,pw,130,130,,pewny,tak,Córka Antonio.
-cdial-618-2-109-1818-U-s023vb,4,Antonio,K…nicki,,inna,,,,nieczytelny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s023vb,5,Mathias,Szczawinski,,chrzestny,pm,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023vb,6,Theresia,,,chrzestna,pw,,,,,nie,Żona Joannis Radaczynskiego.
-cdial-618-2-109-1818-U-s023vb,7,Joannis,Radaczynski,,inna,,,,pewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1818-U-s023vb,8,Maria,Popad…ka,,akuszerka,,,,nieczytelny,,nie,
+cdial-618-2-109-1818-U-s023a,9,Jakub,Czyzewski,,kaplan,,,,pewny,,nie,W akcie zapisano imię Jacob..
+cdial-618-2-109-1818-U-s023b,1,Stanisław Kos.,,,dziecko,pm,64,64,,pewny,tak,W akcie zapisano imię Stanislaus Kos..
+cdial-618-2-109-1818-U-s023b,2,Kajetan,Szczawurski,,ojciec,pm,64,64,pewny,pewny,tak,W akcie zapisano imię Cajetanus.
+cdial-618-2-109-1818-U-s023b,3,Helena,,,matka,pm,64,64,,pewny,tak,Córka Romana.
+cdial-618-2-109-1818-U-s023b,4,Roman,Wasylkowski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Romano.
+cdial-618-2-109-1818-U-s023b,5,Stefan,Małaczyński,,chrzestny,pm,,,pewny,,nie,W akcie zapisano imię Stephanus.
+cdial-618-2-109-1818-U-s023b,6,Tekla,,,chrzestna,Krasna,,,,,nie,Żona Jana. W akcie zapisano imię Thecla.
+cdial-618-2-109-1818-U-s023b,7,Jan,Kaminski,,inna,,,,niepewny,,nie,Mąż chrzestnej. W akcie zapisano imię Joannis.
+cdial-618-2-109-1818-U-s023b,8,Eudokia,Zawadynska,,akuszerka,Tołstoluhy,,,pewny,,nie,W akcie zapisano imię Eudocia.
+cdial-618-2-109-1818-U-s023b,9,Jakub,Czyzewski,,kaplan,,,,pewny,,nie,W akcie zapisano imię Jacob..
+cdial-618-2-109-1818-U-s023c,1,Franciszek,,,dziecko,pm,55,55,,pewny,tak,W akcie zapisano imię Franciscus.
+cdial-618-2-109-1818-U-s023c,2,Stefan,Małaczyński,,ojciec,pm,55,55,pewny,pewny,tak,W akcie zapisano imię Stephanus.
+cdial-618-2-109-1818-U-s023c,3,Agnieszka,,,matka,pm,55,55,,pewny,tak,Córka Wojciecha. W akcie zapisano imię Agnes.
+cdial-618-2-109-1818-U-s023c,4,Wojciech,Strzałkowski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Adalberto.
+cdial-618-2-109-1818-U-s023c,5,Kacper,Siedzicki,,chrzestny,,,,niepewny,,nie,W akcie zapisano imię Gaspar.
+cdial-618-2-109-1818-U-s023c,6,Prakseda,,,chrzestna,,,,,,nie,Żona Teodora. W akcie zapisano imię Praxe…a. Polska forma Prakseda jest odczytem niepewnym.
+cdial-618-2-109-1818-U-s023c,7,Teodor,Mudzinski,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Theodori.
+cdial-618-2-109-1818-U-s023c,8,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,Wikariusz obrządku greckokatolickiego z Płauczy Wielkiej. W akcie zapisano imię Theodor.
+cdial-618-2-109-1818-U-s023d,1,Wiktoria,,,dziecko,pm,66,66,,pewny,tak,W akcie zapisano imię Victoria.
+cdial-618-2-109-1818-U-s023d,2,Maciej,Bolesławski,,ojciec,pm,66,66,pewny,pewny,tak,W akcie zapisano imię Mathias.
+cdial-618-2-109-1818-U-s023d,3,Franciszka,,,matka,pm,66,66,,pewny,tak,Córka Michała. W akcie zapisano imię Francisca.
+cdial-618-2-109-1818-U-s023d,4,Michał,Bronowski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Michaele.
+cdial-618-2-109-1818-U-s023d,5,Marcin,Trojan,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Martinus.
+cdial-618-2-109-1818-U-s023d,6,Apolonia,,,chrzestna,,,,,,nie,Żona Kacpra Bolesławskiego.
+cdial-618-2-109-1818-U-s023d,7,Kacper,Bolesławski,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Gaspari.
+cdial-618-2-109-1818-U-s023d,8,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,Wikariusz obrządku greckokatolickiego z Płauczy Wielkiej. W akcie zapisano imię Theodor.
+cdial-618-2-109-1818-U-s023e,1,Marianna,,,dziecko,pw,112,112,,pewny,tak,W akcie zapisano imię Mariana.
+cdial-618-2-109-1818-U-s023e,2,Sebastian,Podolski,,ojciec,pw,112,112,pewny,pewny,tak,W akcie zapisano imię Sebastianus.
+cdial-618-2-109-1818-U-s023e,3,Anastazja,,,matka,pw,112,112,,pewny,tak,Córka Józefa. W akcie zapisano imię Anastasia.
+cdial-618-2-109-1818-U-s023e,4,Józef,Złobicki,,inna,,,,niepewny,,nie,Ojciec matki. W akcie zapisano imię Josepho.
+cdial-618-2-109-1818-U-s023e,5,Jan,Mielnik,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Joannes.
+cdial-618-2-109-1818-U-s023e,6,Ewa,,,chrzestna,,,,,,nie,Żona Sebastiana. W akcie zapisano imię Eva.
+cdial-618-2-109-1818-U-s023e,7,Sebastian,Błazkow,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Sebastiani.
+cdial-618-2-109-1818-U-s023e,8,Jan,Zukowski,,kaplan,,,,pewny,,nie,Proboszcz obrządku greckokatolickiego w Płauczy Wielkiej. W akcie zapisano imię Joannes.
+cdial-618-2-109-1818-U-s023va,1,Ludwik,,,dziecko,pw,113,113,,pewny,tak,W akcie zapisano imię Ludovicus.
+cdial-618-2-109-1818-U-s023va,2,Jan,Radaczyński,,ojciec,pw,113,113,pewny,pewny,tak,W akcie zapisano imię Joannes. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-U-s023va,3,Teresa,,,matka,pw,113,113,,pewny,tak,Córka Jana. W akcie zapisano imię Theresia.
+cdial-618-2-109-1818-U-s023va,4,Jan,Boguszewski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Joanne.
+cdial-618-2-109-1818-U-s023va,5,Karol,Radaczyński,,chrzestny,pw,,,pewny,,nie,W akcie zapisano imię Carolus. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-U-s023va,6,Teresa,,,chrzestna,pw,,,,,nie,Żona Franciszka Radaczyńskiego. W akcie zapisano imię Theresia.
+cdial-618-2-109-1818-U-s023va,7,Franciszek,Radaczyński,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Francisci. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-U-s023va,8,Jan,Zukowski,,kaplan,,,,pewny,,nie,Chrzest z wody. W akcie zapisano imię Joanne.
+cdial-618-2-109-1818-U-s023va,9,Jakub,Czyzewski,,kaplan,,,,pewny,,nie,Uzupełnienie ceremonii. W akcie zapisano imię Jacob..
+cdial-618-2-109-1818-U-s023vb,1,Jan,,,dziecko,pw,130,130,,pewny,tak,W akcie zapisano imię Joannes.
+cdial-618-2-109-1818-U-s023vb,2,Franciszek,Radaczyński,,ojciec,pw,130,130,pewny,pewny,tak,W akcie zapisano imię Franciscus. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-U-s023vb,3,Rozalia,,,matka,pw,130,130,,pewny,tak,Córka Antoniego. W akcie zapisano imię Rosalia.
+cdial-618-2-109-1818-U-s023vb,4,Antoni,Ironicki,,inna,,,,niepewny,,nie,Ojciec matki. W akcie zapisano imię Antonio.
+cdial-618-2-109-1818-U-s023vb,5,Maciej,Szczawinski,,chrzestny,pm,,,pewny,,nie,W akcie zapisano imię Mathias.
+cdial-618-2-109-1818-U-s023vb,6,Teresa,,,chrzestna,pw,,,,,nie,Żona Jana Radaczyńskiego. W akcie zapisano imię Theresia.
+cdial-618-2-109-1818-U-s023vb,7,Jan,Radaczyński,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Joannis. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-U-s023vb,8,Maria,Popadniczka,,akuszerka,,,,pewny,,nie,
 cdial-618-2-109-1818-U-s023vb,9,…,Czyzewski,,kaplan,,,,pewny,,nie,Uzupełnienie ceremonii.
-cdial-618-2-109-1818-U-s023vc,1,Michael,,,dziecko,pw,113,113,,pewny,tak,
-cdial-618-2-109-1818-U-s023vc,2,Stanislaus,Radaczynski,,ojciec,pw,113,113,pewny,pewny,tak,
-cdial-618-2-109-1818-U-s023vc,3,Marianna,,,matka,pw,113,113,,pewny,tak,Córka Michaele.
-cdial-618-2-109-1818-U-s023vc,4,Michaele,Cz…nowicz,,inna,,,,nieczytelny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s023vc,5,Nic…,S…sowski,,chrzestny,pm,,,nieczytelny,,nie,Wpis określa go jako ekonom.
-cdial-618-2-109-1818-U-s023vc,6,Justina,Zukowska,,chrzestna,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023vc,7,Marianna,Popad…ka,,akuszerka,,,,nieczytelny,,nie,
-cdial-618-2-109-1818-U-s023vc,8,Joannes,Zukowski,,kaplan,,,,pewny,,nie,Proboszcz obrządku greckokatolickiego w Płauczy Wielkiej.
-cdial-618-2-109-1818-U-s023vd,1,Stephanus,,,dziecko,pw,127[?],127,,niepewny,tak,
-cdial-618-2-109-1818-U-s023vd,2,Sebastianus,Kierdel,,ojciec,pw,127[?],127,pewny,niepewny,tak,
-cdial-618-2-109-1818-U-s023vd,3,Constantia,,,matka,pw,127[?],127,,niepewny,tak,Córka Adalberto.
-cdial-618-2-109-1818-U-s023vd,4,Adalberto,Se…jecki,,inna,,,,nieczytelny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s023vd,5,Sebastianus,Błazkow,,chrzestny,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023vd,6,Anastasia,,,chrzestna,,,,,,nie,Żona Sebastiani.
-cdial-618-2-109-1818-U-s023vd,7,Sebastiani,Sobolow,,inna,,,,pewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1818-U-s023vd,8,Joanne,Zukowski,,kaplan,,,,pewny,,nie,
+cdial-618-2-109-1818-U-s023vc,1,Michał,,,dziecko,pw,113,113,,pewny,tak,W akcie zapisano imię Michael.
+cdial-618-2-109-1818-U-s023vc,2,Stanisław,Radaczyński,,ojciec,pw,113,113,pewny,pewny,tak,W akcie zapisano imię Stanislaus. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-U-s023vc,3,Marianna,,,matka,pw,113,113,,pewny,tak,Córka Michała.
+cdial-618-2-109-1818-U-s023vc,4,Michał,Czarnowicz,,inna,,,,niepewny,,nie,Ojciec matki. W akcie zapisano imię Michaele.
+cdial-618-2-109-1818-U-s023vc,5,Hiacynt,Lisowski,,chrzestny,pm,,,pewny,,nie,Przy nazwisku określenie V…tor oraz zapis de Plau. parva. W akcie zapisano imię Hiacynthus.
+cdial-618-2-109-1818-U-s023vc,6,Justyna,Zukowska,,chrzestna,,,,pewny,,nie,W akcie zapisano imię Justina.
+cdial-618-2-109-1818-U-s023vc,7,Marianna,Popadniczka,,akuszerka,,,,pewny,,nie,
+cdial-618-2-109-1818-U-s023vc,8,Jan,Zukowski,,kaplan,,,,pewny,,nie,Proboszcz obrządku greckokatolickiego w Płauczy Wielkiej. W akcie zapisano imię Joannes.
+cdial-618-2-109-1818-U-s023vd,1,Stefan,,,dziecko,pw,127,127,,pewny,tak,W akcie zapisano imię Stephanus.
+cdial-618-2-109-1818-U-s023vd,2,Sebastian,Kierdel,,ojciec,pw,127,127,pewny,pewny,tak,W akcie zapisano imię Sebastianus.
+cdial-618-2-109-1818-U-s023vd,3,Konstancja,,,matka,pw,127,127,,pewny,tak,Córka Wojciecha. W akcie zapisano imię Constantia.
+cdial-618-2-109-1818-U-s023vd,4,Wojciech,Sejecki,,inna,,,,niepewny,,nie,Ojciec matki. W akcie zapisano imię Adalberto.
+cdial-618-2-109-1818-U-s023vd,5,Sebastian,Błazkow,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Sebastianus.
+cdial-618-2-109-1818-U-s023vd,6,Anastazja,,,chrzestna,,,,,,nie,Żona Sebastiana. W akcie zapisano imię Anastasia.
+cdial-618-2-109-1818-U-s023vd,7,Sebastian,Sobolow,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Sebastiani.
+cdial-618-2-109-1818-U-s023vd,8,Jan,Zukowski,,kaplan,,,,pewny,,nie,W akcie zapisano imię Joanne.
 cdial-618-2-109-1818-U-s023vd,9,J.,Czyzewski,,kaplan,,,,pewny,,nie,Adnotacja o wpisaniu do księgi.
-cdial-618-2-109-1818-U-s023ve,1,Julianna,,,dziecko,pw,130[?],130,,niepewny,tak,
-cdial-618-2-109-1818-U-s023ve,2,Martinus,B…dkowski,,ojciec,pw,130[?],130,nieczytelny,niepewny,tak,
-cdial-618-2-109-1818-U-s023ve,3,Elisabeth,,,matka,pw,130[?],130,,niepewny,tak,Córka Antonio.
-cdial-618-2-109-1818-U-s023ve,4,Antonio,Radaczynski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1818-U-s023ve,5,Carolus,Radaczynski,,chrzestny,,,,pewny,,nie,
-cdial-618-2-109-1818-U-s023ve,6,Justina,Zukowska,,chrzestna,,,,pewny,,nie,
+cdial-618-2-109-1818-U-s023ve,1,Julianna,,,dziecko,pw,130,130,,pewny,tak,
+cdial-618-2-109-1818-U-s023ve,2,Marcin,Bądkowski,,ojciec,pw,130,130,pewny,pewny,tak,W akcie zapisano imię Martinus. Wcześniejszy odczyt nazwiska: Bza…owski.
+cdial-618-2-109-1818-U-s023ve,3,Elżbieta,,,matka,pw,130,130,,pewny,tak,Córka Antoniego. W akcie zapisano imię Elisabeth.
+cdial-618-2-109-1818-U-s023ve,4,Antoni,Radaczyński,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Antonio. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-U-s023ve,5,Karol,Radaczyński,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Carolus. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-U-s023ve,6,Justyna,Zukowska,,chrzestna,,,,pewny,,nie,W akcie zapisano imię Justina.
 cdial-618-2-109-1818-U-s023ve,7,J.,Czyzewski,,kaplan,,,,pewny,,nie,Adnotacja o wpisaniu do księgi.
-cdial-618-2-109-1818-M-s027va,1,Joannes,,,pan_mlody,pw,1,1,,pewny,tak,23 lata.
-cdial-618-2-109-1818-M-s027va,2,Antonii,Wier…cki,,rodzic_pana_mlodego,,,,nieczytelny,,nie,Ojciec pana młodego.
-cdial-618-2-109-1818-M-s027va,3,Mariae,,,rodzic_pana_mlodego,,,,,,nie,Matka pana młodego.
-cdial-618-2-109-1818-M-s027va,4,Josepha,,,panna_mloda,pw,,,,,nie,13 lat.
-cdial-618-2-109-1818-M-s027va,5,Francisci,Cz…owicz,,rodzic_panny_mlodej,,,,nieczytelny,,nie,Ojciec panny młodej.
-cdial-618-2-109-1818-M-s027va,6,Mariannae,,,rodzic_panny_mlodej,,,,,,nie,Matka panny młodej.
-cdial-618-2-109-1818-M-s027va,7,Sebastianus,Radaczynski,,swiadek,pw,,,pewny,,nie,
-cdial-618-2-109-1818-M-s027va,8,Josephus,…kowski,,swiadek,pw,,,nieczytelny,,nie,
-cdial-618-2-109-1818-M-s027va,9,Jacobus,Czyzewski,,kaplan,,,,pewny,,nie,
+cdial-618-2-109-1818-M-s027va,1,Jan,Wiernicki,,pan_mlody,pw,1,1,pewny,pewny,tak,23 lata. W akcie zapisano imię Joannes. Nazwisko według zapisu przy ojcu i korekty użytkowniczki.
+cdial-618-2-109-1818-M-s027va,2,Antoni,Wiernicki,,rodzic_pana_mlodego,,,,pewny,,nie,Ojciec pana młodego. W akcie zapisano imię Antonii.
+cdial-618-2-109-1818-M-s027va,3,Maria,,,rodzic_pana_mlodego,,,,,,nie,Matka pana młodego. W akcie zapisano imię Mariae.
+cdial-618-2-109-1818-M-s027va,4,Józefa,Czechowicz,Czechowicz,panna_mloda,pw,,,pewny,,nie,13 lat. W akcie zapisano imię Josepha. Nazwisko według zapisu przy ojcu i korekty użytkowniczki.
+cdial-618-2-109-1818-M-s027va,5,Franciszek,Czechowicz,,rodzic_panny_mlodej,,,,pewny,,nie,Ojciec panny młodej. W akcie zapisano imię Francisci.
+cdial-618-2-109-1818-M-s027va,6,Marianna,,,rodzic_panny_mlodej,,,,,,nie,Matka panny młodej. W akcie zapisano imię Mariannae.
+cdial-618-2-109-1818-M-s027va,7,Sebastian,Radaczyński,,swiadek,pw,,,pewny,,nie,W akcie zapisano imię Sebastianus. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-M-s027va,8,Józef,…kowski,,swiadek,pw,,,nieczytelny,,nie,W akcie zapisano imię Josephus.
+cdial-618-2-109-1818-M-s027va,9,Jakub,Czyzewski,,kaplan,,,,pewny,,nie,W akcie zapisano imię Jacobus.
 cdial-618-2-109-1818-M-s027vb,1,Gabriel,,,pan_mlody,pm,61,61,,pewny,tak,22 lata.
-cdial-618-2-109-1818-M-s027vb,2,Gregorii,Waśkow,,rodzic_pana_mlodego,,,,pewny,,nie,Zmarły ojciec pana młodego.
-cdial-618-2-109-1818-M-s027vb,3,Mariannae,,,rodzic_pana_mlodego,,,,,,nie,Matka pana młodego.
-cdial-618-2-109-1818-M-s027vb,4,Lucia,,,panna_mloda,pw,,,,,nie,20 lat.
-cdial-618-2-109-1818-M-s027vb,5,Mathiae,Kierdel,,rodzic_panny_mlodej,,,,pewny,,nie,Zmarły ojciec panny młodej.
-cdial-618-2-109-1818-M-s027vb,6,Mariannae,,,rodzic_panny_mlodej,,,,,,nie,Matka panny młodej.
-cdial-618-2-109-1818-M-s027vb,7,Mathias,Pichur,,swiadek,,,,pewny,,nie,
-cdial-618-2-109-1818-M-s027vb,8,Paulus,Waśkow,,swiadek,,,,pewny,,nie,
-cdial-618-2-109-1818-M-s027vb,9,Adalbertus,Trebar,,kaplan,,,,niepewny,,nie,
-cdial-618-2-109-1818-Z-s032va,1,Anna,,,zmarla,pw,119,119,,pewny,tak,Córka Sebastiani Radaczynskiego.
-cdial-618-2-109-1818-Z-s032va,2,Sebastiani,Radaczynski,,ojciec,,,,pewny,,nie,
-cdial-618-2-109-1818-Z-s032vb,1,Domicela,,,zmarla,pw,119,119,,pewny,tak,Córka Josephi Radaczynskiego.
-cdial-618-2-109-1818-Z-s032vb,2,Josephi,Radaczynski,,ojciec,,,,pewny,,nie,
-cdial-618-2-109-1818-Z-s032vc,1,Marianna,,,zmarla,pw,112,112,,pewny,tak,Córka Sebastiani Podolskiego.
-cdial-618-2-109-1818-Z-s032vc,2,Sebastiani,Podolski,,ojciec,,,,pewny,,nie,
+cdial-618-2-109-1818-M-s027vb,2,Grzegorz,Waśkow,,rodzic_pana_mlodego,,,,pewny,,nie,Zmarły ojciec pana młodego. W akcie zapisano imię Gregorii.
+cdial-618-2-109-1818-M-s027vb,3,Marianna,,,rodzic_pana_mlodego,,,,,,nie,Matka pana młodego. W akcie zapisano imię Mariannae.
+cdial-618-2-109-1818-M-s027vb,4,Łucja,,,panna_mloda,pw,,,,,nie,20 lat. W akcie zapisano imię Lucia.
+cdial-618-2-109-1818-M-s027vb,5,Maciej,Kierdel,,rodzic_panny_mlodej,,,,pewny,,nie,Zmarły ojciec panny młodej. W akcie zapisano imię Mathiae.
+cdial-618-2-109-1818-M-s027vb,6,Marianna,,,rodzic_panny_mlodej,,,,,,nie,Matka panny młodej. W akcie zapisano imię Mariannae.
+cdial-618-2-109-1818-M-s027vb,7,Maciej,Pichur,,swiadek,,,,pewny,,nie,W akcie zapisano imię Mathias.
+cdial-618-2-109-1818-M-s027vb,8,Paweł,Waśkow,,swiadek,,,,pewny,,nie,W akcie zapisano imię Paulus.
+cdial-618-2-109-1818-M-s027vb,9,Wojciech,Trebar,,kaplan,,,,pewny,,nie,W akcie zapisano imię Adalbertus.
+cdial-618-2-109-1818-Z-s032va,1,Anna,,,zmarla,pw,119,119,,pewny,tak,Córka Sebastiana Radaczyńskiego.
+cdial-618-2-109-1818-Z-s032va,2,Sebastian,Radaczyński,,ojciec,,,,pewny,,nie,W akcie zapisano imię Sebastiani. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-Z-s032vb,1,Domicela,,,zmarla,pw,119,119,,pewny,tak,Córka Józefa Radaczyńskiego.
+cdial-618-2-109-1818-Z-s032vb,2,Józef,Radaczyński,,ojciec,,,,pewny,,nie,W akcie zapisano imię Josephi. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1818-Z-s032vc,1,Marianna,,,zmarla,pw,112,112,,pewny,tak,Córka Sebastiana Podolskiego.
+cdial-618-2-109-1818-Z-s032vc,2,Sebastian,Podolski,,ojciec,,,,pewny,,nie,W akcie zapisano imię Sebastiani.
 cdial-618-2-109-1818-Z-s032vc,3,J.,Czyzewski,,kaplan,,,,pewny,,nie,Adnotacja o pogrzebie.
-cdial-618-2-109-1818-Z-s033a,1,Nicolaus,,,zmarly,pm,18,18,,pewny,tak,Syn Joannis.
-cdial-618-2-109-1818-Z-s033a,2,Joannis,Man…terski,,ojciec,,,,nieczytelny,,nie,
-cdial-618-2-109-1818-Z-s033b,1,Ignatius,,,zmarly,pm,74,74,,pewny,tak,Syn Matthiae Pichura.
-cdial-618-2-109-1818-Z-s033b,2,Matthiae,Pichur,,ojciec,,,,pewny,,nie,
-cdial-618-2-109-1818-Z-s033c,1,Mathias,,,zmarly,pm,37,37,,pewny,tak,Syn Joannis Niebylskiego.
-cdial-618-2-109-1818-Z-s033c,2,Joannis,Niebylski,,ojciec,,,,pewny,,nie,
-cdial-618-2-109-1818-Z-s033d,1,Theresia,,,zmarla,pm,23,23,,pewny,tak,Córka Blasii Bonisławskiego.
-cdial-618-2-109-1818-Z-s033d,2,Blasii,Bonisławski,,ojciec,,,,pewny,,nie,
-cdial-618-2-109-1818-Z-s033e,1,Thomas,Szczawinski,,zmarly,pm,54,54,pewny,pewny,tak,Uxoratus.
+cdial-618-2-109-1818-Z-s033a,1,Mikołaj,,,zmarly,pm,18,18,,pewny,tak,Syn Jana. W akcie zapisano imię Nicolaus.
+cdial-618-2-109-1818-Z-s033a,2,Jan,Manastyrski,,ojciec,,,,pewny,,nie,W akcie zapisano imię Joannis. Wcześniejszy odczyt nazwiska: Manasterski.
+cdial-618-2-109-1818-Z-s033b,1,Ignacy,,,zmarly,pm,74,74,,pewny,tak,Syn Macieja Pichura. W akcie zapisano imię Ignatius.
+cdial-618-2-109-1818-Z-s033b,2,Maciej,Pichur,,ojciec,,,,pewny,,nie,W akcie zapisano imię Matthiae.
+cdial-618-2-109-1818-Z-s033c,1,Maciej,,,zmarly,pm,37,37,,pewny,tak,Syn Jana Niebylskiego. W akcie zapisano imię Mathias.
+cdial-618-2-109-1818-Z-s033c,2,Jan,Niebylski,,ojciec,,,,pewny,,nie,W akcie zapisano imię Joannis.
+cdial-618-2-109-1818-Z-s033d,1,Teresa,,,zmarla,pm,23,23,,pewny,tak,Córka Błażeja Bonisławskiego. W akcie zapisano imię Theresia.
+cdial-618-2-109-1818-Z-s033d,2,Błażej,Bonisławski,,ojciec,,,,pewny,,nie,W akcie zapisano imię Blasii.
+cdial-618-2-109-1818-Z-s033e,1,Tomasz,Szczawinski,,zmarly,pm,54,54,pewny,pewny,tak,Uxoratus. W akcie zapisano imię Thomas.
 cdial-618-2-109-1818-Z-s033e,2,J.,Czyzewski,,kaplan,,,,pewny,,nie,Adnotacja o pogrzebie.
-cdial-618-2-109-1818-Z-s033f,1,Casimirus,Wos…czyn,,zmarly,pm,67,67,nieczytelny,pewny,tak,Uxoratus.
-cdial-618-2-109-1818-Z-s033f,2,Theodor,M…dzinski,,kaplan,,,,nieczytelny,,nie,Adnotacja o pogrzebie.
-cdial-618-2-109-1819-U-s049a,1,Sebastianus,,,dziecko,pm,57[?],57,,niepewny,tak,
-cdial-618-2-109-1819-U-s049a,2,Franciscus,Bar…ki,,ojciec,pm,57[?],57,nieczytelny,niepewny,tak,
-cdial-618-2-109-1819-U-s049a,3,Marianna,,,matka,pm,57[?],57,,niepewny,tak,Córka Antonio.
-cdial-618-2-109-1819-U-s049a,4,Antonio,Małaczynski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s049a,5,Sebastianus,Nowa…cki,,chrzestny,Kozłów,,,nieczytelny,,nie,
-cdial-618-2-109-1819-U-s049a,6,Agnes,,,chrzestna,gl,,,,,nie,Żona Joannis Jac…skiego. Miejscowość odczytana niepewnie jako Klinna.
-cdial-618-2-109-1819-U-s049a,7,Joannis,Jac…ski,,inna,,,,nieczytelny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1819-U-s049a,8,Apolonia,Capowa,,akuszerka,,,,pewny,,nie,
-cdial-618-2-109-1819-U-s049a,9,Jacobus,Czyzewski,,kaplan,,,,pewny,,nie,
-cdial-618-2-109-1819-U-s049b,1,Mariana,,,dziecko,pm,10,10,,pewny,tak,
-cdial-618-2-109-1819-U-s049b,2,Anna,,,matka,pm,10,10,,pewny,tak,Córka Thoma.
-cdial-618-2-109-1819-U-s049b,3,Thoma,Bolesławski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s049b,4,Jacobus,Pichur,,chrzestny,pm,,,pewny,,nie,
-cdial-618-2-109-1819-U-s049b,5,Barbara,,,chrzestna,pm,,,,,nie,Żona Adalberti.
-cdial-618-2-109-1819-U-s049b,6,Adalberti,Dragyczak,,inna,,,,niepewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1819-U-s049b,7,Apolonia,Capowa,,akuszerka,,,,pewny,,nie,
-cdial-618-2-109-1819-U-s049b,8,Jacobus,Czyzewski,,kaplan,,,,pewny,,nie,
+cdial-618-2-109-1818-Z-s033f,1,Kazimierz,Woszczyczynski,,zmarly,pm,67,67,niepewny,pewny,tak,Uxoratus. W akcie zapisano imię Casimirus.
+cdial-618-2-109-1818-Z-s033f,2,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,Adnotacja o pogrzebie. W akcie zapisano imię Theodor.
+cdial-618-2-109-1819-U-s049a,1,Sebastian,,,dziecko,pm,57,57,,pewny,tak,W akcie zapisano imię Sebastianus.
+cdial-618-2-109-1819-U-s049a,2,Franciszek,Barski,,ojciec,pm,57,57,pewny,pewny,tak,W akcie zapisano imię Franciscus.
+cdial-618-2-109-1819-U-s049a,3,Marianna,,,matka,pm,57,57,,pewny,tak,Córka Antoniego.
+cdial-618-2-109-1819-U-s049a,4,Antoni,Małaczyński,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Antonio.
+cdial-618-2-109-1819-U-s049a,5,Sebastian,Nowacecki,,chrzestny,Kozłów,,,niepewny,,nie,W akcie zapisano imię Sebastianus.
+cdial-618-2-109-1819-U-s049a,6,Agnieszka,,,chrzestna,gl,,,,,nie,Żona Jana. Miejscowość odczytana niepewnie jako Klinna. W akcie zapisano imię Agnes.
+cdial-618-2-109-1819-U-s049a,7,Jan,Jacowski,,inna,,,,niepewny,,nie,Mąż chrzestnej. W akcie zapisano imię Joannis.
+cdial-618-2-109-1819-U-s049a,8,Apolonia,Ciapowa,,akuszerka,,,,niepewny,,nie,
+cdial-618-2-109-1819-U-s049a,9,Jakub,Czyzewski,,kaplan,,,,pewny,,nie,W akcie zapisano imię Jacobus.
+cdial-618-2-109-1819-U-s049b,1,Marianna,,,dziecko,pm,10,10,,pewny,tak,W akcie zapisano imię Mariana.
+cdial-618-2-109-1819-U-s049b,2,Anna,,,matka,pm,10,10,,pewny,tak,"Córka Tomasza Bolesławskiego. Innupta, niezamężna."
+cdial-618-2-109-1819-U-s049b,3,Tomasz,Bolesławski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Thoma.
+cdial-618-2-109-1819-U-s049b,4,Jakub,Pichur,,chrzestny,pm,,,pewny,,nie,W akcie zapisano imię Jacobus.
+cdial-618-2-109-1819-U-s049b,5,Barbara,,,chrzestna,pm,,,,,nie,Żona Wojciecha.
+cdial-618-2-109-1819-U-s049b,6,Wojciech,Dragyczak,,inna,,,,niepewny,,nie,Mąż chrzestnej. W akcie zapisano imię Adalberti.
+cdial-618-2-109-1819-U-s049b,7,Apolonia,Ciapowa,,akuszerka,pm,,,niepewny,,nie,
+cdial-618-2-109-1819-U-s049b,8,Jakub,Czyzewski,,kaplan,,,,pewny,,nie,"Coop., wikary. W akcie zapisano imię Jacobus."
 cdial-618-2-109-1819-U-s049va,1,Balbina,,,dziecko,pm,11,11,,pewny,tak,
-cdial-618-2-109-1819-U-s049va,2,Hiacy…,Liskowski,,ojciec,pm,11,11,niepewny,pewny,tak,
-cdial-618-2-109-1819-U-s049va,3,Magdalena,,,matka,pm,11,11,,pewny,tak,Córka Joanne.
-cdial-618-2-109-1819-U-s049va,4,Joanne,Radaczynski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s049va,5,Stanislaus,Radaczynski,,chrzestny,,,,pewny,,nie,
-cdial-618-2-109-1819-U-s049va,6,Praxe…a,,,chrzestna,,,,,,nie,Żona Theodori.
-cdial-618-2-109-1819-U-s049va,7,Theodori,Mudzinski,,inna,,,,niepewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1819-U-s049va,8,Theodor,Mudzinski,,kaplan,,,,niepewny,,nie,
+cdial-618-2-109-1819-U-s049va,2,Hiacynt,Lisowski,,ojciec,pm,11,11,pewny,pewny,tak,W akcie zapisano imię Hiacynthus.
+cdial-618-2-109-1819-U-s049va,3,Magdalena,,,matka,pm,11,11,,pewny,tak,Córka Jana.
+cdial-618-2-109-1819-U-s049va,4,Jan,Radaczyński,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Joanne. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1819-U-s049va,5,Stanisław,Radaczyński,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Stanislaus. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1819-U-s049va,6,Prakseda,,,chrzestna,,,,,,nie,Żona Teodora. W akcie zapisano imię Praxe…a. Polska forma Prakseda jest odczytem niepewnym.
+cdial-618-2-109-1819-U-s049va,7,Teodor,Mudzinski,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Theodori.
+cdial-618-2-109-1819-U-s049va,8,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,W akcie zapisano imię Theodor.
 cdial-618-2-109-1819-U-s049vb,1,Balbina,,,dziecko,pm,14,14,,pewny,tak,
-cdial-618-2-109-1819-U-s049vb,2,Mathaeus,Pichur,,ojciec,pm,14,14,pewny,pewny,tak,
-cdial-618-2-109-1819-U-s049vb,3,Agnes,,,matka,pm,14,14,,pewny,tak,Córka Michaele.
-cdial-618-2-109-1819-U-s049vb,4,Michaele,Konarski,,inna,,,,niepewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s049vb,5,Thomas,Marcz…ski,,chrzestny,,,,nieczytelny,,nie,
-cdial-618-2-109-1819-U-s049vb,6,Eva,,,chrzestna,,,,,,nie,Żona Danielis.
-cdial-618-2-109-1819-U-s049vb,7,Danielis,Iwan…ow,,inna,,,,nieczytelny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1819-U-s049vb,8,Theodor,Mudzinski,,kaplan,,,,niepewny,,nie,"W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu."
-cdial-618-2-109-1819-U-s049vc,1,Sophia,,,dziecko,pm,37,37,,pewny,tak,
-cdial-618-2-109-1819-U-s049vc,2,Stephanus,Murzynski,,ojciec,pm,37,37,pewny,pewny,tak,
-cdial-618-2-109-1819-U-s049vc,3,Josepha,,,matka,pm,37,37,,pewny,tak,Córka Joanne.
-cdial-618-2-109-1819-U-s049vc,4,Joanne,Szczawinski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s049vc,5,Joannes,Radaczynski,,chrzestny,,,,pewny,,nie,
-cdial-618-2-109-1819-U-s049vc,6,Marianna,,,chrzestna,,,,,,nie,Żona Thoma.
-cdial-618-2-109-1819-U-s049vc,7,Thoma,Szczawinski,,inna,,,,pewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1819-U-s049vc,8,Theodor,Mudzinski,,kaplan,,,,niepewny,,nie,"W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu."
-cdial-618-2-109-1819-U-s049vd,1,Joannes,,,dziecko,pm,18,18,,pewny,tak,
-cdial-618-2-109-1819-U-s049vd,2,Joannes,Manastyrski,,ojciec,pm,18,18,niepewny,pewny,tak,
-cdial-618-2-109-1819-U-s049vd,3,Anna,,,matka,pm,18,18,,pewny,tak,Córka Matthia.
-cdial-618-2-109-1819-U-s049vd,4,Matthia,Senicki,,inna,,,,niepewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s049vd,5,Daniel,Iwan…ow,,chrzestny,,,,nieczytelny,,nie,
-cdial-618-2-109-1819-U-s049vd,6,Marianna,,,chrzestna,,,,,,nie,Żona Joannis.
-cdial-618-2-109-1819-U-s049vd,7,Joannis,Niebylski,,inna,,,,niepewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1819-U-s049vd,8,Theodor,Mudzinski,,kaplan,,,,niepewny,,nie,"W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu."
+cdial-618-2-109-1819-U-s049vb,2,Mateusz,Pichur,,ojciec,pm,14,14,pewny,pewny,tak,W akcie zapisano imię Mathaeus.
+cdial-618-2-109-1819-U-s049vb,3,Agnieszka,,,matka,pm,14,14,,pewny,tak,Córka Michała. W akcie zapisano imię Agnes.
+cdial-618-2-109-1819-U-s049vb,4,Michał,Konarski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Michaele.
+cdial-618-2-109-1819-U-s049vb,5,Tomasz,Marcinski,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Thomas.
+cdial-618-2-109-1819-U-s049vb,6,Ewa,,,chrzestna,,,,,,nie,Żona Daniela. W akcie zapisano imię Eva.
+cdial-618-2-109-1819-U-s049vb,7,Daniel,Iwanciow,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Danielis.
+cdial-618-2-109-1819-U-s049vb,8,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,"W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu. W akcie zapisano imię Theodor."
+cdial-618-2-109-1819-U-s049vc,1,Zofia,,,dziecko,pm,37,37,,pewny,tak,W akcie zapisano imię Sophia.
+cdial-618-2-109-1819-U-s049vc,2,Stefan,Murzynski,,ojciec,pm,37,37,pewny,pewny,tak,W akcie zapisano imię Stephanus.
+cdial-618-2-109-1819-U-s049vc,3,Józefa,,,matka,pm,37,37,,pewny,tak,Córka Jana. W akcie zapisano imię Josepha.
+cdial-618-2-109-1819-U-s049vc,4,Jan,Szczawinski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Joanne.
+cdial-618-2-109-1819-U-s049vc,5,Jan,Radaczyński,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Joannes. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1819-U-s049vc,6,Marianna,,,chrzestna,,,,,,nie,Żona Tomasza.
+cdial-618-2-109-1819-U-s049vc,7,Tomasz,Szczawinski,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Thoma.
+cdial-618-2-109-1819-U-s049vc,8,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,"W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu. W akcie zapisano imię Theodor."
+cdial-618-2-109-1819-U-s049vd,1,Jan,,,dziecko,pm,18,18,,pewny,tak,W akcie zapisano imię Joannes.
+cdial-618-2-109-1819-U-s049vd,2,Jan,Manastyrski,,ojciec,pm,18,18,pewny,pewny,tak,W akcie zapisano imię Joannes.
+cdial-618-2-109-1819-U-s049vd,3,Anna,,,matka,pm,18,18,,pewny,tak,Córka Macieja.
+cdial-618-2-109-1819-U-s049vd,4,Maciej,Sonicki,,inna,,,,niepewny,,nie,Ojciec matki. W akcie zapisano imię Matthia.
+cdial-618-2-109-1819-U-s049vd,5,Daniel,Iwanciow,,chrzestny,,,,pewny,,nie,
+cdial-618-2-109-1819-U-s049vd,6,Marianna,,,chrzestna,,,,,,nie,Żona Jana.
+cdial-618-2-109-1819-U-s049vd,7,Jan,Kierdel,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Joannis.
+cdial-618-2-109-1819-U-s049vd,8,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,"W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu. W akcie zapisano imię Theodor."
 cdial-618-2-109-1819-U-s049ve,1,Marianna,,,dziecko,pm,38,38,,pewny,tak,
-cdial-618-2-109-1819-U-s049ve,2,Alexius,Wilk,,ojciec,pm,38,38,niepewny,pewny,tak,
-cdial-618-2-109-1819-U-s049ve,3,Francisca,,,matka,pm,38,38,,pewny,tak,Córka Thoma.
-cdial-618-2-109-1819-U-s049ve,4,Thoma,Walc…zynski,,inna,,,,nieczytelny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s049ve,5,Joannes,Mart…ka,,chrzestny,,,,nieczytelny,,nie,
-cdial-618-2-109-1819-U-s049ve,6,Rosalia,,,chrzestna,,,,,,nie,Żona Johannis.
-cdial-618-2-109-1819-U-s049ve,7,Johannis,Krasinski,,inna,,,,niepewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1819-U-s049ve,8,Theodor,Mudzinski,,kaplan,,,,niepewny,,nie,"W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu."
-cdial-618-2-109-1819-U-s049vf,1,Jacobus,,,dziecko,pm,12,12,,pewny,tak,
-cdial-618-2-109-1819-U-s049vf,2,Andreas,Adamiak,,ojciec,pm,12,12,pewny,pewny,tak,
-cdial-618-2-109-1819-U-s049vf,3,Eudocia,,,matka,pm,12,12,,pewny,tak,Córka Basilio.
-cdial-618-2-109-1819-U-s049vf,4,Basilio,Chmyz,,inna,,,,niepewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s049vf,5,Timotheus,S…cow,,chrzestny,,,,nieczytelny,,nie,
-cdial-618-2-109-1819-U-s049vf,6,Eva,,,chrzestna,,,,,,nie,Żona Michaelis.
-cdial-618-2-109-1819-U-s049vf,7,Michaelis,Adamiak,,inna,,,,pewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1819-U-s049vf,8,Theodor,Mudzinski,,kaplan,,,,niepewny,,nie,"W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu."
-cdial-618-2-109-1819-U-s050a,1,Laurentius,,,dziecko,pm,37,37,,pewny,tak,
-cdial-618-2-109-1819-U-s050a,2,Joannes,Niebylski,,ojciec,pm,37,37,pewny,pewny,tak,
-cdial-618-2-109-1819-U-s050a,3,Victoria,,,matka,pm,37,37,,pewny,tak,Córka Joanne.
-cdial-618-2-109-1819-U-s050a,4,Joanne,Murzynski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s050a,5,Stephanus,Małaczynski,,chrzestny,,,,pewny,,nie,
-cdial-618-2-109-1819-U-s050a,6,Praxe…a,,,chrzestna,,,,,,nie,Żona Theodori.
-cdial-618-2-109-1819-U-s050a,7,Theodori,Mudzinski,,inna,,,,niepewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1819-U-s050a,8,Theodor,Mudzinski,,kaplan,,,,niepewny,,nie,Wikariusz greckokatolicki z Płauczy Wielkiej.
-cdial-618-2-109-1819-U-s050b,1,Laurentius,,,dziecko,pm,17,17,,pewny,tak,
-cdial-618-2-109-1819-U-s050b,2,Josephus,Wał…zyn,,ojciec,pm,17,17,nieczytelny,pewny,tak,
-cdial-618-2-109-1819-U-s050b,3,Sophia,,,matka,pm,17,17,,pewny,tak,Córka Petro.
-cdial-618-2-109-1819-U-s050b,4,Petro,Tomaszewski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s050b,5,Sebastianus,Błaz…ow,,chrzestny,pm,,,nieczytelny,,nie,
-cdial-618-2-109-1819-U-s050b,6,Magdalena,,,chrzestna,pm,,,,,nie,Żona Hiacynthi.
-cdial-618-2-109-1819-U-s050b,7,Hiacynthi,Liskowski,,inna,,,,niepewny,,nie,Mąż chrzestnej.
+cdial-618-2-109-1819-U-s049ve,2,Aleksy,Wilk,,ojciec,pm,38,38,pewny,pewny,tak,W akcie zapisano imię Alexius.
+cdial-618-2-109-1819-U-s049ve,3,Franciszka,,,matka,pm,38,38,,pewny,tak,Córka Tomasza. W akcie zapisano imię Francisca.
+cdial-618-2-109-1819-U-s049ve,4,Tomasz,Walczyszyn,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Thoma.
+cdial-618-2-109-1819-U-s049ve,5,Jan,Bortnik,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Joannes.
+cdial-618-2-109-1819-U-s049ve,6,Rozalia,,,chrzestna,,,,,,nie,Żona Antoniego. W akcie zapisano imię Rosalia.
+cdial-618-2-109-1819-U-s049ve,7,Antoni,Krasinski,,inna,,,,niepewny,,nie,Mąż chrzestnej. W akcie zapisano imię Antonii.
+cdial-618-2-109-1819-U-s049ve,8,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,"W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu. W akcie zapisano imię Theodor."
+cdial-618-2-109-1819-U-s049vf,1,Jakub,,,dziecko,pm,12,12,,pewny,tak,W akcie zapisano imię Jacobus.
+cdial-618-2-109-1819-U-s049vf,2,Andrzej,Adamiak,,ojciec,pm,12,12,pewny,pewny,tak,W akcie zapisano imię Andreas.
+cdial-618-2-109-1819-U-s049vf,3,Eudokia,,,matka,pm,12,12,,pewny,tak,Córka Bazylego. W akcie zapisano imię Eudocia.
+cdial-618-2-109-1819-U-s049vf,4,Bazyli,Chmyz,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Basilio.
+cdial-618-2-109-1819-U-s049vf,5,Tymoteusz,Szewcow,,chrzestny,,,,niepewny,,nie,W akcie zapisano imię Timotheus.
+cdial-618-2-109-1819-U-s049vf,6,Ewa,,,chrzestna,,,,,,nie,Żona Michała. W akcie zapisano imię Eva.
+cdial-618-2-109-1819-U-s049vf,7,Michał,Adamiak,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Michaelis.
+cdial-618-2-109-1819-U-s049vf,8,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,"W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu. W akcie zapisano imię Theodor."
+cdial-618-2-109-1819-U-s050a,1,Wawrzyniec,,,dziecko,pm,37,37,,pewny,tak,W akcie zapisano imię Laurentius.
+cdial-618-2-109-1819-U-s050a,2,Jan,Niebylski,,ojciec,pm,37,37,pewny,pewny,tak,W akcie zapisano imię Joannes.
+cdial-618-2-109-1819-U-s050a,3,Wiktoria,,,matka,pm,37,37,,pewny,tak,Córka Jana. W akcie zapisano imię Victoria.
+cdial-618-2-109-1819-U-s050a,4,Jan,Murzynski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Joanne.
+cdial-618-2-109-1819-U-s050a,5,Stefan,Małaczyński,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Stephanus.
+cdial-618-2-109-1819-U-s050a,6,Prakseda,,,chrzestna,,,,,,nie,Żona Teodora. W akcie zapisano imię Praxe…a. Polska forma Prakseda jest odczytem niepewnym.
+cdial-618-2-109-1819-U-s050a,7,Teodor,Mudzinski,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Theodori.
+cdial-618-2-109-1819-U-s050a,8,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,Wikariusz greckokatolicki z Płauczy Wielkiej. W akcie zapisano imię Theodor.
+cdial-618-2-109-1819-U-s050b,1,Wawrzyniec,Walczyszyn,,dziecko,pm,17,17,pewny,pewny,tak,W akcie zapisano imię Laurentius. Nazwisko według zapisu przy ojcu i korekty użytkowniczki.
+cdial-618-2-109-1819-U-s050b,2,Józef,Walczyszyn,,ojciec,pm,17,17,pewny,pewny,tak,W akcie zapisano imię Josephus.
+cdial-618-2-109-1819-U-s050b,3,Zofia,,,matka,pm,17,17,,pewny,tak,Córka Piotra. W akcie zapisano imię Sophia.
+cdial-618-2-109-1819-U-s050b,4,Piotr,Tomaszewski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Petro.
+cdial-618-2-109-1819-U-s050b,5,Sebastian,Błazkow,,chrzestny,pm,,,pewny,,nie,W akcie zapisano imię Sebastianus.
+cdial-618-2-109-1819-U-s050b,6,Magdalena,,,chrzestna,pm,,,,,nie,Żona Hiacynta.
+cdial-618-2-109-1819-U-s050b,7,Hiacynt,Lisowski,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Hiacynthi.
 cdial-618-2-109-1819-U-s050b,8,Marianna,Pichurowa,,akuszerka,pm,,,pewny,,nie,
-cdial-618-2-109-1819-U-s050b,9,Theod…,Mudzinski,,kaplan,,,,niepewny,,nie,Chrzest z wody.
-cdial-618-2-109-1819-U-s050b,10,Jacobus,Czyzewski,,kaplan,,,,pewny,,nie,Uzupełnienie ceremonii.
+cdial-618-2-109-1819-U-s050b,9,Teodor,Mudzinski,,kaplan,,,,pewny,,nie,Chrzest z wody. W akcie zapisano imię Theodoro.
+cdial-618-2-109-1819-U-s050b,10,Jakub,Czyzewski,,kaplan,,,,pewny,,nie,Uzupełnienie ceremonii. W akcie zapisano imię Jacobus.
 cdial-618-2-109-1819-U-s050va,1,Honorata,,,dziecko,pw,119,119,,pewny,tak,
-cdial-618-2-109-1819-U-s050va,2,Sebastianus,Radaczynski,,ojciec,pw,119,119,pewny,pewny,tak,
-cdial-618-2-109-1819-U-s050va,3,Marianna,,,matka,pw,119,119,,pewny,tak,Córka Joanne.
-cdial-618-2-109-1819-U-s050va,4,Joanne,Zieliński,,inna,,,,niepewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s050va,5,Stephanus,Małaczynski,,chrzestny,pm,,,pewny,,nie,
-cdial-618-2-109-1819-U-s050va,6,Theresia,,,chrzestna,pw,,,,,nie,Żona Joannis Radaczynskiego.
-cdial-618-2-109-1819-U-s050va,7,Joannis,Radaczynski,,inna,,,,pewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1819-U-s050va,8,Catharina,Bogutowa,,akuszerka,pw,,,niepewny,,nie,
-cdial-618-2-109-1819-U-s050va,9,Jacobus,Czyzewski,,kaplan,,,,pewny,,nie,
-cdial-618-2-109-1819-U-s050vb,1,Mariana,,,dziecko,pw,112[?],112,,niepewny,tak,
-cdial-618-2-109-1819-U-s050vb,2,Josephus,Radaczynski,,ojciec,pw,112[?],112,pewny,niepewny,tak,
-cdial-618-2-109-1819-U-s050vb,3,Magdalena,,,matka,pw,112[?],112,,niepewny,tak,Córka Adalberto.
-cdial-618-2-109-1819-U-s050vb,4,Adalberto,Strzałkowski,,inna,,,,niepewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s050vb,5,Sebastianus,Blaz…ow,,chrzestny,pw,,,nieczytelny,,nie,
-cdial-618-2-109-1819-U-s050vb,6,Agnes,,,chrzestna,pm,,,,,nie,Żona Stephani Małaczynskiego.
-cdial-618-2-109-1819-U-s050vb,7,Stephani,Małaczynski,,inna,,,,pewny,,nie,Mąż chrzestnej.
-cdial-618-2-109-1819-U-s050vb,8,Catharina,Bogutowa,,akuszerka,pw,,,niepewny,,nie,
-cdial-618-2-109-1819-U-s050vb,9,Joanne,…kowski,,kaplan,,,,nieczytelny,,nie,Chrzest z wody. W dopisku określony jako proboszcz Płauczy Wielkiej.
+cdial-618-2-109-1819-U-s050va,2,Sebastian,Radaczyński,,ojciec,pw,119,119,pewny,pewny,tak,W akcie zapisano imię Sebastianus. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1819-U-s050va,3,Marianna,,,matka,pw,119,119,,pewny,tak,Córka Jana.
+cdial-618-2-109-1819-U-s050va,4,Jan,Zielinski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Joanne.
+cdial-618-2-109-1819-U-s050va,5,Stefan,Małaczyński,,chrzestny,pm,,,pewny,,nie,W akcie zapisano imię Stephanus.
+cdial-618-2-109-1819-U-s050va,6,Teresa,,,chrzestna,pw,,,,,nie,Żona Jana Radaczyńskiego. W akcie zapisano imię Theresia.
+cdial-618-2-109-1819-U-s050va,7,Jan,Radaczyński,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Joannis. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1819-U-s050va,8,Katarzyna,Kogutowa,,akuszerka,pw,,,niepewny,,nie,W akcie zapisano imię Catharina.
+cdial-618-2-109-1819-U-s050va,9,Jakub,Czyzewski,,kaplan,,,,pewny,,nie,W akcie zapisano imię Jacobus.
+cdial-618-2-109-1819-U-s050vb,1,Marianna,,,dziecko,pw,112,112,,pewny,tak,W akcie zapisano imię Mariana.
+cdial-618-2-109-1819-U-s050vb,2,Józef,Radaczyński,,ojciec,pw,112,112,pewny,pewny,tak,W akcie zapisano imię Josephus. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1819-U-s050vb,3,Magdalena,,,matka,pw,112,112,,pewny,tak,Córka Wojciecha.
+cdial-618-2-109-1819-U-s050vb,4,Wojciech,Strzałkowski,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Adalberto.
+cdial-618-2-109-1819-U-s050vb,5,Sebastian,Błazkow,,chrzestny,pw,,,pewny,,nie,W akcie zapisano imię Sebastianus.
+cdial-618-2-109-1819-U-s050vb,6,Agnieszka,,,chrzestna,pm,,,,,nie,Żona Stefana Małaczyńskiego. W akcie zapisano imię Agnes.
+cdial-618-2-109-1819-U-s050vb,7,Stefan,Małaczyński,,inna,,,,pewny,,nie,Mąż chrzestnej. W akcie zapisano imię Stephani.
+cdial-618-2-109-1819-U-s050vb,8,Katarzyna,Kogutowa,,akuszerka,pw,,,niepewny,,nie,W akcie zapisano imię Catharina.
+cdial-618-2-109-1819-U-s050vb,9,Jan,Zukowski,,kaplan,,,,pewny,,nie,Chrzest z wody. W dopisku określony jako proboszcz Płauczy Wielkiej. W akcie zapisano imię Joanne.
 cdial-618-2-109-1819-U-s050vb,10,J.,Czyzewski,,kaplan,,,,pewny,,nie,Uzupełnienie ceremonii.
-cdial-618-2-109-1819-U-s050vc,1,Justina,,,dziecko,pw,119[?],119,,niepewny,tak,
-cdial-618-2-109-1819-U-s050vc,2,Carolus,Radaczynski,,ojciec,pw,119[?],119,pewny,niepewny,tak,
-cdial-618-2-109-1819-U-s050vc,3,Helena,,,matka,pw,119[?],119,,niepewny,tak,Córka Josepho.
-cdial-618-2-109-1819-U-s050vc,4,Josepho,Małaczynski,,inna,,,,pewny,,nie,Ojciec matki.
-cdial-618-2-109-1819-U-s050vc,5,Franciscus,Radaczynski,,chrzestny,,,,pewny,,nie,
-cdial-618-2-109-1819-U-s050vc,6,Agnes,Małaczynska,,chrzestna,,,,pewny,,nie,
-cdial-618-2-109-1819-U-s050vc,7,Joannes,…kowski,,kaplan,,,,nieczytelny,,nie,W dopisku określony jako proboszcz Płauczy Wielkiej.
-cdial-618-2-109-1819-M-s058va,1,Gaspar,Bolesławski,,pan_mlody,pm,66,66,pewny,pewny,tak,"Wdowiec, lat 38."
-cdial-618-2-109-1819-M-s058va,2,Rosalia,,,panna_mloda,Kozłów,N.D. 192[?],192,,niepewny,tak,"Wdowa, wiek odczytany jako 26."
-cdial-618-2-109-1819-M-s058va,3,Joannis,Kacz…,,inna,,,,nieczytelny,,nie,Zmarły poprzedni mąż panny młodej.
-cdial-618-2-109-1819-M-s058va,4,Andreas,Adamiak,,swiadek,pm,,,pewny,,nie,
-cdial-618-2-109-1819-M-s058va,5,Gaspar,Sał…ski,,swiadek,Kozłów,,,nieczytelny,,nie,
+cdial-618-2-109-1819-U-s050vc,1,Justyna,,,dziecko,pw,119,119,,pewny,tak,W akcie zapisano imię Justina.
+cdial-618-2-109-1819-U-s050vc,2,Karol,Radaczyński,,ojciec,pw,119,119,pewny,pewny,tak,W akcie zapisano imię Carolus. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1819-U-s050vc,3,Helena,,,matka,pw,119,119,,pewny,tak,Córka Józefa.
+cdial-618-2-109-1819-U-s050vc,4,Józef,Małaczyński,,inna,,,,pewny,,nie,Ojciec matki. W akcie zapisano imię Josepho.
+cdial-618-2-109-1819-U-s050vc,5,Franciszek,Radaczyński,,chrzestny,,,,pewny,,nie,W akcie zapisano imię Franciscus. Wcześniejszy odczyt nazwiska: Radaczynski.
+cdial-618-2-109-1819-U-s050vc,6,Agnieszka,Małaczyńska,,chrzestna,,,,pewny,,nie,W akcie zapisano imię Agnes.
+cdial-618-2-109-1819-U-s050vc,7,Jan,Zukowski,,kaplan,,,,pewny,,nie,W dopisku określony jako proboszcz Płauczy Wielkiej. W akcie zapisano imię Joannes.
+cdial-618-2-109-1819-M-s058va,1,Kacper,Bolesławski,,pan_mlody,pm,66,66,pewny,pewny,tak,"Wdowiec, lat 38. W akcie zapisano imię Gaspar."
+cdial-618-2-109-1819-M-s058va,2,Rozalia,,,panna_mloda,Kozłów,N.D. 192,192,,pewny,tak,"Wdowa, lat 26. W akcie zapisano imię Rosalia."
+cdial-618-2-109-1819-M-s058va,3,Jan,Kadracki,,inna,,,,niepewny,,nie,Zmarły poprzedni mąż panny młodej. W akcie zapisano imię Joannis.
+cdial-618-2-109-1819-M-s058va,4,Andrzej,Adamiak,,swiadek,pm,,,pewny,,nie,W akcie zapisano imię Andreas.
+cdial-618-2-109-1819-M-s058va,5,Kacper,Gałowski,,swiadek,Kozłów,,,niepewny,,nie,W akcie zapisano imię Gaspar.
 cdial-618-2-109-1819-M-s058va,6,J.,Czyzewski,,kaplan,,,,pewny,,nie,
-cdial-618-2-109-1819-M-s059a,1,Nicolaus,,,pan_mlody,pm,69,69,,pewny,tak,"Syn Mathiae i Apoloniae, lat 22."
-cdial-618-2-109-1819-M-s059a,2,Mathiae,Ciapo,,rodzic_pana_mlodego,,,,niepewny,,nie,
-cdial-618-2-109-1819-M-s059a,3,Apoloniae,,,rodzic_pana_mlodego,,,,,,nie,
+cdial-618-2-109-1819-M-s059a,1,Mikołaj,Ciapa,,pan_mlody,pm,69,69,pewny,pewny,tak,"Syn Macieja i Apolonii, lat 22. W akcie zapisano imię Nicolaus. Nazwisko według zapisu przy ojcu i korekty użytkowniczki."
+cdial-618-2-109-1819-M-s059a,2,Maciej,Ciapa,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie zapisano imię Mathiae.
+cdial-618-2-109-1819-M-s059a,3,Apolonia,,,rodzic_pana_mlodego,,,,,,nie,W akcie zapisano imię Apoloniae.
 cdial-618-2-109-1819-M-s059a,4,Antonia,,,panna_mloda,pm,N.D. 26,26,,pewny,tak,Lat 13.
-cdial-618-2-109-1819-M-s059a,5,Adalberti,Bednarski,,rodzic_panny_mlodej,,,,pewny,,nie,
-cdial-618-2-109-1819-M-s059a,6,Franciscae,,,rodzic_panny_mlodej,,,,,,nie,
-cdial-618-2-109-1819-M-s059a,7,Thadaeus,Trojan,,swiadek,pm,,,pewny,,nie,
-cdial-618-2-109-1819-M-s059a,8,Andreas,Adamiak,,swiadek,pm,,,pewny,,nie,
-cdial-618-2-109-1819-M-s059a,9,Adalbertus,Trebar,,kaplan,,,,niepewny,,nie,
-cdial-618-2-109-1819-M-s059va,1,Michael,,,pan_mlody,pw,83,83,,pewny,tak,"Syn Stephani i Catharinae, lat 21."
-cdial-618-2-109-1819-M-s059va,2,Stephani,Sudak,,rodzic_pana_mlodego,,,,niepewny,,nie,
-cdial-618-2-109-1819-M-s059va,3,Catharinae,,,rodzic_pana_mlodego,,,,,,nie,
-cdial-618-2-109-1819-M-s059va,4,Elisabeth,,,panna_mloda,pw,,,,,nie,"Córka Joannis i Mariannae, lat 17."
-cdial-618-2-109-1819-M-s059va,5,Joannis,Kierdel,,rodzic_panny_mlodej,,,,niepewny,,nie,
-cdial-618-2-109-1819-M-s059va,6,Mariannae,,,rodzic_panny_mlodej,,,,,,nie,
-cdial-618-2-109-1819-M-s059va,7,Stanislaus,Sudak,,swiadek,pw,,,niepewny,,nie,
-cdial-618-2-109-1819-M-s059va,8,Petrus,Boyko,,swiadek,pw,,,pewny,,nie,
-cdial-618-2-109-1819-M-s059va,9,Jacobus,Czyzewski,,kaplan,,,,pewny,,nie,
-cdial-618-2-109-1819-M-s059vb,1,Michael,By…,,pan_mlody,Kozłów,,,nieczytelny,,nie,Disp… in Aul. Kozlow. Miejscowość odczytana z tego określenia.
-cdial-618-2-109-1819-M-s059vb,2,Anna,Radaczynska,,panna_mloda,pw,,,pewny,,nie,Lat 30.
-cdial-618-2-109-1819-M-s059vb,3,Dominicus,Małaczynski,,swiadek,,,,niepewny,,nie,Zapis Domini Kozlow przy określeniu funkcji.
-cdial-618-2-109-1819-M-s059vb,4,Ludovicus,Bison…ski,,swiadek,,,,nieczytelny,,nie,
+cdial-618-2-109-1819-M-s059a,5,Wojciech,Bednarski,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie zapisano imię Adalberti.
+cdial-618-2-109-1819-M-s059a,6,Franciszka,,,rodzic_panny_mlodej,,,,,,nie,W akcie zapisano imię Franciscae.
+cdial-618-2-109-1819-M-s059a,7,Tadeusz,Trojan,,swiadek,pm,,,pewny,,nie,W akcie zapisano imię Thadaeus.
+cdial-618-2-109-1819-M-s059a,8,Andrzej,Adamiak,,swiadek,pm,,,pewny,,nie,W akcie zapisano imię Andreas.
+cdial-618-2-109-1819-M-s059a,9,Wojciech,Trebar,,kaplan,,,,pewny,,nie,W akcie zapisano imię Adalbertus.
+cdial-618-2-109-1819-M-s059va,1,Michał,,,pan_mlody,pw,83,83,,pewny,tak,"Syn Stefana i Katarzyny, lat 21. W akcie zapisano imię Michael."
+cdial-618-2-109-1819-M-s059va,2,Stefan,Suta,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie zapisano imię Stephani.
+cdial-618-2-109-1819-M-s059va,3,Katarzyna,,,rodzic_pana_mlodego,,,,,,nie,W akcie zapisano imię Catharinae.
+cdial-618-2-109-1819-M-s059va,4,Elżbieta,,,panna_mloda,pw,,,,,nie,"Córka Jana i Marianny, lat 17. W akcie zapisano imię Elisabeth."
+cdial-618-2-109-1819-M-s059va,5,Jan,Kierdel,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie zapisano imię Joannis.
+cdial-618-2-109-1819-M-s059va,6,Marianna,,,rodzic_panny_mlodej,,,,,,nie,W akcie zapisano imię Mariannae.
+cdial-618-2-109-1819-M-s059va,7,Stanisław,Sucapa,,swiadek,pw,,,niepewny,,nie,W akcie zapisano imię Stanislaus.
+cdial-618-2-109-1819-M-s059va,8,Piotr,Boyko,,swiadek,pw,,,pewny,,nie,W akcie zapisano imię Petrus.
+cdial-618-2-109-1819-M-s059va,9,Jakub,Czyzewski,,kaplan,,,,pewny,,nie,W akcie zapisano imię Jacobus.
+cdial-618-2-109-1819-M-s059vb,1,Michał,Bygalski,,pan_mlody,Kozłów,,,niepewny,,nie,Disp… in Aul. Kozlow. Miejscowość odczytana z tego określenia. W akcie zapisano imię Michael.
+cdial-618-2-109-1819-M-s059vb,2,Anna,Radaczyńska,,panna_mloda,pw,,,pewny,,nie,Lat 30. Wcześniejszy odczyt nazwiska: Radaczynska.
+cdial-618-2-109-1819-M-s059vb,3,Dominik,Małaczyński,,swiadek,,,,pewny,,nie,Zapis Domini Kozlow przy określeniu funkcji. W akcie zapisano imię Dominicus.
+cdial-618-2-109-1819-M-s059vb,4,Ludwik,Konarski,,swiadek,,,,pewny,,nie,W akcie zapisano imię Ludovicus.
 cdial-618-2-109-1819-M-s059vb,5,J.,Czyzewski,,kaplan,,,,pewny,,nie,
-cdial-618-2-109-1819-Z-s067a,1,Sophia,Szczawinska,,zmarla,pm,78,78,niepewny,pewny,tak,
-cdial-618-2-109-1819-Z-s067b,1,Apolonia,,,zmarla,pm,66,66,,pewny,tak,Żona Gaspari Bolesławskiego.
-cdial-618-2-109-1819-Z-s067b,2,Gaspari,Bolesławski,,inna,,,,pewny,,nie,Mąż zmarłej.
+cdial-618-2-109-1819-Z-s067a,1,Zofia,Szczawinska,,zmarla,pm,78,78,pewny,pewny,tak,W akcie zapisano imię Sophia.
+cdial-618-2-109-1819-Z-s067b,1,Apolonia,,,zmarla,pm,66,66,,pewny,tak,Żona Kacpra Bolesławskiego.
+cdial-618-2-109-1819-Z-s067b,2,Kacper,Bolesławski,,inna,,,,pewny,,nie,Mąż zmarłej. W akcie zapisano imię Gaspari.
 cdial-618-2-109-1819-Z-s067b,3,J.,Czyzewski,,kaplan,,,,pewny,,nie,
