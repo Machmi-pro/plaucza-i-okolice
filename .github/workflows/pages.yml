@@ -1,4 +1,4 @@
-# Publikuje makietę (mockup/) i dane (data/) na GitHub Pages.
+# Publikuje stronę (site/) z danymi (data/) na GitHub Pages; makieta trafia pod /makieta/.
 # Uruchamia się po każdej zmianie na gałęzi main albo ręcznie (Actions > Run workflow).
 name: Publikacja na GitHub Pages
 
@@ -24,8 +24,10 @@ jobs:
       - name: Przygotuj stronę
         run: |
           mkdir -p _site
-          cp -r mockup/. _site/
+          cp -r site/. _site/
           cp -r data _site/data
+          mkdir -p _site/makieta
+          cp -r mockup/. _site/makieta/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

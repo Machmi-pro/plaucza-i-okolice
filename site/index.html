@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domy i mieszkańcy · Płaucza Mała, Glinna, Płaucza Wielka</title>
+<meta name="description" content="Historia mieszkańców Płauczy Małej, Glinnej i Płauczy Wielkiej (1700–1945) według numerów domów, na podstawie akt metrykalnych obu obrządków.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Cpath d='M8 16l8-7 8 7v8H8z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ai-bar">Dane z odczytu skanów przez AI, do sprawdzenia ze skanem</div>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo"><i aria-hidden="true">⌂</i><h1>Domy i mieszkańcy</h1></div>
+      <select id="village" aria-label="Wybór wsi"></select>
+    </div>
+    <form class="search" id="searchForm" role="search">
+      <input type="search" id="q" placeholder="Szukaj nazwiska, np. Bolesławski" aria-label="Szukaj nazwiska" autocomplete="off">
+      <button class="btn" type="submit">Szukaj</button>
+    </form>
+  </div>
+</header>
+<main class="wrap" id="app" tabindex="-1"><p class="loading">Wczytywanie danych…</p></main>
+<footer>
+  <p>Płaucza Mała • Glinna • Płaucza Wielka · 1700–1945</p>
+  <p id="stamp"></p>
+  <p><a href="https://github.com/Machmi-pro/plaucza-i-okolice/tree/main/data" target="_blank" rel="noopener">Dane źródłowe (CSV)</a></p>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
