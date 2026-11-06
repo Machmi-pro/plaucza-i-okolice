@@ -5,186 +5,194 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Domy i mieszkańcy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #f7f3ec;
-  --surface: #fffdf9;
-  --surface-2: #efe8dc;
-  --ink: #2a2520;
-  --ink-2: #5d554c;
-  --line: #ddd3c4;
-  --accent: #7a3b1e;
+  --bg: #f3f6fb;
+  --surface: #ffffff;
+  --surface-2: #f6f8fc;
+  --ink: #0f1b2d;
+  --ink-2: #53627a;
+  --line: #e1e7f0;
+  --accent: #2563eb;
   --accent-ink: #ffffff;
-  --event: #9c2b2b;
-  --event-bg: #f8e4df;
-  --ok: #2f6b3a;     --ok-bg: #dcefdc;
-  --scan: #2c5a86;   --scan-bg: #dde9f5;
-  --part: #7a5d12;   --part-bg: #f5ebcc;
-  --cat: #5d554c;    --cat-bg: #e9e4dc;
-  --none: #8a8178;   --none-bg: transparent;
-  --warn: #8a4b00;   --warn-bg: #fdecc8;
-  --radius: 10px;
-  --serif: "Source Serif 4", Georgia, serif;
-  --sans: "Source Sans 3", system-ui, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #1b1916; --surface: #24211d; --surface-2: #2e2a25; --ink: #eee7dc; --ink-2: #b9afa2;
-    --line: #3d3832; --accent: #e09a6c; --accent-ink: #1b1916; --event: #f08f80; --event-bg: #3a2420;
-    --ok: #8fd09a; --ok-bg: #1f3423; --scan: #95c0ea; --scan-bg: #1d2c3b; --part: #e3c46d; --part-bg: #3a321b;
-    --cat: #c8bfb3; --cat-bg: #34302a; --none: #8f867b; --warn: #f2b35e; --warn-bg: #3b2c14;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #1b1916; --surface: #24211d; --surface-2: #2e2a25; --ink: #eee7dc; --ink-2: #b9afa2;
-  --line: #3d3832; --accent: #e09a6c; --accent-ink: #1b1916; --event: #f08f80; --event-bg: #3a2420;
-  --ok: #8fd09a; --ok-bg: #1f3423; --scan: #95c0ea; --scan-bg: #1d2c3b; --part: #e3c46d; --part-bg: #3a321b;
-  --cat: #c8bfb3; --cat-bg: #34302a; --none: #8f867b; --warn: #f2b35e; --warn-bg: #3b2c14;
+  --accent-soft: #e8f0ff;
+  --event: #e0405a;
+  --event-bg: #fff0f2;
+  --ok: #0e8a5f;     --ok-bg: #dff6ec;
+  --scan: #2563eb;   --scan-bg: #e4edff;
+  --part: #a35f00;   --part-bg: #fff2d6;
+  --cat: #5b6b82;    --cat-bg: #eceff5;
+  --none: #8896ab;
+  --warn: #a35f00;   --warn-bg: #fff2d6;
+  --radius: 16px;
+  --shadow: 0 1px 2px rgba(15,27,45,.06), 0 6px 20px rgba(15,27,45,.05);
+  --font: "Manrope", system-ui, sans-serif;
+  color-scheme: light;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 var(--sans); overflow-wrap: anywhere; }
-a { color: var(--accent); }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--font); overflow-wrap: anywhere; }
+a { color: var(--accent); font-weight: 600; }
 button, select, input { font: inherit; color: inherit; }
-h1, h2, h3 { font-family: var(--serif); font-weight: 650; line-height: 1.2; margin: 0; }
-h1 { font-size: 1.35rem; }
-h2 { font-size: 1.2rem; }
-h3 { font-size: 1.02rem; }
-.wrap { max-width: 640px; margin: 0 auto; padding: 0 16px; }
-.mock-note { background: var(--warn-bg); color: var(--warn); font-size: .82rem; text-align: center; padding: 4px 16px; }
+h1, h2, h3 { margin: 0; line-height: 1.2; letter-spacing: -.01em; }
+h1 { font-size: .98rem; font-weight: 800; }
+h2 { font-size: 1.5rem; font-weight: 800; }
+h3 { font-size: 1rem; font-weight: 700; }
+.wrap { max-width: 640px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.mock-note { background: var(--ink); color: #dbe4f3; font-size: .78rem; text-align: center; padding: 5px 16px; }
 
-/* Nagłówek */
-header.top { position: sticky; top: 0; z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
-header.top .wrap { padding-top: 10px; padding-bottom: 10px; display: grid; gap: 8px; }
-.brand { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
-.brand small { color: var(--ink-2); font-size: .8rem; }
-.controls { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 8px; }
-select, input[type="search"] { width: 100%; min-height: 42px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); padding: 6px 10px; }
-form.search { display: flex; gap: 6px; min-width: 0; }
-form.search input { min-width: 0; }
-.btn { white-space: nowrap; min-height: 42px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); border-radius: 8px; padding: 6px 12px; cursor: pointer; font-weight: 600; }
-.btn.ghost { background: transparent; color: var(--accent); }
-.btn.small { min-height: 34px; padding: 4px 10px; font-size: .9rem; }
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+header.top .wrap { padding-block: 10px; display: grid; gap: 8px; }
+.brand { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.brand .logo { display: flex; align-items: center; gap: 8px; }
+.brand .logo i { width: 26px; height: 26px; border-radius: 8px; background: var(--accent); display: grid; place-items: center; color: #fff; font-style: normal; font-size: .9rem; }
+select, input[type="search"] { width: 100%; min-height: 44px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); padding: 6px 12px; }
+.brand select { width: auto; max-width: 150px; min-height: 38px; font-weight: 700; padding-right: 6px; }
+h1 { white-space: nowrap; }
+form.search { display: flex; gap: 8px; min-width: 0; }
+form.search input { min-width: 0; background: var(--surface-2); }
+input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.btn { white-space: nowrap; min-height: 44px; border: 0; background: var(--accent); color: var(--accent-ink); border-radius: 12px; padding: 6px 16px; cursor: pointer; font-weight: 700; }
+.btn.ghost { background: var(--accent-soft); color: var(--accent); }
+.btn.small { min-height: 36px; padding: 4px 12px; font-size: .88rem; }
 
-main { padding: 14px 0 48px; }
-.lead { color: var(--ink-2); margin: 6px 0 12px; }
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; margin: 10px 0; }
+main { padding-top: 16px; padding-bottom: 56px; }
 .muted { color: var(--ink-2); }
-.small { font-size: .88rem; }
-.back { display: inline-block; margin-bottom: 8px; text-decoration: none; font-weight: 600; }
+.small { font-size: .86rem; }
+.lead { color: var(--ink-2); margin: 8px 0 0; }
+.card { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px 16px; margin: 12px 0; }
+.back { display: inline-flex; align-items: center; gap: 4px; margin-bottom: 10px; text-decoration: none; }
 
-/* Zakładki */
-.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 8px 0 12px; }
-.tabs button { flex: 1; background: none; border: 0; border-bottom: 3px solid transparent; padding: 8px 2px; cursor: pointer; color: var(--ink-2); font-weight: 600; font-size: .92rem; }
-.tabs button[aria-selected="true"] { color: var(--ink); border-color: var(--accent); }
+/* Wieś */
+.hero { background: var(--surface); border-radius: 20px; box-shadow: var(--shadow); padding: 16px; }
+.eyebrow { margin: 0 0 2px; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.more summary { cursor: pointer; color: var(--accent); font-weight: 700; font-size: .84rem; margin-top: 6px; }
+.more p { margin: 6px 0 0; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 14px; }
+.stats div { background: var(--surface-2); border-radius: 12px; padding: 8px 10px; }
+.stats b { display: block; font-size: 1.3rem; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.stats span { font-size: .74rem; color: var(--ink-2); }
+
+.tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; background: #e6ecf6; border-radius: 14px; padding: 4px; margin: 14px 0; }
+.tabs button { border: 0; background: none; border-radius: 10px; padding: 9px 4px; cursor: pointer; color: var(--ink-2); font-weight: 700; font-size: .84rem; }
+.tabs button[aria-selected="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(15,27,45,.12); }
 
 /* Oś czasu */
-.timeline details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); margin: 8px 0; }
-.timeline summary { list-style: none; cursor: pointer; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+details.tl { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); }
+details.tl > summary { list-style: none; cursor: pointer; padding: 12px 16px; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; }
+details.tl > summary::-webkit-details-marker { display: none; }
+.tl-ico { width: 40px; height: 40px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-weight: 800; }
+.tl-main small { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+.tl-main strong { font-size: 1.15rem; font-weight: 800; }
+.tl-main span { display: block; color: var(--ink-2); font-size: .84rem; }
+.tl-change { color: var(--accent); font-weight: 700; font-size: .84rem; white-space: nowrap; }
+details.tl[open] .tl-change::after { content: " ▴"; } details.tl:not([open]) .tl-change::after { content: " ▾"; }
+.tl-body { padding: 0 12px 12px; border-top: 1px solid var(--line); }
+.timeline details { border-radius: 12px; margin: 8px 0; background: var(--surface-2); }
+.timeline summary { list-style: none; cursor: pointer; padding: 10px 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .timeline summary::-webkit-details-marker { display: none; }
-.timeline summary .yrs { font-family: var(--serif); font-weight: 650; font-size: 1.1rem; }
-.timeline summary::after { content: "▾"; color: var(--ink-2); transition: transform .15s; }
-.timeline details[open] summary::after { transform: rotate(180deg); }
-.timeline ol { list-style: none; margin: 0; padding: 0 10px 10px 22px; border-left: 2px solid var(--line); margin-left: 20px; }
+.timeline summary .yrs { font-weight: 800; font-size: 1.02rem; }
+.timeline summary::after { content: "▾"; color: var(--ink-2); }
+.timeline details[open] summary::after { content: "▴"; }
+.timeline ol { list-style: none; margin: 0 0 6px 18px; padding: 0 8px 4px 18px; border-left: 2px solid var(--line); }
 .timeline li { position: relative; margin: 6px 0; }
-.timeline li::before { content: ""; position: absolute; left: -29px; top: 16px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--ink-2); }
+.timeline li::before { content: ""; position: absolute; left: -26px; top: 18px; width: 10px; height: 10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--none); }
 .timeline li.has::before { background: var(--ok); border-color: var(--ok); }
 .timeline li.event::before { border-radius: 2px; transform: rotate(45deg); background: var(--event); border-color: var(--event); }
-.period { width: 100%; text-align: left; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; cursor: pointer; display: grid; gap: 2px; }
-.period[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--surface); }
+.period { width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 9px 12px; cursor: pointer; display: grid; gap: 2px; }
+.period[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--accent-soft); }
 .period .row { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
-.period strong { font-family: var(--serif); }
-.period .desc { color: var(--ink-2); font-size: .86rem; }
-.evt { width: 100%; text-align: left; background: var(--event-bg); color: var(--ink); border: 1px dashed var(--event); border-radius: 8px; padding: 8px 10px; cursor: pointer; }
-.evt .lbl { display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--event); margin-bottom: 2px; }
-.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .8rem; color: var(--ink-2); margin: 4px 0 0; }
-.legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; border: 2px solid var(--ink-2); vertical-align: -1px; }
+.period .desc { color: var(--ink-2); font-size: .82rem; }
+.evt { width: 100%; text-align: left; background: var(--event-bg); border: 1px dashed var(--event); border-radius: 12px; padding: 9px 12px; cursor: pointer; }
+.evt .lbl { display: inline-block; font-size: .7rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--event); }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .78rem; color: var(--ink-2); margin: 10px 4px 0; }
+.legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; border: 2px solid var(--none); vertical-align: -1px; }
 .legend .l-has::before { background: var(--ok); border-color: var(--ok); }
-.legend .l-evt::before { border-radius: 1px; transform: rotate(45deg); background: var(--event); border-color: var(--event); }
+.legend .l-evt::before { border-radius: 2px; transform: rotate(45deg); background: var(--event); border-color: var(--event); }
 
 /* Znaczniki stanu */
-.chip { display: inline-block; font-size: .76rem; font-weight: 600; border-radius: 99px; padding: 1px 8px; white-space: nowrap; border: 1px solid transparent; }
+.chip { display: inline-block; font-size: .72rem; font-weight: 700; border-radius: 99px; padding: 2px 9px; white-space: nowrap; border: 1px solid transparent; }
 .s-opracowany { color: var(--ok); background: var(--ok-bg); }
-.s-w_opracowaniu { color: var(--ok); background: transparent; border-color: var(--ok); }
+.s-w_opracowaniu { color: var(--ok); background: #fff; border-color: var(--ok); }
 .s-skany_calosc { color: var(--scan); background: var(--scan-bg); }
 .s-skany_czesc { color: var(--part); background: var(--part-bg); }
 .s-katalog { color: var(--cat); background: var(--cat-bg); }
-.s-brak_ustalen { color: var(--none); border-color: var(--line); }
-.flag { display: inline-block; font-size: .74rem; font-weight: 600; color: var(--warn); background: var(--warn-bg); border-radius: 4px; padding: 0 5px; }
+.s-brak_ustalen { color: var(--none); border-color: var(--line); background: #fff; }
+.flag { display: inline-block; font-size: .7rem; font-weight: 700; color: var(--warn); background: var(--warn-bg); border-radius: 6px; padding: 0 6px; }
 
 /* Panel okresu */
-.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
-.filters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin: 10px 0; }
-.filters label { font-size: .76rem; color: var(--ink-2); display: grid; gap: 2px; }
-.filters select { min-height: 38px; padding: 4px 6px; }
-.wykaz summary { cursor: pointer; font-weight: 600; }
-.wykaz table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: .88rem; }
-.wykaz th, .wykaz td { text-align: left; padding: 4px 4px; border-top: 1px solid var(--line); }
-.wykaz th { font-weight: 600; color: var(--ink-2); }
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-top: 22px; scroll-margin-top: 130px; }
+.panel-head h2 { font-size: 1.3rem; }
+.filters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 12px 0; }
+.filters label { font-size: .72rem; font-weight: 700; color: var(--ink-2); display: grid; gap: 3px; }
+.filters select { min-height: 40px; padding: 4px 8px; font-weight: 600; }
+.wykaz summary { cursor: pointer; font-weight: 700; }
+.wykaz table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: .86rem; }
+.wykaz th, .wykaz td { text-align: left; padding: 5px 4px; border-top: 1px solid var(--line); }
+.wykaz th { color: var(--ink-2); font-weight: 700; }
 
 /* Domy */
-.houses { list-style: none; padding: 0; margin: 0; }
-.house { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 10px; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; margin: 8px 0; cursor: pointer; }
-.house .no { font-family: var(--serif); font-size: 1.5rem; font-weight: 650; color: var(--accent); line-height: 1; padding-top: 2px; }
-.house .no small { display: block; font-family: var(--sans); font-size: .68rem; font-weight: 600; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
-.names { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; }
-.names b { font-weight: 600; }
-.names .yrs { color: var(--ink-2); font-size: .9rem; }
-.toggle { display: flex; align-items: center; gap: 8px; font-size: .9rem; color: var(--ink-2); margin: 6px 0; }
+.list-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 18px 0 4px; }
+.houses { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.house { display: grid; grid-template-columns: 58px minmax(0, 1fr) auto; gap: 12px; align-items: center; width: 100%; text-align: left; background: var(--surface); border: 0; border-radius: var(--radius); box-shadow: var(--shadow); padding: 12px 14px 12px 12px; cursor: pointer; }
+.house:active { background: var(--surface-2); }
+.house .no { width: 58px; height: 58px; border-radius: 14px; background: var(--accent-soft); color: var(--accent); display: grid; place-content: center; text-align: center; font-size: 1.45rem; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
+.house .no small { display: block; font-size: .6rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 3px; opacity: .8; }
+.house .chev { color: var(--none); font-size: 1.4rem; }
+.names { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+.names b { font-weight: 700; }
+.names .yrs { color: var(--ink-2); font-size: .84rem; font-variant-numeric: tabular-nums; }
+.hmeta { display: block; margin-top: 6px; font-size: .76rem; color: var(--ink-2); }
+.toggle { display: flex; align-items: center; gap: 8px; font-size: .86rem; color: var(--ink-2); margin: 12px 0 0; }
 .toggle input { width: 18px; height: 18px; accent-color: var(--accent); }
+.section-title { margin: 22px 0 8px; font-size: 1.02rem; font-weight: 800; }
+.count { display: inline-block; min-width: 22px; text-align: center; background: var(--cat-bg); color: var(--ink-2); border-radius: 99px; padding: 0 7px; font-size: .8rem; font-weight: 700; margin-left: 4px; }
 
 /* Wpisy */
-.seg { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; margin: 10px 0; }
-.seg button { border: 0; background: var(--surface); padding: 8px; cursor: pointer; font-weight: 600; color: var(--ink-2); }
-.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
-.entry { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); margin: 8px 0; }
-.entry summary { cursor: pointer; padding: 10px 12px; display: grid; gap: 2px; list-style: none; }
+.seg { display: grid; grid-template-columns: 1fr 1fr; background: #e6ecf6; border-radius: 12px; padding: 4px; margin: 12px 0; gap: 4px; }
+.seg button { border: 0; background: none; border-radius: 9px; padding: 8px; cursor: pointer; font-weight: 700; color: var(--ink-2); }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(15,27,45,.12); }
+.entry { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); margin: 10px 0; }
+.entry summary { cursor: pointer; padding: 12px 14px; display: grid; gap: 2px; list-style: none; }
 .entry summary::-webkit-details-marker { display: none; }
-.entry .when { font-family: var(--serif); font-weight: 650; }
-.entry .body { padding: 0 12px 12px; border-top: 1px solid var(--line); }
-dl.meta { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 12px; margin: 10px 0; font-size: .9rem; }
+.entry .when { font-weight: 800; }
+.entry .body { padding: 0 14px 14px; border-top: 1px solid var(--line); }
+dl.meta { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 5px 14px; margin: 12px 0; font-size: .88rem; }
 dl.meta dt { color: var(--ink-2); }
-dl.meta dd { margin: 0; }
+dl.meta dd { margin: 0; font-weight: 600; }
 .people { list-style: none; margin: 8px 0; padding: 0; display: grid; gap: 6px; }
-.people li { background: var(--bg); border-radius: 8px; padding: 6px 10px; font-size: .92rem; }
-.people .role { font-size: .76rem; color: var(--ink-2); text-transform: uppercase; letter-spacing: .03em; font-weight: 600; }
-.src-read { font-size: .8rem; color: var(--ink-2); }
-.note { border-left: 3px solid var(--part); background: var(--part-bg); padding: 8px 10px; border-radius: 0 8px 8px 0; font-size: .9rem; margin: 10px 0; }
-.note.event { border-color: var(--event); background: var(--event-bg); }
+.people li { background: var(--surface-2); border-radius: 12px; padding: 8px 12px; font-size: .9rem; }
+.people .role { font-size: .7rem; color: var(--ink-2); text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+.src-read { font-size: .78rem; color: var(--ink-2); }
+.note { background: var(--part-bg); color: #6b4200; padding: 10px 12px; border-radius: 12px; font-size: .86rem; margin: 12px 0; }
+.note.event { background: var(--event-bg); color: #7a1f30; }
 
-/* Wyniki */
-.result { display: block; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; margin: 8px 0; cursor: pointer; }
-.result .nm { font-weight: 600; font-size: 1.02rem; }
-.result .where { color: var(--ink-2); font-size: .9rem; }
-
-/* Pusty wynik */
-.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: var(--radius); padding: 14px; margin: 10px 0; }
+.result { display: block; width: 100%; text-align: left; background: var(--surface); border: 0; border-radius: var(--radius); box-shadow: var(--shadow); padding: 12px 14px; margin: 10px 0; cursor: pointer; }
+.result .nm { font-weight: 800; font-size: 1.05rem; }
+.result .where { color: var(--ink-2); font-size: .88rem; }
+.empty { background: var(--surface); border: 1.5px dashed #c6d1e3; border-radius: var(--radius); padding: 16px; margin: 14px 0; }
 .empty h3 { margin-bottom: 6px; }
-.empty ul { margin: 8px 0; padding-left: 18px; }
-.empty li { margin: 3px 0; }
-
-.section-title { margin: 20px 0 4px; font-size: 1.05rem; }
-.event-head { border-left: 4px solid var(--event); padding-left: 10px; }
-.event-head .lbl { color: var(--event); font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
-.two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 12px 0; }
-.two .btn { width: 100%; white-space: normal; }
-.srcs { list-style: none; padding: 0; margin: 0; }
-footer { color: var(--ink-2); font-size: .8rem; text-align: center; padding: 20px 16px 32px; }
+.empty ul { margin: 10px 0; padding-left: 0; list-style: none; display: grid; gap: 6px; }
+.event-head { border-left: 4px solid var(--event); padding-left: 12px; }
+.event-head .lbl { color: var(--event); font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0; }
+.two .btn { width: 100%; white-space: normal; padding-block: 10px; }
+footer { color: var(--ink-2); font-size: .78rem; text-align: center; padding: 20px 16px 32px; }
 </style>
 </head>
 <body>
-<div class="mock-note">Makieta. Wszystkie nazwiska, numery aktów i część sygnatur są przykładowe.</div>
+<div class="mock-note">Makieta · wszystkie dane są przykładowe</div>
 <header class="top">
   <div class="wrap">
-    <div class="brand"><h1>Domy i mieszkańcy</h1><small>1700–1945</small></div>
-    <div class="controls">
+    <div class="brand">
+      <div class="logo"><i aria-hidden="true">⌂</i><h1>Domy i mieszkańcy</h1></div>
       <select id="village" aria-label="Wybór wsi"></select>
-      <form class="search" id="searchForm" role="search">
-        <input type="search" id="q" placeholder="Nazwisko…" aria-label="Szukaj nazwiska" autocomplete="off">
-        <button class="btn" type="submit" aria-label="Szukaj">Szukaj</button>
-      </form>
     </div>
+    <form class="search" id="searchForm" role="search">
+      <input type="search" id="q" placeholder="Szukaj nazwiska, np. Kowalczuk" aria-label="Szukaj nazwiska" autocomplete="off">
+      <button class="btn" type="submit">Szukaj</button>
+    </form>
   </div>
 </header>
 <main class="wrap" id="app" tabindex="-1"></main>
@@ -314,6 +322,38 @@ const ACTS = [
     P("Wasyl","Kowalczuk","dziecko",47,"47",true), P("Hryć","Kowalczuk","ojciec",47,"47",true) ] },
 ];
 
+/* ---- więcej danych przykładowych: rodziny z domami w latach 1836–1851 ---- */
+(function () {
+  let n = 100;
+  const add = (v, y, rite, kind, src, people, extra = {}) => {
+    n++;
+    const mm = String(1 + (n * 7) % 12).padStart(2, "0"), dd = String(1 + (n * 11) % 28).padStart(2, "0");
+    ACTS.push({ id: `${v}-${y}-${kind}-x${n}`, v, date: `${y}-${mm}-${dd}`, rite, kind, src, nr: String(1 + (n * 3) % 60), page: rite === "rz" ? `s. ${10 + (n * 5) % 150}` : `k. ${2 + (n * 3) % 40}`, scan: "#", people, ...extra });
+  };
+  const fam = (v, dom, rite, src, sur, fem, father, mother, maiden, kids, deaths = []) => {
+    for (const [y, kid] of kids) add(v, y, rite, "U", src, [P(kid, sur, "dziecko", dom, "", true), P(father, sur, "ojciec", dom, "", true), P(mother, fem, "matka", dom, "", true, "pewny", "pewny", maiden)]);
+    for (const [y, who, role] of deaths) add(v, y, rite, "Z", src, [P(who, role === "zmarla" ? fem : sur, role, dom, "", true)]);
+  };
+  const rz = "koz", gk = "pwgk";
+  fam("pm", 2, "rz", rz, "Mazur", "Mazurowa", "Wojciech", "Maria", "Dudek", [[1838, "Jan"], [1841, "Anna"], [1846, "Marcin"]], [[1849, "Maria", "zmarla"]]);
+  fam("pm", 5, "rz", rz, "Bojko", "Bojkowa", "Jakub", "Zofia", "Mazur", [[1837, "Tomasz"], [1840, "Katarzyna"], [1843, "Józef"]]);
+  fam("pm", 14, "gk", gk, "Szewczuk", "Szewczukowa", "Semen", "Hanna", "Hrycak", [[1839, "Mykoła"], [1842, "Oleksa"], [1845, "Marijka"]], [[1848, "Semen", "zmarly"]]);
+  fam("pm", 23, "rz", rz, "Wiśniewski", "Wiśniewska", "Tomasz", "Rozalia", "Łysak", [[1836, "Antoni"], [1839, "Rozalia"], [1842, "Piotr"], [1850, "Marianna"]], [[1847, "Antoni", "zmarly"]]);
+  fam("pm", 31, "rz", rz, "Szewczuk", "Szewczukowa", "Piotr", "Maria", "Bojko", [[1840, "Wojciech"], [1844, "Agnieszka"]]);
+  fam("pm", 58, "gk", gk, "Pasternak", "Pasternakowa", "Hryć", "Katryna", "Stefaniuk", [[1838, "Dmytro"], [1841, "Hanna"], [1844, "Iwan"], [1849, "Petro"]]);
+  fam("pm", 76, "rz", rz, "Dudek", "Dudkowa", "Franciszek", "Salomea", "Kozioł", [[1837, "Stanisław"], [1840, "Salomea"], [1846, "Ignacy"]], [[1851, "Franciszek", "zmarly"]]);
+  fam("pm", 88, "gk", gk, "Stefaniuk", "Stefaniukowa", "Wasyl", "Paraska", "Melnyk", [[1839, "Mychajło"], [1843, "Anastazja"]]);
+  fam("pm", 101, "rz", rz, "Zając", "Zającowa", "Michał", "Ewa", "Kaczmarek", [[1838, "Jakub"], [1845, "Ewa"], [1848, "Walenty"]]);
+  fam("pm", 112, "gk", gk, "Romaniuk", "Romaniukowa", "Andrij", "Marija", "Danyluk", [[1841, "Iwan"], [1847, "Teodozija"]]);
+  add("pm", 1845, "rz", "M", rz, [P("Józef", "Bojko", "pan_mlody", 5, "", true), P("Rozalia", "Wiśniewska", "panna_mloda", 23, "", true), P("Tomasz", "Wiśniewski", "swiadek")]);
+  add("pm", 1843, "gk", "M", gk, [P("Hryć", "Pasternak", "pan_mlody", 58, "", true), P("Hanna", "Szewczuk", "panna_mloda", 14, "", true)]);
+  /* inne wsie */
+  fam("gl", 12, "gk", gk, "Kowalczuk", "Kowalczukowa", "Hryhorij", "Anna", "Mazur", [[1840, "Petro"], [1844, "Oksana"]]);
+  fam("gl", 3, "gk", gk, "Mazur", "Mazurowa", "Iwan", "Marija", "Kowalczuk", [[1842, "Wasyl"]]);
+  fam("gl", 47, "rz", "bud1", "Lysak", "Lysakowa", "Jan", "Helena", "Boyko", [[1888, "Józef"], [1892, "Helena"]]);
+  fam("pw", 9, "gk", gk, "Hnatyszyn", "Hnatyszynowa", "Mykoła", "Kateryna", "Szewczuk", [[1847, "Stepan"], [1848, "Hanna"]]);
+})();
+
 const EVENTS = [
   { id: "pozar-1910", v: "pm", title: "Pożar Płauczy Małej, 1910", date: "1910", dateNote: "Dokładna data do potwierdzenia",
     desc: "Pożar strawił znaczną część zabudowy wsi. Opis w makiecie jest przykładowy; właściwa treść zostanie uzupełniona na podstawie relacji prasowej i dokumentów parafialnych.",
@@ -346,21 +386,16 @@ const listYears = ys => {
 };
 
 /* ===================== STAN / ROUTING ===================== */
-let S = {};
-function readHash() {
-  const p = new URLSearchParams(location.hash.slice(1));
-  S = Object.fromEntries(p.entries());
-  S.w = S.w || "pm"; S.v = S.v || "wies"; S.t = S.t || "domy";
-}
+let S = { w: "pm", v: "wies", t: "domy", o: "1836-1851" };
+const STACK = [];
 function go(patch, replace = false) {
-  const next = { ...S, ...patch };
-  for (const k of Object.keys(next)) if (next[k] === "" || next[k] == null) delete next[k];
-  const h = "#" + new URLSearchParams(next).toString();
-  if (replace) history.replaceState(null, "", h); else history.pushState(null, "", h);
+  if (!replace) STACK.push({ ...S });
+  S = { ...S, ...patch };
+  for (const k of Object.keys(S)) if (S[k] === "" || S[k] == null) delete S[k];
+  S.w = S.w || "pm"; S.v = S.v || "wies"; S.t = S.t || "domy";
   route(true);
 }
-window.addEventListener("popstate", () => route(true));
-window.addEventListener("hashchange", () => route(true));
+function goBack() { if (STACK.length) { S = STACK.pop(); route(true); } else go({ v: "wies" }); }
 
 /* ===================== FILTRY I INDEKSY ===================== */
 function actsIn(v, from, to, f = {}) {
@@ -385,11 +420,12 @@ function housesFrom(acts) {
   const houses = [...map.entries()].sort((x, y) => x[0] - y[0]);
   return { houses, noHouse };
 }
+const stem = n => n.replace(/(owna|owa)$/, "").replace(/ska$/, "ski");
 function namesForHouse(rows, collapse) {
   if (collapse) {
     const g = new Map();
     for (const { a, p } of rows) {
-      const key = variantOf[norm(p.nazw)] || norm(p.nazw);
+      const key = variantOf[norm(p.nazw)] || stem(norm(p.nazw));
       if (!g.has(key)) g.set(key, { names: new Set(), years: [], flag: false });
       const e = g.get(key); e.names.add(p.nazw); e.years.push(year(a)); if (p.pn !== "pewny" || p.pd !== "pewny") e.flag = true;
     }
@@ -403,29 +439,44 @@ const app = document.getElementById("app");
 function stateChip(s) { return `<span class="chip s-${s}">${STATE[s]}</span>`; }
 function periodHasData(v, p) { return ACTS.some(a => a.v === v && year(a) >= p.from && year(a) <= p.to); }
 
+function villageStats(v) {
+  const acts = ACTS.filter(a => a.v === v);
+  const houses = new Set(acts.flatMap(a => a.people.filter(p => p.miesz && p.dom != null && p.dom !== "").map(p => p.dom)));
+  const names = new Set(acts.flatMap(a => a.people.map(p => norm(p.nazw))));
+  return { houses: houses.size, names: names.size, acts: acts.length };
+}
+function descBlock(d) {
+  const i = d.indexOf(". ");
+  if (i < 0) return `<p class="lead">${esc(d)}</p>`;
+  return `<p class="lead">${esc(d.slice(0, i + 1))}</p><details class="more"><summary>Więcej o wsi</summary><p class="small muted">${esc(d.slice(i + 2))}</p></details>`;
+}
 function viewVillage() {
   const v = VILLAGES.find(x => x.id === S.w);
-  const tab = S.t;
-  let h = `<h2>${esc(v.name)}</h2><p class="lead">${esc(v.desc)}</p>
+  const tab = S.t, st = villageStats(v.id);
+  let h = `<section class="hero"><p class="eyebrow">Wieś</p><h2>${esc(v.name)}</h2>${descBlock(v.desc)}
+    <div class="stats"><div><b>${st.houses}</b><span>domów</span></div><div><b>${st.names}</b><span>nazwisk</span></div><div><b>${st.acts}</b><span>wpisów</span></div></div></section>
   <div class="tabs" role="tablist">
-    ${[["domy", "Domy i mieszkańcy"], ["historia", "Historia wsi"], ["zrodla", "Źródła"]].map(([k, l]) =>
+    ${[["domy", "Domy"], ["historia", "Historia wsi"], ["zrodla", "Źródła"]].map(([k, l]) =>
       `<button role="tab" aria-selected="${tab === k}" data-tab="${k}">${l}</button>`).join("")}
   </div>`;
   if (tab === "zrodla") return h + viewSources(v.id);
   h += timeline(v.id);
   if (tab === "historia") return h + viewHistory(v.id);
   if (S.o) h += periodPanel(v.id, findPeriod(S.o));
-  else h += `<p class="muted small">Rozwiń część osi i wybierz okres, aby zobaczyć listę domów.</p>`;
+  else h += `<div class="empty"><h3>Wybierz okres</h3><p class="small muted">Rozwiń oś czasu powyżej i wybierz okres, aby zobaczyć listę domów.</p></div>`;
   return h;
 }
 
 function timeline(v) {
-  const openPart = S.o ? PARTS.findIndex(pt => pt.periods.some(p => pkey(p) === S.o)) : -1;
-  let h = `<div class="timeline" aria-label="Oś czasu">`;
+  const cur = S.o ? findPeriod(S.o) : null;
+  const openPart = cur ? PARTS.findIndex(pt => pt.periods.some(p => pkey(p) === S.o)) : -1;
+  let h = `<details class="tl" ${cur ? "" : "open"}><summary><span class="tl-ico" aria-hidden="true">◷</span>
+    <span class="tl-main"><small>Okres</small>${cur ? `<strong>${cur.from}–${cur.to}</strong><span>${esc(cur.title)}</span>` : "<strong>Wybierz okres</strong>"}</span><span class="tl-change">Oś czasu</span></summary>
+    <div class="tl-body"><div class="timeline" aria-label="Oś czasu">`;
   PARTS.forEach((pt, i) => {
     const cnt = pt.periods.filter(p => periodHasData(v, p)).length;
     h += `<details ${i === openPart ? "open" : ""}><summary><span><span class="yrs">${pt.label}</span><br>
-      <span class="muted small">${pt.periods.length} okres${pt.periods.length > 4 ? "ów" : "y"} · ${cnt ? cnt + " z opracowanymi wpisami" : "brak opracowanych wpisów"}</span></span></summary><ol>`;
+      <span class="muted small">${cnt ? cnt + " z " + pt.periods.length + " okresów ma wpisy" : "brak opracowanych wpisów"}</span></span></summary><ol>`;
     for (const p of pt.periods) {
       for (const e of EVENTS.filter(e => e.v === v && +e.date.slice(0, 4) === p.from))
         h += `<li class="event"><button class="evt" data-event="${e.id}"><span class="lbl">◆ Wydarzenie</span><br><strong>${esc(e.title)}</strong><br><span class="muted small">${esc(e.dateNote)}</span></button></li>`;
@@ -436,7 +487,7 @@ function timeline(v) {
     }
     h += `</ol></details>`;
   });
-  return h + `</div><div class="legend"><span class="l-has">okres z opracowanymi wpisami</span><span>okres bez wpisów</span><span class="l-evt">wydarzenie</span></div>`;
+  return h + `</div><div class="legend"><span class="l-has">okres z opracowanymi wpisami</span><span>okres bez wpisów</span><span class="l-evt">wydarzenie</span></div></div></details>`;
 }
 
 function wykaz(v, p, open = false) {
@@ -492,20 +543,22 @@ function periodPanel(v, p) {
   </div>`;
   const ev = EVENTS.find(e => e.v === v && e.after === pkey(p));
   if (ev) h += `<div class="note event">Okres zaczyna się w roku wydarzenia „${esc(ev.title)}”. ${esc(ev.dateNote)}, dlatego wpisy z ${ev.date} r. nie są dzielone na sprzed i po pożarze. <a href="#" data-event="${ev.id}">Karta wydarzenia</a></div>`;
-  h += wykaz(v, p);
   if (!houses.length && !noHouse.length) {
-    return h + emptyState(v, S.r ? +S.r : p.from, S.r ? +S.r : p.to, S.ob, S.r || S.ob || S.rd ? "Brak wpisów dla wybranych filtrów" : "Ten okres nie ma jeszcze opracowanych wpisów");
+    return h + wykaz(v, p) + emptyState(v, S.r ? +S.r : p.from, S.r ? +S.r : p.to, S.ob, S.r || S.ob || S.rd ? "Brak wpisów dla wybranych filtrów" : "Ten okres nie ma jeszcze opracowanych wpisów");
   }
-  h += `<label class="toggle"><input type="checkbox" data-collapse ${collapse ? "checked" : ""}> Zwiń powtórzenia nazwiska</label>
-    <h3 class="section-title">Domy (${houses.length})</h3><ul class="houses">`;
+  h += `<div class="list-head"><h3 class="section-title" style="margin:0">Domy <span class="count">${houses.length}</span></h3>
+    <label class="toggle" style="margin:0"><input type="checkbox" data-collapse ${collapse ? "checked" : ""}> Zwiń powtórzenia</label></div><ul class="houses">`;
   for (const [no, rows] of houses) {
     const names = namesForHouse(rows, collapse);
-    h += `<li><button class="house" data-house="${no}"><span class="no"><small>nr</small>${no}</span><ul class="names">
-      ${names.map(n => `<li><b>${esc(n.name)}</b> ${n.flag ? '<span class="flag">niepewny odczyt</span>' : ""}<br><span class="yrs">${n.years}</span></li>`).join("")}</ul></button></li>`;
+    const yrs = rows.map(r => year(r.a));
+    h += `<li><button class="house" data-house="${no}" aria-label="Dom numer ${no}"><span class="no"><small>nr</small>${no}</span><span><ul class="names">
+      ${names.map(n => `<li><b>${esc(n.name)}</b> ${n.flag ? '<span class="flag">niepewny odczyt</span>' : ""}<br><span class="yrs">${n.years}</span></li>`).join("")}</ul>
+      <span class="hmeta">${new Set(rows.map(r => r.a.id)).size} wpisów · ${Math.min(...yrs)}–${Math.max(...yrs)}</span></span><span class="chev" aria-hidden="true">›</span></button></li>`;
   }
   h += `</ul>`;
-  h += `<h3 class="section-title">Bez numeru domu (${noHouse.length})</h3>`;
+  h += `<h3 class="section-title">Bez numeru domu <span class="count">${noHouse.length}</span></h3>`;
   h += noHouse.length ? noHouse.map(entryCard).join("") : `<p class="muted small">Wszystkie wpisy w tym zakresie mają numer domu.</p>`;
+  h += wykaz(v, p);
   return h;
 }
 
@@ -664,7 +717,6 @@ function viewSearch() {
 /* ===================== RENDER ===================== */
 let lastView = "";
 function route(scroll) {
-  readHash();
   document.getElementById("village").value = S.w;
   document.getElementById("q").value = S.v === "szukaj" ? (S.q || "") : "";
   const views = { wies: viewVillage, dom: viewHouse, akt: viewAct, szukaj: viewSearch, wydarzenie: viewEvent };
@@ -693,7 +745,7 @@ app.addEventListener("click", ev => {
   else if (d.gotoPeriod) { go({ v: "wies", t: "domy", o: d.gotoPeriod, r: "", e: "" }); requestAnimationFrame(() => document.getElementById("okres")?.scrollIntoView({ block: "start" })); }
   else if (d.scope) go({ z: d.scope === "all" ? "all" : "" }, true);
   else if ("allvOn" in d) go({ all: "1" }, true);
-  else if ("back" in d) history.length > 1 ? history.back() : go({ v: "wies" });
+  else if ("back" in d) goBack();
 });
 app.addEventListener("change", ev => {
   const t = ev.target;
@@ -703,5 +755,6 @@ app.addEventListener("change", ev => {
 });
 route(false);
 </script>
+
 </body>
 </html>
