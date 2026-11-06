@@ -517,7 +517,8 @@ function viewSearch() {
       const viaVar = !direct && (groups.has(VAR[nn]) || (np && groups.has(VAR[np])));
       if (!direct && !viaVar) continue;
       const dom = hasHouse(p) ? p.dom : null;
-      const maiden = !(nn && nn.includes(nq)) && !!np && np.includes(nq);
+      const byName = (nn && nn.includes(nq)) || (nn && groups.has(VAR[nn]));
+      const maiden = !byName && !!np;
       const shown = maiden ? p.pan : p.nazw;
       const key = `${a.v}|${dom ?? "-"}|${shown}|${dom == null ? a.id : ""}`;
       if (!res.has(key)) res.set(key, { v: a.v, dom, nazw: shown, years: [], acts: [], roles: new Set(), viaVar, maiden, derived: false });
