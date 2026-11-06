@@ -10,4 +10,9 @@ Wyciągi greckokatolickie z 1836 r., CDIAL 201/4a/1117. Dane przyszły w trzech 
 - Na skanach 1538 lewa strona, 1539 lewa strona, 1542 lewa strona oraz 1546 lewa strona są puste formularze.
 - Niepewne nazwiska i cyfry oznaczono w odpowiednich kolumnach. W razie niepewnej liczby pole dom pozostaje puste. Geneteka nie dostarczyła niezależnego potwierdzenia tych niepewnych odczytów.
 - Przy kolejnych odczytach porównywać powtarzające się nazwiska i sposób zapisu liter na kartach tej samej wsi, korzystając z potwierdzonych form, m.in. Rewny, Małaczyński i Szczawurski. Gdy porównanie nie rozstrzyga odczytu, zachować oznaczenie niepewności.
-- Powtórne porównanie kart rozstrzygnęło część zapisów Rewny, Pichur, Pabiak, Grochowski i Rogucka oraz sześć numerów domów w aktach chrztu. Przy dwóch zapisach z Glinnej pod nr 59 odnotowano możliwość odczytu Kobało. Niepełne daty i nierozstrzygnięte odczyty pozostają oznaczone.
+- Powtórne porównanie kart rozstrzygnęło część zapisów Rewny, Pichur, Pabiak, Grochowski i Rogucka oraz sześć numerów domów w aktach chrztu. Niepełne daty i nierozstrzygnięte odczyty pozostają oznaczone.
+
+## Glinna (poprawiona wersja)
+
+- Dom 98: Krak i Czarny po korekcie użytkowniczki. W chrzcie nazwisko Bazylego jest podzielone na dwa wiersze jako Di / dyk. Dom 100: skorygowano miesiąc ślubu na październik (8ber). Nazwisko Didyk pozostaje przy tym ślubie odczytem prawdopodobnym.
+- Skorygowano nazwiska przy domach 11, 26, 59, 65, 66, 69, 77, 89 i 93. Na skanie 1535 w chrzcie Michała, syna Mikołaja Procaka, poprawiono numer domu z 28 na 38. Nazwisko Stokało potwierdzono w dwóch wpisach dotyczących domu 59 według korekty użytkowniczki opartej na Genetece. W chrzcie Barbary (dom 11) odczyt Stokało przy Dymitrze jest prawdopodobny. Dom 11 odnosi się do chrztu Barbary i jej rodziców.

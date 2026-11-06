@@ -83,7 +83,7 @@ function roleOf(r) {
   if (r.rola !== "inna") return r.rola;
   const u = r.uwagi.toLowerCase();
   if (u.includes("ojciec matki")) return "dziadek_matki";
-  if (u.includes("mąż chrzestnej")) return "maz_chrzestnej";
+  if (u.includes("mąż chrzestnej") || /mąż [^,.]+, chrzestnej/.test(u)) return "maz_chrzestnej";
   return "inna";
 }
 
