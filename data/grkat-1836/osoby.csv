@@ -1,7 +1,7 @@
 akt,lp,imie,nazwisko,nazwisko_panienskie,rola,wies_zamieszkania,dom_zrodlowy,dom,pewnosc_nazwiska,pewnosc_domu,mieszkaniec,uwagi
 cdial-201-4a-1117-1836-M-s1538ra,1,Grzegorz,,,pan_mlody,pm,75,75,,pewny,tak,W akcie imię Gregorius. Wiek 22 lat
 cdial-201-4a-1117-1836-M-s1538ra,2,Anna,,,panna_mloda,,,,,,nie,Wiek 22 lat
-cdial-201-4a-1117-1836-M-s1538ra,3,Jan,W…k,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1538ra,3,Jan,Wowk[?],,rodzic_pana_mlodego,,,,niepewny,,nie,"W akcie imię Joannes. Prawdopodobnie Wowk: ten sam zapis W…k co w aktach domów 18, 48 i 78"
 cdial-201-4a-1117-1836-M-s1538ra,4,Grzegorz,Baran,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Gregorius
 cdial-201-4a-1117-1836-M-s1538ra,5,Jakub,Homeniuk,,swiadek,,,,pewny,,nie,W akcie imię Jacobus
 cdial-201-4a-1117-1836-M-s1538ra,6,Stefan,Homeniuk,,swiadek,,,,pewny,,nie,W akcie imię Stephanus
@@ -90,13 +90,13 @@ cdial-201-4a-1117-1836-U-s1540rc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,
 cdial-201-4a-1117-1836-U-s1540rd,1,Grzegorz,,,dziecko,pm,46,46,,pewny,tak,W akcie imię Gregorius
 cdial-201-4a-1117-1836-U-s1540rd,2,Jan,Chmyz,,ojciec,pm,46,46,pewny,pewny,tak,W akcie imię Joannes
 cdial-201-4a-1117-1836-U-s1540rd,3,Julianna,,Grabowski,matka,pm,46,46,pewny,pewny,tak,córka Joannes Grabowski. Nazwisko uzupełnione według indeksu Geneteki
-cdial-201-4a-1117-1836-U-s1540rd,4,Jan,W…k,,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-U-s1540rd,4,Jan,Wowk[?],,chrzestny,,,,niepewny,,nie,"W akcie imię Joannes. Prawdopodobnie Wowk: ten sam zapis W…k co w aktach domów 18, 48 i 78"
 cdial-201-4a-1117-1836-U-s1540rd,5,Barbara,,,chrzestna,,,,,,nie,żona Mattheus Sie…ski
 cdial-201-4a-1117-1836-U-s1540rd,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
 cdial-201-4a-1117-1836-U-s1540rd,7,Jan,Grabowski,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki. Nazwisko uzupełnione według indeksu Geneteki
 cdial-201-4a-1117-1836-U-s1540rd,8,Mateusz,Sie…ski,,inna,,,,niepewny,,nie,W akcie imię Mattheus. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1540rd,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
-cdial-201-4a-1117-1836-U-s1540re,1,Aleksy,,,dziecko,pm,18,18,,pewny,tak,W akcie imię Alexius
+cdial-201-4a-1117-1836-U-s1540re,1,Aleksy,Wowk,,dziecko,pm,18,18,pewny,pewny,tak,W akcie imię Alexius
 cdial-201-4a-1117-1836-U-s1540re,2,Michał,Wowk,,ojciec,pm,18,18,pewny,pewny,tak,W akcie imię Michael. Nazwisko uzupełnione według indeksu Geneteki
 cdial-201-4a-1117-1836-U-s1540re,3,Agafia,,Skarz[?],matka,pm,18,18,niepewny,pewny,tak,W akcie imię Ahaphia. córka Basilius Skarz[?]
 cdial-201-4a-1117-1836-U-s1540re,4,Aleksy,Czar,,chrzestny,,,,pewny,,nie,W akcie imię Alexius
@@ -204,7 +204,7 @@ cdial-201-4a-1117-1836-U-s1541rb,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,ni
 cdial-201-4a-1117-1836-U-s1541rb,7,Paweł,S…ko,,inna,,,,niepewny,,nie,W akcie imię Paulus. Ojciec matki
 cdial-201-4a-1117-1836-U-s1541rb,8,Antoni,Rewny,,inna,,,,pewny,,nie,W akcie imię Antonius. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1541rb,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
-cdial-201-4a-1117-1836-U-s1541rc,1,Filip,,,dziecko,pm,48,48,,pewny,tak,W akcie imię Philippus
+cdial-201-4a-1117-1836-U-s1541rc,1,Filip,Wowk,,dziecko,pm,48,48,pewny,pewny,tak,W akcie imię Philippus
 cdial-201-4a-1117-1836-U-s1541rc,2,Michał,Wowk,,ojciec,pm,48,48,pewny,pewny,tak,W akcie imię Michael. Nazwisko uzupełnione według indeksu Geneteki
 cdial-201-4a-1117-1836-U-s1541rc,3,Anna,,Sabaka,matka,pm,48,48,pewny,pewny,tak,córka Stephanus Sabaka
 cdial-201-4a-1117-1836-U-s1541rc,4,Michał,Sabaka,,chrzestny,,,,pewny,,nie,W akcie imię Michael
@@ -213,8 +213,8 @@ cdial-201-4a-1117-1836-U-s1541rc,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,ni
 cdial-201-4a-1117-1836-U-s1541rc,7,Stefan,Sabaka,,inna,,,,pewny,,nie,W akcie imię Stephanus. Ojciec matki
 cdial-201-4a-1117-1836-U-s1541rc,8,Gabriel,Czar…ny,,inna,,,,niepewny,,nie,Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1541rc,9,Auksenty,…afijowski[?],,kaplan,,,,niepewny,,nie,W akcie imię Auxentius. Wymieniony pod tabelą
-cdial-201-4a-1117-1836-U-s1541rd,1,Grzegorz,,,dziecko,pm,78,78,,pewny,tak,W akcie imię Gregorius
-cdial-201-4a-1117-1836-U-s1541rd,2,Jan,Wowk,,ojciec,pm,78,78,pewny,pewny,tak,W akcie imię Joannes. Nazwisko uzupełnione według indeksu Geneteki
+cdial-201-4a-1117-1836-U-s1541rd,1,Grzegorz,Wowk,,dziecko,pm,78,78,pewny,pewny,tak,W akcie imię Gregorius. Nazwisko Wowk według korekty użytkowniczki (skan aktu i Geneteka)
+cdial-201-4a-1117-1836-U-s1541rd,2,Jan,Wowk,,ojciec,pm,78,78,pewny,pewny,tak,W akcie imię Joannes. Nazwisko Wowk według korekty użytkowniczki (skan aktu i Geneteka)
 cdial-201-4a-1117-1836-U-s1541rd,3,Eudoksja,,Zarnowski,matka,pm,78,78,pewny,pewny,tak,W akcie imię Eudoxia. córka Demetrius Zarnowski
 cdial-201-4a-1117-1836-U-s1541rd,4,Antoni,N…asiński,,chrzestny,,,,niepewny,,nie,W akcie imię Antonius
 cdial-201-4a-1117-1836-U-s1541rd,5,Rozalia,,,chrzestna,,,,,,nie,W akcie imię Rosalia. żona Mattheus Łom…

@@ -20,4 +20,4 @@ Wyciągi greckokatolickie z 1836 r., CDIAL 201/4a/1117. Dane przyszły w trzech 
 ## Korekty z 6 listopada 2026 r.
 
 - Glinna: dom 77 Anna Pospiech (nazwisko po mężu); dom 100 Didyk; dom 76 Eufrozyna Rewny; dom 97 Aleksander Kril, syn Jana i Jerzyny z d. Pasiecznik, ur. 14.06.1836, chrzestny Laba (nie Zaba), usunięto wpis akuszerki Eufrozyny.
-- Płaucza Mała i Wielka: luki w odczycie uzupełnione według indeksu Geneteki (parafia Kozłów gr.-kat., 1836) tylko tam, gdzie widoczne litery zgadzają się z indeksem: Wowk, Zawiła, Marczowski, Kotełek, Grabowski, Leszczyszyn, Kowalik, Podhaieczny, Muzyka, Konczewicz. Pozostałe rozbieżności z indeksem czekają na decyzję.
+- Płaucza Mała i Wielka: luki w odczycie uzupełnione według indeksu Geneteki (parafia Kozłów gr.-kat., 1836) tylko tam, gdzie widoczne litery zgadzają się z indeksem: Wowk (dom 78 potwierdzony na skanie; Jan W…k w ślubie z domu 75 i jako chrzestny w domu 46 oznaczony jako Wowk[?]), Zawiła, Marczowski, Kotełek, Grabowski, Leszczyszyn, Kowalik, Podhaieczny, Muzyka, Konczewicz. Pozostałe rozbieżności z indeksem czekają na decyzję.
