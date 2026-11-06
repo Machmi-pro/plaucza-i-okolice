@@ -7,7 +7,45 @@
       "Plaucza Mala",
       "Płaucza parva"
     ],
-    "opis": "Pierwsza opracowywana miejscowość. Księgi parafii Kozłów zaczynają się w 1723 r., później wieś należała do parafii Budyłów, a od 1932 r. miała własną parafię rzymskokatolicką. W 1910 r. gmina Płaucza Mała należała do powiatu brzeżańskiego; 11 października 1910 r. pożar zniszczył prawie całą wieś."
+    "opis": "Wieś koło Zborowa, dziś w hromadzie Kozowa w obwodzie tarnopolskim. W 1910 r. należała do powiatu brzeżańskiego. Księgi parafii Kozłów zaczynają się w 1723 r., później wieś należała do parafii Budyłów, a od 1932 r. miała własną parafię rzymskokatolicką. 11 października 1910 r. pożar zniszczył prawie całą wieś.",
+    "historia": [
+      {
+        "tekst": "Pierwsza znana wzmianka pochodzi z 1615 r., gdy majątek kupił arcybiskup lwowski Jan Zamoyski; wieś należała potem do arcybiskupów lwowskich aż do XX wieku.",
+        "zrodlo": "rkc.in.ua; irp.te.ua"
+      },
+      {
+        "tekst": "W 1783 r. planowano założyć we wsi kapelanię, jednak bez skutku. Od 1852 r. katolicy obrządku łacińskiego należeli do parafii w Budyłowie.",
+        "zrodlo": "rkc.in.ua"
+      },
+      {
+        "tekst": "Na początku XX wieku wieś zamieszkiwała drobna szlachta, która zachowała polskie nazwiska, wyznanie rzymskokatolickie i język: Małaczyńscy, Muszyńscy, Dobrowolscy, Lisowscy, Bonisławscy, Psiurscy, Radaczyńscy, Szczaurscy, Prawelscy, Manasterscy, Barscy, Szczęsnowiczowie. Płaucza Mała liczyła wtedy 84 rodziny i 550 dusz (według tej gazety).",
+        "zrodlo": "Słowo Polskie nr 14, 9 stycznia 1904, s. 3"
+      },
+      {
+        "tekst": "Liczba mieszkańców: 1035 osób w 1900 r. i 1320 osób w 1939 r.",
+        "zrodlo": "rkc.in.ua; irp.te.ua"
+      },
+      {
+        "tekst": "W 1900 r. lwowskie towarzystwo oświatowe założyło we wsi czytelnię prowadzoną przez nauczyciela Ryszarda Kurzbauera, a w 1902 r. powstało Kółko rolnicze. W 1903 r. mieszkańcy postanowili zbudować kaplicę na 300 osób.",
+        "zrodlo": "Słowo Polskie nr 14, 9 stycznia 1904, s. 3"
+      },
+      {
+        "tekst": "Murowany kościół filialny wzniesiono w 1905 r. z ofiar wiernych, a w 1906 r. poświęcono go pod wezwaniem Matki Bożej Nieustającej Pomocy; wiernych było wtedy około 250.",
+        "zrodlo": "rkc.in.ua"
+      },
+      {
+        "tekst": "11 października 1910 r. pożar zniszczył niemal całą wieś (ponad 120 gospodarstw).",
+        "zrodlo": "Protokół 98. posiedzenia Sejmu Krajowego, 18 października 1910"
+      },
+      {
+        "tekst": "Według portalu regionalnego wieś została całkowicie zniszczona w czasie I wojny światowej i odbudowana do 1934 r. Działały w niej filia Proswity i czytelnia.",
+        "zrodlo": "irp.te.ua"
+      },
+      {
+        "tekst": "W 1932 r. powstała samodzielna parafia rzymskokatolicka, do której włączono dziesięć okolicznych wsi; pod koniec lat 30. liczyła ponad 1000 wiernych. Proboszczami byli ks. Franciszek Wołoszczuk, a od 1937 r. ks. Henryk Guchro.",
+        "zrodlo": "rkc.in.ua"
+      }
+    ]
   },
   {
     "id": "gl",

@@ -91,6 +91,86 @@
     "link": ""
   },
   {
+    "id": "slowo-polskie-1904",
+    "archiwum": "Prasa: Słowo Polskie (Lwów)",
+    "zespol": "",
+    "sygnatura": "Nr 14 z dnia 9 stycznia 1904, s. 3, artykuł „Kościół w Płauczy”",
+    "parafia": "",
+    "obrzadek": "",
+    "rodzaje": "artykuł prasowy",
+    "roczniki": "1904",
+    "wsie": [
+      "pm"
+    ],
+    "skany": "wycinek przekazany przez Magdalenę",
+    "stan": "odczytane ręcznie",
+    "link": ""
+  },
+  {
+    "id": "wiek-nowy-1938",
+    "archiwum": "Prasa: Wiek Nowy (Lwów), przedruk w „Kronice”",
+    "zespol": "",
+    "sygnatura": "Wiek Nowy z 19 XI 1938, notatka „Skarb z XIV w.” przytoczona w dziale „Kronika”, s. 348 (tytuł czasopisma do uzupełnienia)",
+    "parafia": "",
+    "obrzadek": "",
+    "rodzaje": "notatka prasowa",
+    "roczniki": "1938",
+    "wsie": [
+      "pm"
+    ],
+    "skany": "wycinek przekazany przez Magdalenę",
+    "stan": "odczytane ręcznie",
+    "link": ""
+  },
+  {
+    "id": "glos-brzezanski",
+    "archiwum": "Prasa: Głos Brzeżański",
+    "zespol": "",
+    "sygnatura": "Nr 10, s. 13, notatka „Zbrodnicze podpalenie” (rok numeru do potwierdzenia)",
+    "parafia": "",
+    "obrzadek": "",
+    "rodzaje": "notatka prasowa",
+    "roczniki": "1933?",
+    "wsie": [
+      "pm"
+    ],
+    "skany": "wycinek przekazany przez Magdalenę",
+    "stan": "odczytane ręcznie",
+    "link": ""
+  },
+  {
+    "id": "rkc-in-ua",
+    "archiwum": "Katalog kościołów rzymskokatolickich na Ukrainie (rkc.in.ua)",
+    "zespol": "",
+    "sygnatura": "Wpis o kościele MB Nieustającej Pomocy w Małej Plawuczy",
+    "parafia": "",
+    "obrzadek": "",
+    "rodzaje": "opracowanie internetowe",
+    "roczniki": "1615–1939",
+    "wsie": [
+      "pm"
+    ],
+    "skany": "strona internetowa",
+    "stan": "odczytane ręcznie",
+    "link": "https://rkc.in.ua/index.php?m=k&p=tpkompmb"
+  },
+  {
+    "id": "irp-te-ua",
+    "archiwum": "Portal regionalny irp.te.ua",
+    "zespol": "",
+    "sygnatura": "Wpis „Mała Plawucza”",
+    "parafia": "",
+    "obrzadek": "",
+    "rodzaje": "opracowanie internetowe",
+    "roczniki": "1615–1939",
+    "wsie": [
+      "pm"
+    ],
+    "skany": "strona internetowa",
+    "stan": "odczytane ręcznie",
+    "link": "https://irp.te.ua/mala-plavucha-kozivska-gromada-ternopilska-oblast/"
+  },
+  {
     "id": "prasa-1910",
     "archiwum": "Prasa",
     "zespol": "",
