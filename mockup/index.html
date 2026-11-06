@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domy i mieszkańcy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f3f6fb;
+  --surface: #ffffff;
+  --surface-2: #f6f8fc;
+  --ink: #0f1b2d;
+  --ink-2: #53627a;
+  --line: #e1e7f0;
+  --accent: #2563eb;
+  --accent-ink: #ffffff;
+  --accent-soft: #e8f0ff;
+  --event: #e0405a;
+  --event-bg: #fff0f2;
+  --ok: #0e8a5f;     --ok-bg: #dff6ec;
+  --scan: #2563eb;   --scan-bg: #e4edff;
+  --part: #a35f00;   --part-bg: #fff2d6;
+  --cat: #5b6b82;    --cat-bg: #eceff5;
+  --none: #8896ab;
+  --warn: #a35f00;   --warn-bg: #fff2d6;
+  --radius: 16px;
+  --shadow: 0 1px 2px rgba(15,27,45,.06), 0 6px 20px rgba(15,27,45,.05);
+  --font: "Manrope", system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--font); overflow-wrap: anywhere; }
+a { color: var(--accent); font-weight: 600; }
+button, select, input { font: inherit; color: inherit; }
+h1, h2, h3 { margin: 0; line-height: 1.2; letter-spacing: -.01em; }
+h1 { font-size: .98rem; font-weight: 800; }
+h2 { font-size: 1.5rem; font-weight: 800; }
+h3 { font-size: 1rem; font-weight: 700; }
+.wrap { max-width: 640px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.mock-note { background: var(--ink); color: #dbe4f3; font-size: .78rem; text-align: center; padding: 5px 16px; }
+
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+header.top .wrap { padding-block: 10px; display: grid; gap: 8px; }
+.brand { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.brand .logo { display: flex; align-items: center; gap: 8px; }
+.brand .logo i { width: 26px; height: 26px; border-radius: 8px; background: var(--accent); display: grid; place-items: center; color: #fff; font-style: normal; font-size: .9rem; }
+select, input[type="search"] { width: 100%; min-height: 44px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); padding: 6px 12px; }
+.brand select { width: auto; max-width: 150px; min-height: 38px; font-weight: 700; padding-right: 6px; }
+h1 { white-space: nowrap; }
+form.search { display: flex; gap: 8px; min-width: 0; }
+form.search input { min-width: 0; background: var(--surface-2); }
+input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.btn { white-space: nowrap; min-height: 44px; border: 0; background: var(--accent); color: var(--accent-ink); border-radius: 12px; padding: 6px 16px; cursor: pointer; font-weight: 700; }
+.btn.ghost { background: var(--accent-soft); color: var(--accent); }
+.btn.small { min-height: 36px; padding: 4px 12px; font-size: .88rem; }
+
+main { padding-top: 16px; padding-bottom: 56px; }
+.muted { color: var(--ink-2); }
+.small { font-size: .86rem; }
+.lead { color: var(--ink-2); margin: 8px 0 0; }
+.card { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px 16px; margin: 12px 0; }
+.back { display: inline-flex; align-items: center; gap: 4px; margin-bottom: 10px; text-decoration: none; }
+
+/* Wieś */
+.hero { background: var(--surface); border-radius: 20px; box-shadow: var(--shadow); padding: 16px; }
+.eyebrow { margin: 0 0 2px; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.more summary { cursor: pointer; color: var(--accent); font-weight: 700; font-size: .84rem; margin-top: 6px; }
+.more p { margin: 6px 0 0; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 14px; }
+.stats div { background: var(--surface-2); border-radius: 12px; padding: 8px 10px; }
+.stats b { display: block; font-size: 1.3rem; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.stats span { font-size: .74rem; color: var(--ink-2); }
+
+.tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; background: #e6ecf6; border-radius: 14px; padding: 4px; margin: 14px 0; }
+.tabs button { border: 0; background: none; border-radius: 10px; padding: 9px 4px; cursor: pointer; color: var(--ink-2); font-weight: 700; font-size: .84rem; }
+.tabs button[aria-selected="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(15,27,45,.12); }
+
+/* Oś czasu */
+details.tl { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); }
+details.tl > summary { list-style: none; cursor: pointer; padding: 12px 16px; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; }
+details.tl > summary::-webkit-details-marker { display: none; }
+.tl-ico { width: 40px; height: 40px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-weight: 800; }
+.tl-main small { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+.tl-main strong { font-size: 1.15rem; font-weight: 800; }
+.tl-main span { display: block; color: var(--ink-2); font-size: .84rem; }
+.tl-change { color: var(--accent); font-weight: 700; font-size: .84rem; white-space: nowrap; }
+details.tl[open] .tl-change::after { content: " ▴"; } details.tl:not([open]) .tl-change::after { content: " ▾"; }
+.tl-body { padding: 0 12px 12px; border-top: 1px solid var(--line); }
+.timeline details { border-radius: 12px; margin: 8px 0; background: var(--surface-2); }
+.timeline summary { list-style: none; cursor: pointer; padding: 10px 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.timeline summary::-webkit-details-marker { display: none; }
+.timeline summary .yrs { font-weight: 800; font-size: 1.02rem; }
+.timeline summary::after { content: "▾"; color: var(--ink-2); }
+.timeline details[open] summary::after { content: "▴"; }
+.timeline ol { list-style: none; margin: 0 0 6px 18px; padding: 0 8px 4px 18px; border-left: 2px solid var(--line); }
+.timeline li { position: relative; margin: 6px 0; }
+.timeline li::before { content: ""; position: absolute; left: -26px; top: 18px; width: 10px; height: 10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--none); }
+.timeline li.has::before { background: var(--ok); border-color: var(--ok); }
+.timeline li.event::before { border-radius: 2px; transform: rotate(45deg); background: var(--event); border-color: var(--event); }
+.period { width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 9px 12px; cursor: pointer; display: grid; gap: 2px; }
+.period[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--accent-soft); }
+.period .row { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.period .desc { color: var(--ink-2); font-size: .82rem; }
+.evt { width: 100%; text-align: left; background: var(--event-bg); border: 1px dashed var(--event); border-radius: 12px; padding: 9px 12px; cursor: pointer; }
+.evt .lbl { display: inline-block; font-size: .7rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--event); }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .78rem; color: var(--ink-2); margin: 10px 4px 0; }
+.legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; border: 2px solid var(--none); vertical-align: -1px; }
+.legend .l-has::before { background: var(--ok); border-color: var(--ok); }
+.legend .l-evt::before { border-radius: 2px; transform: rotate(45deg); background: var(--event); border-color: var(--event); }
+
+/* Znaczniki stanu */
+.chip { display: inline-block; font-size: .72rem; font-weight: 700; border-radius: 99px; padding: 2px 9px; white-space: nowrap; border: 1px solid transparent; }
+.s-opracowany { color: var(--ok); background: var(--ok-bg); }
+.s-w_opracowaniu { color: var(--ok); background: #fff; border-color: var(--ok); }
+.s-skany_calosc { color: var(--scan); background: var(--scan-bg); }
+.s-skany_czesc { color: var(--part); background: var(--part-bg); }
+.s-katalog { color: var(--cat); background: var(--cat-bg); }
+.s-brak_ustalen { color: var(--none); border-color: var(--line); background: #fff; }
+.flag { display: inline-block; font-size: .7rem; font-weight: 700; color: var(--warn); background: var(--warn-bg); border-radius: 6px; padding: 0 6px; }
+
+/* Panel okresu */
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-top: 22px; scroll-margin-top: 130px; }
+.panel-head h2 { font-size: 1.3rem; }
+.filters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 12px 0; }
+.filters label { font-size: .72rem; font-weight: 700; color: var(--ink-2); display: grid; gap: 3px; }
+.filters select { min-height: 40px; padding: 4px 8px; font-weight: 600; }
+.wykaz summary { cursor: pointer; font-weight: 700; }
+.wykaz table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: .86rem; }
+.wykaz th, .wykaz td { text-align: left; padding: 5px 4px; border-top: 1px solid var(--line); }
+.wykaz th { color: var(--ink-2); font-weight: 700; }
+
+/* Domy */
+.list-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 18px 0 4px; }
+.houses { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.house { display: grid; grid-template-columns: 58px minmax(0, 1fr) auto; gap: 12px; align-items: center; width: 100%; text-align: left; background: var(--surface); border: 0; border-radius: var(--radius); box-shadow: var(--shadow); padding: 12px 14px 12px 12px; cursor: pointer; }
+.house:active { background: var(--surface-2); }
+.house .no { width: 58px; height: 58px; border-radius: 14px; background: var(--accent-soft); color: var(--accent); display: grid; place-content: center; text-align: center; font-size: 1.45rem; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
+.house .no small { display: block; font-size: .6rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 3px; opacity: .8; }
+.house .chev { color: var(--none); font-size: 1.4rem; }
+.names { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+.names b { font-weight: 700; }
+.names .yrs { color: var(--ink-2); font-size: .84rem; font-variant-numeric: tabular-nums; }
+.hmeta { display: block; margin-top: 6px; font-size: .76rem; color: var(--ink-2); }
+.toggle { display: flex; align-items: center; gap: 8px; font-size: .86rem; color: var(--ink-2); margin: 12px 0 0; }
+.toggle input { width: 18px; height: 18px; accent-color: var(--accent); }
+.section-title { margin: 22px 0 8px; font-size: 1.02rem; font-weight: 800; }
+.count { display: inline-block; min-width: 22px; text-align: center; background: var(--cat-bg); color: var(--ink-2); border-radius: 99px; padding: 0 7px; font-size: .8rem; font-weight: 700; margin-left: 4px; }
+
+/* Wpisy */
+.seg { display: grid; grid-template-columns: 1fr 1fr; background: #e6ecf6; border-radius: 12px; padding: 4px; margin: 12px 0; gap: 4px; }
+.seg button { border: 0; background: none; border-radius: 9px; padding: 8px; cursor: pointer; font-weight: 700; color: var(--ink-2); }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(15,27,45,.12); }
+.entry { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); margin: 10px 0; }
+.entry summary { cursor: pointer; padding: 12px 14px; display: grid; gap: 2px; list-style: none; }
+.entry summary::-webkit-details-marker { display: none; }
+.entry .when { font-weight: 800; }
+.entry .body { padding: 0 14px 14px; border-top: 1px solid var(--line); }
+dl.meta { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 5px 14px; margin: 12px 0; font-size: .88rem; }
+dl.meta dt { color: var(--ink-2); }
+dl.meta dd { margin: 0; font-weight: 600; }
+.people { list-style: none; margin: 8px 0; padding: 0; display: grid; gap: 6px; }
+.people li { background: var(--surface-2); border-radius: 12px; padding: 8px 12px; font-size: .9rem; }
+.people .role { font-size: .7rem; color: var(--ink-2); text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+.src-read { font-size: .78rem; color: var(--ink-2); }
+.note { background: var(--part-bg); color: #6b4200; padding: 10px 12px; border-radius: 12px; font-size: .86rem; margin: 12px 0; }
+.note.event { background: var(--event-bg); color: #7a1f30; }
+
+.result { display: block; width: 100%; text-align: left; background: var(--surface); border: 0; border-radius: var(--radius); box-shadow: var(--shadow); padding: 12px 14px; margin: 10px 0; cursor: pointer; }
+.result .nm { font-weight: 800; font-size: 1.05rem; }
+.result .where { color: var(--ink-2); font-size: .88rem; }
+.empty { background: var(--surface); border: 1.5px dashed #c6d1e3; border-radius: var(--radius); padding: 16px; margin: 14px 0; }
+.empty h3 { margin-bottom: 6px; }
+.empty ul { margin: 10px 0; padding-left: 0; list-style: none; display: grid; gap: 6px; }
+.event-head { border-left: 4px solid var(--event); padding-left: 12px; }
+.event-head .lbl { color: var(--event); font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0; }
+.two .btn { width: 100%; white-space: normal; padding-block: 10px; }
+footer { color: var(--ink-2); font-size: .78rem; text-align: center; padding: 20px 16px 32px; }
+</style>
+</head>
+<body>
+<div class="mock-note">Makieta · dane z odczytu skanów (AI), do sprawdzenia</div>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo"><i aria-hidden="true">⌂</i><h1>Domy i mieszkańcy</h1></div>
+      <select id="village" aria-label="Wybór wsi"></select>
+    </div>
+    <form class="search" id="searchForm" role="search">
+      <input type="search" id="q" placeholder="Szukaj nazwiska, np. Kowalczuk" aria-label="Szukaj nazwiska" autocomplete="off">
+      <button class="btn" type="submit">Szukaj</button>
+    </form>
+  </div>
+</header>
+<main class="wrap" id="app" tabindex="-1"></main>
+<footer>Makieta strony „Domy i mieszkańcy”. Płaucza Mała • Glinna • Płaucza Wielka</footer>
+
+<script>
+/* ===================== DANE PRZYKŁADOWE ===================== */
+const VILLAGES = [
+  { id: "pm", name: "Płaucza Mała", variants: ["Płaucza Mała", "Plaucza Mala", "Płaucza parva"],
+    desc: "Pierwsza opracowywana miejscowość. Księgi parafii Kozłów zaczynają się w 1723 r., później wieś należała do parafii Budyłów, a od 1932 r. miała własną parafię rzymskokatolicką." },
+  { id: "gl", name: "Glinna", variants: ["Glinna", "Hlynna"],
+    desc: "Materiał nie jest jeszcze opracowany; widoczny jest tylko stan źródeł." },
+  { id: "pw", name: "Płaucza Wielka", variants: ["Płaucza Wielka", "Plaucza Wielka", "Płaucza magna"],
+    desc: "Źródła greckokatolickie noszą nazwę „Płaucza Wielka z filiami”. Opracowanie rozpoczęte od ksiąg z lat 1818–1819 i 1847." },
+];
+
+const PARTS = [
+  { label: "1700–1808", periods: [
+    { from: 1700, to: 1775, title: "Najstarsze wzmianki", desc: { pm: "Dla Płauczy Małej księgi parafii Kozłów zaczynają się w 1723 r." } },
+    { from: 1776, to: 1808, title: "Akta wymieniające Płauczę Małą", desc: { pm: "Numery domów są pokazywane tam, gdzie występują w źródle." } } ] },
+  { label: "1809–1871", periods: [
+    { from: 1809, to: 1835, title: "Wczesne księgi XIX wieku", desc: { pm: "Brak potwierdzonego dostępu do skanów z lat 1809–1817." } },
+    { from: 1836, to: 1851, title: "Skany obu obrządków", desc: { pm: "Okres, dla którego dostępne są skany obu obrządków." } },
+    { from: 1852, to: 1871, title: "Domy w połowie XIX wieku", desc: { "*": "Lista źródeł wskazuje dostępność poszczególnych roczników." } } ] },
+  { label: "1872–1909", periods: [
+    { from: 1872, to: 1884, title: "Seria ksiąg Budyłowa, cz. 1", desc: { "*": "Pierwsza część dłuższej serii ksiąg parafii Budyłów." } },
+    { from: 1885, to: 1895, title: "Seria ksiąg Budyłowa, cz. 2", desc: { pm: "Rok 1892 pozwala zestawić zapisy obu obrządków." } },
+    { from: 1896, to: 1909, title: "Przed pożarem", desc: { pm: "Ostatni okres przed pożarem Płauczy Małej." } } ] },
+  { label: "1910–1945", periods: [
+    { from: 1910, to: 1918, title: "Od roku pożaru", desc: { pm: "Dokładne daty aktów i wydarzenia decydują, czy wpis z 1910 r. powstał przed pożarem czy po nim." } },
+    { from: 1919, to: 1931, title: "Międzywojnie", desc: { pm: "Przed wyodrębnieniem parafii rzymskokatolickiej w Płauczy Małej." } },
+    { from: 1932, to: 1938, title: "Własna parafia rz.-kat.", desc: { pm: "Okres własnej parafii rzymskokatolickiej w Płauczy Małej." } },
+    { from: 1939, to: 1945, title: "Okres wojenny", desc: {} } ] },
+];
+const PERIODS = PARTS.flatMap(p => p.periods);
+const pkey = p => p.from + "-" + p.to;
+
+const SOURCES = {
+  pw47:  { arch: "AGAD (Szukaj w Archiwach)", fond: "298", sig: "Płaucza Wielka z filiami, 1847–1848", parish: "Płaucza Wielka z filiami", rite: "gk", kinds: "U, M, Z", years: "1847–1848", villages: ["pm", "gl", "pw"], scans: "w całości", state: "w opracowaniu", link: "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/18135536" },
+  bud2:  { arch: "AGAD (Szukaj w Archiwach)", fond: "301", sig: "301/1831", parish: "Budyłów", rite: "rz", kinds: "U, M, Z", years: "1896–1909", villages: ["pm", "gl"], scans: "w całości", state: "do opracowania", link: "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17820318" },
+  lwow:  { arch: "Archiwum Historyczne we Lwowie", fond: "", sig: "galeria 138376 (fond/opis/sprawa do ustalenia)", parish: "parafia greckokatolicka (do ustalenia)", rite: "gk", kinds: "U, M, Z", years: "do ustalenia", villages: ["pm"], scans: "do sprawdzenia", state: "do opracowania", link: "https://archium.tsdial.archives.gov.ua/file-viewer/138376" },
+  cdial: { arch: "Centralne Państwowe Archiwum Historyczne Ukrainy we Lwowie (CDIAL)", fond: "618", sig: "op. 2, spr. 109 (do potwierdzenia)", parish: "Kozłów", rite: "rz", kinds: "U, M, Z", years: "1818–1819", villages: ["pm", "pw", "gl"], scans: "częściowo", state: "w opracowaniu", link: "https://archium.tsdial.archives.gov.ua/file-viewer/227422" },
+  prasa: { arch: "Prasa", fond: "", sig: "Gazeta (tytuł i numer do ustalenia), 1910", parish: "", rite: "", kinds: "relacja prasowa", years: "1910", villages: ["pm"], scans: "do ustalenia", state: "kwerenda", link: "" },
+};
+const RITE = { rz: "rzymskokatolicki", gk: "greckokatolicki" };
+const KIND = { U: "Urodzenie / chrzest", M: "Małżeństwo", Z: "Zgon" };
+const ROLE = { dziecko: "dziecko", ojciec: "ojciec", matka: "matka", chrzestny: "chrzestny", chrzestna: "chrzestna", swiadek: "świadek", zmarly: "zmarły", zmarla: "zmarła", pan_mlody: "pan młody", panna_mloda: "panna młoda", dziadek_matki: "ojciec matki", maz_chrzestnej: "mąż chrzestnej", akuszerka: "akuszerka", kaplan: "kapłan", inna: "inna", rodzic_pana_mlodego: "rodzic pana młodego", rodzic_panny_mlodej: "rodzic panny młodej" };
+const STATE = {
+  opracowany: "Opracowany", w_opracowaniu: "W opracowaniu", skany_calosc: "Skany do opracowania",
+  skany_czesc: "Skany częściowe", katalog: "Znany z katalogu", brak_ustalen: "Źródła nie ustalono",
+};
+
+/* Stan roczników: [wieś, obrządek, od, do, stan] — późniejsze wiersze nadpisują wcześniejsze */
+const YEAR_RULES = [
+  ["pm","rz",1700,1945,"brak_ustalen"], ["pm","gk",1700,1945,"brak_ustalen"],
+  ["pm","rz",1723,1775,"katalog"], ["pm","rz",1776,1808,"skany_calosc"], ["pm","gk",1776,1808,"katalog"],
+  ["pm","rz",1809,1817,"katalog"], ["pm","gk",1809,1817,"katalog"], ["pm","rz",1818,1835,"skany_czesc"], ["pm","gk",1818,1835,"katalog"],
+  ["pm","rz",1836,1845,"skany_calosc"], ["pm","rz",1846,1851,"skany_calosc"], ["pm","gk",1836,1840,"skany_calosc"], ["pm","gk",1841,1851,"skany_calosc"],
+  ["pm","rz",1852,1871,"skany_czesc"], ["pm","gk",1852,1871,"katalog"],
+  ["pm","rz",1872,1895,"skany_calosc"], ["pm","gk",1872,1891,"katalog"], ["pm","gk",1885,1891,"skany_czesc"], ["pm","rz",1892,1892,"skany_calosc"], ["pm","gk",1892,1892,"skany_calosc"], ["pm","gk",1893,1910,"skany_czesc"],
+  ["pm","rz",1896,1904,"skany_calosc"], ["pm","rz",1905,1909,"skany_calosc"],
+  ["pm","rz",1910,1910,"skany_calosc"], ["pm","rz",1911,1918,"skany_czesc"], ["pm","gk",1911,1918,"katalog"],
+  ["pm","rz",1919,1938,"katalog"], ["pm","gk",1919,1938,"katalog"],
+  ["gl","rz",1700,1945,"brak_ustalen"], ["gl","gk",1700,1945,"brak_ustalen"], ["gl","gk",1836,1851,"skany_calosc"], ["gl","rz",1872,1909,"skany_calosc"], ["gl","rz",1910,1938,"katalog"],
+  ["pw","rz",1700,1945,"brak_ustalen"], ["pw","gk",1700,1945,"brak_ustalen"], ["pw","gk",1836,1851,"skany_calosc"], ["pw","gk",1847,1847,"w_opracowaniu"], ["pw","gk",1848,1848,"skany_calosc"], ["pw","gk",1852,1918,"katalog"],
+  ["pm","rz",1818,1819,"w_opracowaniu"], ["pw","rz",1818,1819,"w_opracowaniu"],
+];
+function yearState(v, rite, y) {
+  let s = "brak_ustalen";
+  for (const [rv, rr, a, b, st] of YEAR_RULES) if (rv === v && rr === rite && y >= a && y <= b) s = st;
+  return s;
+}
+
+/* Grupy wariantów nazwisk (łączą wyszukiwanie, nie osoby) */
+const VARIANTS = {};  /* grupy wariantów powstaną przy opracowaniu (data/warianty-nazwisk.csv) */
+
+/* Osoba: [imię, nazwisko, rola, dom (liczba|null), dom źródłowy, mieszkaniec?, pewność nazwiska, pewność domu, nazwisko panieńskie] */
+const P = (imie, nazw, rola, dom = null, domSrc = "", miesz = false, pn = "pewny", pd = "pewny", pan = "") => ({ imie, nazw, rola, dom, domSrc: domSrc || (dom != null ? String(dom) : ""), miesz, pn, pd, pan });
+const ACTS = [];
+
+/*REAL-DATA-START*/
+ACTS.push({"id": "app-879-151-1847-U-s062a", "v": "pw", "date": "1847-01-02", "rite": "gk", "kind": "U", "src": "pw47", "nr": "", "page": "s. 62", "scan": "https://photos.szukajwarchiwach.gov.pl/05ef61fd1ba9f47deb39abc389adecdba1cf35ea38b65151596e0fe9e85fe8c0_max", "note": "Chrzest 1847-01-02", "unverified": true, "people": [{"imie": "Julianna", "nazw": "Towstyga", "rola": "dziecko", "dom": 11, "domSrc": "11", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Paulus", "nazw": "Towstyga", "rola": "ojciec", "dom": 11, "domSrc": "11", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Anastasia", "nazw": "", "rola": "matka", "dom": 11, "domSrc": "11", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Bortnyk", "note": "Córka Andreae Bortnyk", "wies": "pw", "panDer": true}, {"imie": "Andreae", "nazw": "Bortnyk", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Tomas", "nazw": "S…vinski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Anastasia", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Alexii Bortnyk", "wies": ""}, {"imie": "Alexii", "nazw": "Bortnyk", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Maria", "nazw": "Re…tycha", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Petrus", "nazw": "Bobowczak", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "Proboszcz. Ochrzcił i bierzmował.", "wies": ""}]});
+ACTS.push({"id": "app-879-151-1847-U-s063a", "v": "pw", "date": "1847-01-19", "rite": "gk", "kind": "U", "src": "pw47", "nr": "", "page": "s. 63", "scan": "https://photos.szukajwarchiwach.gov.pl/05ef61fd1ba9f47deb39abc389adecdba1cf35ea38b65151596e0fe9e85fe8c0_max", "note": "Chrzest 1847-01-19. Wpis w rubryce Illegitimi.", "unverified": true, "people": [{"imie": "Joannes", "nazw": "", "rola": "dziecko", "dom": 123, "domSrc": "123", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Maria", "nazw": "", "rola": "matka", "dom": 123, "domSrc": "123", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Kowalyk", "note": "Córka Theodori Kowalyk", "wies": "pw", "panDer": true}, {"imie": "Theodori", "nazw": "Kowalyk", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Casper", "nazw": "Ska…winski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Anna", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Joannis Babiak", "wies": ""}, {"imie": "Joannis", "nazw": "Babiak", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "app-879-151-1847-U-s063b", "v": "pw", "date": "1847-02-08", "rite": "gk", "kind": "U", "src": "pw47", "nr": "", "page": "s. 63", "scan": "https://photos.szukajwarchiwach.gov.pl/05ef61fd1ba9f47deb39abc389adecdba1cf35ea38b65151596e0fe9e85fe8c0_max", "note": "Chrzest 1847-02-08", "unverified": true, "people": [{"imie": "Euphrosina", "nazw": "Bujak", "rola": "dziecko", "dom": 44, "domSrc": "44", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Basilius", "nazw": "Bujak", "rola": "ojciec", "dom": 44, "domSrc": "44", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Anna", "nazw": "", "rola": "matka", "dom": 44, "domSrc": "44", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Worok", "note": "Córka Michaelis Worok", "wies": "pw", "panDer": true}, {"imie": "Michaelis", "nazw": "Worok", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Theodorus", "nazw": "Grochowski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Maria", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Joannis H…monik", "wies": ""}, {"imie": "Joannis", "nazw": "H…monik", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Maria", "nazw": "Bujak", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "app-879-151-1847-U-s063c", "v": "pw", "date": "1847-02-17", "rite": "gk", "kind": "U", "src": "pw47", "nr": "", "page": "s. 63", "scan": "https://photos.szukajwarchiwach.gov.pl/05ef61fd1ba9f47deb39abc389adecdba1cf35ea38b65151596e0fe9e85fe8c0_max", "note": "Chrzest 1847-02-17", "unverified": true, "people": [{"imie": "Basilius", "nazw": "Meleniowski", "rola": "dziecko", "dom": 56, "domSrc": "56", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Jacobus", "nazw": "Meleniowski", "rola": "ojciec", "dom": 56, "domSrc": "56", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Maria", "nazw": "", "rola": "matka", "dom": 56, "domSrc": "56", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Prociak", "note": "Córka Michaelis Prociak", "wies": "pw", "panDer": true}, {"imie": "Michaelis", "nazw": "Prociak", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Basilius", "nazw": "Bujak", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Anna", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Andreae Maw…zyniec", "wies": ""}, {"imie": "Andreae", "nazw": "Maw…zyniec", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Maria", "nazw": "Bujak", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "app-879-151-1847-U-s063d", "v": "pw", "date": "1847-02-28", "rite": "gk", "kind": "U", "src": "pw47", "nr": "", "page": "s. 63", "scan": "https://photos.szukajwarchiwach.gov.pl/05ef61fd1ba9f47deb39abc389adecdba1cf35ea38b65151596e0fe9e85fe8c0_max", "note": "Chrzest 1847-02-28", "unverified": true, "people": [{"imie": "Euphrosina", "nazw": "Babiak", "rola": "dziecko", "dom": 48, "domSrc": "48", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Elias", "nazw": "Babiak", "rola": "ojciec", "dom": 48, "domSrc": "48", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Catharina", "nazw": "", "rola": "matka", "dom": 48, "domSrc": "48", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Maw…zyniec", "note": "Córka Theodori Maw…zyniec", "wies": "pw", "panDer": true}, {"imie": "Theodori", "nazw": "Maw…zyniec", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Stephanus", "nazw": "Łec…w", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Maria", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Theodori Bortnyk", "wies": ""}, {"imie": "Theodori", "nazw": "Bortnyk", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Eudocia", "nazw": "Mar…ka", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "app-879-151-1847-U-s063e", "v": "pw", "date": "1847-03-03", "rite": "gk", "kind": "U", "src": "pw47", "nr": "", "page": "s. 63", "scan": "https://photos.szukajwarchiwach.gov.pl/05ef61fd1ba9f47deb39abc389adecdba1cf35ea38b65151596e0fe9e85fe8c0_max", "note": "Chrzest 1847-03-03", "unverified": true, "people": [{"imie": "Leon", "nazw": "Dubas", "rola": "dziecko", "dom": 5, "domSrc": "5", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Michael", "nazw": "Dubas", "rola": "ojciec", "dom": 5, "domSrc": "5", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Martha", "nazw": "", "rola": "matka", "dom": 5, "domSrc": "5", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Babiak", "note": "Córka Joannis Babiak", "wies": "pw", "panDer": true}, {"imie": "Joannis", "nazw": "Babiak", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Nicolaus", "nazw": "Bo…gucki", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Parasc…va", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Romani Bar…ab", "wies": ""}, {"imie": "Romani", "nazw": "Bar…ab", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Maria", "nazw": "Re…tycha", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "app-879-151-1847-U-s063f", "v": "pw", "date": "1847-03-19", "rite": "gk", "kind": "U", "src": "pw47", "nr": "", "page": "s. 63", "scan": "https://photos.szukajwarchiwach.gov.pl/05ef61fd1ba9f47deb39abc389adecdba1cf35ea38b65151596e0fe9e85fe8c0_max", "note": "Chrzest 1847-03-19", "unverified": true, "people": [{"imie": "Constantinus", "nazw": "Pryhoda", "rola": "dziecko", "dom": 17, "domSrc": "17", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Paulus", "nazw": "Pryhoda", "rola": "ojciec", "dom": 17, "domSrc": "17", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Melania", "nazw": "", "rola": "matka", "dom": 17, "domSrc": "17", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Babiak", "note": "Córka Constantii Babiak", "wies": "pw", "panDer": true}, {"imie": "Constantii", "nazw": "Babiak", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Joachimus", "nazw": "Chodkiewicz", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Barbara", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Pauli Barab…sz", "wies": ""}, {"imie": "Pauli", "nazw": "Barab…sz", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Maria", "nazw": "Re…tycha", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "app-879-151-1847-U-s063g", "v": "pw", "date": "1847-03-20", "rite": "gk", "kind": "U", "src": "pw47", "nr": "", "page": "s. 63", "scan": "https://photos.szukajwarchiwach.gov.pl/05ef61fd1ba9f47deb39abc389adecdba1cf35ea38b65151596e0fe9e85fe8c0_max", "note": "Niezgodność dat w odczycie: w danych 1847-03-20, w uwagach 1847-03-28. Do sprawdzenia na skanie. Chrzest 1847-03-28", "unverified": true, "people": [{"imie": "Chrystina", "nazw": "Babiak", "rola": "dziecko", "dom": 35, "domSrc": "35", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Niepewny odczyt końcówki imienia", "wies": "pw", "der": true}, {"imie": "Gregorius", "nazw": "Babiak", "rola": "ojciec", "dom": 35, "domSrc": "35", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Maria", "nazw": "", "rola": "matka", "dom": 35, "domSrc": "35", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "O…nyk", "note": "Córka Joannis O…nyk", "wies": "pw", "panDer": true}, {"imie": "Joannis", "nazw": "O…nyk", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Stephanus", "nazw": "Stołowaty", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Anna", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Joannis Babiak", "wies": ""}, {"imie": "Joannis", "nazw": "Babiak", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Maria", "nazw": "Bujak", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Petrus", "nazw": "Bobowczak", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "Proboszcz. Adnotacja o chrzcie i bierzmowaniu pod tabelą.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s022va", "v": "pm", "date": "1818-01-29", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 22v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424779", "note": "Chrzest 1818-01-30.", "unverified": true, "people": [{"imie": "Agatha", "nazw": "Bolesławski", "rola": "dziecko", "dom": 66, "domSrc": "66", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Gaspar", "nazw": "Bolesławski", "rola": "ojciec", "dom": 66, "domSrc": "66", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Apolonia", "nazw": "", "rola": "matka", "dom": 66, "domSrc": "66", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Ryg…", "note": "Córka Michaelis.", "wies": "pm", "panDer": true}, {"imie": "Michaele", "nazw": "Ryg…", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Martinus", "nazw": "Trojan", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Agnes", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Blasii Bolesławskiego.", "wies": "pm"}, {"imie": "Blasii", "nazw": "Bolesławski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Jacobus", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s022vb", "v": "pm", "date": "1818-02-06", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 22v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424779", "note": "Chrzest 1818-02-06. Przy ojcu widoczne nadpisanie w rubryce Conditio.", "unverified": true, "people": [{"imie": "Mathias", "nazw": "Niebylski", "rola": "dziecko", "dom": 37, "domSrc": "37", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Joannes", "nazw": "Niebylski", "rola": "ojciec", "dom": 37, "domSrc": "37", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Victoria", "nazw": "", "rola": "matka", "dom": 37, "domSrc": "37", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Murzynski", "note": "Córka Joannis.", "wies": "pm", "panDer": true}, {"imie": "Joanne", "nazw": "Murzynski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Joannes", "nazw": "Radaczynski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Josepha", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Stephani Murzynskiego.", "wies": ""}, {"imie": "Stephani", "nazw": "Murzynski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Theodor", "nazw": "M…dzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Wikariusz obrządku greckokatolickiego z Płauczy Wielkiej.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s022vc", "v": "pm", "date": "1818-09-09", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 22v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424779", "note": "Chrzest 1818-09-09.", "unverified": true, "people": [{"imie": "Nicolaus", "nazw": "Pichur", "rola": "dziecko", "dom": 20, "domSrc": "20", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Sebastianus", "nazw": "Pichur", "rola": "ojciec", "dom": 20, "domSrc": "20", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Catharina", "nazw": "", "rola": "matka", "dom": 20, "domSrc": "20", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Neh…ski", "note": "Córka Joanne.", "wies": "pm", "panDer": true}, {"imie": "Joanne", "nazw": "Neh…ski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Blasius", "nazw": "Bolesławski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Anna", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Andreae.", "wies": "pm"}, {"imie": "Andreae", "nazw": "…kow", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Marianna", "nazw": "Man…towska", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Jacobus", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s022vd", "v": "pm", "date": "1818-10-02", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 22v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424779", "note": "Data urodzenia z dopisku. Chrzest z wody w dniu urodzenia. W rubryce chrztu widnieje 4 października. Dopisek o uzupełnieniu ceremonii.", "unverified": true, "people": [{"imie": "Stephanus", "nazw": "Pichur", "rola": "dziecko", "dom": 3, "domSrc": "3", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Jacobus", "nazw": "Pichur", "rola": "ojciec", "dom": 3, "domSrc": "3", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Anna", "nazw": "", "rola": "matka", "dom": 3, "domSrc": "3", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "M…czy", "note": "Córka Stephano.", "wies": "pm", "panDer": true}, {"imie": "Stephano", "nazw": "M…czy", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Praxe…a", "nazw": "M…dzinska", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Thomas", "nazw": "Szczawinski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Marianna", "nazw": "Copowa", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Theodoro", "nazw": "M…dzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Chrzest z wody.", "wies": ""}, {"imie": "J.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Uzupełnienie ceremonii.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s022ve", "v": "pm", "date": "1818-10-09", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 22v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424779", "note": "Chrzest 1818-10-09.", "unverified": true, "people": [{"imie": "Franciscus", "nazw": "Bolesławski", "rola": "dziecko", "dom": 23, "domSrc": "23", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Blasius", "nazw": "Bolesławski", "rola": "ojciec", "dom": 23, "domSrc": "23", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Agnes", "nazw": "", "rola": "matka", "dom": 23, "domSrc": "23", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Bonisławski", "note": "Córka Casimiro.", "wies": "pm", "panDer": true}, {"imie": "Casimiro", "nazw": "Bonisławski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Adalbertus", "nazw": "Bednarski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Theresia", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Martini Trojana.", "wies": "pm"}, {"imie": "Martini", "nazw": "Trojan", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Apolonia", "nazw": "Copowa", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "J.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s023a", "v": "pm", "date": "1818-10-18", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 23", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424779", "note": "Chrzest 1818-10-19.", "unverified": true, "people": [{"imie": "Theresia", "nazw": "Małaczynski", "rola": "dziecko", "dom": 50, "domSrc": "50[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Joannes", "nazw": "Małaczynski", "rola": "ojciec", "dom": 50, "domSrc": "50[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Veronica", "nazw": "", "rola": "matka", "dom": 50, "domSrc": "50[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "Małaczynski", "note": "Córka Antonio.", "wies": "pm", "panDer": true}, {"imie": "Antonio", "nazw": "Małaczynski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Carolus", "nazw": "Radaczynski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Theresia", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Joannis Radaczynskiego.", "wies": "pw"}, {"imie": "Joannis", "nazw": "Radaczynski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Apolonia", "nazw": "Copowa", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Jacob.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s023b", "v": "pm", "date": "1818-11-17", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 23", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424779", "note": "Chrzest 1818-11-17. Drugie imię dziecka zapisano skrótem Kos.", "unverified": true, "people": [{"imie": "Stanislaus Kos.", "nazw": "Szczawinski", "rola": "dziecko", "dom": 61, "domSrc": "61[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Cajetanus", "nazw": "Szczawinski", "rola": "ojciec", "dom": 61, "domSrc": "61[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Helena", "nazw": "", "rola": "matka", "dom": 61, "domSrc": "61[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "Wasylkowski", "note": "Córka Romano.", "wies": "pm", "panDer": true}, {"imie": "Romano", "nazw": "Wasylkowski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Stephanus", "nazw": "Małaczynski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Thecla", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Joannis.", "wies": "Krasna"}, {"imie": "Joannis", "nazw": "…on…ski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Eudocia", "nazw": "Zawadynska", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "Tołstoluhy"}, {"imie": "Jacob.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s023c", "v": "pm", "date": "1818-12-01", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 23", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424779", "note": "Chrzest 1818-12-01.", "unverified": true, "people": [{"imie": "Franciscus", "nazw": "Małaczynski", "rola": "dziecko", "dom": 55, "domSrc": "55[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Stephanus", "nazw": "Małaczynski", "rola": "ojciec", "dom": 55, "domSrc": "55[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Agnes", "nazw": "", "rola": "matka", "dom": 55, "domSrc": "55[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "Strzałkowski", "note": "Córka Adalberto.", "wies": "pm", "panDer": true}, {"imie": "Adalberto", "nazw": "Strzałkowski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Gaspar", "nazw": "S…dzicki", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Praxe…a", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Theodori.", "wies": ""}, {"imie": "Theodori", "nazw": "M…dzinski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Theodor", "nazw": "M…dzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Wikariusz obrządku greckokatolickiego z Płauczy Wielkiej.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s023d", "v": "pm", "date": "1818-12-17", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 23", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424779", "note": "Chrzest 1818-12-17. Wpis zawiera dopisek in necessitate.", "unverified": true, "people": [{"imie": "Victoria", "nazw": "Bolesławski", "rola": "dziecko", "dom": 66, "domSrc": "66", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Mathias", "nazw": "Bolesławski", "rola": "ojciec", "dom": 66, "domSrc": "66", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Francisca", "nazw": "", "rola": "matka", "dom": 66, "domSrc": "66", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Bronowski", "note": "Córka Michaele.", "wies": "pm", "panDer": true}, {"imie": "Michaele", "nazw": "Bronowski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Martinus", "nazw": "Trojan", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Apolonia", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Gaspari Bolesławskiego.", "wies": ""}, {"imie": "Gaspari", "nazw": "Bolesławski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Theodor", "nazw": "M…dzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Wikariusz obrządku greckokatolickiego z Płauczy Wielkiej.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s023e", "v": "pw", "date": "1818-02-01", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 23", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424779", "note": "Chrzest 1818-02-01. Początek sekcji Płaucza magna.", "unverified": true, "people": [{"imie": "Mariana", "nazw": "Podolski", "rola": "dziecko", "dom": 112, "domSrc": "112", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Sebastianus", "nazw": "Podolski", "rola": "ojciec", "dom": 112, "domSrc": "112", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Anastasia", "nazw": "", "rola": "matka", "dom": 112, "domSrc": "112", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Za…bicki", "note": "Córka Josepho.", "wies": "pw", "panDer": true}, {"imie": "Josepho", "nazw": "Za…bicki", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Joannes", "nazw": "Mielnik", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Eva", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Sebastiani.", "wies": ""}, {"imie": "Sebastiani", "nazw": "Bła…kow", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Joannes", "nazw": "Zukowski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Proboszcz obrządku greckokatolickiego w Płauczy Wielkiej.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s023va", "v": "pw", "date": "1818-05-02", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 23v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424804", "note": "Chrzest z wody w dniu urodzenia według dopisku. W rubryce chrztu 3 maja. Dopisek o uzupełnieniu ceremonii.", "unverified": true, "people": [{"imie": "Ludovicus", "nazw": "Radaczynski", "rola": "dziecko", "dom": 113, "domSrc": "113", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Joannes", "nazw": "Radaczynski", "rola": "ojciec", "dom": 113, "domSrc": "113", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Theresia", "nazw": "", "rola": "matka", "dom": 113, "domSrc": "113", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Bogusz…ski", "note": "Córka Joanne.", "wies": "pw", "panDer": true}, {"imie": "Joanne", "nazw": "Bogusz…ski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Carolus", "nazw": "Radaczynski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Theresia", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Francisci Radaczynskiego.", "wies": "pw"}, {"imie": "Francisci", "nazw": "Radaczynski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Joanne", "nazw": "Zukowski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Chrzest z wody.", "wies": ""}, {"imie": "Jacob.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Uzupełnienie ceremonii.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s023vb", "v": "pw", "date": "1818-07-11", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 23v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424804", "note": "W rubryce chrztu 12 lipca. W dopisku chrzest z wody w dniu urodzenia i uzupełnienie ceremonii.", "unverified": true, "people": [{"imie": "Joannes", "nazw": "Radaczynski", "rola": "dziecko", "dom": 130, "domSrc": "130", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Franciscus", "nazw": "Radaczynski", "rola": "ojciec", "dom": 130, "domSrc": "130", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Rosalia", "nazw": "", "rola": "matka", "dom": 130, "domSrc": "130", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "K…nicki", "note": "Córka Antonio.", "wies": "pw", "panDer": true}, {"imie": "Antonio", "nazw": "K…nicki", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Mathias", "nazw": "Szczawinski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Theresia", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Joannis Radaczynskiego.", "wies": "pw"}, {"imie": "Joannis", "nazw": "Radaczynski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Maria", "nazw": "Popad…ka", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "…", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Uzupełnienie ceremonii.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s023vc", "v": "pw", "date": "1818-09-29", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 23v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424804", "note": "Chrzest 1818-09-29.", "unverified": true, "people": [{"imie": "Michael", "nazw": "Radaczynski", "rola": "dziecko", "dom": 113, "domSrc": "113", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Stanislaus", "nazw": "Radaczynski", "rola": "ojciec", "dom": 113, "domSrc": "113", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Marianna", "nazw": "", "rola": "matka", "dom": 113, "domSrc": "113", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Cz…nowicz", "note": "Córka Michaele.", "wies": "pw", "panDer": true}, {"imie": "Michaele", "nazw": "Cz…nowicz", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Nic…", "nazw": "S…sowski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Wpis określa go jako ekonom.", "wies": "pm"}, {"imie": "Justina", "nazw": "Zukowska", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Marianna", "nazw": "Popad…ka", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Joannes", "nazw": "Zukowski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Proboszcz obrządku greckokatolickiego w Płauczy Wielkiej.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s023vd", "v": "pw", "date": "1818-09-02", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 23v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424804", "note": "Data urodzenia i chrztu z dopisku 2 7bris. Wpis w sekcji listopadowej z adnotacją o wpisaniu do księgi.", "unverified": true, "people": [{"imie": "Stephanus", "nazw": "Kierdel", "rola": "dziecko", "dom": 127, "domSrc": "127[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Sebastianus", "nazw": "Kierdel", "rola": "ojciec", "dom": 127, "domSrc": "127[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Constantia", "nazw": "", "rola": "matka", "dom": 127, "domSrc": "127[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "Se…jecki", "note": "Córka Adalberto.", "wies": "pw", "panDer": true}, {"imie": "Adalberto", "nazw": "Se…jecki", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Sebastianus", "nazw": "Błazkow", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Anastasia", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Sebastiani.", "wies": ""}, {"imie": "Sebastiani", "nazw": "Sobolow", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Joanne", "nazw": "Zukowski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "J.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Adnotacja o wpisaniu do księgi.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-U-s023ve", "v": "pw", "date": "1818-02-16", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 23v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424804", "note": "Data urodzenia z dopisku. Chrzest z wody tego samego dnia według dopisku. Pieczęć zasłania fragment rubryk dat.", "unverified": true, "people": [{"imie": "Julianna", "nazw": "B…dkowski", "rola": "dziecko", "dom": 130, "domSrc": "130[?]", "miesz": true, "pn": "nieczytelny", "pd": "niepewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Martinus", "nazw": "B…dkowski", "rola": "ojciec", "dom": 130, "domSrc": "130[?]", "miesz": true, "pn": "nieczytelny", "pd": "niepewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Elisabeth", "nazw": "", "rola": "matka", "dom": 130, "domSrc": "130[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "Radaczynski", "note": "Córka Antonio.", "wies": "pw", "panDer": true}, {"imie": "Antonio", "nazw": "Radaczynski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Carolus", "nazw": "Radaczynski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Justina", "nazw": "Zukowska", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "J.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Adnotacja o wpisaniu do księgi.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-M-s027va", "v": "pw", "date": "1818-07-05", "rite": "rz", "kind": "M", "src": "cdial", "nr": "", "page": "k. 27v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424766", "note": "Przy osobach w akcie adnotacja Oes de Płaucza magna. Numer z rubryki pana młodego.", "unverified": true, "people": [{"imie": "Joannes", "nazw": "Wier…cki", "rola": "pan_mlody", "dom": 1, "domSrc": "1", "miesz": true, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "23 lata.", "wies": "pw", "der": true}, {"imie": "Antonii", "nazw": "Wier…cki", "rola": "rodzic_pana_mlodego", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Ojciec pana młodego.", "wies": ""}, {"imie": "Mariae", "nazw": "", "rola": "rodzic_pana_mlodego", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Matka pana młodego.", "wies": ""}, {"imie": "Josepha", "nazw": "Cz…owicz", "rola": "panna_mloda", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "13 lat.", "wies": "pw", "der": true}, {"imie": "Francisci", "nazw": "Cz…owicz", "rola": "rodzic_panny_mlodej", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Ojciec panny młodej.", "wies": ""}, {"imie": "Mariannae", "nazw": "", "rola": "rodzic_panny_mlodej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Matka panny młodej.", "wies": ""}, {"imie": "Sebastianus", "nazw": "Radaczynski", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Josephus", "nazw": "…kowski", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Jacobus", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-M-s027vb", "v": "pm", "date": "1818-11-15", "rite": "rz", "kind": "M", "src": "cdial", "nr": "", "page": "k. 27v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424766", "note": "Pan młody z Płauczy Małej. Panna młoda z Płauczy Wielkiej. Numer z rubryki pana młodego.", "unverified": true, "people": [{"imie": "Gabriel", "nazw": "Waśkow", "rola": "pan_mlody", "dom": 61, "domSrc": "61", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "22 lata.", "wies": "pm", "der": true}, {"imie": "Gregorii", "nazw": "Waśkow", "rola": "rodzic_pana_mlodego", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Zmarły ojciec pana młodego.", "wies": ""}, {"imie": "Mariannae", "nazw": "", "rola": "rodzic_pana_mlodego", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Matka pana młodego.", "wies": ""}, {"imie": "Lucia", "nazw": "Kierdel", "rola": "panna_mloda", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "20 lat.", "wies": "pw", "der": true}, {"imie": "Mathiae", "nazw": "Kierdel", "rola": "rodzic_panny_mlodej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Zmarły ojciec panny młodej.", "wies": ""}, {"imie": "Mariannae", "nazw": "", "rola": "rodzic_panny_mlodej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Matka panny młodej.", "wies": ""}, {"imie": "Mathias", "nazw": "Pichur", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Paulus", "nazw": "Waśkow", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Adalbertus", "nazw": "Trebar", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-Z-s032va", "v": "pw", "date": "1818-04-13", "rite": "rz", "kind": "Z", "src": "cdial", "nr": "", "page": "k. 32v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424805", "note": "Wiek 1½. Przyczyna zapisana jako Ordinaria.", "unverified": true, "people": [{"imie": "Anna", "nazw": "Radaczynski", "rola": "zmarla", "dom": 119, "domSrc": "119", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Córka Sebastiani Radaczynskiego.", "wies": "pw", "der": true}, {"imie": "Sebastiani", "nazw": "Radaczynski", "rola": "ojciec", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-Z-s032vb", "v": "pw", "date": "1818-04-27", "rite": "rz", "kind": "Z", "src": "cdial", "nr": "", "page": "k. 32v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424805", "note": "Wiek 1. Przyczyna zapisana jako Tussi.", "unverified": true, "people": [{"imie": "Domicela", "nazw": "Radaczynski", "rola": "zmarla", "dom": 119, "domSrc": "119", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Córka Josephi Radaczynskiego.", "wies": "pw", "der": true}, {"imie": "Josephi", "nazw": "Radaczynski", "rola": "ojciec", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-Z-s032vc", "v": "pw", "date": "1818-11-21", "rite": "rz", "kind": "Z", "src": "cdial", "nr": "", "page": "k. 32v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424805", "note": "Przyczyna zapisana jako Tussi.", "unverified": true, "people": [{"imie": "Marianna", "nazw": "Podolski", "rola": "zmarla", "dom": 112, "domSrc": "112", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Córka Sebastiani Podolskiego.", "wies": "pw", "der": true}, {"imie": "Sebastiani", "nazw": "Podolski", "rola": "ojciec", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "J.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Adnotacja o pogrzebie.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-Z-s033a", "v": "pm", "date": "1818-03-13", "rite": "rz", "kind": "Z", "src": "cdial", "nr": "", "page": "k. 33", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424805", "note": "Wiek 2. Przyczyna zapisana jako Ordinaria.", "unverified": true, "people": [{"imie": "Nicolaus", "nazw": "Man…terski", "rola": "zmarly", "dom": 18, "domSrc": "18", "miesz": true, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Syn Joannis.", "wies": "pm", "der": true}, {"imie": "Joannis", "nazw": "Man…terski", "rola": "ojciec", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-Z-s033b", "v": "pm", "date": "1818-04-23", "rite": "rz", "kind": "Z", "src": "cdial", "nr": "", "page": "k. 33", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424805", "note": "Wiek 1. Przyczyna zapisana jako Tussi.", "unverified": true, "people": [{"imie": "Ignatius", "nazw": "Pichur", "rola": "zmarly", "dom": 74, "domSrc": "74", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Syn Matthiae Pichura.", "wies": "pm", "der": true}, {"imie": "Matthiae", "nazw": "Pichur", "rola": "ojciec", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-Z-s033c", "v": "pm", "date": "1818-04-24", "rite": "rz", "kind": "Z", "src": "cdial", "nr": "", "page": "k. 33", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424805", "note": "Wiek ¼. Przyczyna zapisana jako Tussi.", "unverified": true, "people": [{"imie": "Mathias", "nazw": "Niebylski", "rola": "zmarly", "dom": 37, "domSrc": "37", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Syn Joannis Niebylskiego.", "wies": "pm", "der": true}, {"imie": "Joannis", "nazw": "Niebylski", "rola": "ojciec", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-Z-s033d", "v": "pm", "date": "1818-05-08", "rite": "rz", "kind": "Z", "src": "cdial", "nr": "", "page": "k. 33", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424805", "note": "Wiek 2½. Przyczyna zapisana jako Tussi.", "unverified": true, "people": [{"imie": "Theresia", "nazw": "Bonisławski", "rola": "zmarla", "dom": 23, "domSrc": "23", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Córka Blasii Bonisławskiego.", "wies": "pm", "der": true}, {"imie": "Blasii", "nazw": "Bonisławski", "rola": "ojciec", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-Z-s033e", "v": "pm", "date": "1818-11-14", "rite": "rz", "kind": "Z", "src": "cdial", "nr": "", "page": "k. 33", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424805", "note": "Wiek 22. Przyczyna zapisana jako Tussi.", "unverified": true, "people": [{"imie": "Thomas", "nazw": "Szczawinski", "rola": "zmarly", "dom": 54, "domSrc": "54", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Uxoratus.", "wies": "pm"}, {"imie": "J.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Adnotacja o pogrzebie.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1818-Z-s033f", "v": "pm", "date": "1818-11-21", "rite": "rz", "kind": "Z", "src": "cdial", "nr": "", "page": "k. 33", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424805", "note": "Wiek 46. Przyczyna zapisana jako Ordinaria. Dopisek o pogrzebie na cmentarzu greckokatolickim w Płauczy Małej.", "unverified": true, "people": [{"imie": "Casimirus", "nazw": "Wos…czyn", "rola": "zmarly", "dom": 67, "domSrc": "67", "miesz": true, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Uxoratus.", "wies": "pm"}, {"imie": "Theodor", "nazw": "M…dzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Adnotacja o pogrzebie.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s049a", "v": "pm", "date": "1819-01-14", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 49", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424798", "note": "Chrzest 1819-01-15. Przy chrzestnej zapis miejscowości odczytany niepewnie jako Klinna, możliwa Glinna.", "unverified": true, "people": [{"imie": "Sebastianus", "nazw": "Bar…ki", "rola": "dziecko", "dom": 57, "domSrc": "57[?]", "miesz": true, "pn": "nieczytelny", "pd": "niepewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Franciscus", "nazw": "Bar…ki", "rola": "ojciec", "dom": 57, "domSrc": "57[?]", "miesz": true, "pn": "nieczytelny", "pd": "niepewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Marianna", "nazw": "", "rola": "matka", "dom": 57, "domSrc": "57[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "Małaczynski", "note": "Córka Antonio.", "wies": "pm", "panDer": true}, {"imie": "Antonio", "nazw": "Małaczynski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Sebastianus", "nazw": "Nowa…cki", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": "Kozłów"}, {"imie": "Agnes", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Joannis Jac…skiego. Miejscowość odczytana niepewnie jako Klinna.", "wies": "gl"}, {"imie": "Joannis", "nazw": "Jac…ski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Apolonia", "nazw": "Capowa", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Jacobus", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s049b", "v": "pm", "date": "1819-02-14", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 49", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424798", "note": "Chrzest 1819-02-14. Anna zapisana jako córka Thoma Bolesławskiego, innupta. Rubryka pochodzenia dziecka oznaczona jako Illegitimi.", "unverified": true, "people": [{"imie": "Mariana", "nazw": "", "rola": "dziecko", "dom": 10, "domSrc": "10", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Anna", "nazw": "", "rola": "matka", "dom": 10, "domSrc": "10", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Bolesławski", "note": "Córka Thoma.", "wies": "pm", "panDer": true}, {"imie": "Thoma", "nazw": "Bolesławski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Jacobus", "nazw": "Pichur", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Barbara", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Adalberti.", "wies": "pm"}, {"imie": "Adalberti", "nazw": "Dragyczak", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Apolonia", "nazw": "Capowa", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Jacobus", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s049va", "v": "pm", "date": "1819-03-21", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 49v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424758", "note": "Chrzest 1819-03-21. W dopisku chrzest i bierzmowanie przez greckokatolickiego księdza z Płauczy Wielkiej.", "unverified": true, "people": [{"imie": "Balbina", "nazw": "Liskowski", "rola": "dziecko", "dom": 11, "domSrc": "11", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Hiacy…", "nazw": "Liskowski", "rola": "ojciec", "dom": 11, "domSrc": "11", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Magdalena", "nazw": "", "rola": "matka", "dom": 11, "domSrc": "11", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Radaczynski", "note": "Córka Joanne.", "wies": "pm", "panDer": true}, {"imie": "Joanne", "nazw": "Radaczynski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Stanislaus", "nazw": "Radaczynski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Praxe…a", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Theodori.", "wies": ""}, {"imie": "Theodori", "nazw": "Mudzinski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Theodor", "nazw": "Mudzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s049vb", "v": "pm", "date": "1819-03-22", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 49v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424758", "note": "Dzień chrztu zapisany z poprawką, prawdopodobnie 22 marca. Dopisek idem qui sup.", "unverified": true, "people": [{"imie": "Balbina", "nazw": "Pichur", "rola": "dziecko", "dom": 14, "domSrc": "14", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Mathaeus", "nazw": "Pichur", "rola": "ojciec", "dom": 14, "domSrc": "14", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Agnes", "nazw": "", "rola": "matka", "dom": 14, "domSrc": "14", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Konarski", "note": "Córka Michaele.", "wies": "pm", "panDer": true}, {"imie": "Michaele", "nazw": "Konarski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Thomas", "nazw": "Marcz…ski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Eva", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Danielis.", "wies": ""}, {"imie": "Danielis", "nazw": "Iwan…ow", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Theodor", "nazw": "Mudzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s049vc", "v": "pm", "date": "1819-04-25", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 49v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424758", "note": "Chrzest 1819-04-25. Dopisek idem qui sup.", "unverified": true, "people": [{"imie": "Sophia", "nazw": "Murzynski", "rola": "dziecko", "dom": 37, "domSrc": "37", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Stephanus", "nazw": "Murzynski", "rola": "ojciec", "dom": 37, "domSrc": "37", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Josepha", "nazw": "", "rola": "matka", "dom": 37, "domSrc": "37", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Szczawinski", "note": "Córka Joanne.", "wies": "pm", "panDer": true}, {"imie": "Joanne", "nazw": "Szczawinski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Joannes", "nazw": "Radaczynski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Marianna", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Thoma.", "wies": ""}, {"imie": "Thoma", "nazw": "Szczawinski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Theodor", "nazw": "Mudzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s049vd", "v": "pm", "date": "1819-05-11", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 49v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424758", "note": "Chrzest 1819-05-11. Dopisek idem qui sup.", "unverified": true, "people": [{"imie": "Joannes", "nazw": "Manastyrski", "rola": "dziecko", "dom": 18, "domSrc": "18", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Joannes", "nazw": "Manastyrski", "rola": "ojciec", "dom": 18, "domSrc": "18", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Anna", "nazw": "", "rola": "matka", "dom": 18, "domSrc": "18", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Senicki", "note": "Córka Matthia.", "wies": "pm", "panDer": true}, {"imie": "Matthia", "nazw": "Senicki", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Daniel", "nazw": "Iwan…ow", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Marianna", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Joannis.", "wies": ""}, {"imie": "Joannis", "nazw": "Niebylski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Theodor", "nazw": "Mudzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s049ve", "v": "pm", "date": "1819-07-10", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 49v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424758", "note": "Chrzest 1819-07-10. Dopisek idem qui sup.", "unverified": true, "people": [{"imie": "Marianna", "nazw": "Wilk", "rola": "dziecko", "dom": 38, "domSrc": "38", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Alexius", "nazw": "Wilk", "rola": "ojciec", "dom": 38, "domSrc": "38", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Francisca", "nazw": "", "rola": "matka", "dom": 38, "domSrc": "38", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Walc…zynski", "note": "Córka Thoma.", "wies": "pm", "panDer": true}, {"imie": "Thoma", "nazw": "Walc…zynski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Joannes", "nazw": "Mart…ka", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Rosalia", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Johannis.", "wies": ""}, {"imie": "Johannis", "nazw": "Krasinski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Theodor", "nazw": "Mudzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s049vf", "v": "pm", "date": "1819-07-13", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 49v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424758", "note": "Chrzest 1819-07-13. Dopisek idem qui sup.", "unverified": true, "people": [{"imie": "Jacobus", "nazw": "Adamiak", "rola": "dziecko", "dom": 12, "domSrc": "12", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Andreas", "nazw": "Adamiak", "rola": "ojciec", "dom": 12, "domSrc": "12", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Eudocia", "nazw": "", "rola": "matka", "dom": 12, "domSrc": "12", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Chmyz", "note": "Córka Basilio.", "wies": "pm", "panDer": true}, {"imie": "Basilio", "nazw": "Chmyz", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Timotheus", "nazw": "S…cow", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Eva", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Michaelis.", "wies": ""}, {"imie": "Michaelis", "nazw": "Adamiak", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Theodor", "nazw": "Mudzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "W tym wierszu idem qui sup., odesłanie do poprzedniego wpisu.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s050a", "v": "pm", "date": "1819-08-15", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 50", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424758", "note": "Chrzest 1819-08-15. Dopisek o chrzcie i bierzmowaniu przez księdza greckokatolickiego.", "unverified": true, "people": [{"imie": "Laurentius", "nazw": "Niebylski", "rola": "dziecko", "dom": 37, "domSrc": "37", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Joannes", "nazw": "Niebylski", "rola": "ojciec", "dom": 37, "domSrc": "37", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Victoria", "nazw": "", "rola": "matka", "dom": 37, "domSrc": "37", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Murzynski", "note": "Córka Joanne.", "wies": "pm", "panDer": true}, {"imie": "Joanne", "nazw": "Murzynski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Stephanus", "nazw": "Małaczynski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Praxe…a", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Theodori.", "wies": ""}, {"imie": "Theodori", "nazw": "Mudzinski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Theodor", "nazw": "Mudzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "Wikariusz greckokatolicki z Płauczy Wielkiej.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s050b", "v": "pm", "date": "1819-08-09", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 50", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424758", "note": "Dopisek o chrzcie z wody w dniu urodzenia i uzupełnieniu ceremonii 29 sierpnia. Omnes de Plaucza parva.", "unverified": true, "people": [{"imie": "Laurentius", "nazw": "Wał…zyn", "rola": "dziecko", "dom": 17, "domSrc": "17", "miesz": true, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": "pm", "der": true}, {"imie": "Josephus", "nazw": "Wał…zyn", "rola": "ojciec", "dom": 17, "domSrc": "17", "miesz": true, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Sophia", "nazw": "", "rola": "matka", "dom": 17, "domSrc": "17", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Tomaszewski", "note": "Córka Petro.", "wies": "pm", "panDer": true}, {"imie": "Petro", "nazw": "Tomaszewski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Sebastianus", "nazw": "Błaz…ow", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Magdalena", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Hiacynthi.", "wies": "pm"}, {"imie": "Hiacynthi", "nazw": "Liskowski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Marianna", "nazw": "Pichurowa", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Theod…", "nazw": "Mudzinski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "Chrzest z wody.", "wies": ""}, {"imie": "Jacobus", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Uzupełnienie ceremonii.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s050va", "v": "pw", "date": "1819-02-12", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 50v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424767", "note": "Chrzest 1819-02-13. Chrzestny z Płauczy Małej, chrzestna z Płauczy Wielkiej.", "unverified": true, "people": [{"imie": "Honorata", "nazw": "Radaczynski", "rola": "dziecko", "dom": 119, "domSrc": "119", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Sebastianus", "nazw": "Radaczynski", "rola": "ojciec", "dom": 119, "domSrc": "119", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Marianna", "nazw": "", "rola": "matka", "dom": 119, "domSrc": "119", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "Zieliński", "note": "Córka Joanne.", "wies": "pw", "panDer": true}, {"imie": "Joanne", "nazw": "Zieliński", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Stephanus", "nazw": "Małaczynski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Theresia", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Joannis Radaczynskiego.", "wies": "pw"}, {"imie": "Joannis", "nazw": "Radaczynski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Catharina", "nazw": "Bogutowa", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Jacobus", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s050vb", "v": "pw", "date": "1819-04-05", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 50v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424767", "note": "Chrzest z wody w dniu urodzenia według dopisku. W rubryce chrztu 12 kwietnia. Dopisek o uzupełnieniu ceremonii.", "unverified": true, "people": [{"imie": "Mariana", "nazw": "Radaczynski", "rola": "dziecko", "dom": 112, "domSrc": "112[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Josephus", "nazw": "Radaczynski", "rola": "ojciec", "dom": 112, "domSrc": "112[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Magdalena", "nazw": "", "rola": "matka", "dom": 112, "domSrc": "112[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "Strzałkowski", "note": "Córka Adalberto.", "wies": "pw", "panDer": true}, {"imie": "Adalberto", "nazw": "Strzałkowski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Sebastianus", "nazw": "Blaz…ow", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Agnes", "nazw": "", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Stephani Małaczynskiego.", "wies": "pm"}, {"imie": "Stephani", "nazw": "Małaczynski", "rola": "maz_chrzestnej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Catharina", "nazw": "Bogutowa", "rola": "akuszerka", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Joanne", "nazw": "…kowski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Chrzest z wody. W dopisku określony jako proboszcz Płauczy Wielkiej.", "wies": ""}, {"imie": "J.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Uzupełnienie ceremonii.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-U-s050vc", "v": "pw", "date": "1819-06-16", "rite": "rz", "kind": "U", "src": "cdial", "nr": "", "page": "k. 50v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424767", "note": "Chrzest 1819-06-16.", "unverified": true, "people": [{"imie": "Justina", "nazw": "Radaczynski", "rola": "dziecko", "dom": 119, "domSrc": "119[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pw", "der": true}, {"imie": "Carolus", "nazw": "Radaczynski", "rola": "ojciec", "dom": 119, "domSrc": "119[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Helena", "nazw": "", "rola": "matka", "dom": 119, "domSrc": "119[?]", "miesz": true, "pn": "pewny", "pd": "niepewny", "pan": "Małaczynski", "note": "Córka Josepho.", "wies": "pw", "panDer": true}, {"imie": "Josepho", "nazw": "Małaczynski", "rola": "dziadek_matki", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Franciscus", "nazw": "Radaczynski", "rola": "chrzestny", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Agnes", "nazw": "Małaczynska", "rola": "chrzestna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Joannes", "nazw": "…kowski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "W dopisku określony jako proboszcz Płauczy Wielkiej.", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-M-s058va", "v": "pm", "date": "1819-10-24", "rite": "rz", "kind": "M", "src": "cdial", "nr": "", "page": "k. 58v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424812", "note": "Wpis w sekcji Kozłów. Pan młody z Płauczy Małej, panna młoda z Kozłowa. Dopisek Ratificavit.", "unverified": true, "people": [{"imie": "Gaspar", "nazw": "Bolesławski", "rola": "pan_mlody", "dom": 66, "domSrc": "66", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Wdowiec, lat 38.", "wies": "pm"}, {"imie": "Rosalia", "nazw": "", "rola": "panna_mloda", "dom": 192, "domSrc": "N.D. 192[?]", "miesz": false, "pn": "pewny", "pd": "niepewny", "pan": "", "note": "Wdowa, wiek odczytany jako 26. Zamieszkała w miejscowości „Kozłów”, numer domu dotyczy tej miejscowości.", "wies": "Kozłów"}, {"imie": "Joannis", "nazw": "Kacz…", "rola": "inna", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Zmarły poprzedni mąż panny młodej.", "wies": ""}, {"imie": "Andreas", "nazw": "Adamiak", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Gaspar", "nazw": "Sał…ski", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": "Kozłów"}, {"imie": "J.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-M-s059a", "v": "pm", "date": "1819-11-07", "rite": "rz", "kind": "M", "src": "cdial", "nr": "", "page": "k. 59", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424812", "note": "Przy osobach w akcie Oes de Plaucza pva. Numer z rubryki pana młodego. Przy pannie młodej osobno N.D. 26.", "unverified": true, "people": [{"imie": "Nicolaus", "nazw": "Ciapo", "rola": "pan_mlody", "dom": 69, "domSrc": "69", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "Syn Mathiae i Apoloniae, lat 22.", "wies": "pm", "der": true}, {"imie": "Mathiae", "nazw": "Ciapo", "rola": "rodzic_pana_mlodego", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Apoloniae", "nazw": "", "rola": "rodzic_pana_mlodego", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Antonia", "nazw": "Bednarski", "rola": "panna_mloda", "dom": 26, "domSrc": "N.D. 26", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Lat 13.", "wies": "pm", "der": true}, {"imie": "Adalberti", "nazw": "Bednarski", "rola": "rodzic_panny_mlodej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Franciscae", "nazw": "", "rola": "rodzic_panny_mlodej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Thadaeus", "nazw": "Trojan", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Andreas", "nazw": "Adamiak", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}, {"imie": "Adalbertus", "nazw": "Trebar", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-M-s059va", "v": "pw", "date": "1819-02-21", "rite": "rz", "kind": "M", "src": "cdial", "nr": "", "page": "k. 59v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424789", "note": "Przy osobach w akcie Omnes de Plau gna. Numer z rubryki pana młodego.", "unverified": true, "people": [{"imie": "Michael", "nazw": "Sudak", "rola": "pan_mlody", "dom": 83, "domSrc": "83", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "Syn Stephani i Catharinae, lat 21.", "wies": "pw", "der": true}, {"imie": "Stephani", "nazw": "Sudak", "rola": "rodzic_pana_mlodego", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Catharinae", "nazw": "", "rola": "rodzic_pana_mlodego", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Elisabeth", "nazw": "Kierdel", "rola": "panna_mloda", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "Córka Joannis i Mariannae, lat 17.", "wies": "pw", "der": true}, {"imie": "Joannis", "nazw": "Kierdel", "rola": "rodzic_panny_mlodej", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Mariannae", "nazw": "", "rola": "rodzic_panny_mlodej", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "Stanislaus", "nazw": "Sudak", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Petrus", "nazw": "Boyko", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": "pw"}, {"imie": "Jacobus", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-M-s059vb", "v": "pw", "date": "1819-11-21", "rite": "rz", "kind": "M", "src": "cdial", "nr": "", "page": "k. 59v", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424789", "note": "Uwaga: wieś aktu nie jest określona w odczycie; przypisano do sekcji księgi (pw). Wpis w sekcji Płaucza Wielka. Pan młody wskazany jako związany z Kozłowem. Numer 110 w rubryce pana młodego, miejscowość przypisania numeru niejasna.", "unverified": true, "people": [{"imie": "Michael", "nazw": "By…", "rola": "pan_mlody", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "Disp… in Aul. Kozlow. Miejscowość odczytana z tego określenia.", "wies": "Kozłów"}, {"imie": "Anna", "nazw": "Radaczynska", "rola": "panna_mloda", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Lat 30.", "wies": "pw"}, {"imie": "Dominicus", "nazw": "Małaczynski", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "Zapis Domini Kozlow przy określeniu funkcji.", "wies": ""}, {"imie": "Ludovicus", "nazw": "Bison…ski", "rola": "swiadek", "dom": null, "domSrc": "", "miesz": false, "pn": "nieczytelny", "pd": "pewny", "pan": "", "note": "", "wies": ""}, {"imie": "J.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+ACTS.push({"id": "cdial-618-2-109-1819-Z-s067a", "v": "pm", "date": "1819-01-27", "rite": "rz", "kind": "Z", "src": "cdial", "nr": "", "page": "k. 67", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424786", "note": "Wdowa, lat 44. Przyczyna zapisana jako Hydrops.", "unverified": true, "people": [{"imie": "Sophia", "nazw": "Szczawinska", "rola": "zmarla", "dom": 78, "domSrc": "78", "miesz": true, "pn": "niepewny", "pd": "pewny", "pan": "", "note": "", "wies": "pm"}]});
+ACTS.push({"id": "cdial-618-2-109-1819-Z-s067b", "v": "pm", "date": "1819-08-08", "rite": "rz", "kind": "Z", "src": "cdial", "nr": "", "page": "k. 67", "scan": "https://archium.tsdial.archives.gov.ua/file-viewer/227422#file-424786", "note": "Lat 30. Przyczyna zapisana jako Ordinaria. Adnotacja o pogrzebie.", "unverified": true, "people": [{"imie": "Apolonia", "nazw": "", "rola": "zmarla", "dom": 66, "domSrc": "66", "miesz": true, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Żona Gaspari Bolesławskiego.", "wies": "pm"}, {"imie": "Gaspari", "nazw": "Bolesławski", "rola": "inna", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "Mąż zmarłej.", "wies": ""}, {"imie": "J.", "nazw": "Czyzewski", "rola": "kaplan", "dom": null, "domSrc": "", "miesz": false, "pn": "pewny", "pd": "pewny", "pan": "", "note": "", "wies": ""}]});
+/*REAL-DATA-END*/
+
+const EVENTS = [
+  { id: "pozar-1910", v: "pm", title: "Pożar Płauczy Małej, 1910", date: "1910", dateNote: "Dokładna data do potwierdzenia",
+    desc: "Pożar strawił znaczną część zabudowy wsi. Opis w makiecie jest przykładowy; właściwa treść zostanie uzupełniona na podstawie relacji prasowej i dokumentów parafialnych.",
+    sources: ["prasa"], houses: [], before: "1896-1909", after: "1910-1918" },
+];
+
+/* ===================== NARZĘDZIA ===================== */
+const CYR = { а:"a",б:"b",в:"w",г:"h",ґ:"g",д:"d",е:"e",є:"je",ж:"z",з:"z",и:"y",і:"i",ї:"ji",й:"j",к:"k",л:"l",м:"m",н:"n",о:"o",п:"p",р:"r",с:"s",т:"t",у:"u",ф:"f",х:"ch",ц:"c",ч:"cz",ш:"sz",щ:"szcz",ь:"",ю:"ju",я:"ja" };
+function norm(s) {
+  return (s || "").toLowerCase().replace(/ł/g, "l").normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[а-яіїєґ]/g, c => CYR[c] ?? c).replace(/[\s'’\-]/g, "");
+}
+const variantOf = {};
+for (const [g, list] of Object.entries(VARIANTS)) for (const n of list) variantOf[norm(n)] = g;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const year = a => +a.date.slice(0, 4);
+const vName = id => VILLAGES.find(v => v.id === id)?.name || id;
+const fmtDate = d => {
+  const m = ["", "stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
+  const [y, mo, da] = d.split("-");
+  if (da) return `${+da} ${m[+mo]} ${y}`;
+  if (mo) return `${m[+mo].replace(/a$/, "")} ${y}`;
+  return `${y} (bez dokładnej daty)`;
+};
+const findPeriod = k => PERIODS.find(p => pkey(p) === k);
+const periodDesc = (p, v) => p.desc[v] || p.desc["*"] || "";
+const listYears = ys => {
+  const u = [...new Set(ys)].sort((a, b) => a - b);
+  return u.join(", ");
+};
+
+/* ===================== STAN / ROUTING ===================== */
+let S = { w: "pm", v: "wies", t: "domy", o: "1809-1835" };
+const STACK = [];
+function go(patch, replace = false) {
+  if (!replace) STACK.push({ ...S });
+  S = { ...S, ...patch };
+  for (const k of Object.keys(S)) if (S[k] === "" || S[k] == null) delete S[k];
+  S.w = S.w || "pm"; S.v = S.v || "wies"; S.t = S.t || "domy";
+  route(true);
+}
+function goBack() { if (STACK.length) { S = STACK.pop(); route(true); } else go({ v: "wies" }); }
+
+/* ===================== FILTRY I INDEKSY ===================== */
+function actsIn(v, from, to, f = {}) {
+  return ACTS.filter(a => a.v === v && year(a) >= from && year(a) <= to
+    && (!f.r || year(a) === +f.r) && (!f.ob || a.rite === f.ob) && (!f.rd || a.kind === f.rd))
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+function housesFrom(acts) {
+  const map = new Map();
+  const noHouse = [];
+  for (const a of acts) {
+    let any = false;
+    for (const p of a.people) {
+      if (p.miesz && p.dom != null && p.dom !== "") {
+        any = true;
+        if (!map.has(p.dom)) map.set(p.dom, []);
+        map.get(p.dom).push({ a, p });
+      }
+    }
+    if (!any) noHouse.push(a);
+  }
+  const houses = [...map.entries()].sort((x, y) => x[0] - y[0]);
+  return { houses, noHouse };
+}
+const stem = n => n.replace(/(owna|owa)$/, "").replace(/ska$/, "ski");
+function namesForHouse(rows, collapse) {
+  if (collapse) {
+    const g = new Map();
+    rows = rows.filter(r => r.p.nazw);
+    if (!rows.length) return [{ name: "Nazwisko nie podane w akcie", years: "", flag: false }];
+    for (const { a, p } of rows) {
+      const key = variantOf[norm(p.nazw)] || stem(norm(p.nazw));
+      if (!g.has(key)) g.set(key, { names: new Set(), years: [], flag: false });
+      const e = g.get(key); e.names.add(p.nazw); e.years.push(year(a)); if (p.pn !== "pewny" || p.pd !== "pewny") e.flag = true;
+    }
+    return [...g.values()].map(e => ({ name: [...e.names].join(" / "), years: listYears(e.years), flag: e.flag }));
+  }
+  return rows.map(({ a, p }) => ({ name: `${p.imie} ${p.nazw}`.trim(), years: String(year(a)), flag: p.pn !== "pewny" || p.pd !== "pewny" }));
+}
+
+/* ===================== WIDOKI ===================== */
+const app = document.getElementById("app");
+function stateChip(s) { return `<span class="chip s-${s}">${STATE[s]}</span>`; }
+function periodHasData(v, p) { return ACTS.some(a => a.v === v && year(a) >= p.from && year(a) <= p.to); }
+
+function villageStats(v) {
+  const acts = ACTS.filter(a => a.v === v);
+  const houses = new Set(acts.flatMap(a => a.people.filter(p => p.miesz && p.dom != null && p.dom !== "").map(p => p.dom)));
+  const names = new Set(acts.flatMap(a => a.people.map(p => norm(p.nazw))).filter(Boolean));
+  return { houses: houses.size, names: names.size, acts: acts.length };
+}
+function descBlock(d) {
+  const i = d.indexOf(". ");
+  if (i < 0) return `<p class="lead">${esc(d)}</p>`;
+  return `<p class="lead">${esc(d.slice(0, i + 1))}</p><details class="more"><summary>Więcej o wsi</summary><p class="small muted">${esc(d.slice(i + 2))}</p></details>`;
+}
+function viewVillage() {
+  const v = VILLAGES.find(x => x.id === S.w);
+  const tab = S.t, st = villageStats(v.id);
+  let h = `<section class="hero"><p class="eyebrow">Wieś</p><h2>${esc(v.name)}</h2>${descBlock(v.desc)}
+    <div class="stats"><div><b>${st.houses}</b><span>domów</span></div><div><b>${st.names}</b><span>nazwisk</span></div><div><b>${st.acts}</b><span>wpisów</span></div></div></section>
+  <div class="tabs" role="tablist">
+    ${[["domy", "Domy"], ["historia", "Historia wsi"], ["zrodla", "Źródła"]].map(([k, l]) =>
+      `<button role="tab" aria-selected="${tab === k}" data-tab="${k}">${l}</button>`).join("")}
+  </div>`;
+  if (ACTS.some(a => a.v === v.id && a.unverified)) h += `<div class="note small">Wpisy tej wsi pochodzą z odczytu skanów wykonanego przez AI i nie zostały jeszcze sprawdzone ze skanem. Oznaczenia „niepewny” i „nieczytelny” pochodzą z odczytu.</div>`;
+  if (tab === "zrodla") return h + viewSources(v.id);
+  h += timeline(v.id);
+  if (tab === "historia") return h + viewHistory(v.id);
+  if (S.o) h += periodPanel(v.id, findPeriod(S.o));
+  else h += `<div class="empty"><h3>Wybierz okres</h3><p class="small muted">Rozwiń oś czasu powyżej i wybierz okres, aby zobaczyć listę domów.</p></div>`;
+  return h;
+}
+
+function timeline(v) {
+  const cur = S.o ? findPeriod(S.o) : null;
+  const openPart = cur ? PARTS.findIndex(pt => pt.periods.some(p => pkey(p) === S.o)) : -1;
+  let h = `<details class="tl" ${cur ? "" : "open"}><summary><span class="tl-ico" aria-hidden="true">◷</span>
+    <span class="tl-main"><small>Okres</small>${cur ? `<strong>${cur.from}–${cur.to}</strong><span>${esc(cur.title)}</span>` : "<strong>Wybierz okres</strong>"}</span><span class="tl-change">Oś czasu</span></summary>
+    <div class="tl-body"><div class="timeline" aria-label="Oś czasu">`;
+  PARTS.forEach((pt, i) => {
+    const cnt = pt.periods.filter(p => periodHasData(v, p)).length;
+    h += `<details ${i === openPart ? "open" : ""}><summary><span><span class="yrs">${pt.label}</span><br>
+      <span class="muted small">${cnt ? cnt + " z " + pt.periods.length + " okresów ma wpisy" : "brak opracowanych wpisów"}</span></span></summary><ol>`;
+    for (const p of pt.periods) {
+      for (const e of EVENTS.filter(e => e.v === v && +e.date.slice(0, 4) === p.from))
+        h += `<li class="event"><button class="evt" data-event="${e.id}"><span class="lbl">◆ Wydarzenie</span><br><strong>${esc(e.title)}</strong><br><span class="muted small">${esc(e.dateNote)}</span></button></li>`;
+      const has = periodHasData(v, p);
+      h += `<li class="${has ? "has" : ""}"><button class="period" aria-pressed="${S.o === pkey(p)}" data-period="${pkey(p)}">
+        <span class="row"><strong>${p.from}–${p.to}</strong><span class="small ${has ? "" : "muted"}">${has ? "● opracowane wpisy" : "○ brak opracowanych"}</span></span>
+        <span>${esc(p.title)}</span>${periodDesc(p, v) ? `<span class="desc">${esc(periodDesc(p, v))}</span>` : ""}</button></li>`;
+    }
+    h += `</ol></details>`;
+  });
+  return h + `</div><div class="legend"><span class="l-has">okres z opracowanymi wpisami</span><span>okres bez wpisów</span><span class="l-evt">wydarzenie</span></div></div></details>`;
+}
+
+function wykaz(v, p, open = false) {
+  let rows = "";
+  for (let y = p.from; y <= p.to; y++) rows += `<tr><td>${y}</td><td>${stateChip(yearState(v, "rz", y))}</td><td>${stateChip(yearState(v, "gk", y))}</td></tr>`;
+  return `<details class="wykaz card" ${open ? "open" : ""}><summary>Szczegółowy wykaz roczników</summary>
+    <table><thead><tr><th>Rok</th><th>rz.-kat.</th><th>gr.-kat.</th></tr></thead><tbody>${rows}</tbody></table></details>`;
+}
+
+function stateSummary(v, from, to, rite) {
+  const rites = rite ? [rite] : ["rz", "gk"];
+  const c = {};
+  for (const r of rites) for (let y = from; y <= to; y++) { const s = yearState(v, r, y); (c[s] = c[s] || []).push(`${y} ${r === "rz" ? "rz.-kat." : "gr.-kat."}`); }
+  return c;
+}
+function compressYears(items) {
+  const by = {};
+  for (const it of items) { const [y, r] = it.split(" "); (by[r] = by[r] || []).push(+y); }
+  return Object.entries(by).map(([r, ys]) => {
+    const out = []; let s = ys[0], prev = ys[0];
+    for (const y of ys.slice(1).concat(Infinity)) { if (y !== prev + 1) { out.push(s === prev ? `${s}` : `${s}–${prev}`); s = y; } prev = y; }
+    return `${out.join(", ")} (${r})`;
+  }).join("; ");
+}
+function emptyState(v, from, to, rite, title) {
+  const c = stateSummary(v, from, to, rite);
+  const order = ["w_opracowaniu", "skany_calosc", "skany_czesc", "katalog", "brak_ustalen", "opracowany"];
+  const expl = {
+    opracowany: "opracowane, ale bez wpisów spełniających filtry",
+    w_opracowaniu: "opracowanie trwa",
+    skany_calosc: "skany dostępne, czekają na opracowanie",
+    skany_czesc: "skany dostępne częściowo",
+    katalog: "znane z katalogu, bez potwierdzonego dostępu do skanów",
+    brak_ustalen: "źródła jeszcze nie ustalono",
+  };
+  const li = order.filter(s => c[s]).map(s => `<li>${stateChip(s)} <span class="small">${expl[s]}: ${compressYears(c[s])}</span></li>`).join("");
+  return `<div class="empty" role="status"><h3>${esc(title)}</h3>
+    <p class="small muted">Brak opracowanych wpisów dla tych ustawień. Stan materiału:</p><ul>${li}</ul>
+    <button class="btn ghost small" data-tab="zrodla">Zobacz źródła</button></div>`;
+}
+
+function periodPanel(v, p) {
+  const f = { r: S.r, ob: S.ob, rd: S.rd };
+  const acts = actsIn(v, p.from, p.to, f);
+  const { houses, noHouse } = housesFrom(acts);
+  const collapse = S.zw !== "0";
+  const yrs = []; for (let y = p.from; y <= p.to; y++) yrs.push(y);
+  let h = `<div class="panel-head" id="okres"><h2>${p.from}–${p.to}</h2><span class="muted small">${esc(p.title)}</span></div>
+  <div class="filters">
+    <label>Rocznik<select data-f="r"><option value="">wszystkie</option>${yrs.map(y => `<option ${S.r == y ? "selected" : ""}>${y}</option>`).join("")}</select></label>
+    <label>Obrządek<select data-f="ob"><option value="">oba</option><option value="rz" ${S.ob === "rz" ? "selected" : ""}>rz.-kat.</option><option value="gk" ${S.ob === "gk" ? "selected" : ""}>gr.-kat.</option></select></label>
+    <label>Rodzaj aktu<select data-f="rd"><option value="">wszystkie</option>${Object.entries(KIND).map(([k, l]) => `<option value="${k}" ${S.rd === k ? "selected" : ""}>${l.split(" ")[0]}</option>`).join("")}</select></label>
+  </div>`;
+  const ev = EVENTS.find(e => e.v === v && e.after === pkey(p));
+  if (ev) h += `<div class="note event">Okres zaczyna się w roku wydarzenia „${esc(ev.title)}”. ${esc(ev.dateNote)}, dlatego wpisy z ${ev.date} r. nie są dzielone na sprzed i po pożarze. <a href="#" data-event="${ev.id}">Karta wydarzenia</a></div>`;
+  if (!houses.length && !noHouse.length) {
+    return h + wykaz(v, p) + emptyState(v, S.r ? +S.r : p.from, S.r ? +S.r : p.to, S.ob, S.r || S.ob || S.rd ? "Brak wpisów dla wybranych filtrów" : "Ten okres nie ma jeszcze opracowanych wpisów");
+  }
+  h += `<div class="list-head"><h3 class="section-title" style="margin:0">Domy <span class="count">${houses.length}</span></h3>
+    <label class="toggle" style="margin:0"><input type="checkbox" data-collapse ${collapse ? "checked" : ""}> Zwiń powtórzenia</label></div><ul class="houses">`;
+  for (const [no, rows] of houses) {
+    const names = namesForHouse(rows, collapse);
+    const yrs = rows.map(r => year(r.a));
+    h += `<li><button class="house" data-house="${no}" aria-label="Dom numer ${no}"><span class="no"><small>nr</small>${no}</span><span><ul class="names">
+      ${names.map(n => `<li><b>${esc(n.name)}</b> ${n.flag ? '<span class="flag">niepewny odczyt</span>' : ""}<br><span class="yrs">${n.years}</span></li>`).join("")}</ul>
+      <span class="hmeta">${new Set(rows.map(r => r.a.id)).size} wpisów · ${Math.min(...yrs)}–${Math.max(...yrs)}</span></span><span class="chev" aria-hidden="true">›</span></button></li>`;
+  }
+  h += `</ul>`;
+  h += `<h3 class="section-title">Bez numeru domu <span class="count">${noHouse.length}</span></h3>`;
+  h += noHouse.length ? noHouse.map(entryCard).join("") : `<p class="muted small">Wszystkie wpisy w tym zakresie mają numer domu.</p>`;
+  h += wykaz(v, p);
+  return h;
+}
+
+function personLine(p, v) {
+  const flags = [];
+  if (p.pn !== "pewny") flags.push(`nazwisko: ${p.pn}`);
+  if (p.der) flags.push("nazwisko z nazwiska ojca (wyprowadzone)");
+  if (p.panDer) flags.push("nazwisko panieńskie z wpisu o ojcu matki");
+  if (p.dom != null && p.dom !== "" && p.pd !== "pewny") flags.push(`numer domu: ${p.pd}`);
+  const dom = p.dom != null && p.dom !== "" ? `dom nr ${p.dom}${p.domSrc && p.domSrc !== String(p.dom) ? ` <span class="src-read">(w źródle: „${esc(p.domSrc)}”)</span>` : ""}${p.miesz ? "" : ' <span class="src-read">(nie przypisany do listy mieszkańców)</span>'}` : '<span class="src-read">bez adresu w akcie</span>';
+  return `<li><span class="role">${ROLE[p.rola] || p.rola}</span><br><b>${esc(p.imie)} ${esc(p.nazw)}</b>${p.note ? ` <span class="src-read">(${esc(p.note)})</span>` : ""}${p.pan ? ` <span class="muted">z d. ${esc(p.pan)}</span>` : ""}
+    ${flags.length ? `<span class="flag">${flags.join(", ")}</span>` : ""}<br><span class="small">${dom}</span></li>`;
+}
+function actMeta(a) {
+  const s = SOURCES[a.src];
+  return `<dl class="meta">
+    <dt>Data</dt><dd>${fmtDate(a.date)}</dd>
+    <dt>Rodzaj</dt><dd>${KIND[a.kind]}</dd>
+    <dt>Obrządek</dt><dd>${RITE[a.rite]}</dd>
+    <dt>Parafia</dt><dd>${esc(s.parish)}</dd>
+    <dt>Sygnatura</dt><dd>${esc(s.arch)}, ${esc(s.sig)}</dd>
+    <dt>Akt / strona</dt><dd>${a.nr ? `nr ${esc(a.nr)}, ` : "bez numeru aktu, "}${esc(a.page)}</dd>
+    <dt>Skan</dt><dd>${a.scan && a.scan !== "#" ? `<a href="${esc(a.scan)}" target="_blank" rel="noopener">otwórz skan ↗</a>` : '<a href="#" onclick="return false">otwórz skan (przykład)</a>'}</dd>
+  </dl>`;
+}
+function entryCard(a) {
+  const main = a.people.filter(p => ["dziecko", "zmarly", "zmarla", "pan_mlody", "panna_mloda"].includes(p.rola)).map(p => `${p.imie} ${p.nazw}`.trim()).join(" i ");
+  const copies = a.event ? ACTS.filter(x => x.event === a.event && x.id !== a.id) : [];
+  return `<details class="entry"><summary><span class="when">${fmtDate(a.date)}</span>
+    <span>${KIND[a.kind]}: ${esc(main)}</span><span class="muted small">${RITE[a.rite]} · ${esc(SOURCES[a.src].parish)} · ${a.nr ? `nr ${esc(a.nr)}` : esc(a.page)}</span>${a.unverified ? '<span><span class="flag">odczyt AI, do sprawdzenia</span></span>' : ""}</summary>
+    <div class="body">${actMeta(a)}
+      ${a.note ? `<div class="note">Uwagi do odczytu: ${esc(a.note)}</div>` : ""}
+      <ul class="people">${a.people.map(p => personLine(p, a.v)).join("")}</ul>
+      ${copies.length ? `<p class="small">Ten sam akt w innym źródle: ${copies.map(c => `<a href="#" data-act="${c.id}">${RITE[c.rite]}, nr ${esc(c.nr)}</a>`).join(", ")}</p>` : ""}
+      <a href="#" class="small" data-act="${a.id}">Strona wzmianki</a>
+    </div></details>`;
+}
+
+function viewHouse() {
+  const v = S.w, no = +S.d, p = S.o ? findPeriod(S.o) : null;
+  const all = S.z === "all" || !p;
+  const from = all ? 1700 : p.from, to = all ? 1945 : p.to;
+  const acts = actsIn(v, from, to).filter(a => a.people.some(x => x.miesz && x.dom === no));
+  const allActs = actsIn(v, 1700, 1945).filter(a => a.people.some(x => x.miesz && x.dom === no));
+  let h = `<a href="#" class="back" data-back>← ${esc(vName(v))}${p ? `, ${pkey(p).replace("-", "–")}` : ""}</a>
+    <h2>Dom nr ${no}</h2><p class="lead">${esc(vName(v))}. Wpisy, w których źródło wiąże osobę z tym numerem domu.</p>
+    <div class="seg"><button aria-pressed="${!all}" data-scope="okres" ${p ? "" : "disabled"}>${p ? `Okres ${p.from}–${p.to}` : "Okres"}</button><button aria-pressed="${all}" data-scope="all">Wszystkie lata</button></div>`;
+  const rows = acts.flatMap(a => a.people.filter(x => x.miesz && x.dom === no).map(x => ({ a, p: x })));
+  const names = namesForHouse(rows, true);
+  if (names.length) h += `<div class="card"><h3>Nazwiska</h3><ul class="names" style="margin-top:6px">${names.map(n => `<li><b>${esc(n.name)}</b> ${n.flag ? '<span class="flag">niepewny odczyt</span>' : ""} <span class="yrs">${n.years}</span></li>`).join("")}</ul></div>`;
+  h += `<div class="note small">Rok potwierdza wzmiankę. Ciągłość zamieszkania między wzmiankami i tożsamość budynku po pożarze 1910 r. wymagają osobnego potwierdzenia.</div>`;
+  h += `<h3 class="section-title">Wpisy chronologicznie (${acts.length})</h3>`;
+  h += acts.length ? acts.map(entryCard).join("") : emptyState(v, from, to, "", `Brak wpisów dla domu nr ${no} w tym okresie`) + (allActs.length ? `<p class="small">Ten dom ma ${allActs.length} wpis(y) w innych latach. <a href="#" data-scope="all">Pokaż wszystkie lata</a></p>` : "");
+  const other = VILLAGES.filter(x => x.id !== v && ACTS.some(a => a.v === x.id && a.people.some(pp => pp.miesz && pp.dom === no)));
+  if (other.length) h += `<p class="small muted">Dom o tym samym numerze w innej wsi to osobna karta: ${other.map(x => `<a href="#" data-goto-house="${x.id}:${no}">${esc(x.name)}, nr ${no}</a>`).join(", ")}.</p>`;
+  return h;
+}
+
+function viewAct() {
+  const a = ACTS.find(x => x.id === S.a);
+  if (!a) return `<p>Nie znaleziono wpisu.</p>`;
+  const copies = a.event ? ACTS.filter(x => x.event === a.event && x.id !== a.id) : [];
+  return `<a href="#" class="back" data-back>← wróć</a>
+    <h2>${KIND[a.kind]}, ${fmtDate(a.date)}</h2><p class="lead">${esc(vName(a.v))} · wzmianka źródłowa</p>
+    <div class="card">${actMeta(a)}${a.note ? `<div class="note">Uwagi do odczytu: ${esc(a.note)}</div>` : ""}</div>
+    <h3 class="section-title">Osoby we wpisie</h3><ul class="people">${a.people.map(p => personLine(p, a.v)).join("")}</ul>
+    ${copies.length ? `<div class="card small">Ten sam akt zachował się także w: ${copies.map(c => `<a href="#" data-act="${c.id}">${esc(SOURCES[c.src].arch)}, ${RITE[c.rite]}, nr ${esc(c.nr)}</a>`).join(", ")}.</div>` : ""}
+    <h3 class="section-title">Źródło</h3>${sourceCard(a.src)}`;
+}
+
+function sourceCard(id) {
+  const s = SOURCES[id];
+  return `<div class="card"><b>${esc(s.arch)}${s.fond ? `, zespół ${esc(s.fond)}` : ""}</b><br><span class="small">${esc(s.sig)}</span>
+    <dl class="meta"><dt>Parafia</dt><dd>${esc(s.parish || "—")}</dd><dt>Obrządek</dt><dd>${s.rite ? RITE[s.rite] : "—"}</dd>
+    <dt>Rodzaj akt</dt><dd>${esc(s.kinds)}</dd><dt>Roczniki</dt><dd>${esc(s.years)}</dd>
+    <dt>Miejscowości</dt><dd>${s.villages.map(vName).join(", ")}</dd><dt>Skany</dt><dd>${esc(s.scans)}</dd><dt>Stan</dt><dd>${esc(s.state)}</dd></dl>
+    ${s.link ? `<a class="small" href="${esc(s.link)}" target="_blank" rel="noopener">${esc(new URL(s.link).hostname)} ↗</a>` : '<span class="small muted">Link do ustalenia</span>'}</div>`;
+}
+
+function viewSources(v) {
+  const ids = Object.keys(SOURCES).filter(id => SOURCES[id].villages.includes(v));
+  let h = `<p class="small muted">Wykaz źródeł dla tej wsi i stan opracowania roczników. Okresy są wspólne dla wszystkich wsi; dostępność źródeł różni się między miejscowościami.</p>`;
+  h += `<div class="legend" style="margin-bottom:8px">${Object.keys(STATE).map(stateChip).join(" ")}</div>`;
+  h += `<h3 class="section-title">Roczniki według okresów</h3>`;
+  for (const p of PERIODS) {
+    const c = stateSummary(v, p.from, p.to);
+    const best = ["opracowany", "w_opracowaniu", "skany_calosc", "skany_czesc", "katalog", "brak_ustalen"].filter(s => c[s]);
+    h += `<details class="wykaz card"><summary>${p.from}–${p.to} <span style="font-weight:400">${best.slice(0, 2).map(stateChip).join(" ")}</span></summary>
+      ${wykaz(v, p, true).replace(/<details[^>]*><summary>.*?<\/summary>/, "").replace(/<\/details>$/, "")}</details>`;
+  }
+  h += `<h3 class="section-title">Źródła (${ids.length})</h3>` + ids.map(sourceCard).join("");
+  return h;
+}
+
+function viewHistory(v) {
+  const evs = EVENTS.filter(e => e.v === v);
+  if (!evs.length) return `<div class="empty"><h3>Brak opisanych wydarzeń</h3><p class="small muted">Dla tej wsi nie dodano jeszcze wydarzeń. Wydarzenia pojawią się na osi czasu jako znaczniki ◆.</p></div>`;
+  return `<h3 class="section-title">Wydarzenia</h3>` + evs.map(e => `<button class="evt" style="margin:6px 0" data-event="${e.id}"><span class="lbl">◆ Wydarzenie · ${e.date}</span><br><strong>${esc(e.title)}</strong><br><span class="small muted">${esc(e.desc.slice(0, 90))}…</span></button>`).join("");
+}
+
+function viewEvent() {
+  const e = EVENTS.find(x => x.id === S.e);
+  const after = findPeriod(e.after), before = findPeriod(e.before);
+  const afterActs = actsIn(e.v, after.from, after.to);
+  const y = +e.date;
+  const yearActs = ACTS.filter(a => a.v === e.v && year(a) === y);
+  return `<a href="#" class="back" data-back>← ${esc(vName(e.v))}</a>
+    <div class="event-head"><span class="lbl">◆ Wydarzenie</span><h2>${esc(e.title)}</h2><p class="muted small" style="margin:2px 0 0">${e.date} · ${esc(e.dateNote)}</p></div>
+    <p>${esc(e.desc)}</p>
+    <div class="two">
+      <button class="btn ghost" data-goto-period="${e.before}">Domy przed pożarem<br><span class="small">${before.from}–${before.to}</span></button>
+      <button class="btn" data-goto-period="${e.after}">Domy od roku pożaru<br><span class="small">${after.from}–${after.to}</span></button>
+    </div>
+    <div class="note event small">Dopóki dokładna data pożaru nie jest potwierdzona, ${yearActs.length} wpis(y) z ${y} r. pozostają w widoku „Od roku pożaru”, bez przypisania do części przed pożarem lub po nim.</div>
+    ${afterActs.every(a => year(a) === y) ? `<div class="empty small"><b>Późniejsze lata (${y + 1}–${after.to})</b> nie są jeszcze opracowane: ${compressYears(stateSummary(e.v, y + 1, after.to, "rz")[yearState(e.v, "rz", y + 1)] || [])} — ${STATE[yearState(e.v, "rz", y + 1)].toLowerCase()}.</div>` : ""}
+    <h3 class="section-title">Powiązane domy</h3>
+    <p class="small muted">Domy, których numery wskazują dokumenty dotyczące pożaru.</p>
+    ${e.houses.length ? `<div style="display:flex;flex-wrap:wrap;gap:6px">${e.houses.map(n => `<button class="btn ghost small" data-goto-house="${e.v}:${n}">nr ${n}</button>`).join("")}</div>` : '<p class="small muted">Dokumenty nie wskazują jeszcze numerów domów.</p>'}
+    <h3 class="section-title">Źródła</h3>${e.sources.map(sourceCard).join("")}`;
+}
+
+function viewSearch() {
+  const q = S.q || "", nq = norm(q), all = S.all === "1";
+  let h = `<a href="#" class="back" data-back>← ${esc(vName(S.w))}</a><h2>Wyniki: „${esc(q)}”</h2>
+    <label class="toggle"><input type="checkbox" data-allv ${all ? "checked" : ""}> Wszystkie wsie</label>`;
+  if (nq.length < 2) return h + `<p class="muted">Wpisz co najmniej dwie litery nazwiska.</p>`;
+  const groups = new Set(Object.entries(variantOf).filter(([n]) => n.includes(nq)).map(([, g]) => g));
+  const res = new Map();
+  for (const a of ACTS) {
+    if (!all && a.v !== S.w) continue;
+    for (const p of a.people) {
+      const nn = norm(p.nazw), np = norm(p.pan);
+      const direct = nn.includes(nq) || (np && np.includes(nq));
+      const viaVar = !direct && (groups.has(variantOf[nn]) || (np && groups.has(variantOf[np])));
+      if (!direct && !viaVar) continue;
+      const dom = p.miesz && p.dom != null && p.dom !== "" ? p.dom : null;
+      const key = `${a.v}|${dom ?? "-"}|${p.nazw}`;
+      if (!res.has(key)) res.set(key, { v: a.v, dom, nazw: p.nazw, years: [], acts: [], viaVar, maiden: !nn.includes(nq) && np && np.includes(nq), pan: p.pan });
+      const r = res.get(key); r.years.push(year(a)); r.acts.push(a.id);
+    }
+  }
+  const list = [...res.values()].sort((a, b) => a.v.localeCompare(b.v) || (a.dom ?? 1e9) - (b.dom ?? 1e9) || a.nazw.localeCompare(b.nazw));
+  if (!list.length) {
+    const p = S.o ? findPeriod(S.o) : null;
+    return h + `<div class="empty" role="status"><h3>Nie znaleziono nazwiska</h3><p class="small">Wyszukiwanie obejmuje tylko opracowane wpisy ${all ? "ze wszystkich wsi" : `z wsi ${esc(vName(S.w))}`}. Wiele roczników czeka jeszcze na opracowanie.</p>
+      ${all ? "" : `<button class="btn ghost small" data-allv-on>Szukaj we wszystkich wsiach</button> `}<button class="btn ghost small" data-tab="zrodla">Stan źródeł</button></div>`;
+  }
+  h += `<p class="small muted">${list.length} wynik(ów). Pisownia jak w dokumencie; zbieżność nazwisk nie oznacza pokrewieństwa.</p>`;
+  for (const r of list) {
+    h += `<button class="result" ${r.dom != null ? `data-goto-house="${r.v}:${r.dom}"` : `data-act="${r.acts[0]}"`}>
+      <span class="nm">${esc(r.nazw)}</span> ${r.viaVar ? '<span class="chip s-katalog">wariant pisowni</span>' : ""} ${r.maiden ? `<span class="chip s-katalog">nazwisko panieńskie: ${esc(r.pan)}</span>` : ""}<br>
+      <span class="where">${esc(vName(r.v))} · ${r.dom != null ? `dom nr ${r.dom}` : "Bez numeru domu"}</span><br>
+      <span class="small">Lata: ${listYears(r.years)}</span></button>`;
+  }
+  return h;
+}
+
+/* ===================== RENDER ===================== */
+let lastView = "";
+function route(scroll) {
+  document.getElementById("village").value = S.w;
+  document.getElementById("q").value = S.v === "szukaj" ? (S.q || "") : "";
+  const views = { wies: viewVillage, dom: viewHouse, akt: viewAct, szukaj: viewSearch, wydarzenie: viewEvent };
+  app.innerHTML = (views[S.v] || viewVillage)();
+  const sig = S.v + S.d + S.a + S.e;
+  if (scroll && sig !== lastView) window.scrollTo(0, 0);
+  lastView = sig;
+}
+
+const vsel = document.getElementById("village");
+vsel.innerHTML = VILLAGES.map(v => `<option value="${v.id}">${esc(v.name)}</option>`).join("");
+vsel.addEventListener("change", () => go({ w: vsel.value, v: "wies", d: "", a: "", e: "" })); /* okres i filtry zostają */
+document.getElementById("searchForm").addEventListener("submit", ev => { ev.preventDefault(); go({ v: "szukaj", q: document.getElementById("q").value.trim() }); });
+
+app.addEventListener("click", ev => {
+  const t = ev.target.closest("[data-tab],[data-period],[data-house],[data-act],[data-event],[data-scope],[data-goto-house],[data-goto-period],[data-back],[data-allv-on]");
+  if (!t) return;
+  ev.preventDefault();
+  const d = t.dataset;
+  if (d.tab) go({ v: "wies", t: d.tab });
+  else if (d.period) { go({ o: S.o === d.period ? "" : d.period, r: "" }); requestAnimationFrame(() => document.getElementById("okres")?.scrollIntoView({ behavior: "smooth", block: "start" })); }
+  else if (d.house) go({ v: "dom", d: d.house, z: "" });
+  else if (d.gotoHouse) { const [w, n] = d.gotoHouse.split(":"); go({ v: "dom", w, d: n, z: S.o ? "" : "all" }); }
+  else if (d.act) go({ v: "akt", a: d.act });
+  else if (d.event) go({ v: "wydarzenie", e: d.event });
+  else if (d.gotoPeriod) { go({ v: "wies", t: "domy", o: d.gotoPeriod, r: "", e: "" }); requestAnimationFrame(() => document.getElementById("okres")?.scrollIntoView({ block: "start" })); }
+  else if (d.scope) go({ z: d.scope === "all" ? "all" : "" }, true);
+  else if ("allvOn" in d) go({ all: "1" }, true);
+  else if ("back" in d) goBack();
+});
+app.addEventListener("change", ev => {
+  const t = ev.target;
+  if (t.dataset.f) go({ [t.dataset.f]: t.value }, true);
+  else if ("collapse" in t.dataset) go({ zw: t.checked ? "" : "0" }, true);
+  else if ("allv" in t.dataset) go({ all: t.checked ? "1" : "" }, true);
+});
+route(false);
+</script>
+
+</body>
+</html>
