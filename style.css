@@ -94,6 +94,8 @@ details.tl[open] .tl-change::after { content: " ▴"; } details.tl:not([open]) .
 .period[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--accent-soft); }
 .period .row { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
 .period .desc { color: var(--ink-2); font-size: .82rem; }
+.period.all-years { margin-top: 12px; }
+.period .row { flex-wrap: wrap; }
 .evt { width: 100%; text-align: left; background: var(--event-bg); border: 1px dashed var(--event); border-radius: 12px; padding: 9px 12px; cursor: pointer; }
 .evt .lbl { display: inline-block; font-size: .7rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--event); }
 .legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .78rem; color: var(--ink-2); margin: 10px 4px 0; }
