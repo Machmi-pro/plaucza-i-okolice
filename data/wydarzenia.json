@@ -3,12 +3,25 @@
     "id": "pozar-1910",
     "wies": "pm",
     "tytul": "Pożar Płauczy Małej, 1910",
-    "data": "1910",
-    "uwaga_daty": "Dokładna data do potwierdzenia",
-    "opis": "Pożar Płauczy Małej w 1910 r. Opis zostanie uzupełniony na podstawie relacji prasowej i dokumentów parafialnych; tytuł gazety i numer są w trakcie kwerendy.",
-    "zrodla": ["prasa-1910"],
+    "data": "1910-10-11",
+    "uwaga_daty": "data według wniosku nagłego w Sejmie Krajowym",
+    "opis": "11 października 1910 r. w Płauczy Małej w powiecie brzeżańskim wybuchł pożar, który przy silnym wietrze w kilka chwil zniszczył całą wieś: ponad 120 gospodarstw wraz z narzędziami i zapasami zboża. Około 1000 osób zostało bez dachu i środków do życia; ocalały tylko 4 chaty na uboczu wsi. Szkodę oszacowano na ponad pół miliona koron, a ubezpieczone były tylko niektóre budynki. 18 października 1910 r. Sejm Krajowy rozpatrzył wnioski nagłe posłów T. Starucha i Schätzla i przyznał pogorzelcom gminy Płaucza Mała zapomogę 2500 koron.",
+    "zrodla": [
+      "sejm-1910",
+      "prasa-1910"
+    ],
     "domy": [],
     "przed": "1896-1909",
-    "po": "1910-1918"
+    "po": "1910-1918",
+    "cytaty": [
+      {
+        "tekst": "Dnia 11. października 1910 powstał ogień w Płauczy małej pow. Brzeżany i przy silnym wietrze w kilku chwilach zniszczył całą wieś — zwyż 120 gospodarzy wraz ze wszystkiemi narzędziami gospodarskiemi i zapasami zboża, tak, że około 1.000 ludzi zostało bez dachu i środków do życia. Nieszczęście jest tem większe, że spaliła się cała wieś, a zostało tylko 4 chaty, stojące na uboczu wsi. […] Szkoda ogólna wynosi zwyż pół miliona koron a ubezpieczone były tylko niektóre budynki, a zboże nie było zupełnie ubezpieczone.",
+        "zrodlo": "Wniosek nagły p. T. Starucha i tow., Protokół 98. posiedzenia Sejmu Krajowego z dnia 18 października 1910, s. 2"
+      },
+      {
+        "tekst": "Dla pogorzelców gm. Płaucza mała pow. brzeżańskiego przeznacza się kwotę 2.500 K do dyspozycyi Wydziału kraj. Wydatkiem tym obciąża się budżet krajowy na rok 1910.",
+        "zrodlo": "Sprawozdanie komisji budżetowej, uchwalone przez Izbę, Protokół 98. posiedzenia Sejmu Krajowego z dnia 18 października 1910"
+      }
+    ]
   }
 ]

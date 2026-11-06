@@ -39,6 +39,7 @@ const fmtDate = d => {
   if (mo) return `${MONTHS[+mo]} ${y}`;
   return `${y} (bez dokładnej daty)`;
 };
+const exactDate = e => /^\d{4}-\d{2}-\d{2}$/.test(e.date);
 const pkey = p => p.from + "-" + p.to;
 const findPeriod = k => PERIODS.find(p => pkey(p) === k);
 const periodDesc = (p, v) => p.desc[v] || p.desc["*"] || "";
@@ -147,7 +148,7 @@ async function loadAll() {
   PARTS = okresy.map(c => ({ label: c.etykieta, periods: c.okresy.map(o => ({ from: o.od, to: o.do, title: o.tytul, desc: o.opis || {} })) }));
   PERIODS = PARTS.flatMap(p => p.periods);
   for (const z of zrodla) SOURCES[z.id] = z;
-  EVENTS = wyd.map(e => ({ id: e.id, v: e.wies, title: e.tytul, date: e.data, dateNote: e.uwaga_daty || "", desc: e.opis || "", sources: e.zrodla || [], houses: e.domy || [], before: e.przed, after: e.po }));
+  EVENTS = wyd.map(e => ({ id: e.id, v: e.wies, title: e.tytul, date: e.data, dateNote: e.uwaga_daty || "", desc: e.opis || "", quotes: e.cytaty || [], sources: e.zrodla || [], houses: e.domy || [], before: e.przed, after: e.po }));
   YEAR_RULES = stan.map(r => [r.wies, r.obrzadek, +r.od, +r.do, r.stan]);
   try { VARIANTS = await getJSON("warianty-nazwisk.json"); } catch { VARIANTS = {}; }
   const sets = await Promise.all(zrodla.filter(z => z.katalog_danych).map(async z => {
@@ -299,7 +300,7 @@ function timeline(v) {
       <span class="muted small">${cnt ? cnt + " z " + pt.periods.length + " okresów ma wpisy" : "brak opracowanych wpisów"}</span></span></summary><ol>`;
     for (const p of pt.periods) {
       for (const e of EVENTS.filter(e => e.v === v && +e.date.slice(0, 4) === p.from))
-        h += `<li class="event"><button class="evt" data-event="${e.id}"><span class="lbl">◆ Wydarzenie</span><br><strong>${esc(e.title)}</strong><br><span class="muted small">${esc(e.dateNote)}</span></button></li>`;
+        h += `<li class="event"><button class="evt" data-event="${e.id}"><span class="lbl">◆ Wydarzenie</span><br><strong>${esc(e.title)}</strong><br><span class="muted small">${esc(exactDate(e) ? fmtDate(e.date) : e.dateNote)}</span></button></li>`;
       const has = periodHasData(v, p);
       h += `<li class="${has ? "has" : ""}"><button class="period" aria-pressed="${S.o === pkey(p)}" data-period="${pkey(p)}">
         <span class="row"><strong>${p.from}–${p.to}</strong><span class="small ${has ? "" : "muted"}">${has ? "● opracowane wpisy" : "○ brak opracowanych"}</span></span>
@@ -346,7 +347,9 @@ function periodPanel(v, p) {
     <label>Rodzaj aktu<select data-f="rd"><option value="">wszystkie</option>${Object.keys(KIND).map(k => `<option value="${k}" ${S.rd === k ? "selected" : ""}>${KIND_SHORT[k]}</option>`).join("")}</select></label>
   </div>`;
   const ev = EVENTS.find(e => e.v === v && e.after === pkey(p));
-  if (ev) h += `<div class="note event">Okres zaczyna się w roku wydarzenia „${esc(ev.title)}”. ${esc(ev.dateNote)}, dlatego wpisy z ${esc(ev.date)} r. nie są dzielone na sprzed i po wydarzeniu. <a href="#" data-event="${ev.id}">Karta wydarzenia</a></div>`;
+  if (ev) h += `<div class="note event">Okres zaczyna się w roku wydarzenia „${esc(ev.title)}”. ${exactDate(ev)
+    ? `Wydarzenie miało miejsce ${fmtDate(ev.date)}; wpisy z ${ev.date.slice(0, 4)} r. sprzed tej daty powstały przed nim, mimo że są pokazywane w tym okresie.`
+    : `${esc(ev.dateNote)}, dlatego wpisy z ${esc(ev.date)} r. nie są dzielone na sprzed i po wydarzeniu.`} <a href="#" data-event="${ev.id}">Karta wydarzenia</a></div>`;
   if (!houses.length && !noHouse.length) {
     return h + emptyState(v, S.r ? +S.r : p.from, S.r ? +S.r : p.to, S.ob, S.r || S.ob || S.rd ? "Brak wpisów dla wybranych filtrów" : "Ten okres nie ma jeszcze opracowanych wpisów") + wykaz(v, p);
   }
@@ -474,7 +477,7 @@ function viewSources(v) {
 function viewHistory(v) {
   const evs = EVENTS.filter(e => e.v === v);
   if (!evs.length) return `<div class="empty"><h3>Brak opisanych wydarzeń</h3><p class="small muted">Dla tej wsi nie dodano jeszcze wydarzeń. Wydarzenia pojawią się na osi czasu jako znaczniki ◆.</p></div>`;
-  return `<h3 class="section-title">Wydarzenia</h3>` + evs.map(e => `<button class="evt" style="margin:6px 0" data-event="${e.id}"><span class="lbl">◆ Wydarzenie · ${esc(e.date)}</span><br><strong>${esc(e.title)}</strong><br><span class="small muted">${esc(e.desc.length > 90 ? e.desc.slice(0, 90) + "…" : e.desc)}</span></button>`).join("");
+  return `<h3 class="section-title">Wydarzenia</h3>` + evs.map(e => `<button class="evt" style="margin:6px 0" data-event="${e.id}"><span class="lbl">◆ Wydarzenie · ${esc(exactDate(e) ? fmtDate(e.date) : e.date)}</span><br><strong>${esc(e.title)}</strong><br><span class="small muted">${esc(e.desc.length > 90 ? e.desc.slice(0, 90) + "…" : e.desc)}</span></button>`).join("");
 }
 
 function viewEvent() {
@@ -485,13 +488,16 @@ function viewEvent() {
   const yearActs = ACTS.filter(a => a.v === e.v && year(a) === y);
   const laterActs = after ? actsIn(e.v, y + 1, after.to) : [];
   let h = `<a href="#" class="back" data-back>← ${esc(vName(e.v))}</a>
-    <div class="event-head"><span class="lbl">◆ Wydarzenie</span><h2>${esc(e.title)}</h2><p class="muted small" style="margin:2px 0 0">${esc(e.date)}${e.dateNote ? " · " + esc(e.dateNote) : ""}</p></div>
-    <p>${esc(e.desc)}</p>`;
+    <div class="event-head"><span class="lbl">◆ Wydarzenie</span><h2>${esc(e.title)}</h2><p class="muted small" style="margin:2px 0 0">${esc(exactDate(e) ? fmtDate(e.date) : e.date)}${e.dateNote ? " · " + esc(e.dateNote) : ""}</p></div>
+    <p>${esc(e.desc)}</p>
+    ${e.quotes.map(q => `<blockquote class="quote"><p>${esc(q.tekst)}</p><footer>${esc(q.zrodlo)}</footer></blockquote>`).join("")}`;
   if (before && after) h += `<div class="two">
       <button class="btn ghost" data-goto-period="${e.before}">Domy przed pożarem<br><span class="small">${before.from}–${before.to}</span></button>
       <button class="btn" data-goto-period="${e.after}">Domy od roku pożaru<br><span class="small">${after.from}–${after.to}</span></button>
     </div>
-    <div class="note event small">Dopóki dokładna data nie jest potwierdzona, wpisy z ${y} r. (${yearActs.length}) pozostają w widoku „Od roku pożaru”, bez przypisania do części przed pożarem lub po nim.</div>`;
+    <div class="note event small">${exactDate(e)
+      ? `Wpisy z ${y} r. (${yearActs.length}) są w widoku „Od roku pożaru”. Te sprzed ${fmtDate(e.date)} powstały jeszcze przed pożarem.`
+      : `Dopóki dokładna data nie jest potwierdzona, wpisy z ${y} r. (${yearActs.length}) pozostają w widoku „Od roku pożaru”, bez przypisania do części przed pożarem lub po nim.`}</div>`;
   if (after && !laterActs.length && y < after.to) {
     const c = stateSummary(e.v, y + 1, after.to);
     h += `<div class="empty small"><b>Późniejsze lata (${y + 1}–${after.to})</b> nie są jeszcze opracowane. Stan źródeł: ${STATE_ORDER.filter(s => c[s]).map(s => `${STATE[s].toLowerCase()}: ${compressYears(c[s])}`).join("; ")}.</div>`;

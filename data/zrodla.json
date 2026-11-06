@@ -9,7 +9,11 @@
     "obrzadek": "gk",
     "rodzaje": "U, M, Z",
     "roczniki": "1847–1848",
-    "wsie": ["pm", "gl", "pw"],
+    "wsie": [
+      "pm",
+      "gl",
+      "pw"
+    ],
     "skany": "w całości",
     "stan": "w opracowaniu (odczytane skany 1–3 z 66)",
     "odczyt_ai": true,
@@ -27,7 +31,11 @@
     "obrzadek_uwaga": "Obrządek do potwierdzenia na skanie: w aktach występują księża greckokatoliccy z Płauczy Wielkiej.",
     "rodzaje": "U, M, Z",
     "roczniki": "1818–1819",
-    "wsie": ["pm", "pw", "gl"],
+    "wsie": [
+      "pm",
+      "pw",
+      "gl"
+    ],
     "skany": "częściowo",
     "stan": "w opracowaniu",
     "odczyt_ai": true,
@@ -42,7 +50,10 @@
     "obrzadek": "rz",
     "rodzaje": "U, M, Z",
     "roczniki": "1896–1909",
-    "wsie": ["pm", "gl"],
+    "wsie": [
+      "pm",
+      "gl"
+    ],
     "skany": "w całości",
     "stan": "do opracowania",
     "link": "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17820318"
@@ -56,10 +67,28 @@
     "obrzadek": "gk",
     "rodzaje": "U, M, Z",
     "roczniki": "do ustalenia",
-    "wsie": ["pm"],
+    "wsie": [
+      "pm"
+    ],
     "skany": "do sprawdzenia",
     "stan": "do opracowania",
     "link": "https://archium.tsdial.archives.gov.ua/file-viewer/138376"
+  },
+  {
+    "id": "sejm-1910",
+    "archiwum": "Sejm Krajowy Królestwa Galicji i Lodomerii",
+    "zespol": "",
+    "sygnatura": "Protokół 98. posiedzenia z dnia 18 października 1910 (wydanie i link do uzupełnienia)",
+    "parafia": "",
+    "obrzadek": "",
+    "rodzaje": "protokół posiedzenia sejmu: wniosek nagły i uchwała o zapomodze",
+    "roczniki": "1910",
+    "wsie": [
+      "pm"
+    ],
+    "skany": "fragmenty (2 strony) przekazane przez Magdalenę",
+    "stan": "odczytane ręcznie",
+    "link": ""
   },
   {
     "id": "prasa-1910",
@@ -70,7 +99,9 @@
     "obrzadek": "",
     "rodzaje": "relacja prasowa",
     "roczniki": "1910",
-    "wsie": ["pm"],
+    "wsie": [
+      "pm"
+    ],
     "skany": "do ustalenia",
     "stan": "kwerenda",
     "link": ""

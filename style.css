@@ -192,3 +192,6 @@ footer p { margin: 4px 0; }
 .wykaz table { table-layout: fixed; }
 .wykaz th:first-child, .wykaz td:first-child { width: 3.4em; }
 .wykaz td .chip { white-space: normal; }
+.quote { margin: 14px 0; padding: 10px 14px; background: var(--surface); border-left: 4px solid var(--event); border-radius: 0 12px 12px 0; box-shadow: var(--shadow); font-size: .92rem; }
+.quote p { margin: 0 0 6px; font-style: italic; }
+.quote footer { font-size: .78rem; color: var(--ink-2); }

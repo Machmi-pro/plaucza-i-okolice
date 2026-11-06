@@ -2,19 +2,30 @@
   {
     "id": "pm",
     "nazwa": "Płaucza Mała",
-    "warianty": ["Płaucza Mała", "Plaucza Mala", "Płaucza parva"],
-    "opis": "Pierwsza opracowywana miejscowość. Księgi parafii Kozłów zaczynają się w 1723 r., później wieś należała do parafii Budyłów, a od 1932 r. miała własną parafię rzymskokatolicką."
+    "warianty": [
+      "Płaucza Mała",
+      "Plaucza Mala",
+      "Płaucza parva"
+    ],
+    "opis": "Pierwsza opracowywana miejscowość. Księgi parafii Kozłów zaczynają się w 1723 r., później wieś należała do parafii Budyłów, a od 1932 r. miała własną parafię rzymskokatolicką. W 1910 r. gmina Płaucza Mała należała do powiatu brzeżańskiego; 11 października 1910 r. pożar zniszczył prawie całą wieś."
   },
   {
     "id": "gl",
     "nazwa": "Glinna",
-    "warianty": ["Glinna", "Hlynna"],
+    "warianty": [
+      "Glinna",
+      "Hlynna"
+    ],
     "opis": "Materiał nie jest jeszcze opracowany; widoczny jest tylko stan źródeł."
   },
   {
     "id": "pw",
     "nazwa": "Płaucza Wielka",
-    "warianty": ["Płaucza Wielka", "Plaucza Wielka", "Płaucza magna"],
+    "warianty": [
+      "Płaucza Wielka",
+      "Plaucza Wielka",
+      "Płaucza magna"
+    ],
     "opis": "Źródła greckokatolickie noszą nazwę „Płaucza Wielka z filiami”. Opracowanie rozpoczęte od ksiąg z lat 1818–1819 i 1847."
   }
 ]
