@@ -3,12 +3,92 @@
     "id": "pozar-1910",
     "wies": "pm",
     "tytul": "Pożar Płauczy Małej, 1910",
-    "data": "1910",
-    "uwaga_daty": "Dokładna data do potwierdzenia",
-    "opis": "Pożar Płauczy Małej w 1910 r. Opis zostanie uzupełniony na podstawie relacji prasowej i dokumentów parafialnych; tytuł gazety i numer są w trakcie kwerendy.",
-    "zrodla": ["prasa-1910"],
+    "data": "1910-10-11",
+    "uwaga_daty": "data według wniosku nagłego w Sejmie Krajowym",
+    "opis": "11 października 1910 r. w Płauczy Małej w powiecie brzeżańskim wybuchł pożar, który przy silnym wietrze w kilka chwil zniszczył całą wieś: ponad 120 gospodarstw wraz z narzędziami i zapasami zboża. Około 1000 osób zostało bez dachu i środków do życia; ocalały tylko 4 chaty na uboczu wsi. Szkodę oszacowano na ponad pół miliona koron, a ubezpieczone były tylko niektóre budynki. 18 października 1910 r. Sejm Krajowy rozpatrzył wnioski nagłe posłów T. Starucha i Schätzla i przyznał pogorzelcom gminy Płaucza Mała zapomogę 2500 koron.",
+    "zrodla": [
+      "sejm-1910",
+      "prasa-1910"
+    ],
     "domy": [],
     "przed": "1896-1909",
-    "po": "1910-1918"
+    "po": "1910-1918",
+    "cytaty": [
+      {
+        "tekst": "Dnia 11. października 1910 powstał ogień w Płauczy małej pow. Brzeżany i przy silnym wietrze w kilku chwilach zniszczył całą wieś — zwyż 120 gospodarzy wraz ze wszystkiemi narzędziami gospodarskiemi i zapasami zboża, tak, że około 1.000 ludzi zostało bez dachu i środków do życia. Nieszczęście jest tem większe, że spaliła się cała wieś, a zostało tylko 4 chaty, stojące na uboczu wsi. […] Szkoda ogólna wynosi zwyż pół miliona koron a ubezpieczone były tylko niektóre budynki, a zboże nie było zupełnie ubezpieczone.",
+        "zrodlo": "Wniosek nagły p. T. Starucha i tow., Protokół 98. posiedzenia Sejmu Krajowego z dnia 18 października 1910, s. 2"
+      },
+      {
+        "tekst": "Dla pogorzelców gm. Płaucza mała pow. brzeżańskiego przeznacza się kwotę 2.500 K do dyspozycyi Wydziału kraj. Wydatkiem tym obciąża się budżet krajowy na rok 1910.",
+        "zrodlo": "Sprawozdanie komisji budżetowej, uchwalone przez Izbę, Protokół 98. posiedzenia Sejmu Krajowego z dnia 18 października 1910"
+      }
+    ]
+  },
+  {
+    "id": "kosciol-1903",
+    "wies": "pm",
+    "tytul": "Budowa kościoła rzymskokatolickiego",
+    "data": "1903",
+    "uwaga_daty": "decyzja 1903, budowa 1905, poświęcenie 1906",
+    "opis": "W 1903 r. mieszkańcy postanowili zbudować kaplicę na 300 osób. Zebrali 4000 koron, bracia Pichurowie oddali ogród na wyrób cegieł, do początku 1904 r. przygotowano 58 tysięcy cegieł, a arcybiskup Bilczewski przekazał drewno z dóbr Płaucza. Kosztorys wynosił 11 000 koron i brakowało około 7000. Murowany kościół wzniesiono w 1905 r., a w 1906 r. poświęcono go pod wezwaniem Matki Bożej Nieustającej Pomocy.",
+    "cytaty": [
+      {
+        "tekst": "W r. 1902 założono Kółko rolnicze, a wreszcie w r. 1903 postanowili ci włościanie sami zająć się budową kościoła, względnie kaplicy, mogącej pomieścić 300 osób. Dotąd skonskrybowali sami ci mieszkańcy Płauczy 4000 koron, zaś bracia Pichurowie oddali swój ogród na wyrób cegieł dla kościoła.",
+        "zrodlo": "Słowo Polskie nr 14, 9 stycznia 1904, s. 3, „Kościół w Płauczy”"
+      }
+    ],
+    "zrodla": [
+      "slowo-polskie-1904",
+      "rkc-in-ua"
+    ],
+    "domy": []
+  },
+  {
+    "id": "parafia-1932",
+    "wies": "pm",
+    "tytul": "Samodzielna parafia rzymskokatolicka",
+    "data": "1932",
+    "uwaga_daty": "",
+    "opis": "W 1932 r. utworzono w Płauczy Małej samodzielną parafię rzymskokatolicką, do której włączono dziesięć okolicznych wsi. Pod koniec lat 30. liczyła ponad 1000 wiernych. Pierwszym proboszczem był ks. Franciszek Wołoszczuk, w 1937 r. zastąpił go ks. Henryk Guchro.",
+    "zrodla": [
+      "rkc-in-ua"
+    ],
+    "domy": []
+  },
+  {
+    "id": "podpalenie-1933",
+    "wies": "pm",
+    "tytul": "Podpalenie zabudowań Drewnickich",
+    "data": "1933-09-24",
+    "uwaga_daty": "rok przyjęty z innej notatki w tym samym numerze (1933), do potwierdzenia",
+    "opis": "24 września wskutek podpalenia z zemsty spłonęły zabudowania Piotra i Ignacego Drewnickich. Szkodę oszacowano na około 2500 zł.",
+    "cytaty": [
+      {
+        "tekst": "Dnia 24 września br. wskutek zbrodniczego podpalenia z zemsty, powstał pożar w Płauczy Małej w zabudowaniach Piotra i Ignacego Drewnickich, Rusinów. Szkoda, wyrządzona pożarem, wynosi około 2.500 zł. Dochodzenia prowadzi miejscowy Posterunek P. P.",
+        "zrodlo": "Głos Brzeżański nr 10, s. 13, „Zbrodnicze podpalenie”"
+      }
+    ],
+    "zrodla": [
+      "glos-brzezanski"
+    ],
+    "domy": []
+  },
+  {
+    "id": "skarb-1938",
+    "wies": "pm",
+    "tytul": "Skarb monet z czasów królowej Jadwigi",
+    "data": "1938",
+    "uwaga_daty": "wiadomość z 19 listopada 1938",
+    "opis": "Bronisław Bonisławski, kopiąc jamę na ziemniaki, wykopał 101 srebrnych monet z XIV wieku, z czasów królowej Jadwigi. Monety przekazano muzeum.",
+    "cytaty": [
+      {
+        "tekst": "We wsi Płaucza Mała koło Zborowa Bronisław Bonisławski kopiąc jamę na ziemniaki wykopał 101 monet srebrnych z czasów królowej Jadwigi. Monety przekazano Muzeum.",
+        "zrodlo": "„Kronika”, s. 348, za: Wiek Nowy, Lwów, z 19 XI 1938"
+      }
+    ],
+    "zrodla": [
+      "wiek-nowy-1938"
+    ],
+    "domy": []
   }
 ]
