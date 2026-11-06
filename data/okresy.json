@@ -1,0 +1,22 @@
+[
+  { "etykieta": "1700–1808", "okresy": [
+    { "od": 1700, "do": 1775, "tytul": "Najstarsze wzmianki", "opis": { "pm": "Dla Płauczy Małej księgi parafii Kozłów zaczynają się w 1723 r." } },
+    { "od": 1776, "do": 1808, "tytul": "Akta wymieniające Płauczę Małą", "opis": { "pm": "Numery domów są pokazywane tam, gdzie występują w źródle." } }
+  ] },
+  { "etykieta": "1809–1871", "okresy": [
+    { "od": 1809, "do": 1835, "tytul": "Wczesne księgi XIX wieku", "opis": { "pm": "Brak potwierdzonego dostępu do skanów z lat 1809–1817." } },
+    { "od": 1836, "do": 1851, "tytul": "Skany obu obrządków", "opis": { "pm": "Okres, dla którego dostępne są skany obu obrządków." } },
+    { "od": 1852, "do": 1871, "tytul": "Domy w połowie XIX wieku", "opis": { "*": "Lista źródeł wskazuje dostępność poszczególnych roczników." } }
+  ] },
+  { "etykieta": "1872–1909", "okresy": [
+    { "od": 1872, "do": 1884, "tytul": "Seria ksiąg Budyłowa, cz. 1", "opis": { "*": "Pierwsza część dłuższej serii ksiąg parafii Budyłów." } },
+    { "od": 1885, "do": 1895, "tytul": "Seria ksiąg Budyłowa, cz. 2", "opis": { "pm": "Rok 1892 pozwala zestawić zapisy obu obrządków." } },
+    { "od": 1896, "do": 1909, "tytul": "Przed pożarem", "opis": { "pm": "Ostatni okres przed pożarem Płauczy Małej." } }
+  ] },
+  { "etykieta": "1910–1945", "okresy": [
+    { "od": 1910, "do": 1918, "tytul": "Od roku pożaru", "opis": { "pm": "Dokładne daty aktów i wydarzenia decydują, czy wpis z 1910 r. powstał przed pożarem czy po nim." } },
+    { "od": 1919, "do": 1931, "tytul": "Międzywojnie", "opis": { "pm": "Przed wyodrębnieniem parafii rzymskokatolickiej w Płauczy Małej." } },
+    { "od": 1932, "do": 1938, "tytul": "Własna parafia rz.-kat.", "opis": { "pm": "Okres własnej parafii rzymskokatolickiej w Płauczy Małej." } },
+    { "od": 1939, "do": 1945, "tytul": "Okres wojenny", "opis": {} }
+  ] }
+]
