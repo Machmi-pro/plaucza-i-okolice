@@ -22,7 +22,7 @@ let VILLAGES = [], PARTS = [], PERIODS = [], SOURCES = {}, EVENTS = [], YEAR_RUL
 const WARN = [];
 
 /* ===================== NARZĘDZIA ===================== */
-const DATA = location.pathname.includes("/site/") ? "../data/" : "data/";
+const DATA = "data/";
 const CYR = { а:"a",б:"b",в:"w",г:"h",ґ:"g",д:"d",е:"e",є:"je",ж:"z",з:"z",и:"y",і:"i",ї:"ji",й:"j",к:"k",л:"l",м:"m",н:"n",о:"o",п:"p",р:"r",с:"s",т:"t",у:"u",ф:"f",х:"ch",ц:"c",ч:"cz",ш:"sz",щ:"szcz",ь:"",ю:"ju",я:"ja" };
 function norm(s) {
   return (s || "").toLowerCase().replace(/ł/g, "l").normalize("NFD").replace(/[̀-ͯ]/g, "")
