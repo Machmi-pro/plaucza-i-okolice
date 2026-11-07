@@ -98,11 +98,11 @@ cdial-201-4a-1117-1836-U-s1540rd,8,Mateusz,Netrebski,,inna,,,,pewny,,nie,W akcie
 cdial-201-4a-1117-1836-U-s1540rd,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1540re,1,Aleksy,Wowk,,dziecko,pm,18,18,pewny,pewny,tak,W akcie imię Alexius
 cdial-201-4a-1117-1836-U-s1540re,2,Michał,Wowk,,ojciec,pm,18,18,pewny,pewny,tak,W akcie imię Michael. Nazwisko uzupełnione według indeksu Geneteki
-cdial-201-4a-1117-1836-U-s1540re,3,Agafia,,Skarz[?],matka,pm,18,18,niepewny,pewny,tak,W akcie imię Ahaphia. córka Basilius Skarz[?]
+cdial-201-4a-1117-1836-U-s1540re,3,Agafia,,Tkacz,matka,pm,18,18,pewny,pewny,tak,W akcie imię Ahaphia. córka Basilius Tkacz. Nazwisko według korekty użytkowniczki (wcześniej odczyt Tkacz)
 cdial-201-4a-1117-1836-U-s1540re,4,Aleksy,Czar,,chrzestny,,,,pewny,,nie,W akcie imię Alexius
 cdial-201-4a-1117-1836-U-s1540re,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Joannes Mar…owski
 cdial-201-4a-1117-1836-U-s1540re,6,Teresa,Trojan…ka,,akuszerka,,,,niepewny,,nie,W akcie imię Teresia
-cdial-201-4a-1117-1836-U-s1540re,7,Bazyli,Skarz[?],,inna,,,,niepewny,,nie,W akcie imię Basilius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1540re,7,Bazyli,Tkacz,,inna,,,,pewny,,nie,W akcie imię Basilius. Ojciec matki. Nazwisko według korekty użytkowniczki (wcześniej odczyt Tkacz)
 cdial-201-4a-1117-1836-U-s1540re,8,Jan,Mar…owski,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1540re,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1540rf,1,Tymoteusz,,,dziecko,pm,70,70,,pewny,tak,W akcie imię Timotheus
@@ -192,7 +192,7 @@ cdial-201-4a-1117-1836-U-s1541ra,3,Pelagia,,Tkacz,matka,pm,35,35,pewny,pewny,tak
 cdial-201-4a-1117-1836-U-s1541ra,4,Andrzej,Pawłowicz,,chrzestny,,,,pewny,,nie,W akcie imię Andreas
 cdial-201-4a-1117-1836-U-s1541ra,5,Eudoksja,,,chrzestna,,,,,,nie,W akcie imię Eudoxia. żona Mathias Pichur
 cdial-201-4a-1117-1836-U-s1541ra,6,Tatiana,M…yka,,akuszerka,,,,niepewny,,nie,
-cdial-201-4a-1117-1836-U-s1541ra,7,Jan,Tkacz,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki. Nazwisko według korekty użytkowniczki (wcześniej odczyt Skarz[?])
+cdial-201-4a-1117-1836-U-s1541ra,7,Jan,Tkacz,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki. Nazwisko według korekty użytkowniczki (wcześniej odczyt Tkacz)
 cdial-201-4a-1117-1836-U-s1541ra,8,Maciej,Pichur,,inna,,,,pewny,,nie,W akcie imię Mathias. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1541ra,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1541rb,1,Jan,,,dziecko,pm,28,28,,pewny,tak,W akcie imię Joannes
@@ -284,13 +284,13 @@ cdial-201-4a-1117-1836-M-s1544rc,7,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W 
 cdial-201-4a-1117-1836-M-s1544rd,1,Pantaleon,,,pan_mlody,pw,12,12,,pewny,tak,Wiek 21 lat
 cdial-201-4a-1117-1836-M-s1544rd,2,Anastazja,,,panna_mloda,,,,,,nie,W akcie imię Anastasia. Wiek 20 lat
 cdial-201-4a-1117-1836-M-s1544rd,3,Grzegorz,…szyszyn,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Gregorius
-cdial-201-4a-1117-1836-M-s1544rd,4,Jan,Bortnyk,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Joannes
+cdial-201-4a-1117-1836-M-s1544rd,4,Jan,Bartnyk,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Joannes. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
 cdial-201-4a-1117-1836-M-s1544rd,5,Kasper,M…iński,,swiadek,,,,niepewny,,nie,W akcie imię Casper
 cdial-201-4a-1117-1836-M-s1544rd,6,Teodor,S…ski,,swiadek,,,,niepewny,,nie,W akcie imię Theodorus
 cdial-201-4a-1117-1836-M-s1544rd,7,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-M-s1544re,1,Paweł,,,pan_mlody,pw,111,111,,pewny,tak,W akcie imię Paulus. Wiek 20 lat
 cdial-201-4a-1117-1836-M-s1544re,2,Maria,,,panna_mloda,,,,,,nie,Wiek 22 lat
-cdial-201-4a-1117-1836-M-s1544re,3,Maksym,Kołow…,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Maximus
+cdial-201-4a-1117-1836-M-s1544re,3,Maksym,Hołowaty,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Maximus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Hołowaty)
 cdial-201-4a-1117-1836-M-s1544re,4,Łukasz,Ka…uk,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Lucas
 cdial-201-4a-1117-1836-M-s1544re,5,Konstanty,D…cki,,swiadek,,,,niepewny,,nie,W akcie imię Constantinus
 cdial-201-4a-1117-1836-M-s1544re,6,Mikołaj,Błażko,,swiadek,,,,pewny,,nie,W akcie imię Nicolaus
@@ -305,21 +305,21 @@ cdial-201-4a-1117-1836-M-s1545la,7,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W 
 cdial-201-4a-1117-1836-M-s1545lb,1,Bazyli,,,pan_mlody,pw,84,84,,pewny,tak,W akcie imię Basilius. Wiek 20 lat
 cdial-201-4a-1117-1836-M-s1545lb,2,Sophia,,,panna_mloda,,,,,,nie,Wiek 18 lat
 cdial-201-4a-1117-1836-M-s1545lb,3,Saba,Drewnicki,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Sabba
-cdial-201-4a-1117-1836-M-s1545lb,4,Grzegorz,Bortnyk,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-M-s1545lb,4,Grzegorz,Bartnyk,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Gregorius. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
 cdial-201-4a-1117-1836-M-s1545lb,5,Łukasz,Mac…wicz,,swiadek,,,,niepewny,,nie,W akcie imię Lucas
 cdial-201-4a-1117-1836-M-s1545lb,6,Maciej,Sie…ski,,swiadek,,,,niepewny,,nie,W akcie imię Mathias
 cdial-201-4a-1117-1836-M-s1545lb,7,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-M-s1545lc,1,Łukasz,,,pan_mlody,pw,128,128,,pewny,tak,W akcie imię Lucas. Wiek 22 lat
 cdial-201-4a-1117-1836-M-s1545lc,2,Barbara,,,panna_mloda,,,,,,nie,Wiek 18 lat
 cdial-201-4a-1117-1836-M-s1545lc,3,Teodor,Marczowski,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Theodorus. Nazwisko uzupełnione według indeksu Geneteki (wcześniej odczyt Marczowski[?])
-cdial-201-4a-1117-1836-M-s1545lc,4,Mateusz,Kołot[?],,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Mattheus
+cdial-201-4a-1117-1836-M-s1545lc,4,Mateusz,Kohut,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Mattheus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Kohut)
 cdial-201-4a-1117-1836-M-s1545lc,5,Mateusz,Homeniuk,,swiadek,,,,pewny,,nie,W akcie imię Mattheus
 cdial-201-4a-1117-1836-M-s1545lc,6,Michał,Rogucki[?],,swiadek,,,,niepewny,,nie,W akcie imię Michael
 cdial-201-4a-1117-1836-M-s1545lc,7,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-M-s1545ld,1,Jan,,,pan_mlody,pw,116,116,,pewny,tak,W akcie imię Joannes. Wiek 22 lat
 cdial-201-4a-1117-1836-M-s1545ld,2,Eudoksja,,,panna_mloda,,,,,,nie,W akcie imię Eudoxia. Wiek 24 lat
 cdial-201-4a-1117-1836-M-s1545ld,3,Teodor,K…yszyn,,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Theodorus
-cdial-201-4a-1117-1836-M-s1545ld,4,Maksym,Kołow…,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Maximus
+cdial-201-4a-1117-1836-M-s1545ld,4,Maksym,Hołowaty,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Maximus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Hołowaty)
 cdial-201-4a-1117-1836-M-s1545ld,5,Mikołaj,Barabasz,,swiadek,,,,pewny,,nie,W akcie imię Nicolaus
 cdial-201-4a-1117-1836-M-s1545ld,6,Konstanty,D…cki,,swiadek,,,,niepewny,,nie,W akcie imię Constantinus
 cdial-201-4a-1117-1836-M-s1545ld,7,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
@@ -334,7 +334,7 @@ cdial-201-4a-1117-1836-U-s1546ra,8,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W 
 cdial-201-4a-1117-1836-U-s1546rb,1,Julianna,,,dziecko,pw,8,8,,pewny,tak,
 cdial-201-4a-1117-1836-U-s1546rb,2,Jan,Sawczuk,,ojciec,pw,8,8,pewny,pewny,tak,W akcie imię Joannes
 cdial-201-4a-1117-1836-U-s1546rb,3,Anastazja,,Pawłowicz,matka,pw,8,8,pewny,pewny,tak,W akcie imię Anastasia. córka Elias Pawłowicz
-cdial-201-4a-1117-1836-U-s1546rb,4,Grzegorz,Kołot[?],,chrzestny,,,,niepewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1546rb,4,Grzegorz,Kohut,,chrzestny,,,,pewny,,nie,W akcie imię Gregorius. Nazwisko według korekty użytkowniczki (wcześniej odczyt Kohut)
 cdial-201-4a-1117-1836-U-s1546rb,5,Julianna,,,chrzestna,,,,,,nie,żona Basilius Bor…uk
 cdial-201-4a-1117-1836-U-s1546rb,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
 cdial-201-4a-1117-1836-U-s1546rb,7,Eliasz,Pawłowicz,,inna,,,,pewny,,nie,W akcie imię Elias. Ojciec matki
@@ -351,11 +351,11 @@ cdial-201-4a-1117-1836-U-s1546rc,8,Michał,K…icki,,inna,,,,niepewny,,nie,W akc
 cdial-201-4a-1117-1836-U-s1546rc,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1546rd,1,Ksenia,,,dziecko,pw,146,146,,pewny,tak,W akcie imię Xenia
 cdial-201-4a-1117-1836-U-s1546rd,2,Jakub,Barabasz,,ojciec,pw,146,146,pewny,pewny,tak,W akcie imię Jacobus
-cdial-201-4a-1117-1836-U-s1546rd,3,Maria,,Skarz[?],matka,pw,146,146,niepewny,pewny,tak,córka Sabba Skarz[?]
+cdial-201-4a-1117-1836-U-s1546rd,3,Maria,,Tkacz,matka,pw,146,146,pewny,pewny,tak,córka Sabba Tkacz. Nazwisko według korekty użytkowniczki (wcześniej odczyt Tkacz)
 cdial-201-4a-1117-1836-U-s1546rd,4,Grzegorz,Ber…aba,,chrzestny,,,,niepewny,,nie,W akcie imię Gregorius
 cdial-201-4a-1117-1836-U-s1546rd,5,Ksenia,,,chrzestna,,,,,,nie,W akcie imię Xenia. żona Gregorius Kołak[?]
 cdial-201-4a-1117-1836-U-s1546rd,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
-cdial-201-4a-1117-1836-U-s1546rd,7,Saba,Skarz[?],,inna,,,,niepewny,,nie,W akcie imię Sabba. Ojciec matki
+cdial-201-4a-1117-1836-U-s1546rd,7,Saba,Tkacz,,inna,,,,pewny,,nie,W akcie imię Sabba. Ojciec matki. Nazwisko według korekty użytkowniczki (wcześniej odczyt Tkacz)
 cdial-201-4a-1117-1836-U-s1546rd,8,Grzegorz,Kołak[?],,inna,,,,niepewny,,nie,W akcie imię Gregorius. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1546rd,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1547la,1,Paweł,,,dziecko,pw,29[?],,,niepewny,tak,W akcie imię Paulus
@@ -370,16 +370,16 @@ cdial-201-4a-1117-1836-U-s1547la,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W 
 cdial-201-4a-1117-1836-U-s1547lb,1,Eudoksja,,,dziecko,pw,24,24,,pewny,tak,W akcie imię Eudoxia
 cdial-201-4a-1117-1836-U-s1547lb,2,Bazyli,Walczyszen[?],,ojciec,pw,24,24,niepewny,pewny,tak,W akcie imię Basilius
 cdial-201-4a-1117-1836-U-s1547lb,3,Teodozja,,M…,matka,pw,24,24,niepewny,pewny,tak,W akcie imię Theodosia. córka Joannes M…
-cdial-201-4a-1117-1836-U-s1547lb,4,Teodor,Bortnik,,chrzestny,,,,pewny,,nie,W akcie imię Theodorus
-cdial-201-4a-1117-1836-U-s1547lb,5,Anna,,,chrzestna,,,,,,nie,żona Gregorius Kołot[?]
+cdial-201-4a-1117-1836-U-s1547lb,4,Teodor,Bartnik,,chrzestny,,,,pewny,,nie,W akcie imię Theodorus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnik)
+cdial-201-4a-1117-1836-U-s1547lb,5,Anna,,,chrzestna,,,,,,nie,żona Gregorius Kohut
 cdial-201-4a-1117-1836-U-s1547lb,6,Marianna,Bar…yzna,,akuszerka,,,,niepewny,,nie,W akcie imię Mariana
 cdial-201-4a-1117-1836-U-s1547lb,7,Jan,M…,,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
-cdial-201-4a-1117-1836-U-s1547lb,8,Grzegorz,Kołot[?],,inna,,,,niepewny,,nie,W akcie imię Gregorius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547lb,8,Grzegorz,Kohut,,inna,,,,pewny,,nie,W akcie imię Gregorius. Mąż chrzestnej wymieniony w akcie. Nazwisko według korekty użytkowniczki (wcześniej odczyt Kohut)
 cdial-201-4a-1117-1836-U-s1547lb,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1547lc,1,Maria,,,dziecko,pw,48,48,,pewny,tak,
-cdial-201-4a-1117-1836-U-s1547lc,2,Eliasz,Pabiak,,ojciec,pw,48,48,pewny,pewny,tak,W akcie imię Elias
+cdial-201-4a-1117-1836-U-s1547lc,2,Eliasz,Babiak,,ojciec,pw,48,48,pewny,pewny,tak,W akcie imię Elias. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-U-s1547lc,3,Katarzyna,,Leszczyszyn,matka,pw,48,48,pewny,pewny,tak,W akcie imię Catarina. córka Daniel Leszczyszyn. Nazwisko uzupełnione według indeksu Geneteki
-cdial-201-4a-1117-1836-U-s1547lc,4,Teodor,Bortnik,,chrzestny,,,,pewny,,nie,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1547lc,4,Teodor,Bartnik,,chrzestny,,,,pewny,,nie,W akcie imię Theodorus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnik)
 cdial-201-4a-1117-1836-U-s1547lc,5,Tekla,,,chrzestna,,,,,,nie,żona Stephanus S…
 cdial-201-4a-1117-1836-U-s1547lc,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
 cdial-201-4a-1117-1836-U-s1547lc,7,Daniel,Leszczyszyn,,inna,,,,pewny,,nie,Ojciec matki. Nazwisko uzupełnione według indeksu Geneteki
@@ -388,7 +388,7 @@ cdial-201-4a-1117-1836-U-s1547lc,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W 
 cdial-201-4a-1117-1836-U-s1547ld,1,Jakub,,,dziecko,pw,71,71,,pewny,tak,W akcie imię Jacobus
 cdial-201-4a-1117-1836-U-s1547ld,2,Michał,D…nal,,ojciec,pw,71,71,niepewny,pewny,tak,W akcie imię Michael
 cdial-201-4a-1117-1836-U-s1547ld,3,Marta,,Dubas,matka,pw,71,71,pewny,pewny,tak,W akcie imię Martha. córka Andreas Dubas
-cdial-201-4a-1117-1836-U-s1547ld,4,Mateusz,Pabiak,,chrzestny,,,,pewny,,nie,W akcie imię Mattheus
+cdial-201-4a-1117-1836-U-s1547ld,4,Mateusz,Babiak,,chrzestny,,,,pewny,,nie,W akcie imię Mattheus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-U-s1547ld,5,Anna,,,chrzestna,,,,,,nie,żona Stephanus Koc…ut
 cdial-201-4a-1117-1836-U-s1547ld,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
 cdial-201-4a-1117-1836-U-s1547ld,7,Andrzej,Dubas,,inna,,,,pewny,,nie,W akcie imię Andreas. Ojciec matki
@@ -397,10 +397,10 @@ cdial-201-4a-1117-1836-U-s1547ld,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W 
 cdial-201-4a-1117-1836-U-s1547le,1,Agafia,,,dziecko,pw,118,118,,pewny,tak,W akcie imię Ahaphia
 cdial-201-4a-1117-1836-U-s1547le,2,Maria,,Kowalik,matka,pw,118,118,pewny,pewny,tak,córka Theodorus Kowalik. Nazwisko uzupełnione według indeksu Geneteki
 cdial-201-4a-1117-1836-U-s1547le,3,Michał,Sabaka,,chrzestny,,,,pewny,,nie,W akcie imię Michael
-cdial-201-4a-1117-1836-U-s1547le,4,Maria,,,chrzestna,,,,,,nie,żona Joannes Kołot[?]
+cdial-201-4a-1117-1836-U-s1547le,4,Maria,,,chrzestna,,,,,,nie,żona Joannes Kohut
 cdial-201-4a-1117-1836-U-s1547le,5,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
 cdial-201-4a-1117-1836-U-s1547le,6,Teodor,Kowalik,,inna,,,,pewny,,nie,W akcie imię Theodorus. Ojciec matki. Nazwisko uzupełnione według indeksu Geneteki
-cdial-201-4a-1117-1836-U-s1547le,7,Jan,Kołot[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547le,7,Jan,Kohut,,inna,,,,pewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie. Nazwisko według korekty użytkowniczki (wcześniej odczyt Kohut)
 cdial-201-4a-1117-1836-U-s1547le,8,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1547lf,1,Anastazja,,,dziecko,pw,46,46,,pewny,tak,W akcie imię Anastasia
 cdial-201-4a-1117-1836-U-s1547lf,2,Jan,Wy…cki,,ojciec,pw,46,46,niepewny,pewny,tak,W akcie imię Joannes
@@ -430,21 +430,21 @@ cdial-201-4a-1117-1836-U-s1547ra,7,Grzegorz,Wolyn[?],,inna,,,,niepewny,,nie,W ak
 cdial-201-4a-1117-1836-U-s1547ra,8,Grzegorz,Kory…,,inna,,,,niepewny,,nie,W akcie imię Gregorius. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1547ra,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1547rb,1,Teodor,,,dziecko,pw,89,89,,pewny,tak,W akcie imię Theodorus
-cdial-201-4a-1117-1836-U-s1547rb,2,Gabriel,Kołot[?],,ojciec,pw,89,89,niepewny,pewny,tak,
+cdial-201-4a-1117-1836-U-s1547rb,2,Gabriel,Kohut,,ojciec,pw,89,89,pewny,pewny,tak,Nazwisko według korekty użytkowniczki (wcześniej odczyt Kohut)
 cdial-201-4a-1117-1836-U-s1547rb,3,Ksenia,,Kocak[?],matka,pw,89,89,niepewny,pewny,tak,W akcie imię Xenia. córka Joannes Kocak[?]
-cdial-201-4a-1117-1836-U-s1547rb,4,Jan,Pabiak,,chrzestny,,,,pewny,,nie,W akcie imię Joannes
-cdial-201-4a-1117-1836-U-s1547rb,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Daniel Pabiak
+cdial-201-4a-1117-1836-U-s1547rb,4,Jan,Babiak,,chrzestny,,,,pewny,,nie,W akcie imię Joannes. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
+cdial-201-4a-1117-1836-U-s1547rb,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Daniel Babiak
 cdial-201-4a-1117-1836-U-s1547rb,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
 cdial-201-4a-1117-1836-U-s1547rb,7,Jan,Kocak[?],,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
-cdial-201-4a-1117-1836-U-s1547rb,8,Daniel,Pabiak,,inna,,,,pewny,,nie,Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1547rb,8,Daniel,Babiak,,inna,,,,pewny,,nie,Mąż chrzestnej wymieniony w akcie. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-U-s1547rb,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1547rc,1,Paweł,,,dziecko,pw,64,64,,pewny,tak,W akcie imię Paulus
 cdial-201-4a-1117-1836-U-s1547rc,2,Teodor,Grochowski,,ojciec,pw,64,64,pewny,pewny,tak,W akcie imię Theodorus
-cdial-201-4a-1117-1836-U-s1547rc,3,Ksenia,,Pabiak,matka,pw,64,64,pewny,pewny,tak,W akcie imię Xenia. córka Joannes Pabiak
+cdial-201-4a-1117-1836-U-s1547rc,3,Ksenia,,Babiak,matka,pw,64,64,pewny,pewny,tak,W akcie imię Xenia. córka Joannes Babiak. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-U-s1547rc,4,Eustachy,Grochowski[?],,chrzestny,,,,niepewny,,nie,W akcie imię Eustachius
 cdial-201-4a-1117-1836-U-s1547rc,5,Julianna,,,chrzestna,,,,,,nie,żona Basilius B…ko
 cdial-201-4a-1117-1836-U-s1547rc,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
-cdial-201-4a-1117-1836-U-s1547rc,7,Jan,Pabiak,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547rc,7,Jan,Babiak,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-U-s1547rc,8,Bazyli,B…ko,,inna,,,,niepewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1547rc,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1547rd,1,Agrypina,,,dziecko,pw,65,65,,pewny,tak,W akcie imię Agripina
@@ -475,7 +475,7 @@ cdial-201-4a-1117-1836-U-s1547rf,7,Michał,Kowalik[?],,inna,,,,niepewny,,nie,W a
 cdial-201-4a-1117-1836-U-s1547rf,8,Bartłomiej,B…zko,,inna,,,,niepewny,,nie,W akcie imię Bartolomeus. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1547rf,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1547rg,1,Eliasz,,,dziecko,pw,53[?],,,niepewny,tak,W akcie imię Elias
-cdial-201-4a-1117-1836-U-s1547rg,2,Teodor,Bortnyk,,ojciec,pw,53[?],,pewny,niepewny,tak,W akcie imię Theodorus
+cdial-201-4a-1117-1836-U-s1547rg,2,Teodor,Bartnyk,,ojciec,pw,53[?],,pewny,niepewny,tak,W akcie imię Theodorus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
 cdial-201-4a-1117-1836-U-s1547rg,3,Maria,,Sawandczuk[?],matka,pw,53[?],,niepewny,niepewny,tak,córka Joannes Sawandczuk[?]
 cdial-201-4a-1117-1836-U-s1547rg,4,Łukasz,Junc…,,chrzestny,,,,niepewny,,nie,W akcie imię Lucas
 cdial-201-4a-1117-1836-U-s1547rg,5,Julianna,,,chrzestna,,,,,,nie,żona Joannes Kozowicz
@@ -485,33 +485,33 @@ cdial-201-4a-1117-1836-U-s1547rg,8,Jan,Kozowicz,,inna,,,,pewny,,nie,W akcie imi�
 cdial-201-4a-1117-1836-U-s1547rg,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1547rh,1,Anna,,,dziecko,pw,23,23,,pewny,tak,
 cdial-201-4a-1117-1836-U-s1547rh,2,Teodor,Blahowski[?],,ojciec,pw,23,23,niepewny,pewny,tak,W akcie imię Theodorus
-cdial-201-4a-1117-1836-U-s1547rh,3,Teodozja,,Pabiak,matka,pw,23,23,pewny,pewny,tak,W akcie imię Theodosia. córka Joannes Pabiak
+cdial-201-4a-1117-1836-U-s1547rh,3,Teodozja,,Babiak,matka,pw,23,23,pewny,pewny,tak,W akcie imię Theodosia. córka Joannes Babiak. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-U-s1547rh,4,Jan,Junczyn[?],,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
 cdial-201-4a-1117-1836-U-s1547rh,5,Maria,,,chrzestna,,,,,,nie,żona Gregorius Ber…aba
 cdial-201-4a-1117-1836-U-s1547rh,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
-cdial-201-4a-1117-1836-U-s1547rh,7,Jan,Pabiak,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1547rh,7,Jan,Babiak,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-U-s1547rh,8,Grzegorz,Ber…aba,,inna,,,,niepewny,,nie,W akcie imię Gregorius. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1547rh,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548la,1,Anna,,,dziecko,pw,54,54,,pewny,tak,
 cdial-201-4a-1117-1836-U-s1548la,2,Michał,Sk…zyk,,ojciec,pw,54,54,niepewny,pewny,tak,W akcie imię Michael
-cdial-201-4a-1117-1836-U-s1548la,3,Maria,,Skarz[?],matka,pw,54,54,niepewny,pewny,tak,córka Simeon Skarz[?]
+cdial-201-4a-1117-1836-U-s1548la,3,Maria,,Tkacz,matka,pw,54,54,pewny,pewny,tak,córka Simeon Tkacz. Nazwisko według korekty użytkowniczki (wcześniej odczyt Tkacz)
 cdial-201-4a-1117-1836-U-s1548la,4,Mateusz,Man…,,chrzestny,,,,niepewny,,nie,W akcie imię Mattheus
 cdial-201-4a-1117-1836-U-s1548la,5,Maria,,,chrzestna,,,,,,nie,żona Joannes Wy…cki
 cdial-201-4a-1117-1836-U-s1548la,6,Maria,Rogucka,,akuszerka,,,,pewny,,nie,
-cdial-201-4a-1117-1836-U-s1548la,7,Szymon,Skarz[?],,inna,,,,niepewny,,nie,W akcie imię Simeon. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548la,7,Szymon,Tkacz,,inna,,,,pewny,,nie,W akcie imię Simeon. Ojciec matki. Nazwisko według korekty użytkowniczki (wcześniej odczyt Tkacz)
 cdial-201-4a-1117-1836-U-s1548la,8,Jan,Wy…cki,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1548la,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548lb,1,Eudoksja,,,dziecko,pw,14,14,,pewny,tak,W akcie imię Eudoxia
-cdial-201-4a-1117-1836-U-s1548lb,2,Grzegorz,Kołot[?],,ojciec,pw,14,14,niepewny,pewny,tak,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1548lb,2,Grzegorz,Kohut,,ojciec,pw,14,14,pewny,pewny,tak,W akcie imię Gregorius. Nazwisko według korekty użytkowniczki (wcześniej odczyt Kohut)
 cdial-201-4a-1117-1836-U-s1548lb,3,Barbara,,Muzyka,matka,pw,14,14,pewny,pewny,tak,córka Gregorius Muzyka. Nazwisko uzupełnione według indeksu Geneteki
-cdial-201-4a-1117-1836-U-s1548lb,4,Bazyli,Pabiak,,chrzestny,,,,pewny,,nie,W akcie imię Basilius
-cdial-201-4a-1117-1836-U-s1548lb,5,Anna,,,chrzestna,,,,,,nie,żona Simeon Skarz[?]
+cdial-201-4a-1117-1836-U-s1548lb,4,Bazyli,Babiak,,chrzestny,,,,pewny,,nie,W akcie imię Basilius. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
+cdial-201-4a-1117-1836-U-s1548lb,5,Anna,,,chrzestna,,,,,,nie,żona Simeon Tkacz
 cdial-201-4a-1117-1836-U-s1548lb,6,Tatiana,W…yzna,,akuszerka,,,,niepewny,,nie,W akcie imię Thatianna
 cdial-201-4a-1117-1836-U-s1548lb,7,Grzegorz,Muzyka,,inna,,,,pewny,,nie,W akcie imię Gregorius. Ojciec matki. Nazwisko uzupełnione według indeksu Geneteki
-cdial-201-4a-1117-1836-U-s1548lb,8,Szymon,Skarz[?],,inna,,,,niepewny,,nie,W akcie imię Simeon. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548lb,8,Szymon,Tkacz,,inna,,,,pewny,,nie,W akcie imię Simeon. Mąż chrzestnej wymieniony w akcie. Nazwisko według korekty użytkowniczki (wcześniej odczyt Tkacz)
 cdial-201-4a-1117-1836-U-s1548lb,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548lc,1,Tekla,,,dziecko,pw,109,109,,pewny,tak,W akcie imię Thecla
-cdial-201-4a-1117-1836-U-s1548lc,2,Stefan,Bortnyk,,ojciec,pw,109,109,pewny,pewny,tak,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1548lc,2,Stefan,Bartnyk,,ojciec,pw,109,109,pewny,pewny,tak,W akcie imię Stephanus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
 cdial-201-4a-1117-1836-U-s1548lc,3,Julianna,,Murczowski,matka,pw,109,109,pewny,pewny,tak,córka Joannes Murczowski. Nazwisko uzupełnione według indeksu Geneteki (wcześniej odczyt M…owski)
 cdial-201-4a-1117-1836-U-s1548lc,4,Franciszek,Radaczyński,,chrzestny,,,,pewny,,nie,W akcie imię Franciscus
 cdial-201-4a-1117-1836-U-s1548lc,5,Tatiana,,,chrzestna,,,,,,nie,W akcie imię Thatianna. żona Sebastianus Machow
@@ -520,7 +520,7 @@ cdial-201-4a-1117-1836-U-s1548lc,7,Jan,Murczowski,,inna,,,,pewny,,nie,W akcie im
 cdial-201-4a-1117-1836-U-s1548lc,8,Sebastian,Machow,,inna,,,,pewny,,nie,W akcie imię Sebastianus. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1548lc,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548ld,1,Jan,,,dziecko,pw,22,22,,pewny,tak,W akcie imię Joannes
-cdial-201-4a-1117-1836-U-s1548ld,2,Stefan,Bortnyk,,ojciec,pw,22,22,pewny,pewny,tak,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1548ld,2,Stefan,Bartnyk,,ojciec,pw,22,22,pewny,pewny,tak,W akcie imię Stephanus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
 cdial-201-4a-1117-1836-U-s1548ld,3,Anastazja,,Muzyka,matka,pw,22,22,pewny,pewny,tak,W akcie imię Anastasia. córka Joannes Muzyka. Nazwisko uzupełnione według indeksu Geneteki
 cdial-201-4a-1117-1836-U-s1548ld,4,Mikołaj,Rogucki[?],,chrzestny,,,,niepewny,,nie,W akcie imię Nicolaus
 cdial-201-4a-1117-1836-U-s1548ld,5,Barbara,,,chrzestna,,,,,,nie,żona Paulus Barabasz
@@ -529,7 +529,7 @@ cdial-201-4a-1117-1836-U-s1548ld,7,Jan,Muzyka,,inna,,,,pewny,,nie,W akcie imię 
 cdial-201-4a-1117-1836-U-s1548ld,8,Paweł,Barabasz,,inna,,,,pewny,,nie,W akcie imię Paulus. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1548ld,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548le,1,Andrzej,,,dziecko,pw,77,77,,pewny,tak,W akcie imię Andreas
-cdial-201-4a-1117-1836-U-s1548le,2,Dymitr,Kołot[?],,ojciec,pw,77,77,niepewny,pewny,tak,W akcie imię Demetrius
+cdial-201-4a-1117-1836-U-s1548le,2,Dymitr,Kohut,,ojciec,pw,77,77,pewny,pewny,tak,W akcie imię Demetrius. Nazwisko według korekty użytkowniczki (wcześniej odczyt Kohut)
 cdial-201-4a-1117-1836-U-s1548le,3,Maria,,Jurczyn[?],matka,pw,77,77,niepewny,pewny,tak,córka Theodorus Jurczyn[?]
 cdial-201-4a-1117-1836-U-s1548le,4,Łukasz,Dubas,,chrzestny,,,,pewny,,nie,W akcie imię Lucas
 cdial-201-4a-1117-1836-U-s1548le,5,Anna,,,chrzestna,,,,,,nie,żona Joannes Jurczyn[?]
@@ -547,7 +547,7 @@ cdial-201-4a-1117-1836-U-s1548lf,7,Michał,Jedor…ko,,inna,,,,niepewny,,nie,W a
 cdial-201-4a-1117-1836-U-s1548lf,8,Jan,W…ko,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1548lf,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548lg,1,Jan,,,dziecko,pw,105[?],,,niepewny,tak,W akcie imię Joannes
-cdial-201-4a-1117-1836-U-s1548lg,2,Daniel,Pabiak,,ojciec,pw,105[?],,pewny,niepewny,tak,W akcie imię Danielus
+cdial-201-4a-1117-1836-U-s1548lg,2,Daniel,Babiak,,ojciec,pw,105[?],,pewny,niepewny,tak,W akcie imię Danielus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-U-s1548lg,3,Prakseda,,Baraban,matka,pw,105[?],,pewny,niepewny,tak,W akcie imię Praxeda. córka Joannes Baraban
 cdial-201-4a-1117-1836-U-s1548lg,4,Teodor,Balik,,chrzestny,,,,pewny,,nie,W akcie imię Theodorus
 cdial-201-4a-1117-1836-U-s1548lg,5,Anna,,,chrzestna,,,,,,nie,żona Joannes Jurczyn[?]
@@ -557,12 +557,12 @@ cdial-201-4a-1117-1836-U-s1548lg,8,Jan,Jurczyn[?],,inna,,,,niepewny,,nie,W akcie
 cdial-201-4a-1117-1836-U-s1548lg,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548ra,1,Paweł,,,dziecko,pw,58,58,,pewny,tak,W akcie imię Paulus
 cdial-201-4a-1117-1836-U-s1548ra,2,Michał,Grochowski,,ojciec,pw,58,58,pewny,pewny,tak,W akcie imię Michael
-cdial-201-4a-1117-1836-U-s1548ra,3,Katarzyna,,Bortnyk,matka,pw,58,58,pewny,pewny,tak,W akcie imię Catarina. córka Joannes Bortnyk
+cdial-201-4a-1117-1836-U-s1548ra,3,Katarzyna,,Bartnyk,matka,pw,58,58,pewny,pewny,tak,W akcie imię Catarina. córka Joannes Bartnyk. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
 cdial-201-4a-1117-1836-U-s1548ra,4,Jan,Jurczyn[?],,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
-cdial-201-4a-1117-1836-U-s1548ra,5,Maria,,,chrzestna,,,,,,nie,żona Stephanus Pabiak
+cdial-201-4a-1117-1836-U-s1548ra,5,Maria,,,chrzestna,,,,,,nie,żona Stephanus Babiak
 cdial-201-4a-1117-1836-U-s1548ra,6,Maria,Rogucka,,akuszerka,,,,pewny,,nie,
-cdial-201-4a-1117-1836-U-s1548ra,7,Jan,Bortnyk,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
-cdial-201-4a-1117-1836-U-s1548ra,8,Stefan,Pabiak,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548ra,7,Jan,Bartnyk,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
+cdial-201-4a-1117-1836-U-s1548ra,8,Stefan,Babiak,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-U-s1548ra,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548rb,1,Pelagia,,,dziecko,pw,90,90,,pewny,tak,
 cdial-201-4a-1117-1836-U-s1548rb,2,Bazyli,Koł…nik,,ojciec,pw,90,90,niepewny,pewny,tak,W akcie imię Basilius
@@ -583,7 +583,7 @@ cdial-201-4a-1117-1836-U-s1548rc,7,Grzegorz,Jurczyn[?],,inna,,,,niepewny,,nie,W 
 cdial-201-4a-1117-1836-U-s1548rc,8,Bazyli,Koł…ko,,inna,,,,niepewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1548rc,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548rd,1,Agafia,,,dziecko,pw,47[?],,,niepewny,tak,W akcie imię Ahaphia
-cdial-201-4a-1117-1836-U-s1548rd,2,Stefan,Bortnyk,,ojciec,pw,47[?],,pewny,niepewny,tak,W akcie imię Stephanus
+cdial-201-4a-1117-1836-U-s1548rd,2,Stefan,Bartnyk,,ojciec,pw,47[?],,pewny,niepewny,tak,W akcie imię Stephanus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
 cdial-201-4a-1117-1836-U-s1548rd,3,Tekla,,Melnik,matka,pw,47[?],,pewny,niepewny,tak,córka Joannes Melnik
 cdial-201-4a-1117-1836-U-s1548rd,4,Daniel,Jurczyn[?],,chrzestny,,,,niepewny,,nie,W akcie imię Danielus
 cdial-201-4a-1117-1836-U-s1548rd,5,Anastazja,,,chrzestna,,,,,,nie,W akcie imię Anastasia. żona Basilius J…
@@ -595,39 +595,39 @@ cdial-201-4a-1117-1836-U-s1548re,1,Pelagia,,,dziecko,pw,82,82,,pewny,tak,
 cdial-201-4a-1117-1836-U-s1548re,2,Szymon,Kałusz,,ojciec,pw,82,82,pewny,pewny,tak,W akcie imię Simeon
 cdial-201-4a-1117-1836-U-s1548re,3,Anastazja,,D…nycz…,matka,pw,82,82,niepewny,pewny,tak,W akcie imię Anastasia. córka Joannes D…nycz…
 cdial-201-4a-1117-1836-U-s1548re,4,Jan,Drumak[?],,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
-cdial-201-4a-1117-1836-U-s1548re,5,Maria,,,chrzestna,,,,,,nie,żona Stephanus Bortnyk
+cdial-201-4a-1117-1836-U-s1548re,5,Maria,,,chrzestna,,,,,,nie,żona Stephanus Bartnyk
 cdial-201-4a-1117-1836-U-s1548re,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
 cdial-201-4a-1117-1836-U-s1548re,7,Jan,D…nycz…,,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
-cdial-201-4a-1117-1836-U-s1548re,8,Stefan,Bortnyk,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548re,8,Stefan,Bartnyk,,inna,,,,pewny,,nie,W akcie imię Stephanus. Mąż chrzestnej wymieniony w akcie. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
 cdial-201-4a-1117-1836-U-s1548re,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548rf,1,Maria,,,dziecko,pw,78,78,,pewny,tak,
-cdial-201-4a-1117-1836-U-s1548rf,2,Andrzej,Bortnyk,,ojciec,pw,78,78,pewny,pewny,tak,W akcie imię Andreas
+cdial-201-4a-1117-1836-U-s1548rf,2,Andrzej,Bartnyk,,ojciec,pw,78,78,pewny,pewny,tak,W akcie imię Andreas. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
 cdial-201-4a-1117-1836-U-s1548rf,3,Anna,,Załka,matka,pw,78,78,pewny,pewny,tak,córka Danielus Załka
 cdial-201-4a-1117-1836-U-s1548rf,4,Łukasz,Ost…ow,,chrzestny,,,,niepewny,,nie,W akcie imię Lucas
-cdial-201-4a-1117-1836-U-s1548rf,5,…,,,chrzestna,,,,,,nie,żona Basilius Bortnik
+cdial-201-4a-1117-1836-U-s1548rf,5,…,,,chrzestna,,,,,,nie,żona Basilius Bartnik
 cdial-201-4a-1117-1836-U-s1548rf,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
 cdial-201-4a-1117-1836-U-s1548rf,7,Daniel,Załka,,inna,,,,pewny,,nie,W akcie imię Danielus. Ojciec matki
-cdial-201-4a-1117-1836-U-s1548rf,8,Bazyli,Bortnik,,inna,,,,pewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1548rf,8,Bazyli,Bartnik,,inna,,,,pewny,,nie,W akcie imię Basilius. Mąż chrzestnej wymieniony w akcie. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnik)
 cdial-201-4a-1117-1836-U-s1548rf,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548rg,1,Nazar,,,dziecko,pw,91,91,,pewny,tak,
 cdial-201-4a-1117-1836-U-s1548rg,2,Łucja,,Melnik,matka,pw,91,91,pewny,pewny,tak,W akcie imię Lucia. córka Joannes Melnik
-cdial-201-4a-1117-1836-U-s1548rg,3,Grzegorz,Kołot[?],,chrzestny,,,,niepewny,,nie,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1548rg,3,Grzegorz,Kohut,,chrzestny,,,,pewny,,nie,W akcie imię Gregorius. Nazwisko według korekty użytkowniczki (wcześniej odczyt Kohut)
 cdial-201-4a-1117-1836-U-s1548rg,4,Maria,,,chrzestna,,,,,,nie,żona Joannes Wy…cki
 cdial-201-4a-1117-1836-U-s1548rg,5,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
 cdial-201-4a-1117-1836-U-s1548rg,6,Jan,Melnik,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
 cdial-201-4a-1117-1836-U-s1548rg,7,Jan,Wy…cki,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1548rg,8,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1549la,1,Andrzej,,,dziecko,pw,139[?],,,niepewny,tak,W akcie imię Andreas
-cdial-201-4a-1117-1836-U-s1549la,2,Grzegorz,Pabiak,,ojciec,pw,139[?],,pewny,niepewny,tak,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1549la,2,Grzegorz,Babiak,,ojciec,pw,139[?],,pewny,niepewny,tak,W akcie imię Gregorius. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-U-s1549la,3,Julianna,,Melnyk,matka,pw,139[?],,pewny,niepewny,tak,córka Joannes Melnyk
-cdial-201-4a-1117-1836-U-s1549la,4,Daniel,Pabiak,,chrzestny,,,,pewny,,nie,W akcie imię Danielus
+cdial-201-4a-1117-1836-U-s1549la,4,Daniel,Babiak,,chrzestny,,,,pewny,,nie,W akcie imię Danielus. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-U-s1549la,5,Ksenia,,,chrzestna,,,,,,nie,W akcie imię Xenia. żona Theodorus Grochowski[?]
 cdial-201-4a-1117-1836-U-s1549la,6,Julianna,W…howa,,akuszerka,,,,niepewny,,nie,
 cdial-201-4a-1117-1836-U-s1549la,7,Jan,Melnyk,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki
 cdial-201-4a-1117-1836-U-s1549la,8,Teodor,Grochowski[?],,inna,,,,niepewny,,nie,W akcie imię Theodorus. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1549la,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1549lb,1,Prakseda,,,dziecko,pw,30[?],,,niepewny,tak,W akcie imię Praxeda
-cdial-201-4a-1117-1836-U-s1549lb,2,Grzegorz,Bortnyk,,ojciec,pw,30[?],,pewny,niepewny,tak,W akcie imię Gregorius
+cdial-201-4a-1117-1836-U-s1549lb,2,Grzegorz,Bartnyk,,ojciec,pw,30[?],,pewny,niepewny,tak,W akcie imię Gregorius. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
 cdial-201-4a-1117-1836-U-s1549lb,3,Eudoksja,,J…mieny,matka,pw,30[?],,niepewny,niepewny,tak,W akcie imię Eudoxia. córka Stephanus J…mieny
 cdial-201-4a-1117-1836-U-s1549lb,4,Bazyli,…nczyszen,,chrzestny,,,,niepewny,,nie,W akcie imię Basilius
 cdial-201-4a-1117-1836-U-s1549lb,5,Katarzyna,,,chrzestna,,,,,,nie,W akcie imię Catharyna. żona Antonius Grabowski[?]
@@ -646,21 +646,21 @@ cdial-201-4a-1117-1836-U-s1549lc,8,Piotr,Dubas,,inna,,,,pewny,,nie,W akcie imię
 cdial-201-4a-1117-1836-U-s1549lc,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1549ld,1,Andrzej,,,dziecko,pw,124,124,,pewny,tak,W akcie imię Andreas
 cdial-201-4a-1117-1836-U-s1549ld,2,Jan,Drumak[?],,ojciec,pw,124,124,niepewny,pewny,tak,W akcie imię Joannes
-cdial-201-4a-1117-1836-U-s1549ld,3,Maria,,Kołot[?],matka,pw,124,124,niepewny,pewny,tak,córka Michael Kołot[?]
+cdial-201-4a-1117-1836-U-s1549ld,3,Maria,,Kohut,matka,pw,124,124,pewny,pewny,tak,córka Michael Kohut. Nazwisko według korekty użytkowniczki (wcześniej odczyt Kohut)
 cdial-201-4a-1117-1836-U-s1549ld,4,Bazyli,P…rzy…to,,chrzestny,,,,niepewny,,nie,W akcie imię Basilius
 cdial-201-4a-1117-1836-U-s1549ld,5,Maria,,,chrzestna,,,,,,nie,żona Ignatius Grusz…ki
 cdial-201-4a-1117-1836-U-s1549ld,6,Maria,Rogucka[?],,akuszerka,,,,niepewny,,nie,
-cdial-201-4a-1117-1836-U-s1549ld,7,Michał,Kołot[?],,inna,,,,niepewny,,nie,W akcie imię Michael. Ojciec matki
+cdial-201-4a-1117-1836-U-s1549ld,7,Michał,Kohut,,inna,,,,pewny,,nie,W akcie imię Michael. Ojciec matki. Nazwisko według korekty użytkowniczki (wcześniej odczyt Kohut)
 cdial-201-4a-1117-1836-U-s1549ld,8,Ignacy,Grusz…ki,,inna,,,,niepewny,,nie,W akcie imię Ignatius. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1549ld,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1549le,1,Andrzej,,,dziecko,pw,10,10,,pewny,tak,W akcie imię Andreas
-cdial-201-4a-1117-1836-U-s1549le,2,Bazyli,Pabiak,,ojciec,pw,10,10,pewny,pewny,tak,W akcie imię Basilius
-cdial-201-4a-1117-1836-U-s1549le,3,Anastazja,,Bortnyk,matka,pw,10,10,pewny,pewny,tak,W akcie imię Anastasia. córka Simeon Bortnyk
+cdial-201-4a-1117-1836-U-s1549le,2,Bazyli,Babiak,,ojciec,pw,10,10,pewny,pewny,tak,W akcie imię Basilius. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
+cdial-201-4a-1117-1836-U-s1549le,3,Anastazja,,Bartnyk,matka,pw,10,10,pewny,pewny,tak,W akcie imię Anastasia. córka Simeon Bartnyk. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
 cdial-201-4a-1117-1836-U-s1549le,4,Andrzej,…nczyszen,,chrzestny,,,,niepewny,,nie,W akcie imię Andreas
-cdial-201-4a-1117-1836-U-s1549le,5,Ksenia,,,chrzestna,,,,,,nie,W akcie imię Xenea. żona Gabriel Kołot[?]
+cdial-201-4a-1117-1836-U-s1549le,5,Ksenia,,,chrzestna,,,,,,nie,W akcie imię Xenea. żona Gabriel Kohut
 cdial-201-4a-1117-1836-U-s1549le,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
-cdial-201-4a-1117-1836-U-s1549le,7,Szymon,Bortnyk,,inna,,,,pewny,,nie,W akcie imię Simeon. Ojciec matki
-cdial-201-4a-1117-1836-U-s1549le,8,Gabriel,Kołot[?],,inna,,,,niepewny,,nie,Mąż chrzestnej wymieniony w akcie
+cdial-201-4a-1117-1836-U-s1549le,7,Szymon,Bartnyk,,inna,,,,pewny,,nie,W akcie imię Simeon. Ojciec matki. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnyk)
+cdial-201-4a-1117-1836-U-s1549le,8,Gabriel,Kohut,,inna,,,,pewny,,nie,Mąż chrzestnej wymieniony w akcie. Nazwisko według korekty użytkowniczki (wcześniej odczyt Kohut)
 cdial-201-4a-1117-1836-U-s1549le,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1549lf,1,Barbara,,,dziecko,pw,153[?],,,niepewny,tak,
 cdial-201-4a-1117-1836-U-s1549lf,2,Mikołaj,…nczyszen,,ojciec,pw,153[?],,niepewny,niepewny,tak,W akcie imię Nicolaus
@@ -672,7 +672,7 @@ cdial-201-4a-1117-1836-U-s1549lf,7,Łukasz,Dubas,,inna,,,,pewny,,nie,W akcie imi
 cdial-201-4a-1117-1836-U-s1549lf,8,Piotr,Dubas,,inna,,,,pewny,,nie,W akcie imię Petrus. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1549lf,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-Z-s1542ra,1,Jan,,,zmarly,pw,54,54,,pewny,tak,W akcie imię Joannes. Wiek w latach 2
-cdial-201-4a-1117-1836-Z-s1542ra,2,Michał,Skarz[?],,ojciec,,,,niepewny,,nie,W akcie imię Michael. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1542ra,2,Michał,Tkacz,,ojciec,,,,pewny,,nie,W akcie imię Michael. Wymieniony przy zmarłej osobie. Nazwisko według korekty użytkowniczki (wcześniej odczyt Tkacz)
 cdial-201-4a-1117-1836-Z-s1542ra,3,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-Z-s1542rb,1,Szymon,,,zmarly,pw,128,128,,pewny,tak,W akcie imię Simeon. Wiek w latach 2
 cdial-201-4a-1117-1836-Z-s1542rb,2,Jan,S…yga,,ojciec,,,,niepewny,,nie,W akcie imię Joannes. Wymieniony przy zmarłej osobie
@@ -680,7 +680,7 @@ cdial-201-4a-1117-1836-Z-s1542rb,3,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W 
 cdial-201-4a-1117-1836-Z-s1542rc,1,Stefan,,,zmarly,pw,37,37,,pewny,tak,W akcie imię Stephanus. Wiek w latach 6
 cdial-201-4a-1117-1836-Z-s1542rc,2,Szymon,Koł…isty,,ojciec,,,,niepewny,,nie,W akcie imię Simeon. Wymieniony przy zmarłej osobie
 cdial-201-4a-1117-1836-Z-s1542rc,3,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
-cdial-201-4a-1117-1836-Z-s1542rd,1,Jan,Bajak,,zmarly,pw,75,75,pewny,pewny,tak,W akcie imię Joannes. Wiek w latach 65
+cdial-201-4a-1117-1836-Z-s1542rd,1,Jan,Bujak,,zmarly,pw,75,75,pewny,pewny,tak,W akcie imię Joannes. Wiek w latach 65. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bujak)
 cdial-201-4a-1117-1836-Z-s1542rd,2,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-Z-s1542re,1,Eudoksja,,,zmarla,pw,68,68,,pewny,tak,W akcie imię Eudoxia. Wiek w latach 6
 cdial-201-4a-1117-1836-Z-s1542re,2,Jan,Łacanowski[?],,ojciec,,,,niepewny,,nie,W akcie imię Joannes. Wymieniony przy zmarłej osobie
@@ -689,7 +689,7 @@ cdial-201-4a-1117-1836-Z-s1542rf,1,Maria,,,zmarla,pw,129,129,,pewny,tak,Wiek w l
 cdial-201-4a-1117-1836-Z-s1542rf,2,Paweł,Dzumak,,inna,,,,pewny,,nie,W akcie imię Paulus. Mąż zmarłej
 cdial-201-4a-1117-1836-Z-s1542rf,3,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-Z-s1543la,1,Pelagia,,,zmarla,pw,5,5,,pewny,tak,Wiek w latach 1
-cdial-201-4a-1117-1836-Z-s1543la,2,Eustachy,Pabiak,,ojciec,,,,pewny,,nie,W akcie imię Eustachius. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1543la,2,Eustachy,Babiak,,ojciec,,,,pewny,,nie,W akcie imię Eustachius. Wymieniony przy zmarłej osobie. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-Z-s1543la,3,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-Z-s1543lb,1,Mikołaj,,,zmarly,pw,153,153,,pewny,tak,W akcie imię Nicolaus. Wiek w latach 28
 cdial-201-4a-1117-1836-Z-s1543lb,2,Bazyli,…nczyszen,,ojciec,,,,niepewny,,nie,W akcie imię Basilius. Wymieniony przy zmarłej osobie
@@ -701,10 +701,10 @@ cdial-201-4a-1117-1836-Z-s1543ld,1,Jakub,,,zmarly,pw,116,116,,pewny,tak,W akcie 
 cdial-201-4a-1117-1836-Z-s1543ld,2,Gabriel,Saw…kow,,ojciec,,,,niepewny,,nie,Wymieniony przy zmarłej osobie
 cdial-201-4a-1117-1836-Z-s1543ld,3,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-Z-s1543le,1,Prakseda,,,zmarla,pw,25,25,,pewny,tak,W akcie imię Praxeda. Wiek w latach 1
-cdial-201-4a-1117-1836-Z-s1543le,2,Grzegorz,Bortnik,,ojciec,,,,pewny,,nie,W akcie imię Gregorius. Wymieniony przy zmarłej osobie
+cdial-201-4a-1117-1836-Z-s1543le,2,Grzegorz,Bartnik,,ojciec,,,,pewny,,nie,W akcie imię Gregorius. Wymieniony przy zmarłej osobie. Nazwisko według korekty użytkowniczki (wcześniej odczyt Bartnik)
 cdial-201-4a-1117-1836-Z-s1543le,3,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-Z-s1543lf,1,Katarzyna,,,zmarla,pw,75,75,,pewny,tak,W akcie imię Catarina. Wiek w latach 38
-cdial-201-4a-1117-1836-Z-s1543lf,2,Bazyli,Pabiak,,inna,,,,pewny,,nie,W akcie imię Basilius. Mąż zmarłej
+cdial-201-4a-1117-1836-Z-s1543lf,2,Bazyli,Babiak,,inna,,,,pewny,,nie,W akcie imię Basilius. Mąż zmarłej. Nazwisko według korekty użytkowniczki (wcześniej odczyt Babiak)
 cdial-201-4a-1117-1836-Z-s1543lf,3,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-Z-s1543lg,1,Eudoksja,,,zmarla,pw,73,73,,pewny,tak,W akcie imię Eudoxia. Wiek w latach 25
 cdial-201-4a-1117-1836-Z-s1543lg,2,Daniel,Pawliszyn,,ojciec,,,,pewny,,nie,W akcie imię Danielus. Wymieniony przy zmarłej osobie
@@ -790,11 +790,11 @@ cdial-201-4a-1117-1836-U-s1533rd,8,Andrzej,Pa…towicz,,inna,,,,niepewny,,nie,W 
 cdial-201-4a-1117-1836-U-s1533rd,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1533re,1,Grzegorz,,,dziecko,gl,107,107,,pewny,tak,W akcie imię Gregorius
 cdial-201-4a-1117-1836-U-s1533re,2,Szymon,Gresiow,,ojciec,gl,107,107,pewny,pewny,tak,W akcie imię Simeon
-cdial-201-4a-1117-1836-U-s1533re,3,Marta,,Skarz[?],matka,gl,107,107,niepewny,pewny,tak,W akcie imię Martha. córka Basilius Skarz[?]
+cdial-201-4a-1117-1836-U-s1533re,3,Marta,,Tkacz,matka,gl,107,107,pewny,pewny,tak,W akcie imię Martha. córka Basilius Tkacz. Nazwisko według korekty użytkowniczki (wcześniej odczyt Tkacz)
 cdial-201-4a-1117-1836-U-s1533re,4,Jan,W…,,chrzestny,,,,niepewny,,nie,W akcie imię Joannes
 cdial-201-4a-1117-1836-U-s1533re,5,Prakseda,,,chrzestna,,,,,,nie,W akcie imię Praxeda. żona Joannes Ł…
 cdial-201-4a-1117-1836-U-s1533re,6,Prakseda,Kostyszka,,akuszerka,,,,pewny,,nie,W akcie imię Praxeda
-cdial-201-4a-1117-1836-U-s1533re,7,Bazyli,Skarz[?],,inna,,,,niepewny,,nie,W akcie imię Basilius. Ojciec matki
+cdial-201-4a-1117-1836-U-s1533re,7,Bazyli,Tkacz,,inna,,,,pewny,,nie,W akcie imię Basilius. Ojciec matki. Nazwisko według korekty użytkowniczki (wcześniej odczyt Tkacz)
 cdial-201-4a-1117-1836-U-s1533re,8,Jan,Ł…,,inna,,,,niepewny,,nie,W akcie imię Joannes. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1533re,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1533rf,1,Szymon,,,dziecko,gl,28,28,,pewny,tak,W akcie imię Simeon
