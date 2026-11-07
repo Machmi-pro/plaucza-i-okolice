@@ -37,8 +37,7 @@
     "Pichurow",
     "Pichurowa",
     "Pihur",
-    "Pihurowa",
-    "Picruk"
+    "Pihurowa"
   ],
   "Jastrzębski": [
     "Jastrzębski",
@@ -90,5 +89,10 @@
   "Mielnik": [
     "Mielnik",
     "Mielnikowa"
+  ],
+  "Kamieński": [
+    "Kamieński",
+    "Kamienski",
+    "Kamieniski"
   ]
 }

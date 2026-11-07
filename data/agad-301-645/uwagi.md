@@ -55,7 +55,7 @@ Daty są datami chrztów. Pola adresu i mieszkaniec pozostawiono puste przy brak
 Nazwiska osób zachowano w odczytanej postaci, także gdy źródło używa formy odmienionej. Nazwiska dziecka nie dopisywano na podstawie nazwiska ojca. Znacznik [?] oznacza odczyt niepewny.
 Na skanie 7, po ostatnim wpisie z maja 1726 r., znajduje się adnotacja o braku odnalezionych zapisów od czerwca 1726 r. do 27 lutego 1729 r. Wpisy wznawiają się 27 lutego 1729 r.
 Trop rodzinny: 1725-08-10 (skan 6, prawa) Maciej Pichur i Katarzyna są rodzicami Wawrzyńca z Płauczy. 1732-11-04 (skan 10, prawa) Maciej Pichur i Katarzyna występują jako rodzice Katarzyny. Przy drugim wpisie nie odczytano nazwy miejscowości, więc możliwe rodzeństwo wymaga potwierdzenia.
-Trop rodzinny: 1729-05-03 (skan 7, lewa) i 1732-08-24 (skan 10, prawa) powtarzają się chrzestni Walenty Pichur i Zofia Lachowska. W obu aktach rodzicami są Tomasz i Zofia, lecz w pierwszym nazwisko ojca to Burak, a w drugim odczyt jest niepewny i wygląda na Picruk. Wpisy pozostają oddzielne.
+Trop rodzinny: 1729-05-03 (skan 7, lewa) i 1732-08-24 (skan 10, prawa) powtarzają się chrzestni Walenty Pichur i Zofia Lachowska. W obu aktach rodzicami są Tomasz i Zofia, lecz w pierwszym nazwisko ojca to Burak, a w drugim nazwisko ojca ustalono jako Pichur (poprawka Magdaleny, wcześniej Picruk[?]). Wpisy pozostają oddzielne.
 Wzmianka poza główną tabelą: 1731-01-25 (skan 9, lewa) Agnieszka, córka Piotra Pichura i Zofii. Chrzestni Jan Bejow i Regina Olechowa. Miejscowość nie została ustalona.
 Wzmianka poza zakresem trzech wsi: 1723-12-20 (skan 5, lewa), Kozłów. Jan Bolesławski jest ojcem chrzestnym Jana, syna Wojciecha Miałkowa i Agaty. Wpis stanowi osobny trop nazwiskowy.
 Dalszy ciąg przeglądu rozpoczyna się od skanu 14.
