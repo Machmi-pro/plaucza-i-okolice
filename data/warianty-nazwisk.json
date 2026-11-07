@@ -17,13 +17,15 @@
     "Kerdelowa",
     "Kierdelow",
     "Kierdelowa",
-    "Kurdel"
+    "Kurdel",
+    "Kierdel"
   ],
   "Komeraus / Rumeraus": [
     "Komeraus",
     "Kommeraus",
     "Rumeraus",
-    "Kommerausowa"
+    "Kommerausowa",
+    "Kumeraus"
   ],
   "Szczaurski / Szczawurski": [
     "Szczaurski",
@@ -37,7 +39,10 @@
     "Pichurow",
     "Pichurowa",
     "Pihur",
-    "Pihurowa"
+    "Pihurowa",
+    "Pichor",
+    "Piechura",
+    "Piechurow"
   ],
   "Jastrzębski": [
     "Jastrzębski",
@@ -76,7 +81,8 @@
   ],
   "Gizowski": [
     "Gizowski",
-    "Gizowska"
+    "Gizowska",
+    "Gidzowski"
   ],
   "Postoy / Postoiowa": [
     "Postoy",
@@ -94,5 +100,11 @@
     "Kamieński",
     "Kamienski",
     "Kamieniski"
+  ],
+  "Rogowski": [
+    "Rogowski",
+    "Rogowska",
+    "Rogoski",
+    "Rogoska"
   ]
 }
