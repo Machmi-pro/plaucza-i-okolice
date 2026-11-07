@@ -9,9 +9,9 @@ agad-301-646-1767-U-s021ra,7,Andrzej,Kowal,,chrzestny,,,,pewny,,,Andrea. Chrzest
 agad-301-646-1767-U-s021ra,8,Franciszka,Pichurowa,,chrzestna,,,,pewny,,,Francisca. Chrzestna Agnieszki.
 agad-301-646-1767-U-s021ra,9,Antoni,Łękawski,,kaplan,,,,pewny,,,Antonius
 agad-301-646-1767-U-s021rb,1,Wincenty,,,dziecko,pm,,,,,,Vincentium
-agad-301-646-1767-U-s021rb,2,Antoni,Piechurow,,ojciec,pm,,,niepewny,,,Antonii
+agad-301-646-1767-U-s021rb,2,Antoni,Pichur,,ojciec,pm,,,niepewny,,,Antonii. Zapis w źródle: Piechurow.
 agad-301-646-1767-U-s021rb,3,Zofia,,,matka,pm,,,,,,Sophiae
-agad-301-646-1767-U-s021rb,4,Bazyli,Zwierzynski,,chrzestny,pm,,,pewny,,,Basilio
+agad-301-646-1767-U-s021rb,4,Bazyli,Zwierzyński,,chrzestny,pm,,,pewny,,,Basilio
 agad-301-646-1767-U-s021rb,5,Anna,Szczawurska,,chrzestna,pm,,,pewny,,,Anna
 agad-301-646-1767-U-s021rb,6,Jan,Kozoryz,,chrzestny,pm,,,pewny,,,Joanne
 agad-301-646-1767-U-s021rb,7,Marianna,Jamniczowa,,chrzestna,pm,,,niepewny,,,Marianna
@@ -40,14 +40,14 @@ agad-301-646-1767-U-s023lb,5,Marianna,Motylicha,,chrzestna,,,,pewny,,,Marianna
 agad-301-646-1767-U-s023lb,6,Maciej,Gizowski,,chrzestny,,,,pewny,,,Mathia
 agad-301-646-1767-U-s023lb,7,Franciszka,Pichurowa,,chrzestna,,,,pewny,,,Francisca
 agad-301-646-1767-U-s024ra,1,Zofia,,,dziecko,,,,,,,Sophiam
-agad-301-646-1767-U-s024ra,2,Jakub,Kierdelow,,ojciec,,,,pewny,,,Jacobi
+agad-301-646-1767-U-s024ra,2,Jakub,Kierdel,,ojciec,,,,pewny,,,Jacobi. Zapis w źródle: Kierdelow.
 agad-301-646-1767-U-s024ra,3,Marianna,,,matka,,,,,,,Mariannae
 agad-301-646-1767-U-s024ra,4,Łukasz,Tabaka,,chrzestny,pw,,,pewny,,,Luca
 agad-301-646-1767-U-s024ra,5,Apolonia,Homczyszynowa,,chrzestna,pw,,,niepewny,,,Apollonia
 agad-301-646-1767-U-s025ra,1,Piotr,,,dziecko,pm,,,,,,Petrum
 agad-301-646-1767-U-s025ra,2,Maciej,Pichur,,ojciec,pm,,,pewny,,,Mathiae
 agad-301-646-1767-U-s025ra,3,Marianna,,,matka,pm,,,,,,Mariannae
-agad-301-646-1767-U-s025ra,4,Jakub,Olechow,,chrzestny,pm,,,pewny,,,Jacobo
+agad-301-646-1767-U-s025ra,4,Jakub,Olech,,chrzestny,pm,,,pewny,,,Jacobo. Zapis w źródle: Olechow.
 agad-301-646-1767-U-s025ra,5,Zofia,Pichurowa,,chrzestna,pm,,,pewny,,,Sophia
 agad-301-646-1767-U-s026ra,1,Marianna,,,dziecko,pm,,,,,,Mariannam
 agad-301-646-1767-U-s026ra,2,Józef,Kamieniski,,ojciec,pm,,,niepewny,,,Josephi
@@ -56,7 +56,7 @@ agad-301-646-1767-U-s026ra,4,Kazimierz,Podgayny,,chrzestny,pm,,,pewny,,,Casimiro
 agad-301-646-1767-U-s026ra,5,Zofia,Pichurowa,,chrzestna,pm,,,pewny,,,Sophia
 agad-301-646-1767-U-s026ra,6,Jan,Dunajowski,,kaplan,,,,pewny,,,Joannes
 agad-301-646-1767-U-s026rb,1,Stefan,,,dziecko,pw,,,,,,Stephanum
-agad-301-646-1767-U-s026rb,2,Wojciech,Pasiecznikow,,ojciec,pw,,,pewny,,,Adalberti
+agad-301-646-1767-U-s026rb,2,Wojciech,Pasiecznik,,ojciec,pw,,,pewny,,,Adalberti. Zapis w źródle: Pasiecznikow.
 agad-301-646-1767-U-s026rb,3,Marianna,,,matka,pw,,,,,,Mariannae
 agad-301-646-1767-U-s026rb,4,Błażej,Tereszczuk,,chrzestny,pw,,,pewny,,,Blasio
 agad-301-646-1767-U-s026rb,5,Helena,Dmitrowa,,chrzestna,pw,,,niepewny,,,Helena
@@ -67,9 +67,128 @@ agad-301-646-1767-U-s027la,3,Teodora,,,matka,,,,,,,Theodorae
 agad-301-646-1767-U-s027la,4,Jan,Ma…,,chrzestny,pm,,,niepewny,,,Joanne
 agad-301-646-1767-U-s027la,5,Teodora,Miednikowa,,chrzestna,pm,,,niepewny,,,Theodora
 agad-301-646-1767-U-s027lb,1,Rozalia,,,dziecko,pm,,,,,,Rosaliam
-agad-301-646-1767-U-s027lb,2,Wojciech,Pichurow,,ojciec,pm,,,pewny,,,Adalberti
+agad-301-646-1767-U-s027lb,2,Wojciech,Pichur,,ojciec,pm,,,pewny,,,Adalberti. Zapis w źródle: Pichurow.
 agad-301-646-1767-U-s027lb,3,Franciszka,,,matka,pm,,,,,,Franciscae
 agad-301-646-1767-U-s027lb,4,Michał,Szczawurski,,chrzestny,pm,,,pewny,,,Michaële
-agad-301-646-1767-U-s027lb,5,Marianna,Murzynska,,chrzestna,pm,,,pewny,,,Marianna
+agad-301-646-1767-U-s027lb,5,Marianna,Murzyńska,,chrzestna,pm,,,pewny,,,Marianna
 agad-301-646-1767-U-s027lb,6,Jan,Zapotołoczny,,chrzestny,Taurów,,,niepewny,,,Joanne
 agad-301-646-1767-U-s027lb,7,Katarzyna,Kotyczka,,chrzestna,Taurów,,,niepewny,,,Catharina
+agad-301-646-1767-U-s029la,1,Marianna,,,dziecko,pw,,,,,,
+agad-301-646-1767-U-s029la,2,Błażej,Tereszczuk,,ojciec,,,,pewny,,,
+agad-301-646-1767-U-s029la,3,Katarzyna,,,matka,,,,,,,
+agad-301-646-1767-U-s029la,4,Józef,Wiesielski,,chrzestny,przedmieście Kozłowa,,,niepewny,,,
+agad-301-646-1767-U-s029la,5,Helena,Szurakowa,,chrzestna,przedmieście Kozłowa,,,niepewny,,,
+agad-301-646-1767-U-s029la,6,Bartłomiej,Maldoch,,chrzestny,przedmieście Kozłowa,,,niepewny,,,
+agad-301-646-1767-U-s029la,7,Marianna,Gospodynikowa,,chrzestna,pw,,,niepewny,,,
+agad-301-646-1768-U-s030la,1,Agnieszka,,,dziecko,pm,,,,,,
+agad-301-646-1768-U-s030la,2,Maciej,Gizowski,,ojciec,pm,,,niepewny,,,Zapis w źródle: Gidzowski.
+agad-301-646-1768-U-s030la,3,Marianna,,,matka,pm,,,,,,
+agad-301-646-1768-U-s030la,4,Gabriel,Muzykant,,chrzestny,pm,,,pewny,,,
+agad-301-646-1768-U-s030la,5,Franciszka,Pichurowa,,chrzestna,pm,,,pewny,,,
+agad-301-646-1768-U-s030ra,1,Marianna,,,dziecko,,,,,,,
+agad-301-646-1768-U-s030ra,2,Stefan,Komeraus,,ojciec,,,,pewny,,,Zapis w źródle: Kumeraus.
+agad-301-646-1768-U-s030ra,3,Marianna,,,matka,,,,,,,
+agad-301-646-1768-U-s030ra,4,Wojciech,Pasiecznik,,chrzestny,pw,,,pewny,,,
+agad-301-646-1768-U-s030ra,5,Marianna,Staneczyszyna,,chrzestna,pw,,,niepewny,,,
+agad-301-646-1768-U-s031la,1,Błażej,,,dziecko,pm,,,,,,
+agad-301-646-1768-U-s031la,2,Walenty,Murzyński,,ojciec,pm,,,pewny,,,
+agad-301-646-1768-U-s031la,3,Marianna,,,matka,pm,,,,,,
+agad-301-646-1768-U-s031la,4,Błażej,Czapliński,,chrzestny,Olesko,,,niepewny,,,
+agad-301-646-1768-U-s031la,5,Anna,Szczawurska,,chrzestna,pm,,,pewny,,,Zapis w źródle: Szczaurska.
+agad-301-646-1768-U-s031lb,1,Józefa,,,dziecko,,,,,,,
+agad-301-646-1768-U-s031lb,2,Jan,Radaczyński,,ojciec,,,,pewny,,,
+agad-301-646-1768-U-s031lb,3,Apolonia,,,matka,,,,,,,
+agad-301-646-1768-U-s031lb,4,Aleksander,Swiey…owski,,chrzestny,,,,niepewny,,,
+agad-301-646-1768-U-s031lb,5,Marianna,Zabińska,,chrzestna,,,,pewny,,,
+agad-301-646-1768-U-s031ra,1,Maciej,,,dziecko,pm,,,,,,
+agad-301-646-1768-U-s031ra,2,,Rogowski,,ojciec,pm,,,pewny,,,
+agad-301-646-1768-U-s031ra,3,Agnieszka,,,matka,pm,,,,,,
+agad-301-646-1768-U-s031ra,4,Walenty,Murzy…,,chrzestny,pm,,,niepewny,,,
+agad-301-646-1768-U-s031ra,5,Teresa,Gudycha,,chrzestna,Zborów,,,niepewny,,,
+agad-301-646-1768-U-s031ra,6,Jan Duklan,Miekrzynski,,kaplan,,,,niepewny,,,
+agad-301-646-1768-U-s033la,1,Zofia,,,dziecko,,,,,,,
+agad-301-646-1768-U-s033la,2,Walenty,Olech,,ojciec,,,,pewny,,,
+agad-301-646-1768-U-s033la,3,Magdalena,,,matka,,,,,,,
+agad-301-646-1768-U-s033la,4,Krzysztof,Adamiak,,chrzestny,pm,,,pewny,,,
+agad-301-646-1768-U-s033la,5,Apolonia,Chmurowa,,chrzestna,pm,,,pewny,,,
+agad-301-646-1768-U-s034ra,1,Mateusz,,,dziecko,pm,,,,,,
+agad-301-646-1768-U-s034ra,2,Antoni,Pichur,,ojciec,pm,,,pewny,,,Zapis w źródle: Piechura.
+agad-301-646-1768-U-s034ra,3,Zofia,,,matka,pm,,,,,,
+agad-301-646-1768-U-s034ra,4,Jan,Kozoryz,,chrzestny,pm,,,pewny,,,
+agad-301-646-1768-U-s034ra,5,Anna,Szczawurska,,chrzestna,pm,,,pewny,,,
+agad-301-646-1768-U-s034ra,6,Józef,…,,chrzestny,pm,,,nieczytelny,,,
+agad-301-646-1768-U-s034ra,7,Katarzyna,Zwierzyńska,,chrzestna,pm,,,pewny,,,
+agad-301-646-1768-U-s035la,1,Łukasz,,,dziecko,,,,,,,
+agad-301-646-1768-U-s035la,2,Tomasz,Kierdel,,ojciec,,,,pewny,,,
+agad-301-646-1768-U-s035la,3,Marianna,,,matka,,,,,,,
+agad-301-646-1768-U-s035la,4,Jacek,Cymczyszyn,,chrzestny,,,,niepewny,,,
+agad-301-646-1768-U-s035la,5,Anna,Zuklinska,,chrzestna,,,,niepewny,,,
+agad-301-646-1768-U-s035ra,1,Andrzej,,,dziecko,pw,,,,,,
+agad-301-646-1768-U-s035ra,2,Paweł,Komeraus,,ojciec,pw,,,niepewny,,,Zapis w źródle: Kumeraus.
+agad-301-646-1768-U-s035ra,3,Ewa,,,matka,pw,,,,,,
+agad-301-646-1768-U-s035ra,4,Saba,Siewerski,,chrzestny,Lubianka,,,niepewny,,,
+agad-301-646-1768-U-s035ra,5,Agnieszka,Sokołowska,,chrzestna,Lubianka,,,niepewny,,,
+agad-301-646-1768-U-s035rb,1,Katarzyna,,,dziecko,,,,,,,
+agad-301-646-1768-U-s035rb,2,Mikołaj,Chmura,,ojciec,,,,pewny,,,
+agad-301-646-1768-U-s035rb,3,Teresa,,,matka,,,,,,,
+agad-301-646-1768-U-s035rb,4,Ba…,Kozoryz,,chrzestny,,,,pewny,,,Imię odczytane fragmentarycznie.
+agad-301-646-1768-U-s035rb,5,Anna,Szczawurska,,chrzestna,,,,pewny,,,Zapis w źródle: Szczaurska.
+agad-301-646-1768-U-s035rb,6,Maciej,Sarnicki,,chrzestny,,,,niepewny,,,
+agad-301-646-1768-U-s035rb,7,Zofia,Pichurowa,,chrzestna,,,,pewny,,,
+agad-301-646-1768-U-s035rc,1,Katarzyna,,,dziecko,,,,,,,
+agad-301-646-1768-U-s035rc,2,Andrzej,Jaworski,,ojciec,,,,pewny,,,
+agad-301-646-1768-U-s035rc,3,Agnieszka,,,matka,,,,,,,
+agad-301-646-1768-U-s035rc,4,Wojciech,Pichur,,chrzestny,pm,,,pewny,,,Zapis w źródle: Pichor.
+agad-301-646-1768-U-s035rc,5,Agnieszka,Rogowska,,chrzestna,pm,,,pewny,,,
+agad-301-646-1769-U-s037la,1,Agnieszka,,,dziecko,pw,,,,,,
+agad-301-646-1769-U-s037la,2,Błażej,Tereszczuk,,ojciec,pw,,,pewny,,,
+agad-301-646-1769-U-s037la,3,Katarzyna,,,matka,pw,,,,,,
+agad-301-646-1769-U-s037la,4,Łukasz,Tabaka,,chrzestny,,,,pewny,,,
+agad-301-646-1769-U-s037la,5,Katarzyna,Ciesielska,,chrzestna,,,,pewny,,,
+agad-301-646-1769-U-s037la,6,Michał,Janusz,,chrzestny,Kozłów,,,pewny,,,
+agad-301-646-1769-U-s037la,7,Katarzyna,Wirnikowa,,chrzestna,Kozłów,,,niepewny,,,
+agad-301-646-1769-U-s037la,8,Jan Duklan,Miekrzynski,,kaplan,,,,niepewny,,,
+agad-301-646-1769-U-s037lb,1,Regina,,,dziecko,,,,,,,
+agad-301-646-1769-U-s037lb,2,Stefan,Komeraus,,ojciec,,,,pewny,,,Zapis w źródle: Kumeraus.
+agad-301-646-1769-U-s037lb,3,Marianna,,,matka,,,,,,,
+agad-301-646-1769-U-s037lb,4,Wojciech,Pasiecznik,,chrzestny,,,,pewny,,,Zapis w źródle: Pasiecznikow.
+agad-301-646-1769-U-s037lb,5,Marianna,Jurczychowa,,chrzestna,,,,niepewny,,,
+agad-301-646-1769-U-s037lb,6,Jan Duklan,Miekrzynski,,kaplan,,,,niepewny,,,
+agad-301-646-1769-U-s039la,1,Józef,,,dziecko,,,,,,,
+agad-301-646-1769-U-s039la,2,Szymon,Lechor,,ojciec,,,,niepewny,,,
+agad-301-646-1769-U-s039la,3,Zofia,,,matka,,,,,,,
+agad-301-646-1769-U-s039la,4,Józef,Chmura,,chrzestny,pm,,,pewny,,,
+agad-301-646-1769-U-s039la,5,Anna,Szczawurska,,chrzestna,pm,,,pewny,,,Zapis w źródle: Szczaurska.
+agad-301-646-1769-U-s041la,1,Krzysztof,,,dziecko,,,,,,,
+agad-301-646-1769-U-s041la,2,Jakub,Koniuszki,,ojciec,,,,niepewny,,,
+agad-301-646-1769-U-s041la,3,Marianna,,,matka,,,,,,,
+agad-301-646-1769-U-s041la,4,Ignacy,Rog…ki,,chrzestny,,,,niepewny,,,
+agad-301-646-1769-U-s041la,5,Marianna,Kowalicha,,chrzestna,,,,pewny,,,
+agad-301-646-1769-U-s042la,1,Andrzej,,,dziecko,pl-nieustalona,,,,,,
+agad-301-646-1769-U-s042la,2,Marcin,Rogowski,,ojciec,pl-nieustalona,,,pewny,,,Zapis w źródle: Rogoski.
+agad-301-646-1769-U-s042la,3,Agnieszka,,,matka,pl-nieustalona,,,,,,
+agad-301-646-1769-U-s042la,4,Jacek,Rogowski,,chrzestny,pl-nieustalona,,,pewny,,,Zapis w źródle: Rogoski.
+agad-301-646-1769-U-s042la,5,Zofia,Pichurowa,,chrzestna,pl-nieustalona,,,pewny,,,
+agad-301-646-1769-U-s042ra,1,Tomasz,,,dziecko,pm,,,,,,
+agad-301-646-1769-U-s042ra,2,Andrzej,Rogowski,,ojciec,pm,,,pewny,,,Zapis w źródle: Rogoski.
+agad-301-646-1769-U-s042ra,3,Dorota,,,matka,pm,,,,,,
+agad-301-646-1769-U-s042ra,4,Antoni,Pichur,,chrzestny,pm,,,pewny,,,Zapis w źródle: Pihur.
+agad-301-646-1769-U-s042ra,5,Marianna,Rogowska,,chrzestna,pm,,,pewny,,,Zapis w źródle: Rogoska.
+agad-301-646-1769-U-s042rb,1,Tomasz,,,dziecko,pw,,,,,,
+agad-301-646-1769-U-s042rb,2,Maciej,Kierdel,,ojciec,pw,,,pewny,,,
+agad-301-646-1769-U-s042rb,3,Barbara,,,matka,pw,,,,,,
+agad-301-646-1769-U-s042rb,4,Bazyli,Tereszczuk,,chrzestny,pw,,,pewny,,,
+agad-301-646-1769-U-s042rb,5,Anna,Zuklinska,,chrzestna,pw,,,pewny,,,
+agad-301-646-1770-U-s044la,1,Paweł,,,dziecko,pw,,,,,,
+agad-301-646-1770-U-s044la,2,Stefan,Komeraus,,ojciec,pw,,,pewny,,,
+agad-301-646-1770-U-s044la,3,Zofia,,,matka,pw,,,,,,
+agad-301-646-1770-U-s044la,4,Teodor,Kowal,,chrzestny,pw,,,pewny,,,
+agad-301-646-1770-U-s044la,5,Marianna,Staneczyszyna,,chrzestna,pw,,,niepewny,,,
+agad-301-646-1770-U-s044ra,1,Agata,,,dziecko,,,,,,,
+agad-301-646-1770-U-s044ra,2,Wojciech,Pichur,,ojciec,,,,pewny,,,Zapis w źródle: Pichor.
+agad-301-646-1770-U-s044ra,3,Franciszka,,,matka,,,,,,,
+agad-301-646-1770-U-s044ra,4,Andrzej,Szczawurski,,chrzestny,,,,pewny,,,Zapis w źródle: Szczaurski.
+agad-301-646-1770-U-s044ra,5,Marianna,Murzyńska,,chrzestna,,,,pewny,,,
+agad-301-646-1770-U-s044ra,6,Jan,Zapotołoczny,,chrzestny,pm,,,niepewny,,,
+agad-301-646-1770-U-s044ra,7,Katarzyna,Kotowiczowa,,chrzestna,pm,,,niepewny,,,
+agad-301-646-1770-U-s044ra,8,Karol,Wieracki,,kaplan,,,,niepewny,,,
