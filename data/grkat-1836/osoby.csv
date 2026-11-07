@@ -263,7 +263,7 @@ cdial-201-4a-1117-1836-Z-s1536rg,2,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W 
 cdial-201-4a-1117-1836-M-s1544ra,1,Paweł,Barabasz,,pan_mlody,pw,84,84,pewny,pewny,tak,W akcie imię Paulus. Wiek 23 lat
 cdial-201-4a-1117-1836-M-s1544ra,2,Barbara,,,panna_mloda,,,,,,nie,Wiek 14 lat
 cdial-201-4a-1117-1836-M-s1544ra,3,Andrzej,Barabasz,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Andreas
-cdial-201-4a-1117-1836-M-s1544ra,4,Eustachy,Mac…szyniec,,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Eustachius
+cdial-201-4a-1117-1836-M-s1544ra,4,Eustachy,Maczyszyniec,,rodzic_panny_mlodej,,,,pewny,,nie,W akcie imię Eustachius. Nazwisko uzupełnione według indeksu Geneteki (Geneteka: Maczuszyniec; forma Maczyszyniec jak w Płauczy Małej) (wcześniej odczyt Mac…szyniec)
 cdial-201-4a-1117-1836-M-s1544ra,5,Mikołaj,B…ski,,swiadek,,,,niepewny,,nie,W akcie imię Nicolaus
 cdial-201-4a-1117-1836-M-s1544ra,6,Grzegorz,K…ak,,swiadek,,,,niepewny,,nie,W akcie imię Gregorius
 cdial-201-4a-1117-1836-M-s1544ra,7,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
@@ -311,7 +311,7 @@ cdial-201-4a-1117-1836-M-s1545lb,6,Maciej,Sie…ski,,swiadek,,,,niepewny,,nie,W 
 cdial-201-4a-1117-1836-M-s1545lb,7,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-M-s1545lc,1,Łukasz,,,pan_mlody,pw,128,128,,pewny,tak,W akcie imię Lucas. Wiek 22 lat
 cdial-201-4a-1117-1836-M-s1545lc,2,Barbara,,,panna_mloda,,,,,,nie,Wiek 18 lat
-cdial-201-4a-1117-1836-M-s1545lc,3,Teodor,Marczowski[?],,rodzic_pana_mlodego,,,,niepewny,,nie,W akcie imię Theodorus
+cdial-201-4a-1117-1836-M-s1545lc,3,Teodor,Marczowski,,rodzic_pana_mlodego,,,,pewny,,nie,W akcie imię Theodorus. Nazwisko uzupełnione według indeksu Geneteki (wcześniej odczyt Marczowski[?])
 cdial-201-4a-1117-1836-M-s1545lc,4,Mateusz,Kołot[?],,rodzic_panny_mlodej,,,,niepewny,,nie,W akcie imię Mattheus
 cdial-201-4a-1117-1836-M-s1545lc,5,Mateusz,Homeniuk,,swiadek,,,,pewny,,nie,W akcie imię Mattheus
 cdial-201-4a-1117-1836-M-s1545lc,6,Michał,Rogucki[?],,swiadek,,,,niepewny,,nie,W akcie imię Michael
@@ -512,11 +512,11 @@ cdial-201-4a-1117-1836-U-s1548lb,8,Szymon,Skarz[?],,inna,,,,niepewny,,nie,W akci
 cdial-201-4a-1117-1836-U-s1548lb,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548lc,1,Tekla,,,dziecko,pw,109,109,,pewny,tak,W akcie imię Thecla
 cdial-201-4a-1117-1836-U-s1548lc,2,Stefan,Bortnyk,,ojciec,pw,109,109,pewny,pewny,tak,W akcie imię Stephanus
-cdial-201-4a-1117-1836-U-s1548lc,3,Julianna,,M…owski,matka,pw,109,109,niepewny,pewny,tak,córka Joannes M…owski
+cdial-201-4a-1117-1836-U-s1548lc,3,Julianna,,Murczowski,matka,pw,109,109,pewny,pewny,tak,córka Joannes Murczowski. Nazwisko uzupełnione według indeksu Geneteki (wcześniej odczyt M…owski)
 cdial-201-4a-1117-1836-U-s1548lc,4,Franciszek,Radaczyński,,chrzestny,,,,pewny,,nie,W akcie imię Franciscus
 cdial-201-4a-1117-1836-U-s1548lc,5,Tatiana,,,chrzestna,,,,,,nie,W akcie imię Thatianna. żona Sebastianus Machow
 cdial-201-4a-1117-1836-U-s1548lc,6,Maria,Ko…tycha,,akuszerka,,,,niepewny,,nie,
-cdial-201-4a-1117-1836-U-s1548lc,7,Jan,M…owski,,inna,,,,niepewny,,nie,W akcie imię Joannes. Ojciec matki
+cdial-201-4a-1117-1836-U-s1548lc,7,Jan,Murczowski,,inna,,,,pewny,,nie,W akcie imię Joannes. Ojciec matki. Nazwisko uzupełnione według indeksu Geneteki (wcześniej odczyt M…owski)
 cdial-201-4a-1117-1836-U-s1548lc,8,Sebastian,Machow,,inna,,,,pewny,,nie,W akcie imię Sebastianus. Mąż chrzestnej wymieniony w akcie
 cdial-201-4a-1117-1836-U-s1548lc,9,Auksenty,Zafijowski,,kaplan,,,,pewny,,nie,"W akcie imię Auxentius. Wikariusz w Płauczy Małej, jeden kapłan dla całej parafii"
 cdial-201-4a-1117-1836-U-s1548ld,1,Jan,,,dziecko,pw,22,22,,pewny,tak,W akcie imię Joannes
