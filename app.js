@@ -31,7 +31,10 @@ function norm(s) {
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const unescapeHtml = s => { const t = document.createElement("textarea"); t.innerHTML = s || ""; return t.value; };
 const year = a => +a.date.slice(0, 4);
-const vName = id => VILLAGES.find(v => v.id === id)?.name || id;
+/* wpisy z księgi 1724–1766 podają samo „Płaucza” (bez rozróżnienia Małej i Wielkiej) albo „Nowa Płaucza”; pokazywane są w Małej i Wielkiej z oznaczeniem */
+const SHARED = { "pl-nieustalona": "Płaucza (bez rozróżnienia Małej i Wielkiej)", "pl-nowa": "Nowa Płaucza (do ustalenia)" };
+const inV = (a, v) => a.v === v || (!!SHARED[a.v] && (v === "pm" || v === "pw"));
+const vName = id => VILLAGES.find(v => v.id === id)?.name || SHARED[id] || id;
 const MONTHS = ["", "stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
 const fmtDate = d => {
   const [y, mo, da] = d.split("-");
@@ -213,12 +216,12 @@ function defaultPeriod() {
   /* domyślnie wszystkie lata naraz; okresy na osi czasu działają jak opcjonalny filtr */
   return ALL_KEY;
 }
-const dataYears = v => [...new Set(ACTS.filter(a => a.v === v).map(year))].sort((a, b) => a - b);
+const dataYears = v => [...new Set(ACTS.filter(a => inV(a, v)).map(year))].sort((a, b) => a - b);
 const periodLabel = p => p.all ? "wszystkie lata" : `${p.from}–${p.to}`;
 
 /* ===================== FILTRY I INDEKSY ===================== */
 function actsIn(v, from, to, f = {}) {
-  return ACTS.filter(a => a.v === v && year(a) >= from && year(a) <= to
+  return ACTS.filter(a => inV(a, v) && year(a) >= from && year(a) <= to
     && (!f.r || year(a) === +f.r) && (!f.ob || a.rite === f.ob) && (!f.rd || a.kind === f.rd))
     .sort((a, b) => a.date.localeCompare(b.date));
 }
@@ -260,11 +263,11 @@ function namesForHouse(rows, collapse) {
 /* ===================== WIDOKI ===================== */
 const app = document.getElementById("app");
 const stateChip = s => `<span class="chip s-${s}">${STATE[s]}</span>`;
-const periodHasData = (v, p) => ACTS.some(a => a.v === v && year(a) >= p.from && year(a) <= p.to);
+const periodHasData = (v, p) => ACTS.some(a => inV(a, v) && year(a) >= p.from && year(a) <= p.to);
 const aiNote = `<div class="note small"><b>Odczyt AI, do sprawdzenia.</b> Wpisy pochodzą z odczytu skanów wykonanego przez AI i nie zostały jeszcze porównane ze skanem. Oznaczenia „niepewny” i „nieczytelny” pochodzą z odczytu.</div>`;
 
 function villageStats(v) {
-  const acts = ACTS.filter(a => a.v === v);
+  const acts = ACTS.filter(a => inV(a, v));
   const houses = new Set(acts.flatMap(a => a.people.filter(hasHouse).map(p => p.dom)));
   const names = new Set(acts.flatMap(a => a.people.map(p => norm(p.nazw))).filter(Boolean));
   return { houses: houses.size, names: names.size, acts: acts.length };
@@ -378,8 +381,31 @@ function periodPanel(v, p) {
   }
   if (houses.length) h += `</ul>`;
   h += `<h3 class="section-title">Bez numeru domu <span class="count">${noHouse.length}</span></h3>`;
-  h += noHouse.length ? noHouse.map(entryCard).join("") : `<p class="muted small">Wszystkie wpisy w tym zakresie mają numer domu.</p>`;
+  h += noHouse.length ? families(noHouse) : `<p class="muted small">Wszystkie wpisy w tym zakresie mają numer domu.</p>`;
   return h + (p.all ? "" : wykaz(v, p));
+}
+
+/* wpisy bez numeru domu zebrane w rodziny według nazwiska ojca (lub głównej osoby aktu); odmiany pisowni łączy warianty-nazwisk.json */
+const famKey = n => { const k = norm((n || "").replace(/\[\?\]/g, "")); return VAR[k] || stem(k); };
+function families(acts) {
+  const groups = new Map(), loose = [];
+  for (const a of acts) {
+    const p = ["ojciec", "pan_mlody", "zmarly", "zmarla", "dziecko"].map(r => a.people.find(x => x.rola === r && x.nazw)).find(Boolean);
+    if (!p) { loose.push(a); continue; }
+    const k = famKey(p.nazw);
+    if (!groups.has(k)) groups.set(k, { names: new Set(), acts: [] });
+    const g = groups.get(k); g.names.add(p.nazw.replace(/\[\?\]/g, "").trim()); g.acts.push(a);
+  }
+  const list = [...groups.values()].sort((x, y) => y.acts.length - x.acts.length || [...x.names][0].localeCompare([...y.names][0], "pl"));
+  const multi = list.filter(g => g.acts.length > 1), single = list.filter(g => g.acts.length === 1).flatMap(g => g.acts);
+  let h = multi.length ? `<p class="small muted">Wpisy bez numeru domu zebrano w rodziny według nazwiska ojca (odmiany pisowni połączone). Zbieżność nazwisk nie dowodzi pokrewieństwa.</p>` : "";
+  for (const g of multi) {
+    const ys = g.acts.map(year), vs = [...new Set(g.acts.map(a => a.v))].map(vName);
+    h += `<details class="entry family"><summary><span class="when">${esc([...g.names].sort().join(" / "))}</span>
+      <span>${g.acts.length} ${g.acts.length < 5 ? "wpisy" : "wpisów"} · ${listYears(ys).split(", ")[0]}–${Math.max(...ys)}</span><span class="muted small">${esc(vs.join(", "))}</span></summary>
+      <div class="body">${g.acts.sort((x, y) => x.date.localeCompare(y.date)).map(entryCard).join("")}</div></details>`;
+  }
+  return h + [...single, ...loose].sort((x, y) => x.date.localeCompare(y.date)).map(entryCard).join("");
 }
 
 function personLine(p) {
@@ -404,7 +430,8 @@ function actMeta(a) {
     <dt>Data</dt><dd>${fmtDate(a.date)}</dd>
     <dt>Rodzaj</dt><dd>${KIND[a.kind] || esc(a.kind)}</dd>
     <dt>Obrządek</dt><dd>${RITE[a.rite] || "—"}${s.obrzadek_uwaga ? ` <span class="flag">do potwierdzenia</span>` : ""}</dd>
-    <dt>Parafia</dt><dd>${esc(s.parafia || "—")}</dd>
+    <dt>Parafia</dt><dd>${esc(s.parafia || "—")}</dd>${SHARED[a.v] ? `
+    <dt>Miejscowość</dt><dd>${esc(SHARED[a.v])}</dd>` : ""}
     <dt>Sygnatura</dt><dd>${esc(s.archiwum)}${s.zespol ? `, zesp. ${esc(s.zespol)}` : ""}, ${esc(s.sygnatura)}</dd>
     <dt>Akt / strona</dt><dd>${a.nr ? `nr ${esc(a.nr)}, ` : "bez numeru aktu, "}${esc(a.page)}</dd>
     <dt>Skan</dt><dd>${a.scan ? `<a href="${esc(a.scan)}" target="_blank" rel="noopener">otwórz skan ↗</a>` : '<span class="muted">brak odsyłacza</span>'}</dd>
@@ -414,7 +441,7 @@ const actTitle = a => a.people.filter(p => MAIN_ROLES.includes(p.rola)).map(p =>
 function entryCard(a) {
   const copies = a.event ? ACTS.filter(x => x.event === a.event && x.id !== a.id) : [];
   return `<details class="entry"><summary><span class="when">${fmtDate(a.date)}</span>
-    <span>${KIND[a.kind] || esc(a.kind)}: ${esc(actTitle(a))}</span><span class="muted small">${RITE[a.rite] || ""} · ${esc(SOURCES[a.src]?.parafia || "")} · ${a.nr ? `nr ${esc(a.nr)}` : esc(a.page)}</span>${a.unverified ? '<span><span class="flag">odczyt AI, do sprawdzenia</span></span>' : ""}</summary>
+    <span>${KIND[a.kind] || esc(a.kind)}: ${esc(actTitle(a))}</span><span class="muted small">${RITE[a.rite] || ""} · ${esc(SOURCES[a.src]?.parafia || "")} · ${a.nr ? `nr ${esc(a.nr)}` : esc(a.page)}${SHARED[a.v] ? ` · ${esc(SHARED[a.v])}` : ""}</span>${a.unverified ? '<span><span class="flag">odczyt AI, do sprawdzenia</span></span>' : ""}</summary>
     <div class="body">${actMeta(a)}
       ${a.note ? `<div class="note">Uwagi do odczytu: ${esc(a.note)}</div>` : ""}
       <ul class="people">${a.people.map(personLine).join("")}</ul>
@@ -530,7 +557,7 @@ function viewSearch() {
   const groups = new Set(Object.entries(VAR).filter(([n]) => n.includes(nq)).map(([, g]) => g));
   const res = new Map();
   for (const a of ACTS) {
-    if (!all && a.v !== S.w) continue;
+    if (!all && !inV(a, S.w)) continue;
     for (const p of a.people) {
       const nn = norm(p.nazw), np = norm(p.pan);
       const direct = (nn && nn.includes(nq)) || (np && np.includes(nq));

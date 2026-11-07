@@ -189,5 +189,24 @@
     "skany": "do ustalenia",
     "stan": "kwerenda",
     "link": ""
+  },
+  {
+    "id": "agad-301-645",
+    "katalog_danych": "agad-301-645",
+    "archiwum": "AGAD (Szukaj w Archiwach)",
+    "zespol": "301",
+    "sygnatura": "301/645",
+    "parafia": "Kozłów (rzymskokatolicka), księga chrztów",
+    "obrzadek": "rz",
+    "rodzaje": "U",
+    "roczniki": "1724–1766",
+    "wsie": [
+      "pm",
+      "pw"
+    ],
+    "skany": "skany 5–63 odczytane",
+    "stan": "w opracowaniu (chrzty 1724–1766: 100 aktów, bez numerów domów)",
+    "odczyt_ai": true,
+    "link": "https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/17820980"
   }
 ]
