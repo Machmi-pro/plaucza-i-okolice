@@ -35,4 +35,4 @@ Pięć zapisów z 1805 r. występuje na s. 238 w sekcji Płauczy Wielkiej oraz n
 Glinna. Na s. 235 w metryce Macieja Kamińskiego (ur. 1799-02-18, ceremonie uzupełniono 1801-03-01) przy Jacku o nazwisku odczytanym niepewnie jako Kotulski zapisano de Glinna.
 
 ## Ujednolicone zapisy nazwisk
-W tabeli osób ujednolicono zapisy: Pichur (Pichor, Piechura, Pihur), Rogowski i Rogowska (Rogoski, Rogoska), Kierdel (Kerdel, Kerdelow), Gizowski i Gizowska (Gidzowski, Gidzowska), Guła i Gułowa (Gula, Gulowa), formy -ow przy ojcu sprowadzone do podstawowych (Szewcow → Szewc, Mielnikow → Mielnik) oraz polskie znaki w Murzyński, Radaczyński, Małaczyński, Zabiński. Zapis ze źródła zostaje w uwagach przy osobie.
+W tabeli osób ujednolicono zapisy: Pichur (Pichor, Piechura, Pihur), Rogowski i Rogowska (Rogoski, Rogoska), Kierdel (Kerdel, Kerdelow), Gizowski i Gizowska (Gizoski, Gidzowski, Gidzowska), Melnyk (Mielnik, Mielnikow), formy -ow przy ojcu sprowadzone do podstawowych (Szewcow → Szewc) oraz polskie znaki w Murzyński, Radaczyński, Małaczyński, Zabiński. Zapis ze źródła zostaje w uwagach przy osobie.
