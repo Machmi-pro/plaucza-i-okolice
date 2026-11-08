@@ -434,7 +434,7 @@ function actMeta(a) {
     <dt>Miejscowość</dt><dd>${esc(SHARED[a.v])}</dd>` : ""}
     <dt>Sygnatura</dt><dd>${esc(s.archiwum)}${s.zespol ? `, zesp. ${esc(s.zespol)}` : ""}, ${esc(s.sygnatura)}</dd>
     <dt>Akt / strona</dt><dd>${a.nr ? `nr ${esc(a.nr)}, ` : "bez numeru aktu, "}${esc(a.page)}</dd>
-    <dt>Skan</dt><dd>${a.scan ? `<a href="${esc(a.scan)}" target="_blank" rel="noopener">otwórz skan ↗</a>` : '<span class="muted">brak odsyłacza</span>'}</dd>
+    <dt>Skan</dt><dd>${a.scan ? `<a href="${esc(a.scan)}" target="_blank" rel="noopener">${/photos\./.test(a.scan) ? 'otwórz skan ↗' : 'otwórz księgę w archiwum ↗ (skan wg numeru obok)'}</a>` : '<span class="muted">brak odsyłacza</span>'}</dd>
   </dl>`;
 }
 const actTitle = a => a.people.filter(p => MAIN_ROLES.includes(p.rola)).map(p => `${p.imie} ${p.nazw}`.trim()).join(" i ") || "osoba bez imienia w odczycie";
