@@ -227,5 +227,24 @@
     "stan": "w opracowaniu (chrzty 1767–1770: 33 akty, bez numerów domów)",
     "odczyt_ai": true,
     "link": "https://www.szukajwarchiwach.gov.pl/en/jednostka/-/jednostka/17820981"
+  },
+  {
+    "id": "agad-301-649",
+    "katalog_danych": "agad-301-649",
+    "archiwum": "AGAD (Szukaj w Archiwach)",
+    "zespol": "301",
+    "sygnatura": "301/649",
+    "parafia": "Kozłów (rzymskokatolicka), księga urodzeń i chrztów",
+    "obrzadek": "rz",
+    "rodzaje": "U",
+    "roczniki": "1786–1809",
+    "wsie": [
+      "pm",
+      "pw"
+    ],
+    "skany": "skany 119–135 odczytane",
+    "stan": "w opracowaniu (chrzty 1786–1809: 248 aktów, z numerami domów)",
+    "odczyt_ai": true,
+    "link": "https://www.szukajwarchiwach.gov.pl/en/jednostka/-/jednostka/17820984"
   }
 ]
